@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-uglifycss": "latest"
+  }
+}
