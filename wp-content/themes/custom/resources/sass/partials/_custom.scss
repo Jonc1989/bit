@@ -1,0 +1,26 @@
+.title{
+  position: relative;
+  font-family: 'RobotoBold', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.39;
+  text-align: center;
+  color: #38414b;
+}
+.title:after{
+  content: '';
+  width: 45px;
+  height: 2px;
+  background-color: #ffd333;
+  border: solid 1px #ffd333;
+  position: absolute;
+  left: 45%;
+  left: calc( 50% - 22.5px );
+  bottom: -8px;
+}
+.border-bottom{
+  border-bottom: 1px solid #e6e9eb;
+}
+.text-center{
+  text-align: center;
+}

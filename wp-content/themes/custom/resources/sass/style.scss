@@ -1,8 +1,48 @@
 
-@import "custom";
+
+@import "_fonts";
+@import "_tooltips";
 
 /* PARTIALS */
 @import "partials/index";
 
 /* PAGES */
 @import "pages/index";
+
+body, html {
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  font-family: 'RobotoRegular', sans-serif;
+}
+.row{
+  height: 100%;
+}
+a, button {
+  outline: 0;
+}
+
+nav li a{
+  //color: white !important;
+}
+.clear-pads{
+  padding-right: 0px!important;
+  padding-left: 0px!important;
+}
+.soc-icon{
+  display: inline-block;
+}
+ul, menu, dir {
+  -webkit-padding-start: 0px;
+}
+
+.circle{
+  border-radius: 50%;
+}
+.yellow{
+  background-color: #ffd334;
+}
+.dark{
+  background-color: #181b16;
+}

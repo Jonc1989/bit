@@ -53,8 +53,8 @@ $menu = wp_get_nav_menu_items( $menu );
 							<li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
 						<?php } ?>
 
-						<li><a href="#" class="" data-toggle="modal" data-target="#registrationModal">Registration</a></li>
-						<li><a type="button" class="" data-toggle="modal" data-target="#loginModal">Login</a></li>
+						<li><a href="" class="" data-toggle="modal" data-target="#registrationModal">Registration</a></li>
+						<li><a  class="" data-toggle="modal" data-target="#loginModal">Login</a></li>
 					</ul>
 				</div>
 			</div>

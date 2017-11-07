@@ -1,17 +1,45 @@
 #banner{
+
+  margin-top: -72px;
+  padding-top: 175px;
+
+  color: white;
   width: 100%;
-  height: 340px;
-  background-color: #afafaf;
+  height: 681px;
+
+  background: url(resources/images/bg@3x.png)no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .top-title{
+    text-transform: uppercase;
+    display: inline-block;
+    width: fit-content;
+    line-height: 40px;
+    border-radius: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    color: #000;
+  }
   .granulas{
-      width: 208px;
-      height: 208px;
+      width: 416px;
+      height: 416px;
 
     .circle{
 
-      padding: 15px;
+      padding: 32px;
       width: 100%;
       height: 100%;
       border: solid 0.8px #362f2c;
+      &.granula-bg{
+        background: url(resources/images/group-7@3x.png)no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
     }
 
   }

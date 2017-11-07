@@ -1,6 +1,6 @@
 <div class="col-md-12 clear-pads" id="video">
 	<div class="container">
-		<h4>Инвестировать в реальное предприятие</h4>
+		<h4 class="title">Инвестировать в реальное предприятие</h4>
 		<div class="col-md-6">
 			<iframe
 				width="100%"
