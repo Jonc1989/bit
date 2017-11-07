@@ -31,7 +31,7 @@ function partner_register() {
 		'capability_type'    => 'post',
 		'hierarchical'       => true,
 		'menu_position'      => 42,
-		'supports'           => array( 'thumbnail' )
+		'supports'           => array( 'title', 'thumbnail' )
 	);
 
 	register_post_type( 'partner', $args );

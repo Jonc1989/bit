@@ -1,0 +1,129 @@
+#problem{
+  padding-top: 40px;
+  .city-image{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 200px;
+
+    background-image: url('resources/images/illustration@3x.png');
+    background-repeat: no-repeat;
+
+    background-position: bottom;
+
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    .container{
+      height: 100%;
+      .tooltips-wrap{
+        height: 60%;
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+  .posts-wrap{
+    padding-bottom: 85px;
+    .post-wrap{
+      height: 320px;
+
+      .description-post-img{
+        width: 54px;
+        height: 54px;
+      }
+      p{
+        font-family: 'RobotoRegular', sans-serif;
+        font-size: 16px;
+        line-height: 1.88;
+        text-align: left;
+        color: #9099a3;
+      }
+      .border-bottom{
+        height: 100%;
+      }
+    }
+
+  }
+}
+#subscribe{
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+#roadmap{
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 90px;
+  background: gray;
+  ul{
+    width: 740px;
+    margin: 0 auto;
+    position: relative;
+    list-style: none;
+    li{
+      position: relative;
+      .title-text, .date-description{
+        line-height: 1.67;
+        text-align: left;
+        color: #ffffff;
+      }
+      .title-text{
+        font-family: 'RobotoBold', sans-serif;
+        font-size: 18px;
+      }
+      .date-description{
+        font-family: 'RobotoRegular', sans-serif;
+        font-size: 16px;
+      }
+      img{
+        margin-right: 42px;
+        float: left;
+      }
+    }
+    li:before{
+      content: '';
+      width: 9px;
+      height: 9px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      top: 18px;
+      left: -38px;
+    }
+    li:last-of-type:before{
+      content: '';
+      width: 23px;
+      height: 23px;
+      background-color: yellow;
+      border: 7px solid white;
+      border-radius: 50%;
+      position: absolute;
+      top: 18px;
+      left: -45px;
+    }
+  }
+  ul:before{
+    content: '';
+    width: 3px;
+    height: calc( 100% - 50px );
+    background-color: #ffd333;
+    position: absolute;
+    top: 20px;
+    //bottom: -40px;
+    left: -35px;
+  }
+}
+#partners{
+  .partners-wrap{
+    text-align: center;
+    .partner{
+      float: none;
+      display: inline-block;
+      padding: 20px;
+    }
+    img{
+      max-height: 60px;
+      max-width: 210px;
+    }
+  }
+}

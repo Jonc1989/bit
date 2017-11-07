@@ -1,4 +1,6 @@
 #counter{
+
+  padding-bottom: 40px;
   height: 190px;
   background: url(resources/images/bg.png)no-repeat center center;
 
@@ -8,6 +10,16 @@
   background-size: cover;
 
   text-align: center;
+
+  h4{
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.75;
+
+    color: #181b16;
+  }
+
   .counter-wrap > div{
     position: relative;
     padding: 5px 0px;

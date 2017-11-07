@@ -1,6 +1,6 @@
 <div class="col-md-12 clear-pads" id="team">
 	<div class="container">
-		<h4>Наша команда</h4>
+		<h1 class="title">Наша команда</h1>
 
 		<?php
 		$args = array(
@@ -15,7 +15,7 @@
 
 			<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-				<div class="col-md-3">
+				<div class="col-md-3 team-member">
 				<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
 					<?php if($image) { ?>
 						<div class="team-photo circle" style="background: url(<?php echo $image; ?>)no-repeat center center;
@@ -36,5 +36,7 @@
 			<?php endwhile; ?>
 
 		<?php endif; ?>
+
+
 	</div>
 </div>

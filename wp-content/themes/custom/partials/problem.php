@@ -83,32 +83,31 @@
 		$posts = new WP_Query( $args );
 
 		if ( $posts->have_posts() ) : ?>
-
-		<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
-			<div class="col-md-3 post-wrap border-bottom">
-				<div class="col-md-12 clear-pads">
-					<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
-					<?php if($image) { ?>
-						<div class="description-post-img" style="background: url(<?php echo $image; ?>)no-repeat center center;
-							-webkit-background-size: cover;
-							-moz-background-size: cover;
-							-o-background-size: cover;
-							background-size: cover;">
+			<div class="col-md-12 clear-pads border-bottom posts-wrap">
+				<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
+					<div class="col-md-3 post-wrap">
+						<div class="col-md-12 border-bottom">
+							<div class="col-md-12 clear-pads">
+								<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
+								<?php if($image) { ?>
+									<div class="description-post-img" style="background: url(<?php echo $image; ?>)no-repeat center center;
+										-webkit-background-size: cover;
+										-moz-background-size: cover;
+										-o-background-size: cover;
+										background-size: cover;">
+									</div>
+								<?php } ?>
+							</div>
+							<div class="col-md-12 clear-pads">
+								<h1><?php the_title(); ?></h1>
+							</div>
+							<div class="col-md-12 clear-pads">
+								<p><?php the_content(); ?></p>
+							</div>
 						</div>
-					<?php } ?>
-				</div>
-				<div class="col-md-12 clear-pads">
-					<?php the_title(); ?>
-				</div>
-				<div class="col-md-12 clear-pads">
-					<?php the_content(); ?>
-				</div>
-
-
+					</div>
+				<?php endwhile; ?>
 			</div>
-
-		<?php endwhile; ?>
-
 		<?php endif; ?>
 
 

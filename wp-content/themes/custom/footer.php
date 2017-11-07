@@ -45,7 +45,18 @@
 <?php wp_footer(); ?>
 
 <div class="footer">
-	
+	<div id="widgetized-footer">
+
+		<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('footer')) : else : ?>
+
+			<div class="pre-widget">
+				<p><strong>Widgetized Footer</strong></p>
+				<p>This panel is active and ready for you to add some widgets via the WP Admin</p>
+			</div>
+
+		<?php endif; ?>
+
+	</div>
 </div>
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 </body>

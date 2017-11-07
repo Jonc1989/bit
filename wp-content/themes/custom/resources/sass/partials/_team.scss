@@ -1,4 +1,12 @@
-.team-photo{
-  width: 120px;
-  height: 120px;
+#team{
+  .team-member{
+    height: 215px;
+    text-align: center;
+    .team-photo{
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+    }
+  }
 }
+

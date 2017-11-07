@@ -1,4 +1,17 @@
 #progress{
+  padding-top: 87px;
+  padding-bottom: 30px;
+  .description-line{
+    max-width: 430px;
+    padding-bottom: 10px;
+    img{
+      max-width: 43px;
+      max-height: 39px;
+      float: left;
+      margin-right: 26px;
+    }
+  }
+
   .progress-bar-wrap{
     padding: 30px;
     padding-bottom: 20px;
@@ -15,36 +28,6 @@
 // VARS
 $default-delay: .25s;
 $bars: 3;
-
-// MIXINS
-// Color Mixin
-@mixin stat-bar($color-dark, $color-light, $direction, $dir-webkit) {
-  background-color: #ffd334;
-}
-// Animation Mixin
-@mixin bar-animation($time, $dimension) {
-  visibility: hidden;
-  @if $dimension == width {
-    width: 0;
-    -webkit-animation: animate-width;
-    -moz-animation: animate-width;
-    animation: animate-width;
-  }
-  @if $dimension == height {
-    height: 0;
-    -webkit-animation: animate-height;
-    -moz-animation: animate-height;
-    animation: animate-height;
-  }
-  animation-timing-function: cubic-bezier(.35,.95,.67,.99);
-  -webkit-animation-timing-function: cubic-bezier(.35,.95,.67,.99);
-  -moz-animation-timing-function: cubic-bezier(.35,.95,.67,.99);
-  animation-duration: $time*2;
-  -webkit-animation-duration: $time*2;
-  -moz-animation-duration: $time*2;
-  animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-}
 @-webkit-keyframes animate-width {
   0% {
     width: 0;
