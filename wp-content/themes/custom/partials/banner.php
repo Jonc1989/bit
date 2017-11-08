@@ -2,7 +2,7 @@
 	<div class="container">
 
 		<div class="col-md-6">
-			<div class="yellow-text yellow">Pre ico</div>
+			<div class="yellow-text yellow-bg">Pre ico</div>
 			<h1>Project Wood Pellets</h1>
 			<p>Индустрия по производству
 				пеллет в блокчейне</p>

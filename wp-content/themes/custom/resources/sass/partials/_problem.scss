@@ -3,7 +3,7 @@
   .city-image{
     width: 100%;
     height: 150px;
-    margin-bottom: 200px;
+
 
     background-image: url('resources/images/illustration@3x.png');
     background-repeat: no-repeat;
@@ -22,6 +22,40 @@
         align-items: flex-end;
       }
     }
+  }
+  .city-description{
+    text-align: center;
+    .dark-bg{
+      position: relative;
+      border-radius: 3px;
+      h4{
+        margin-top: 0px;
+      }
+      p{
+        margin-bottom: 0px;
+
+      }
+      padding: 21px 15px;
+      text-align: left;
+      max-width: 25%;
+      margin-right: 34px;
+      display: inline-block;
+    }
+
+    .dark-bg:after {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -8px;
+      width: 0; height: 0;
+      border-bottom: 8px solid #000000;
+      border-right: 8px solid transparent;
+      border-left: 8px solid transparent;
+    }
+  }
+  .city-description > .dark-bg:last-of-type{
+    margin-right: 0px;
   }
   .posts-wrap{
     padding-bottom: 85px;

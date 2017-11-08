@@ -33,7 +33,10 @@
     }
   }
 }
-
+@mixin max-content() {
+  width: max-content;
+  width: -moz-max-content;
+}
 
 // MIXINS
 // Color Mixin

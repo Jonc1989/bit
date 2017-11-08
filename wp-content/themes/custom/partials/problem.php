@@ -14,35 +14,46 @@
 	</div>
 		<div class="col-md-12">		<h4 class="text-center">Отопление и электроэнергия</h4></div>
 
-		<div class="city-image">
-			<div class="container">
-				<a class="tooltips" data-toggle="modal" data-target="#tooltipsModal1">
-					<div class="col-md-3  tooltips-wrap">
-						<span>Лесные ресурсы
-Арендованный лес
-71 976 гектар </span>
-					</div>
-				</a>
+		<div class="city-image col-md-12 clear-pads">
 
-				<a class="tooltips" href="#">
-					<div class="col-md-3  tooltips-wrap">
-						<span>Tooltip</span>
-					</div>
-				</a>
-
-				<a class="tooltips" href="#">
-					<div class="col-md-3  tooltips-wrap">
-						<span>Tooltip</span>
-					</div>
-				</a>
-
-				<a class="tooltips" href="#">
-					<div class="col-md-3  tooltips-wrap">
-						<span>Tooltip</span>
-					</div>
-				</a>
-			</div>
 		</div>
+	<div class="container city-description">
+		<div class="col-md-12 clear-pads">
+			<a class="" href="">
+				<div class="dark-bg triangle-top">
+
+					<h4 class="yellow">Лесные ресурсы</h4>
+					<p class="white">Арендованный лес</p>
+					<p class="white">71 976 гектар</p>
+
+				</div>
+			</a>
+
+			<a class="">
+				<div class="dark-bg triangle-top">
+					<h4 class="yellow">Лесопиление</h4>
+					<p class="white">Арендованный лес</p>
+					<p class="white">71 976 гектар</p>
+				</div>
+			</a>
+
+			<a class="">
+				<div class="dark-bg triangle-top">
+					<h4 class="yellow">Лесные ресурсы</h4>
+					<p class="white">Арендованный лес</p>
+					<p class="white">71 976 гектар</p>
+				</div>
+			</a>
+
+			<a class="">
+				<div class="dark-bg triangle-top">
+					<h4 class="yellow">Станция  когенерации</h4>
+					<p class="white">Арендованный лес</p>
+					<p class="white">71 976 гектар</p>
+				</div>
+			</a>
+		</div>
+	</div>
 
 	<div class="modal fade" id="tooltipsModal1" role="dialog">
 		<div class="modal-dialog">
