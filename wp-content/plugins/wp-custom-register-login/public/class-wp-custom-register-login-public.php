@@ -53,7 +53,7 @@ class Wp_Custom_Register_Login_Public extends Wp_Custom_Register_Login_Generic_P
     {
 
         wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/wp-custom-register-login-public.css', array(), $this->version, 'all');
-        wp_enqueue_style($this->plugin_name . '-bootstrap', plugin_dir_url(__FILE__) . 'css/bootstrap.min.css', array(), $this->version, 'all');
+        //wp_enqueue_style($this->plugin_name . '-bootstrap', plugin_dir_url(__FILE__) . 'css/bootstrap.min.css', array(), $this->version, 'all');
         wp_enqueue_style($this->plugin_name . '-formValidation', plugin_dir_url(__FILE__) . 'css/formValidation.min.css', array(), $this->version, 'all');
     }
 
