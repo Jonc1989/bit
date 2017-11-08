@@ -55,3 +55,7 @@ if (function_exists('register_sidebar')) {
 	));
 
 }
+
+function preicon_counter(){
+	return 0;
+}

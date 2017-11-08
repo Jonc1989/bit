@@ -34,7 +34,7 @@
 
 
 			<?php endwhile; ?>
-
+			<?php wp_reset_query(); ?>
 		<?php endif; ?>
 
 

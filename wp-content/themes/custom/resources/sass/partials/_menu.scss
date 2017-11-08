@@ -1,16 +1,36 @@
 nav{
   z-index: 1;
 }
-body{
-  .navbar {
-    border: none;
+.nav>li>a{
+  font-size: 16px;
+  //line-height: 1.88;
+  text-align: left;
+
+}
+.navbar {
+  border: none;
+}
+.navbar-default {
+
+  background-color: transparent;
+  border-color: unset;
+  .navbar-nav>li>a, .navbar-nav>li>a:hover, .navbar-nav>li>a:active{
+    color: #d7d7d7;
   }
-  .navbar-default {
-    background-color: transparent;
-    border-color: unset;
+  .navbar-nav>li>a:hover{
+    color: #ffffff;
   }
-  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-//    color: #555;
-    background-color: transparent;
-  }
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  //    color: #555;
+  background-color: transparent;
+}
+.register-link{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.login-link{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }

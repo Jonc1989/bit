@@ -7,12 +7,14 @@
 			<p>Индустрия по производству
 				пеллет в блокчейне</p>
 
-			<div class="col-md-12 clear-pads">
+			<div class="col-md-12 clear-pads welcome-links">
 				<div class="col-md-6 clear-pads">
 					<a class="btn join-link" href="/login">УЧАСТВОВАТЬ</a>
 				</div>
-				<div class="col-md-6 clear-pads">
-
+				<div class="col-md-6 clear-pads soc-icon">
+					<a href="#" class="vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/vk@2x.png"> </a>
+					<a href="#" class="fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/fb@2x.png"></a>
+					<a href="#" class="telegraph"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/telegraph@2x.png"></a>
 				</div>
 			</div>
 		</div>

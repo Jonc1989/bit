@@ -29,9 +29,15 @@
 						<span class="stat-bar-rating" role="stat-bar" style="width: 45%;">45%</span>
 					</div>
 				</div>
-				<div class="">2000 Soft Cap</div>
-				<div class="">3200 Hard Cap</div>
-				<p>Currantly received 1224 ETH</p>
+
+				<div>
+					<div class="dark-bg triangle-right yellow">2000 Soft Cap</div>
+				</div>
+				<div>
+					<div class="dark-bg triangle-right white">3200 Hard Cap</div>
+				</div>
+
+				<p><div class="circle yellow-bg"></div><span>Currantly received 1224 ETH</span></p>
 			</div>
 			
 		</div>

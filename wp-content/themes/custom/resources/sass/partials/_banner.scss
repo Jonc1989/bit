@@ -1,6 +1,6 @@
 #banner{
 
-  margin-top: -72px;
+  //margin-top: -72px;
   padding-top: 175px;
 
   color: white;
@@ -41,7 +41,25 @@
     text-align: center;
     color: #ffd334;
   }
+  .welcome-links{
+    display: flex;
+    align-items: center;
+  }
+  .soc-icon{
+    img{
+      max-height: 30px;
+      max-width: 30px;
+
+    }
+    a{
+      margin-right: 12px;
+    }
+    a:last-of-type{
+      margin-right: 0px;
+    }
+  }
   .yellow-text{
+    font-family: 'Roboto Black', sans-serif;
     text-transform: uppercase;
     display: inline-block;
     line-height: 40px;
@@ -49,6 +67,10 @@
     padding-left: 9px;
     padding-right: 9px;
     color: #000;
+
+    font-size: 24px;
+
+    text-align: center;
   }
   .granulas{
     .opts-wrap{
@@ -61,7 +83,7 @@
           width: 200px;
           position: absolute;
           top: -50px;
-          left: -20px;
+          left: -86px;
 
           font-family: 'RobotoMedium', sans-serif;
           font-size: 18px;

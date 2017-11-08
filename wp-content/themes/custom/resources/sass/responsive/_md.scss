@@ -1,0 +1,19 @@
+@media (min-width: 768px){
+  #banner{
+    margin-top: -110px;
+  }
+  .navbar-default {
+    padding-top: 35px;
+  }
+
+  .register-link, .register-link:focus, .register-link:active, .login-link, .login-link:focus, .login-link:active{
+    border: 1px solid yellow;
+    outline: 0;
+    outline-color: rgb(77, 144, 254);
+  }
+
+  .navbar-nav>li>a, .navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

@@ -25,6 +25,9 @@ a, button {
 nav li a{
   //color: white !important;
 }
+.col{
+  display: inline-block;
+}
 .clear-pads{
   padding-right: 0px!important;
   padding-left: 0px!important;
@@ -51,3 +54,10 @@ ul, menu, dir {
 .yellow{
   color: #ffd334;
 }
+
+
+
+
+
+@import "responsive/_md";
+@import "responsive/_sm";
