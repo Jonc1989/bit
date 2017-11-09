@@ -1,5 +1,5 @@
 <div class="col-md-12 clear-pads" id="team">
-	<div class="container">
+	<div class="container border-bottom">
 		<h1 class="title">Наша команда</h1>
 
 		<?php
@@ -25,7 +25,7 @@
 							background-size: cover;">
 					</div>
 					<?php } ?>
-					<div class=""><?php the_title(); ?></div>
+					<h4 class=""><?php the_title(); ?></h4>
 					<div class=""><?php the_content(); ?></div>
 				</div>
 

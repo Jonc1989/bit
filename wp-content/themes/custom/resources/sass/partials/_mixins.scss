@@ -37,11 +37,11 @@
   width: max-content;
   width: -moz-max-content;
 }
-@mixin cover-bg(){
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@mixin bg-size( $value ){
+  -webkit-background-size: $value;
+  -moz-background-size: $value;
+  -o-background-size: $value;
+  background-size: $value;
 }
 // MIXINS
 // Color Mixin

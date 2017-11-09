@@ -35,10 +35,15 @@ nav li a{
 .soc-icon{
   display: inline-block;
 }
+ul{
+  list-style: none;
+}
 ul, menu, dir {
   -webkit-padding-start: 0px;
 }
-
+input, textarea{
+  border-radius: 3px;
+}
 .circle{
   border-radius: 50%;
 }

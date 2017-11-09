@@ -1,4 +1,8 @@
 @media (min-width: 768px){
+  .address, .phone{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   #banner{
     margin-top: -110px;
   }
@@ -6,10 +10,13 @@
     padding-top: 35px;
   }
 
-  .register-link, .register-link:focus, .register-link:active, .login-link, .login-link:focus, .login-link:active{
+  .register-link, .login-link{
     border: 1px solid yellow;
-    outline: 0;
-    outline-color: rgb(77, 144, 254);
+    a, a:hover, a:focus, a:active{
+      outline: 0;
+      outline-color: transparent;
+    }
+
   }
 
   .navbar-nav>li>a, .navbar-nav>li>a {

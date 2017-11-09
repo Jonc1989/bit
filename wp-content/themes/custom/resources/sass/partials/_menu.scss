@@ -23,8 +23,11 @@ nav{
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  //    color: #555;
+  color: #ffffff;
   background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active {
+  color: #ffffff;
 }
 .register-link{
   border-top-left-radius: 3px;

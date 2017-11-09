@@ -1,7 +1,7 @@
 <div class="col-md-12" id="subscribe">
 
 
-	<div class="container">
+	<div class="container subscription-container">
 
 		<div class="col-md-6 subscribe-description">
 			<div class="col-md-3">

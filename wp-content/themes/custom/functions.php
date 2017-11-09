@@ -56,6 +56,94 @@ if (function_exists('register_sidebar')) {
 
 }
 
-function preicon_counter(){
-	return 0;
+add_action( 'admin_init', 'counter' );
+function counter() {
+	add_settings_section(
+		'counter_section',
+		'Counter section',
+		'counter_callback',
+		'general'
+	);
+
+	add_settings_field(
+		'show_counter',
+		'Show counter',
+		'show_hide_counter',
+		'general',
+		'counter_section',
+		array(
+			'show_counter'
+		)
+	);
+	add_settings_field(
+		'date_setup',
+		'Counter end date',
+		'input_callback',
+		'general',
+		'counter_section',
+		array(
+			'date_setup'
+		)
+	);
+
+	register_setting( 'general', 'show_counter', 'esc_attr' );
+	register_setting( 'general', 'date_setup', 'esc_attr' );
+}
+
+function counter_callback() {
+	echo '<span> </span>';
+}
+
+function show_hide_counter( $args ) {
+	echo '<input name="' . $args[0] . '" type="checkbox" value="1"' . checked( '1', get_option( $args[0] ), false ) . '/>';
+}
+
+function check_countdown() {
+	echo get_option( 'date_setup' );
+	die();
+}
+add_action( 'wp_ajax_check_countdown', 'check_countdown' );
+add_action( 'wp_ajax_nopriv_check_countdown', 'check_countdown' );
+
+add_action( 'admin_init', 'register_contact_info' );
+function register_contact_info() {
+	add_settings_section(
+		'contact_section',
+		'Contact section',
+		'contact_callback',
+		'general'
+	);
+
+	add_settings_field(
+		'address_input',
+		'Address',
+		'input_callback',
+		'general',
+		'contact_section',
+		array(
+			'address_input'
+		)
+	);
+
+	add_settings_field(
+		'phone_input',
+		'Phone',
+		'input_callback',
+		'general',
+		'contact_section',
+		array(
+			'phone_input'
+		)
+	);
+
+	register_setting( 'general', 'address_input', 'esc_attr' );
+	register_setting( 'general', 'phone_input', 'esc_attr' );
+}
+function contact_callback() {
+	echo '<span> </span>';
+}
+
+function input_callback( $args ) {
+	$option = get_option( $args[0] );
+	echo '<input style="width: 600px;" type="text" id="' . $args[0] . '" name="' . $args[0] . '" value="' . $option . '" />';
 }

@@ -83,7 +83,7 @@
           width: 200px;
           position: absolute;
           top: -50px;
-          left: -86px;
+          left: -55px;
 
           font-family: 'RobotoMedium', sans-serif;
           font-size: 18px;
@@ -91,6 +91,9 @@
           line-height: 2.78;
           text-align: center;
           color: #ffffff;
+
+          display: flex;
+          align-items: center;
         }
       }
     }

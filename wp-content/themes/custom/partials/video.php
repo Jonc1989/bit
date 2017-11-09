@@ -17,11 +17,14 @@
 
 		</div>
 		<div class="col-md-6">
-			<div class="col-md-12 clear-pads">
+			<div class="col-md-12 clear-pads opts">
 				<div class="yellow-text yellow-bg">Pre ico</div><span>1 ETH = 600WPCOIN</span>
 			</div>
-			<div class="col-md-12 clear-pads">
+			<div class="col-md-12 clear-pads opts">
 				<div class="yellow-text yellow-bg">Pre ico</div><span>1 ETH = 600WPCOIN</span>
+			</div>
+			<div class="col-md-12 clear-pads opts">
+				<span>1 WPCOIN = 1 EUR</span>
 			</div>
 		</div>
 	</div>
