@@ -10,11 +10,13 @@
 
 			<div class="col-md-6 contactinfo">
 				<div class="col-md-12 address">
-					<div class="address-icon"></div>
+
+					<img class="address-icon" src="<?php bloginfo('template_directory');?>/resources/images/icons/address.png">
 					<p>182250, Псковцкая обл., Себежцкий п н г Себеж, ул. В И Марго д 32</p>
 				</div>
 				<div class="col-md-12 phone border-bottom">
-					<div class="phone-icon"></div>
+
+					<img class="phone-icon" src="<?php bloginfo('template_directory');?>/resources/images/icons/phone.png">
 					<p>+ 371 29120386</p>
 				</div>
 				<div class="col-md-12 clear-pads soc-icons">

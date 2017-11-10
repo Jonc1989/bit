@@ -1,0 +1,50 @@
+#footer-wrap{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 225px;
+  background-color: #110f0e;
+  .logo{
+    display: inline-block;
+  }
+  ul{
+    li{
+      display: inline-block;        margin-right: 50px;
+      a{
+        font-size: 14px;
+        line-height: 2.86;
+        text-align: left;
+        color: #ffffff;
+      }
+    }
+    li:last-of-type{
+      margin-right: 0px;
+    }
+  }
+  .contactinfo p, .copyright{
+
+      font-size: 14px;
+      line-height: 1.43;
+      color: #bbc4cd;
+
+  }
+  .contactinfo{
+    p{
+      margin-bottom: 0px;
+      &.addressinfo{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .contactinfo{
+    p{
+      text-align: right;
+    }
+  }
+  .pipka{
+    width: 15px;
+    height: 1px;
+    background-color: #ffffff;
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+}

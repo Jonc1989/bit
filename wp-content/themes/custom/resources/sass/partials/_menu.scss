@@ -21,7 +21,9 @@ nav{
     color: #ffffff;
   }
 }
-
+.locale{
+  text-transform: uppercase;
+}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   color: #ffffff;
   background-color: transparent;
@@ -36,4 +38,16 @@ nav{
 .login-link{
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+.dashboard-link{
+  border-radius: 3px;
+}
+.dropdown-toggle{
+  background: transparent;
+  color: white;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
 }

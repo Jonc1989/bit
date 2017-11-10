@@ -1,0 +1,26 @@
+@media (min-width: 768px){
+  .address, .phone{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #banner{
+    margin-top: -110px;
+  }
+  .navbar-default {
+    padding-top: 35px;
+  }
+
+  .register-link, .login-link, .dashboard-link{
+    border: 1px solid yellow;
+    a, a:hover, a:focus, a:active{
+      outline: 0;
+      outline-color: transparent;
+    }
+
+  }
+
+  .navbar-nav>li>a, .navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

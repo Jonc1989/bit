@@ -40,7 +40,7 @@ $menu = wp_get_nav_menu_items( $menu );
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">
+						<li class="active"><a href="<?php echo home_url() ?>">
 								<div class="logo">
 									<img src="<?php bloginfo('template_directory');?>/resources/images/vector-smart-object-9.png"
 									     srcset="<?php bloginfo('template_directory');?>/resources/images/vector-smart-object-9@2x.png 2x,
@@ -54,9 +54,35 @@ $menu = wp_get_nav_menu_items( $menu );
 							<li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
 						<?php } ?>
 
-						<li class="register-link"><a href="" data-toggle="modal" data-target="#registrationModal">Registration</a></li>
-						<li class="login-link"><a href="" class="" data-toggle="modal" data-target="#loginModal">Login</a></li>
+						<?php if( is_user_logged_in() ){ ?>
+							<li class="dashboard-link"><a href="/dashboard" >Dashboard</a></li>
+
+						<?php }else { ?>
+							<li class="register-link"><a href="" data-toggle="modal" data-target="#registrationModal">Registration</a></li>
+							<li class="login-link"><a href="" class="" data-toggle="modal" data-target="#loginModal">Login</a></li>
+						<?php } ?>
+
+
+						<li>
+							<?php
+							global $q_config, $wp; $image_path = null;
+							$current_url = home_url(add_query_arg(array(),$wp->request)); ?>
+
+							<div class="dropdown">
+								<button class="dropdown-toggle" type="button" data-toggle="dropdown">
+									<span class="locale"><?php echo qtranxf_getLanguage(); ?></span>
+									<span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<?php foreach(qtrans_getSortedLanguages() as $language) { ?>
+										<li><a href="<?php echo qtrans_convertURL($current_url, $language, false, true)?>"><?php echo $language; ?></a></li>
+									<?php } ?>
+									<li><a class="" href="<?php echo wp_logout_url( '/' ); ?>">Logout</a> </li>
+								</ul>
+							</div>
+						</li>
 					</ul>
+
+					
 				</div>
 			</div>
 		</nav>
