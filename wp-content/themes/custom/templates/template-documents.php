@@ -4,9 +4,8 @@
  */
 get_header(); ?>
 
-	<div class="main-template">
-
-		<?php get_template_part('partials/banner');?>
-		
+	<div class="document-template">
+		<?php get_template_part('partials/document-top');?>
+		<?php get_template_part('partials/counter');?>
 	</div>
 <?php get_footer(); ?>

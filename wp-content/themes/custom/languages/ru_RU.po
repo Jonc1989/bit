@@ -5,7 +5,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-30 17:43+0300\n"
 "POT-Revision-Date: Mon Jul 25 2016 08:51:33 GMT+0700 (SE Asia Standard Time)\n"
-"PO-Revision-Date: 2017-11-09 18:51+0200\n"
+"PO-Revision-Date: 2017-11-11 16:11+0200\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
@@ -4698,3 +4698,15 @@ msgstr "Hравится"
 
 msgid "No categories"
 msgstr "Нет категорий"
+
+msgid "agreement terms text"
+msgstr "Я согласен с правилами и пользовательским соглашением "
+
+msgid "agreement terms link"
+msgstr "Условия использования"
+
+msgid "Add widgets here to appear in your sidebar."
+msgstr "Add widgets here to appear in your sidebar XXX"
+
+msgid "Connect via your favorite network"
+msgstr "подключитесь через вашу любимую сеть"

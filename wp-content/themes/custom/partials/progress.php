@@ -15,7 +15,7 @@
 					</div>
 					
 
-					<?php $n++; endwhile;?>
+				<?php $n++; endwhile;?>
 
 			<?php endif;?>
 		</div>

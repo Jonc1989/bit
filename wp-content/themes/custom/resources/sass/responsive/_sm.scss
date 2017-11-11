@@ -4,7 +4,7 @@
     padding-right: 0px;
   }
   #banner{
-    margin-top: -110px;
+    //margin-top: -110px;
   }
   .navbar-default {
     padding-top: 35px;
@@ -22,5 +22,9 @@
   .navbar-nav>li>a, .navbar-nav>li>a {
     padding-top: 8px;
     padding-bottom: 8px;
+  }
+
+  .modal-dialog {
+    width: 850px;
   }
 }

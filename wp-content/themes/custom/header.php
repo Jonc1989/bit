@@ -12,11 +12,15 @@
 	<!--<link href="<?php bloginfo('template_directory');?>/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />-->
 
 	<?php wp_head();?>
-	
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 
-<div class="col-md-12 clear-pads">
+<script>
+	var ajaxurl  = '<?php echo get_site_url(); ?>/wp-admin/admin-ajax.php';
+	var domain  = '<?php echo get_site_url(); ?>';
+</script>
+<div class="col-md-12 clear-pads menu-container">
 
 <?php
 
@@ -42,9 +46,8 @@ $menu = wp_get_nav_menu_items( $menu );
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="<?php echo home_url() ?>">
 								<div class="logo">
-									<img src="<?php bloginfo('template_directory');?>/resources/images/vector-smart-object-9.png"
-									     srcset="<?php bloginfo('template_directory');?>/resources/images/vector-smart-object-9@2x.png 2x,
-                                            <?php bloginfo('template_directory');?>/resources/images/vector-smart-object-9@3x.png 3x"
+									<img src="<?php bloginfo('template_directory');?>/resources/images/logo.png"
+									     srcset="<?php bloginfo('template_directory');?>/resources/images/logo@3x.png 3x"
 									     class="header-logo">
 								</div>
 							</a>
@@ -54,13 +57,13 @@ $menu = wp_get_nav_menu_items( $menu );
 							<li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
 						<?php } ?>
 
-						<?php if( is_user_logged_in() ){ ?>
-							<li class="dashboard-link"><a href="/dashboard" >Dashboard</a></li>
-
-						<?php }else { ?>
+<!--						--><?php //if( is_user_logged_in() ){ ?>
+<!--							<li class="dashboard-link"><a href="/dashboard" >Dashboard</a></li>-->
+<!---->
+<!--						--><?php //}else { ?>
 							<li class="register-link"><a href="" data-toggle="modal" data-target="#registrationModal">Registration</a></li>
 							<li class="login-link"><a href="" class="" data-toggle="modal" data-target="#loginModal">Login</a></li>
-						<?php } ?>
+<!--						--><?php //} ?>
 
 
 						<li>

@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     uglify = require('gulp-uglify'),
     uglifycss = require('gulp-uglifycss'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
     plumber = require('gulp-plumber');
 
 gulp.task('app-sass', function () {

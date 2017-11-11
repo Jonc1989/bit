@@ -1,3 +1,10 @@
+.menu-container{
+  position: absolute;
+}
+ul.nav{
+  display: flex;
+  align-items: center;
+}
 nav{
   z-index: 1;
 }

@@ -2,8 +2,8 @@
 	<div class="container">
 
 		<div class="col-md-6">
-			<div class="yellow-text yellow-bg">Pre ico</div>
-			<h1>Project Wood Pellets</h1>
+			<div class="yellow-text yellow-bg"><?php echo get_bloginfo( 'name' ) ?></div>
+			<h1><?php echo get_bloginfo( 'description' ) ?></h1>
 			<p>Индустрия по производству
 				пеллет в блокчейне</p>
 
@@ -19,63 +19,7 @@
 			</div>
 		</div>
 		<div class="col-md-6">
-			<div class="granulas">
-				
-				<div class="opts-wrap">
-					<div class="header-opt yellow-bg">
-						<div class="header-opt-content">
-							<img src="<?php bloginfo('template_directory');?>/resources/images/bitcoin.png">
-							<span>Лесопиление</span></div>
-					</div>
-					<div class="header-opt yellow">
-						<div class="header-opt-content">
-							<img src="<?php bloginfo('template_directory');?>/resources/images/bitcoin.png">
-							</div>
-					</div>
-					<div class="header-opt yellow">
-						<div class="header-opt-content">
-							<img src="<?php bloginfo('template_directory');?>/resources/images/bitcoin.png">
-							<span>Лесопиление</span></div>
-					</div>
-					<div class="header-opt yellow">
-						<div class="header-opt-content">
-							<img src="<?php bloginfo('template_directory');?>/resources/images/bitcoin.png">
-							<span>Лесопиление</span></div>
-					</div>
-					<div class="header-opt yellow">
-						<div class="header-opt-content">
-							<img src="<?php bloginfo('template_directory');?>/resources/images/bitcoin.png">
-							<span>Лесопиление</span></div>
-					</div>
-					<div class="header-opt yellow">
-						<div class="header-opt-content">
-							<img src="<?php bloginfo('template_directory');?>/resources/images/bitcoin.png">
-							<span>Лесопиление</span></div>
-					</div>
-					<div class="header-opt yellow">
-						<div class="header-opt-content">
-							<img src="<?php bloginfo('template_directory');?>/resources/images/bitcoin.png">
-							<span>Лесопиление</span></div>
-					</div>
-				</div>
-				
-
-
-
-
-
-				<div class="circle">
-
-					<div class="circle">
-						<div class="circle granula-bg">
-							<div class="coin">
-								<img class="front" src="<?php bloginfo('template_directory');?>/resources/images/coin.png">
-								<img class="back" src="<?php bloginfo('template_directory');?>/resources/images/coin.png">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php get_template_part('partials/header/circle');?>
 			
 		</div>
 	</div>

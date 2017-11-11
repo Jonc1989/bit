@@ -14,19 +14,19 @@
 ?>
 
 <div id="wpcrlRegisterSection" class="container-fluid">
-    <div class="row">
-        <div class="col-xs-8 col-md-10"> 
+
+        <div class="col-xs-8 col-md-7 left">
             <?php
             $wpcrl_form_settings = get_option('wpcrl_form_settings');
             $form_heading = empty($wpcrl_form_settings['wpcrl_signup_heading']) ? 'Register' : $wpcrl_form_settings['wpcrl_signup_heading'];
 
             // check if the user already login
-            if (!is_user_logged_in()) :
+            if (is_user_logged_in()) :
 
                 ?>
 
                 <form name="wpcrlRegisterForm" id="wpcrlRegisterForm" method="post">
-                    <h3><?php _e($form_heading, $this->plugin_name); ?></h3>
+                    <h4><?php _e($form_heading, $this->plugin_name); ?></h4>
 
                     <div id="wpcrl-reg-loader-info" class="wpcrl-loader" style="display:none;">
                         <img src="<?php echo plugins_url('images/ajax-loader.gif', dirname(__FILE__)); ?>"/>
@@ -37,33 +37,26 @@
                     <?php if ($token_verification): ?>
                         <div class="alert alert-info" role="alert"><?php _e('Your account has been activated, you can login now.', $this->plugin_name); ?></div>
                     <?php endif; ?>
+
                     <div class="form-group">
-                        <label for="firstname"><?php _e('First name', $this->plugin_name); ?></label>
-                        <sup class="wpcrl-required-asterisk">*</sup>
                         <input type="text" class="form-control" name="wpcrl_fname" id="wpcrl_fname" placeholder="First name">
                     </div>
+
                     <div class="form-group">
-                        <label for="lastname"><?php _e('Last name', $this->plugin_name); ?></label>
                         <input type="text" class="form-control" name="wpcrl_lname" id="wpcrl_lname" placeholder="Last name">
                     </div>
+
                     <div class="form-group">
-                        <label for="username"><?php _e('Username', $this->plugin_name); ?></label>
-                        <sup class="wpcrl-required-asterisk">*</sup>
                         <input type="text" class="form-control" name="wpcrl_username" id="wpcrl_username" placeholder="Username">
                     </div>
+
                     <div class="form-group">
-                        <label for="email"><?php _e('Email', $this->plugin_name); ?></label>
-                        <sup class="wpcrl-required-asterisk">*</sup>
                         <input type="text" class="form-control" name="wpcrl_email" id="wpcrl_email" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <label for="password"><?php _e('Password', $this->plugin_name); ?></label>
-                        <sup class="wpcrl-required-asterisk">*</sup>
                         <input type="password" class="form-control" name="wpcrl_password" id="wpcrl_password" placeholder="Password" >
                     </div>
                     <div class="form-group">
-                        <label for="confrim password"><?php _e('Confirm Password', $this->plugin_name); ?></label>
-                        <sup class="wpcrl-required-asterisk">*</sup>
                         <input type="password" class="form-control" name="wpcrl_password2" id="wpcrl_password2" placeholder="Confirm Password" >
                     </div>
 
@@ -85,12 +78,22 @@
                         wp_nonce_field('wpcrl_register_action', 'wpcrl_register_nonce');
 
                     ?>
-                    <button type="submit" class="btn btn-primary">
-                        <?php
-                        $submit_button_text = empty($wpcrl_form_settings['wpcrl_signup_button_text']) ? 'Register' : $wpcrl_form_settings['wpcrl_signup_button_text'];
-                        _e($submit_button_text, $this->plugin_name);
 
-                        ?></button>
+
+                    <label class="agreement-terms"><input type="checkbox" name="checkbox" value="value">
+                        <?php echo __( 'agreement terms text', 'preico' ); ?>
+                        <span><a href="#"><?php echo __( 'agreement terms link', 'preico' ); ?></a> </span>
+                    </label>
+
+                    <div class="col-md-12">
+                        <button type="submit" class="registration-submit">
+                            <?php
+                            $submit_button_text = empty($wpcrl_form_settings['wpcrl_signup_button_text']) ? 'Register' : $wpcrl_form_settings['wpcrl_signup_button_text'];
+                            _e($submit_button_text, $this->plugin_name);
+
+                            ?></button>
+                    </div>
+
                 </form>
                 <?php
             else:
@@ -102,5 +105,15 @@
 
             ?>
         </div>
-    </div>
+
+        <div class="col-xs-4 col-md-5 clear-pads soc-auth-wrapper right">
+
+            <h2><?php echo __( 'Connect via your favorite network', 'preico' ); ?></h2>
+            <div class="col-md-12 social-auth text-center">
+                <a href="#" class="vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/vk@2x.png"> </a>
+                <a href="#" class="fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/fb@2x.png"></a>
+                <a href="#" class="telegraph"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/telegraph@2x.png"></a>
+            </div>
+        </div>
+
 </div>

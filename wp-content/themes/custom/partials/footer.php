@@ -4,9 +4,8 @@
 		<div class="col-md-12 clear-pads">
 			<a href="#">
 				<div class="logo">
-					<img src="<?php bloginfo('template_directory');?>/resources/images/vector-smart-object-9.png"
-					     srcset="<?php bloginfo('template_directory');?>/resources/images/vector-smart-object-9@2x.png 2x,
-                                            <?php bloginfo('template_directory');?>/resources/images/vector-smart-object-9@3x.png 3x"
+					<img src="<?php bloginfo('template_directory');?>/resources/images/logo.png"
+					     srcset="<?php bloginfo('template_directory');?>/resources/images/logo@3x.png 3x"
 					     class="header-logo">
 				</div>
 			</a>

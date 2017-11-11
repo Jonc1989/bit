@@ -404,7 +404,7 @@ class Wp_Custom_Register_Login_Public extends Wp_Custom_Register_Login_Generic_P
 
     public function wpcrl_resetpassword()
     {
-
+debug( ' dirsa');
         $nonce = $_POST['wpcrl_resetpassword_nonce'];
         $response = array();
         // For security : verifying wordpress nonce

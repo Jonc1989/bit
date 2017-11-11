@@ -105,30 +105,30 @@
     }
   }
 
-  input[type="text"]{
-    background-color: #ffffff;
-    border: solid 1px #bbc4cd;
-    height: 51px;
-    width: 400px;
 
-    font-size: 18px;
-    line-height: 1.94;
-    text-align: left;
-    color: #bbc4cd;
-    padding-left: 20px;
-  }
-  input[type="button"]{
-    width: 211px;
-    height: 60px;
-    background-color: white;
-    color: #6fb600;
-    border: solid 1px #6fb600;
-
-    font-family: 'RobotoBold';
-    font-size: 24px;
-  }
 }
+input[type="text"], input[type="password"]{
+  background-color: #ffffff;
+  border: solid 1px #bbc4cd;
+  height: 51px;
+  width: 400px;
 
+  font-size: 18px;
+  line-height: 1.94;
+  text-align: left;
+  color: #bbc4cd;
+  padding-left: 20px;
+}
+input[type="button"]{
+  width: 211px;
+  height: 60px;
+  background-color: white;
+  color: #6fb600;
+  border: solid 1px #6fb600;
+
+  font-family: 'RobotoBold';
+  font-size: 24px;
+}
 
 #roadmap{
   color: white;
