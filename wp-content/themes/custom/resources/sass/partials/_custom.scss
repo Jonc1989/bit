@@ -49,6 +49,12 @@ h1{
 }
 .close{
   position: absolute;
-  right:0px;
+  right: 10px;
   z-index: 1;
+  color: white;
+  opacity: .5;
+}
+.close:focus, .close:hover{
+  opacity: 1;
+  color: white;
 }

@@ -1,1 +1,12 @@
-
+@media (max-width: 1199px) {
+  #banner {
+    .granulas {
+      width: 316px;
+      height: 316px;
+      .opts-wrap {
+        position: absolute;
+        @include on-circle($item-count: 7, $circle-size: 316px, $item-size: 8px);
+      }
+    }
+  }
+}

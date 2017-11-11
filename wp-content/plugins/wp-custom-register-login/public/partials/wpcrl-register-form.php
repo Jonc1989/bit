@@ -81,8 +81,8 @@
 
 
                     <label class="agreement-terms"><input type="checkbox" name="checkbox" value="value">
-                        <?php echo __( 'agreement terms text', 'preico' ); ?>
-                        <span><a href="#"><?php echo __( 'agreement terms link', 'preico' ); ?></a> </span>
+                               <span><?php echo __( 'agreement terms text', 'preico' ); ?>
+                 <a href="#"><?php echo __( 'agreement terms link', 'preico' ); ?></a> </span>
                     </label>
 
                     <div class="col-md-12">
@@ -110,9 +110,9 @@
 
             <h2><?php echo __( 'Connect via your favorite network', 'preico' ); ?></h2>
             <div class="col-md-12 social-auth text-center">
-                <a href="#" class="vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/vk@2x.png"> </a>
-                <a href="#" class="fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/fb@2x.png"></a>
-                <a href="#" class="telegraph"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/telegraph@2x.png"></a>
+                <div class="vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/vk.png"> </div>
+                <div class="fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/fb.png"></div>
+                <div class="g+"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/g+.png"></div>
             </div>
         </div>
 

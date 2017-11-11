@@ -3,8 +3,8 @@
 
 	<div class="container subscription-container">
 
-		<div class="col-md-6 subscribe-description">
-			<div class="col-md-3">
+		<div class="col-md-6 subscribe-description ">
+			<div class="col-md-3 clear-pads">
 				<img src="<?php bloginfo('template_directory');?>/resources/images/mail.png">
 			</div>
 			<div class="col-md-9">
