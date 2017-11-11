@@ -175,8 +175,14 @@ class Wp_Custom_Register_Login
 
         $this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_styles');
         $this->loader->add_action('wp_enqueue_scripts', $plugin_public, 'enqueue_scripts');
+        
+        $this->loader->add_action('wp_ajax_wpcrl_user_login', $plugin_public, 'wpcrl_user_login');
         $this->loader->add_action('wp_ajax_nopriv_wpcrl_user_login', $plugin_public, 'wpcrl_user_login');
+
+        $this->loader->add_action('wp_ajax_wpcrl_user_registration', $plugin_public, 'wpcrl_user_registration');
         $this->loader->add_action('wp_ajax_nopriv_wpcrl_user_registration', $plugin_public, 'wpcrl_user_registration');
+
+        $this->loader->add_action('wp_ajax_wpcrl_resetpassword', $plugin_public, 'wpcrl_resetpassword');
         $this->loader->add_action('wp_ajax_nopriv_wpcrl_resetpassword', $plugin_public, 'wpcrl_resetpassword');
 
         $this->loader->add_shortcode('wpcrl_login_form', $plugin_public, 'wpcrl_display_login_form');
