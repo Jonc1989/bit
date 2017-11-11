@@ -404,7 +404,7 @@ class Wp_Custom_Register_Login_Public extends Wp_Custom_Register_Login_Generic_P
 
     public function wpcrl_resetpassword()
     {
-debug( ' dirsa');
+
         $nonce = $_POST['wpcrl_resetpassword_nonce'];
         $response = array();
         // For security : verifying wordpress nonce
@@ -500,7 +500,7 @@ debug( ' dirsa');
         $headers = array('Content-Type: text/html; charset=UTF-8');
         // configuring email options
         $to = $userdata['user_email'];
-        $headers[] = 'From:' . get_option('blogname');
+        $headers[] = 'From:' . get_option('admin_email');
 
         //placeholders
 
