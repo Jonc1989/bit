@@ -21,7 +21,7 @@
             $form_heading = empty($wpcrl_form_settings['wpcrl_signup_heading']) ? 'Register' : $wpcrl_form_settings['wpcrl_signup_heading'];
 
             // check if the user already login
-            if (is_user_logged_in()) :
+            if (!is_user_logged_in()) :
 
                 ?>
 

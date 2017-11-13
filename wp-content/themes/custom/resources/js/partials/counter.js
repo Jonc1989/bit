@@ -32,11 +32,28 @@ function checkCounter() {
                     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
                     jQuery( '.counter-wrap .days .counter-number' ).text( days );
-                    jQuery( '.counter-wrap .hours .counter-number' ).text( hours );
-                    jQuery( '.counter-wrap .minutes .counter-number' ).text( minutes );
+
+                    if( jQuery( '.counter-wrap .hours .counter-number' ).text() != hours ){
+                        jQuery( '.counter-wrap .hours .counter-number' ).hide();
+                        jQuery( '.counter-wrap .hours .counter-number' ).text( hours );
+                        jQuery( '.counter-wrap .hours .counter-number' ).fadeIn( "slow");
+                    }else{
+                        jQuery( '.counter-wrap .hours .counter-number' ).text( hours );
+                    }
+
+
+                    if( jQuery( '.counter-wrap .minutes .counter-number' ).text() != minutes ){
+                        jQuery( '.counter-wrap .minutes .counter-number' ).hide();
+                        jQuery( '.counter-wrap .minutes .counter-number' ).text( minutes );
+                        jQuery( '.counter-wrap .minutes .counter-number' ).fadeIn( "slow");
+                    }else{
+                        jQuery( '.counter-wrap .minutes .counter-number' ).text( minutes );
+                    }
+
+
+                    jQuery( '.counter-wrap .seconds .counter-number' ).hide();
                     jQuery( '.counter-wrap .seconds .counter-number' ).text( seconds );
-
-
+                    jQuery( '.counter-wrap .seconds .counter-number' ).fadeIn( "slow");
 
                     // If the count down is finished, write some text
                     if (distance < 0) {
