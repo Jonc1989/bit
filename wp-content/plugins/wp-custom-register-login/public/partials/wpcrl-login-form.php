@@ -21,7 +21,7 @@
             $wpcrl_form_settings = get_option('wpcrl_form_settings');
 
             // check if the user already login
-            if (is_user_logged_in()) :
+            if (!is_user_logged_in()) :
                 
                 $form_heading = empty($wpcrl_form_settings['wpcrl_signin_heading']) ? 'Login' : $wpcrl_form_settings['wpcrl_signin_heading'];
                 $submit_button_text = empty($wpcrl_form_settings['wpcrl_signin_button_text']) ? 'Login' : $wpcrl_form_settings['wpcrl_signin_button_text'];
