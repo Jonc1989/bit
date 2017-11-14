@@ -1,29 +1,36 @@
 <div class="col-md-12 clear-pads" id="banner">
 	<div class="container">
 
-		<div class="col-md-6">
+		<div class="col-md-8">
 			<div class="yellow-text yellow-bg"><?php echo get_bloginfo( 'name' ) ?></div>
 			<h1><?php echo get_bloginfo( 'description' ) ?></h1>
 			<p>Индустрия по производству
 				пеллет в блокчейне</p>
 
-			<div class="clear-pads col-md-12 documents">
+			<div class="clear-pads col-md-12 documents rounded">
 				<?php if( get_field( 'documents' ) ){
 					while(has_sub_field('documents')):?>
-						<div class="col-md-12 yellow">
+						<div class="col-md-4 yellow-bg">
 							<div class="row document">
 								<?php if( get_sub_field( 'document_file' )){ ?>
 									<a href="<?php echo get_sub_field('document_file');?>">
 										<?php if( get_sub_field( 'document_icon' )){ ?>
 											<img src="<?php echo get_sub_field('document_icon');?>">
 										<?php } else { ?>
-											<img src="<?php bloginfo('template_directory');?>/resources/images/icons/download.png">
+											<div class="flex">
+												<img src="<?php bloginfo('template_directory');?>/resources/images/icons/address.png">
+											</div>
+
 										<?php } ?>
 
 										<?php if( get_sub_field( 'document_title' )){ ?>
-											<span><?php echo get_sub_field('document_title');?></span>
+											<div class="description">
+												<p class="download-title"><?php echo get_sub_field('document_title');?></p>
+												<p class="download-this"><?php echo get_sub_field('document_title');?></p>
+											</div>
+
 										<?php } else { ?>
-											<span>|<?php __( 'Document', 'preico' ) ?> </span>
+											<p>|<?php __( 'Document', 'preico' ) ?> </p>
 										<?php } ?>
 									</a>
 								<?php } ?>
@@ -57,7 +64,7 @@
 
 
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<?php get_template_part('partials/header/circle');?>
 
 

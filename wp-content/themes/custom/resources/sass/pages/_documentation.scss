@@ -24,7 +24,8 @@
   img{
     max-width: 31px;
     max-height: 31px;
-    margin-right: 15px;
+    margin-right: 12px;
+    margin-left: 15px;
   }
   span{
     font-family: 'RobotoBold', sans-serif;
@@ -34,4 +35,54 @@
     text-align: left;
     color: #ffd334;
   }
+}
+#banner{
+  .rounded{
+    .document{
+      p{
+        margin-bottom: 0px;
+        color: #210e00;
+        line-height: 1;
+        &.download-title{
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 1;
+          text-align: left;
+        }
+        &.download-this{
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 1;
+          text-align: left;
+          margin-bottom: 9px;
+        }
+      }
+
+    }
+  }
+}
+.rounded{
+  .yellow-bg{
+    border-radius: 5px;
+    margin-bottom: 19px;
+  }
+  .document{
+    .description{
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
+    margin-bottom: 0px;
+    height: 82px;
+    a{
+      display: flex;
+      height: 100%;
+    }
+
+  }
+  .flex{
+    align-items: center;
+  }
+}
+.flex{
+  display: flex;
 }
