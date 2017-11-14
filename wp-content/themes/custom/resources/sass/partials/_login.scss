@@ -1,6 +1,7 @@
 #registrationModal, #loginModal{
   label{
-    display: inline;
+    display: flex;
+    align-items: center;
   }
   .modal-content {
     background-color: transparent;
@@ -20,6 +21,13 @@
   }
 }
 #wpcrlRegisterSection, #wpcrlLoginSection{
+  .left{
+    padding-left: 30px;
+    padding-right: 50px;
+    input{
+      width: 100%;
+    }
+  }
   h4{
     font-family: 'RobotoBold', sans-serif;
     font-size: 36px;
@@ -49,18 +57,23 @@
     border: solid 2px #6fb600;
     margin-top: 0px;
   }
+
   h2 {
     margin-top: 145px;
     margin-bottom: 90px;
   }
 }
 #wpcrlLoginSection{
+  overflow: hidden;
   h2 {
     margin-top: 80px;
     margin-bottom: 30px;
   }
 }
 .agreement-terms{
+  input{
+    margin-right: 10px;
+  }
   width: 338px;
   height: 41px;
   font-size: 15px;
@@ -85,11 +98,20 @@
   text-align: center;
   color: #ffffff;
 }
+.login-submit, .forget-password{
+  font-size: 20px;
+}
 .registration-submit{
   width: 100%;
 }
+.login-btn-wrap{
+  padding-left: 0px;
+}
+.reset-btn-wrap{
+  padding-right: 0px;
+}
 .login-submit, .forget-password{
-  width: 45%;
+  width: 100%;
 }
 .soc-auth-wrapper{
   height: 100%;

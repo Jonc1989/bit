@@ -55,15 +55,25 @@
                         wp_nonce_field('wpcrl_login_action', 'wpcrl_login_nonce');
 
                     ?>
-                    <button type="submit" class="login-submit"><?php _e($submit_button_text, $this->plugin_name); ?></button>
-                    <?php
-                        //render forgot password button
-                        if($wpcrl_form_settings['wpcrl_enable_forgot_password']){                            
-                    ?>
-                    <button id="btnForgotPassword" type="button" class="forget-password"><?php _e($forgotpassword_button_text, $this->plugin_name); ?></button>
-                    <?php
-                        }
-                    ?>
+
+
+                    <div class="col-md-12 clear-pads">
+                        <div class="col-md-6 login-btn-wrap">
+                            <button type="submit" class="login-submit"><?php _e($submit_button_text, $this->plugin_name); ?></button>
+                        </div>
+                        <div class="col-md-6 reset-btn-wrap">
+                            <?php
+                            //render forgot password button
+                            if($wpcrl_form_settings['wpcrl_enable_forgot_password']){
+                                ?>
+                                <button id="btnForgotPassword" type="button" class="forget-password"><?php _e($forgotpassword_button_text, $this->plugin_name); ?></button>
+                                <?php
+                            }
+                            ?>
+                        </div>
+
+                    </div>
+
                 </form>
                 <?php
                     //render the reset password form
@@ -75,9 +85,10 @@
                 <?php
             else:
                 $current_user = wp_get_current_user();
-                $logout_redirect = (empty($wpcrl_redirect_settings['wpcrl_logout_redirect']) || $wpcrl_redirect_settings['wpcrl_logout_redirect'] == '-1') ? '' : $wpcrl_redirect_settings['wpcrl_logout_redirect'];
-                
-                echo 'Logged in as <strong>' . ucfirst($current_user->user_login) . '</strong>. <a href="' . wp_logout_url(get_permalink($logout_redirect)) . '">Log out ? </a>';
+                //$logout_redirect = (empty($wpcrl_redirect_settings['wpcrl_logout_redirect']) || $wpcrl_redirect_settings['wpcrl_logout_redirect'] == '-1') ? '' : $wpcrl_redirect_settings['wpcrl_logout_redirect'];
+                $logout_redirect = site_url();
+
+                echo 'Logged in as <strong>' . ucfirst($current_user->user_login) . '</strong>. <a href="' . $logout_redirect . '">Log out ? </a>';
 
             endif;
 

@@ -57,13 +57,13 @@ $menu = wp_get_nav_menu_items( $menu );
 							<li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
 						<?php } ?>
 
-<!--						--><?php //if( is_user_logged_in() ){ ?>
-<!--							<li class="dashboard-link"><a href="/dashboard" >Dashboard</a></li>-->
-<!---->
-<!--						--><?php //}else { ?>
+						<?php if( is_user_logged_in() ){ ?>
+							<li class="dashboard-link"><a href="/dashboard" >Dashboard</a></li>
+
+						<?php }else { ?>
 							<li class="register-link"><a href="" data-toggle="modal" data-target="#registrationModal">Registration</a></li>
 							<li class="login-link"><a href="" class="" data-toggle="modal" data-target="#loginModal">Login</a></li>
-<!--						--><?php //} ?>
+						<?php } ?>
 
 
 						<li>

@@ -85,7 +85,7 @@
                  <a href="#"><?php echo __( 'agreement terms link', 'preico' ); ?></a> </span>
                     </label>
 
-                    <div class="col-md-12">
+                    <div class="col-md-12 clear-pads">
                         <button type="submit" class="registration-submit">
                             <?php
                             $submit_button_text = empty($wpcrl_form_settings['wpcrl_signup_button_text']) ? 'Register' : $wpcrl_form_settings['wpcrl_signup_button_text'];
@@ -98,9 +98,10 @@
                 <?php
             else:
                 $current_user = wp_get_current_user();
-                $logout_redirect = (empty($wpcrl_form_settings['wpcrl_logout_redirect']) || $wpcrl_form_settings['wpcrl_logout_redirect'] == '-1') ? '' : $wpcrl_form_settings['wpcrl_logout_redirect'];
+                //$logout_redirect = (empty($wpcrl_form_settings['wpcrl_logout_redirect']) || $wpcrl_form_settings['wpcrl_logout_redirect'] == '-1') ? '' : $wpcrl_form_settings['wpcrl_logout_redirect'];
+                $logout_redirect = site_url();
 
-                echo 'Logged in as <strong>' . ucfirst($current_user->user_login) . '</strong>. <a href="' . wp_logout_url(get_permalink($logout_redirect)) . '">Log out ? </a>';
+                echo 'Logged in as <strong>' . ucfirst($current_user->user_login) . '</strong>. <a href="' . $logout_redirect . '">Log out ? </a>';
             endif;
 
             ?>
