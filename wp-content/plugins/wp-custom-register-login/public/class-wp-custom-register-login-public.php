@@ -330,7 +330,7 @@ class Wp_Custom_Register_Login_Public extends Wp_Custom_Register_Login_Generic_P
         $headers = array('Content-Type: text/html; charset=UTF-8');
         // configuring email options
         $to = $userdata['user_email'];
-        $headers[] = 'From:' . get_option('blogname');
+        $headers[] = 'From:' . get_option('admin_email');
 
         $placeholders = array(
             '%USERNAME%' => $userdata['user_login'],
