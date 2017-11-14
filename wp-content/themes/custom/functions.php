@@ -179,3 +179,8 @@ function log_user_in(){
 }
 add_action( 'wp_ajax_log_user_in', 'log_user_in' );
 add_action( 'wp_ajax_nopriv_log_user_in', 'log_user_in' );
+
+function wpdocs_excerpt_more( $more ) {
+	return '...';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );

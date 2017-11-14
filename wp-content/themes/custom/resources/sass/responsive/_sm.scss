@@ -1,3 +1,36 @@
+@media (max-width: 991px) {
+  h1, .title{
+    font-size: 30px;
+  }
+  #banner {
+    h1{
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .join-link, .header-opt-content{
+      font-size: 16px;
+    }
+  }
+
+  #counter {
+    .counter-wrap{
+      .counter-number {
+        font-size: 40px;
+      }
+    }
+  }
+  #problem{
+    .city-description{
+      .dark-bg{
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+
 @media (min-width: 768px){
   .address, .phone{
     padding-left: 0px;
@@ -23,8 +56,10 @@
     padding-top: 8px;
     padding-bottom: 8px;
   }
-
-  .modal-dialog {
-    width: 850px;
+  .register-login-modals{
+    .modal-dialog {
+      width: 850px;
+    }
   }
+
 }

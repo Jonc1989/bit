@@ -4,14 +4,20 @@
 			<?php if(get_field('pre_ico_progress_fields')):?>
 
 				<?php $n = 1; while(has_sub_field('pre_ico_progress_fields')):?>
-					<div class="description-line border-bottom">
-						<?php if( get_sub_field( 'progress_icon' )){ ?>
-							<img src="<?php echo get_sub_field('progress_icon');?>">
-						<?php } ?>
+					<div class="description-line">
+						<div class="img-container">
+							<?php if( get_sub_field( 'progress_icon' )){ ?>
+								<img src="<?php echo get_sub_field('progress_icon');?>">
+							<?php } ?>
+						</div>
+						<div class="text-container">
+							<h3><?php echo get_sub_field('progress_title');?></h3>
+							<p><?php echo get_sub_field('progress_description');?></p>
+						</div>
 
 
-						<h3><?php echo get_sub_field('progress_title');?></h3>
-						<p><?php echo get_sub_field('progress_description');?></p>
+
+
 					</div>
 					
 

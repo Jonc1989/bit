@@ -47,8 +47,8 @@
 		<div class="circle">
 			<div class="circle granula-bg">
 				<div class="coin">
-					<img class="front" src="<?php bloginfo('template_directory');?>/resources/images/token.png">
-					<img class="back" src="<?php bloginfo('template_directory');?>/resources/images/token.png">
+					<img class="front" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
+					<img class="back" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
 				</div>
 			</div>
 		</div>

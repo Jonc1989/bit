@@ -1,5 +1,5 @@
 #counter{
-
+  padding-top: 10px;
   padding-bottom: 40px;
   height: 190px;
   background: url(resources/images/bg.png)no-repeat center center;
@@ -12,6 +12,7 @@
   text-align: center;
 
   h4{
+    margin-top: 0px;
     font-family: 'Roboto Black', sans-serif;
     font-size: 20px;
     font-weight: 900;
@@ -59,7 +60,7 @@
       color: #ffffff;
     }
     .counter-text{
-
+      display: none;
     }
     .counter-number, .counter-text{
       color: #ffffff;

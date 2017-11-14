@@ -17,44 +17,47 @@
 		<div class="city-image col-md-12 clear-pads">
 
 		</div>
-	<div class="container city-description">
-		<div class="col-md-12 clear-pads">
-			<a class="" href="">
-				<div class="dark-bg triangle-top">
 
-					<h4 class="yellow">Лесные ресурсы</h4>
-					<p class="white">Арендованный лес</p>
-					<p class="white">71 976 гектар</p>
 
-				</div>
-			</a>
+	<div class="col-md-12">
+		<div class="container city-description">
+			<div class="col-md-12 clear-pads">
+				<a class="" href="">
+					<div class="dark-bg triangle-top">
 
-			<a class="">
-				<div class="dark-bg triangle-top">
-					<h4 class="yellow">Лесопиление</h4>
-					<p class="white">Арендованный лес</p>
-					<p class="white">71 976 гектар</p>
-				</div>
-			</a>
+						<h4 class="yellow">Лесные ресурсы</h4>
+						<p class="white">Арендованный лес</p>
+						<p class="white">71 976 гектар</p>
 
-			<a class="">
-				<div class="dark-bg triangle-top">
-					<h4 class="yellow">Лесные ресурсы</h4>
-					<p class="white">Арендованный лес</p>
-					<p class="white">71 976 гектар</p>
-				</div>
-			</a>
+					</div>
+				</a>
 
-			<a class="">
-				<div class="dark-bg triangle-top">
-					<h4 class="yellow">Станция  когенерации</h4>
-					<p class="white">Арендованный лес</p>
-					<p class="white">71 976 гектар</p>
-				</div>
-			</a>
+				<a class="">
+					<div class="dark-bg triangle-top">
+						<h4 class="yellow">Лесопиление</h4>
+						<p class="white">Арендованный лес</p>
+						<p class="white">71 976 гектар</p>
+					</div>
+				</a>
+
+				<a class="">
+					<div class="dark-bg triangle-top">
+						<h4 class="yellow">Лесные ресурсы</h4>
+						<p class="white">Арендованный лес</p>
+						<p class="white">71 976 гектар</p>
+					</div>
+				</a>
+
+				<a class="">
+					<div class="dark-bg triangle-top">
+						<h4 class="yellow">Станция  когенерации</h4>
+						<p class="white">Арендованный лес</p>
+						<p class="white">71 976 гектар</p>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
-
 	<div class="modal fade" id="tooltipsModal1" role="dialog">
 		<div class="modal-dialog">
 
@@ -97,7 +100,7 @@
 			<div class="col-md-12 clear-pads border-bottom posts-wrap">
 				<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 					<div class="col-md-3 post-wrap">
-						<div class="col-md-12 border-bottom">
+						<div class="col-md-12 clear-pads">
 							<div class="col-md-12 clear-pads">
 								<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
 								<?php if($image) { ?>

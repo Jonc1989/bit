@@ -31,14 +31,17 @@ function checkCounter() {
                     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                    jQuery( '.counter-wrap .days .counter-number' ).text( days );
+                    if(  jQuery( '.counter-wrap .days .counter-number' ).text() != days ){
+                        jQuery( '.counter-wrap .days .counter-number' ).text( days );
+                    }
+
 
                     if( jQuery( '.counter-wrap .hours .counter-number' ).text() != hours ){
                         jQuery( '.counter-wrap .hours .counter-number' ).hide();
                         jQuery( '.counter-wrap .hours .counter-number' ).text( hours );
                         jQuery( '.counter-wrap .hours .counter-number' ).fadeIn( "slow");
                     }else{
-                        jQuery( '.counter-wrap .hours .counter-number' ).text( hours );
+                        //jQuery( '.counter-wrap .hours .counter-number' ).text( hours );
                     }
 
 
@@ -47,7 +50,7 @@ function checkCounter() {
                         jQuery( '.counter-wrap .minutes .counter-number' ).text( minutes );
                         jQuery( '.counter-wrap .minutes .counter-number' ).fadeIn( "slow");
                     }else{
-                        jQuery( '.counter-wrap .minutes .counter-number' ).text( minutes );
+                        //jQuery( '.counter-wrap .minutes .counter-number' ).text( minutes );
                     }
 
 
@@ -61,6 +64,10 @@ function checkCounter() {
                         //
                     }
                 }, 1000);
+                setTimeout( function () {
+                    jQuery( '.counter-text' ).css( 'display', 'block' );
+                }, 1000 );
+
             }
         }
     });

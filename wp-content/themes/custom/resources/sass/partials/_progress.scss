@@ -2,8 +2,14 @@
   padding-top: 87px;
   padding-bottom: 30px;
   .description-line{
+    display: flex;
     max-width: 430px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #e6e9eb;
+    .img-container{
+      display: flex;
+      align-items: center;
+    }
     img{
       max-width: 43px;
       max-height: 39px;
@@ -11,12 +17,13 @@
       margin-right: 26px;
     }
   }
-
+  .description-line:last-of-type{
+    border: none;
+  }
   .progress-bar-wrap{
     padding: 30px;
     padding-bottom: 20px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
-    width: 480px;
 
     .progress{
 
