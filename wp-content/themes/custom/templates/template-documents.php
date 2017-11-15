@@ -9,3 +9,9 @@ get_header(); ?>
 		<?php get_template_part('partials/counter');?>
 	</div>
 <?php get_footer(); ?>
+
+<script>
+    jQuery(document).ready(function () {
+        checkCounter()
+    });
+</script>

@@ -10,10 +10,11 @@
 			<div class="clear-pads col-md-12 documents rounded">
 				<?php if( get_field( 'documents' ) ){
 					while(has_sub_field('documents')):?>
-						<div class="col-md-4 yellow-bg">
-							<div class="row document">
+						<div class="col-md-4 ">
+                            <a href="<?php echo get_sub_field('document_file');?>">
+							<div class="row document white-bg">
 								<?php if( get_sub_field( 'document_file' )){ ?>
-									<a href="<?php echo get_sub_field('document_file');?>">
+
 										<?php if( get_sub_field( 'document_icon' )){ ?>
 											<img src="<?php echo get_sub_field('document_icon');?>">
 										<?php } else { ?>
@@ -26,15 +27,16 @@
 										<?php if( get_sub_field( 'document_title' )){ ?>
 											<div class="description">
 												<p class="download-title"><?php echo get_sub_field('document_title');?></p>
-												<p class="download-this"><?php echo get_sub_field('document_title');?></p>
+												<p class="download-this">Скачать PDF</p>
 											</div>
 
 										<?php } else { ?>
 											<p>|<?php __( 'Document', 'preico' ) ?> </p>
 										<?php } ?>
-									</a>
+
 								<?php } ?>
 							</div>
+                </a>
 						</div>
 					<?php endwhile;
 				} ?>
@@ -65,12 +67,7 @@
 
 		</div>
 		<div class="col-md-4">
-			<?php get_template_part('partials/header/circle');?>
 
-
-			<div class="col-md-12 clear-pads welcome-links">
-				<a class="btn join-link" href="/login">УЧАСТВОВАТЬ</a>
-			</div>
 		</div>
 	</div>
 </div> 

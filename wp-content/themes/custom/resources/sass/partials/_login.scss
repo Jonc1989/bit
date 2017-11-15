@@ -9,6 +9,15 @@
       background-color: #fff;
     }
   }
+  .help-block{
+    position: absolute;
+  }
+  input{
+    height: 40px;
+  }
+  .form-group{
+    margin-bottom: 30px;
+  }
 }
 #registrationModal{
   .left, .right{
@@ -50,8 +59,8 @@
 }
 #wpcrlRegisterSection{
   input[type="checkbox"]{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 3px;
     background-color: #6fb600;
     border: solid 2px #6fb600;
@@ -85,7 +94,7 @@
     color: #6fb600;
   }
 }
-.registration-submit, .login-submit, .forget-password{
+.registration-submit, .login-submit, .forget-password, .reset-password-submit, .back-to-login{
 
   border-radius: 3px;
   background-color: #6fb600;
@@ -101,6 +110,9 @@
 .login-submit, .forget-password{
   font-size: 20px;
 }
+.reset-password-submit, .back-to-login{
+  font-size: 18px;
+}
 .registration-submit{
   width: 100%;
 }
@@ -110,7 +122,7 @@
 .reset-btn-wrap{
   padding-right: 0px;
 }
-.login-submit, .forget-password{
+.login-submit, .forget-password, .reset-password-submit, .back-to-login{
   width: 100%;
 }
 .soc-auth-wrapper{
@@ -123,6 +135,9 @@
   background-size: cover;
 }
 .social-auth{
+  img{
+    cursor: pointer;
+  }
   div{
     display: inline-block;
     margin-right: 23px;

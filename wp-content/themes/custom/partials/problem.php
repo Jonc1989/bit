@@ -23,7 +23,7 @@
 		<div class="container city-description">
 			<div class="col-md-12 clear-pads">
 				<a class="" href="">
-					<div class="dark-bg triangle-top">
+					<div class="dark-bg triangle-top col-md-3">
 
 						<h4 class="yellow">Лесные ресурсы</h4>
 						<p class="white">Арендованный лес</p>
@@ -33,7 +33,7 @@
 				</a>
 
 				<a class="">
-					<div class="dark-bg triangle-top">
+					<div class="dark-bg triangle-top col-md-3">
 						<h4 class="yellow">Лесопиление</h4>
 						<p class="white">Арендованный лес</p>
 						<p class="white">71 976 гектар</p>
@@ -41,7 +41,7 @@
 				</a>
 
 				<a class="">
-					<div class="dark-bg triangle-top">
+					<div class="dark-bg triangle-top col-md-3">
 						<h4 class="yellow">Лесные ресурсы</h4>
 						<p class="white">Арендованный лес</p>
 						<p class="white">71 976 гектар</p>
@@ -49,7 +49,7 @@
 				</a>
 
 				<a class="">
-					<div class="dark-bg triangle-top">
+					<div class="dark-bg triangle-top col-md-3">
 						<h4 class="yellow">Станция  когенерации</h4>
 						<p class="white">Арендованный лес</p>
 						<p class="white">71 976 гектар</p>

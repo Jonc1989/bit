@@ -80,7 +80,7 @@
                     ?>
 
 
-                    <label class="agreement-terms"><input type="checkbox" name="checkbox" value="value">
+                    <label class="agreement-terms"><input type="checkbox" name="agreement_terms" value="value">
                                <span><?php echo __( 'agreement terms text', 'preico' ); ?>
                  <a href="#"><?php echo __( 'agreement terms link', 'preico' ); ?></a> </span>
                     </label>

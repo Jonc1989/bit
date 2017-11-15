@@ -126,11 +126,28 @@
                         stringLength: {
                             max: 30,
                             message: 'The firstname must be less than 30 characters long'
-                        },
-                        regexp: {
-                            regexp: /^[a-zA-Z]*$/,
-                            message: 'Only characters are allowed.'
                         }
+                        //,
+                        //regexp: {
+                        //    regexp: /^[a-zA-Z]*$/,
+                        //    message: 'Only characters are allowed.'
+                        //}
+                    }
+                },
+                wpcrl_lname:{
+                    validators: {
+                        notEmpty: {
+                            message: 'The first name is required'
+                        },
+                        stringLength: {
+                            max: 30,
+                            message: 'The firstname must be less than 30 characters long'
+                        }
+                        //,
+                        //regexp: {
+                        //    regexp: /^[a-zA-Z]*$/,
+                        //    message: 'Only characters are allowed.'
+                        //}
                     }
                 },
                 wpcrl_username: {
@@ -143,7 +160,8 @@
                             min: 6,
                             max: 30,
                             message: 'The username must be more than 6 and less than 30 characters long'
-                        },
+                        }
+                        ,
                         regexp: {
                             regexp: /^[a-zA-Z0-9_\.]+$/,
                             message: 'The username can only consist of alphabetical, number, dot and underscore'
@@ -198,6 +216,15 @@
                             }
                         }
                     }
+                },
+                agreement_erms: {
+                        validators: {
+                            required: true,
+                            callback: {
+                                message: 'Wrong answer'
+                            }
+                        }
+
                 }
             }
         }).on('success.form.fv', function(e) {

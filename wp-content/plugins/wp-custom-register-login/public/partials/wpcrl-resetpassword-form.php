@@ -24,7 +24,7 @@
             $returntologin_button_text = empty($wpcrl_form_settings['wpcrl_returntologin_button_text']) ? 'Return to Login' : $wpcrl_form_settings['wpcrl_returntologin_button_text'];           
 
             ?>
-            <h3><?php _e($resetpassword_form_heading, $this->plugin_name); ?></h3>
+            <h4><?php _e($resetpassword_form_heading, $this->plugin_name); ?></h4>
 
             <div id="wpcrl-resetpassword-loader-info" class="wpcrl-loader" style="display:none;">
                 <img src="<?php echo plugins_url('images/ajax-loader.gif', dirname(__FILE__)); ?>"/>
@@ -39,7 +39,6 @@
 
                     ?>
                     <div class="form-group">
-                        <label for="email"><?php _e('Email', $this->plugin_name); ?></label>
                         <input type="text" class="form-control" name="wpcrl_rp_email" id="wpcrl_rp_email" placeholder="Email">
                     </div>
                     <input type="hidden" name="wpcrl_current_url" id="wpcrl_current_url" value="<?php echo get_permalink(); ?>" />
@@ -48,7 +47,7 @@
 
                     ?>
                     <div class="form-group">
-                        <label for="newpassword"><?php _e('New password', $this->plugin_name); ?></label>
+
                         <input type="password" class="form-control" name="wpcrl_newpassword" id="wpcrl_newpassword" placeholder="New Password">
                     </div>
                     <input type="hidden" name="wpcrl_rp_email" id="wpcrl_rp_email" value="<?php echo $_GET['email'] ?>" />
@@ -64,9 +63,15 @@
                     wp_nonce_field('wpcrl_resetpassword_action', 'wpcrl_resetpassword_nonce');
 
                 ?>
-                <button type="submit" class="btn btn-primary"><?php _e($resetpassword_button_text, $this->plugin_name); ?></button>
-                <button type="button" id="btnReturnToLogin" class="btn btn-primary"><?php _e($returntologin_button_text, $this->plugin_name); ?></button>
 
+                <div class="col-md-12 clear-pads">
+                    <div class="col-md-6 login-btn-wrap">
+                        <button type="submit" class="reset-password-submit"><?php _e($resetpassword_button_text, $this->plugin_name); ?></button>
+                    </div>
+                    <div class="col-md-6  reset-btn-wrap">
+                        <button type="button" id="btnReturnToLogin" class="back-to-login"><?php _e($returntologin_button_text, $this->plugin_name); ?></button>
+                    </div>
+                </div>
             </form>
 
         </div>

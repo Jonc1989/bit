@@ -26,3 +26,9 @@
     }
   }
 }
+
+@media ( min-width: 992px) {
+  #problem .city-description .dark-bg{
+    max-width: 25%;
+  }
+}
