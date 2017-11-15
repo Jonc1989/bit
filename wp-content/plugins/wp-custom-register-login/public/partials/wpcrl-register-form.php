@@ -111,9 +111,9 @@
 
             <h2><?php echo __( 'Connect via your favorite network', 'preico' ); ?></h2>
             <div class="col-md-12 social-auth text-center">
-                <div class="vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/vk.png"> </div>
-                <div class="fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/fb.png"></div>
-                <div class="g+"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/g+.png"></div>
+                <div class="register-vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/vk.png"> </div>
+                <div class="register-fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/fb.png"></div>
+                <div class="register-g+"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/g+.png"></div>
             </div>
         </div>
 

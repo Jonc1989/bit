@@ -34,41 +34,52 @@ window.fbAsyncInit = function() {
 
 };
 
-function getFacebookUserInfo( response ){
-    FB.api('/me?fields=name,email',  function(response) {
+function getFacebookUserInfo( response, registration ){
+    FB.api('/me?fields=name,email,first_name,last_name',  function(response) {
         console.log(response);
         if( response.email !== undefined ){
 
-            var data = {
-                action: 'log_user_in',
-                email: response.email
-            };
 
-            jQuery.ajax({
-                url: ajaxurl,
-                data: data,
-                type: 'GET',
-                success: function (response) {
-                    if( response == 'success' ){
-                        window.location.href = domain + '/dashboard';
-                    }else{
-                        alert( response );
+
+            if( registration ){
+
+                jQuery( '#wpcrl_fname').val( response.first_name );
+                jQuery( '#wpcrl_lname').val( response.last_name );
+                jQuery( '#wpcrl_email').val( response.email );
+
+            }else{
+                var data = {
+                    action: 'log_user_in',
+                    email: response.email
+                };
+
+                jQuery.ajax({
+                    url: ajaxurl,
+                    data: data,
+                    type: 'GET',
+                    success: function (response) {
+                        if( response == 'success' ){
+                            window.location.href = domain + '/dashboard';
+                        }else{
+                            alert( response );
+                        }
                     }
-                }
-            });
+                });
+            }
+
         }else{
             alert('no email provided')
         }
     });
 }
 
-function statusChangeCallback(response) {
+function statusChangeCallback(response, registration) {
     if (response.status === 'connected') {
-        getFacebookUserInfo( response );
+        getFacebookUserInfo( response, registration );
     } else {
         FB.login(function(response) {
             if ( response.authResponse ) {
-                getFacebookUserInfo( response );
+                getFacebookUserInfo( response, registration );
             } else {
                 console.log('User cancelled login or did not fully authorize.');
             }
@@ -77,13 +88,15 @@ function statusChangeCallback(response) {
         });
     }
 }
-function checkLoginState() {
+function checkLoginState( registration ) {
     FB.getLoginStatus(function(response) {
-        statusChangeCallback(response);
+        statusChangeCallback(response, registration);
     });
 }
 
 jQuery( document ).on( 'click', '.social-auth .fb img', function ( e ) {
-
     checkLoginState();
+});
+jQuery( document ).on( 'click', '.social-auth .register-fb img', function ( e ) {
+    checkLoginState( true );
 });

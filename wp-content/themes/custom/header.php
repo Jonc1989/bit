@@ -79,7 +79,9 @@ $menu = wp_get_nav_menu_items( $menu );
 									<?php foreach(qtrans_getSortedLanguages() as $language) { ?>
 										<li><a href="<?php echo qtrans_convertURL($current_url, $language, false, true)?>"><?php echo $language; ?></a></li>
 									<?php } ?>
-									<li><a class="" href="<?php echo wp_logout_url( '/' ); ?>">Logout</a> </li>
+                                    <?php if( is_user_logged_in() ){ ?>
+									<li><a class="" href="<?php echo wp_logout_url( site_url() ); ?>">Logout</a> </li>
+                                    <?php } ?>
 								</ul>
 							</div>
 						</li>
