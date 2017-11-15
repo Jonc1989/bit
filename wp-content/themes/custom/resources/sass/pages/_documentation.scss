@@ -89,3 +89,67 @@
 .flex{
   display: flex;
 }
+.token2{
+  max-width: 75%;
+  animation: flyIn 3s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px,100px);
+    -ms-transform: translate(0px,100px);
+    transform: translate(0px,100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px)
+    translateY(0px)
+    translateZ(0px)
+    rotateX(27deg)
+    rotateY(13deg)
+    rotateZ(-17deg);
+    transform-style: preserve-3d;
+    transition: opacity 300ms, transform 1200ms;
+  }
+}
+@keyframes wind {
+  0%{
+    transform: rotateX(27deg)
+  }
+  10%{
+    transform: rotateX(17deg)
+  }
+  20%{
+    transform: rotateX(7deg)
+  }
+  30%{
+    transform: rotateX(-17deg)
+  }
+  40%{
+    transform: rotateX(-47deg)
+  }
+  50%{
+    transform: rotateX(-37deg)
+  }
+  60%{
+    transform: rotateX(-27deg)
+  }
+  70%{
+    transform: rotateX(-17deg)
+  }
+  80%{
+    transform: rotateX(0deg)
+  }
+  90%{
+    transform: rotateX(27deg)
+  }
+  100%{
+    transform: rotateX(27deg)
+  }
+}
+
+
+

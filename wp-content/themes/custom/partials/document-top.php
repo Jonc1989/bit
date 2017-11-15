@@ -67,7 +67,7 @@
 
 		</div>
 		<div class="col-md-4">
-
+            <img class="token2 next" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
 		</div>
 	</div>
 </div> 
