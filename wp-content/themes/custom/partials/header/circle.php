@@ -42,15 +42,30 @@
 
 
 
-	<div class="circle">
+<!--	<div class="circle">-->
+<!---->
+		<div class="circle first-circle">
 
-		<div class="circle">
-			<div class="circle granula-bg">
-				<div class="coin">
-					<img class="front" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
-					<img class="back" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
-				</div>
-			</div>
+                <div class="granula-bg">
+<!--                    <div class="coin">-->
+<!--                        <img class="front" src="--><?php //bloginfo('template_directory');?><!--/resources/images/token2.png">-->
+<!--                        <img class="back" src="--><?php //bloginfo('template_directory');?><!--/resources/images/token2.png">-->
+<!--                    </div>-->
+
+                    <div class="outer-ring"></div>
+                    <!-- Used for more of a gyroscope type effect
+                    <div class="outer-outer-ring"></div>
+                    -->
+                    <div class="circle1">
+                        <div class="front">
+                            <img class="back-logo" src="<?php bloginfo('template_directory');?>/resources/images/token.png"/>
+                        </div>
+                        <div class="back">
+                            <img class="back-logo" src="<?php bloginfo('template_directory');?>/resources/images/group-7@3x.png"/>
+                        </div>
+                    </div>
+                </div>
+
 		</div>
-	</div>
+<!--	</div>-->
 </div>
