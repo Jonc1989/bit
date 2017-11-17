@@ -97,10 +97,10 @@ function checkLoginState( registration ) {
 
 jQuery( document ).ready( function () {
 
-    document.getElementById("google-register").onclick = function (e) { e.stopPropagation();
+    document.getElementById("google-register").onclick = function (e) { 
+        e.stopPropagation();
 
         var auth2 = gapi.auth2.getAuthInstance();
-        // Sign the user in, and then retrieve their ID.
         auth2.signIn().then(function() {
             var profile = auth2.currentUser.get().getBasicProfile();
             console.log('ID: ' + profile.getId());
@@ -113,15 +113,19 @@ jQuery( document ).ready( function () {
 
     };
 
+    document.getElementById("fb-register").onclick = function (e) {
+        checkLoginState( true );
+    }
+    
     jQuery( document ).on( 'click', '.social-auth .fb img', function ( e ) {
         checkLoginState();
     });
-    jQuery( document ).on( 'click', '.social-auth .register-fb img', function ( e ) {
-        checkLoginState( true );
-    });
+    // jQuery( document ).on( 'click', '.social-auth .register-fb img', function ( e ) {
+    //     checkLoginState( true );
+    // });
 });
 
-function onLoadCallback() {
+function loadGoogleJs() {
     gapi.load('auth2', function()
     {
         auth2 = gapi.auth2.init({

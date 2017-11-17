@@ -112,12 +112,12 @@
             <h2><?php echo __( 'Connect via your favorite network', 'preico' ); ?></h2>
             <div class="col-md-12 social-auth text-center">
                 <div class="register-vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/vk.png"> </div>
-                <div class="register-fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/fb.png"></div>
+                <div id="fb-register" class="register-fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/fb.png"></div>
                 <div id="google-register" class="register-g+"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/g+.png"></div>
             </div>
             <div id="google-sign-in" class="g-signin2 hidden" data-onsuccess="onSignIn"></div>
 
-            <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
+            <script src="https://apis.google.com/js/platform.js?onload=loadGoogleJs" async defer></script>
         </div>
 
 </div>
