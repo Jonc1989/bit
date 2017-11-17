@@ -34,6 +34,7 @@
 <?php wp_footer(); ?>
 
 <?php get_template_part('partials/footer');?>
+<script src="<?php bloginfo('template_directory');?>/resources/js/vendor/progressbar.min.js"></script>
 <script src="<?php bloginfo('template_directory');?>/resources/js/app.js"></script>
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 </body>
