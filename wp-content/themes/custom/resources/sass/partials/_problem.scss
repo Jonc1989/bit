@@ -199,10 +199,11 @@ input[type="button"]{
     border: none;
     background: transparent;
   }
-  .bx-wrapper, .bx-viewport, .partners-wrap {
+  .bx-wrapper, .bx-viewport{
     height: 125px!important;
   }
   .partners-wrap{
+    height: 100%;
 //    text-align: center;
 //    display: flex;
 //    flex-flow: row wrap;

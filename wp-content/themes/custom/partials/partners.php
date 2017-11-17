@@ -59,13 +59,6 @@
 
     window.onload = function(){
         initSlider();
-//
-//        jQuery('.bx-pager-item a').click(function(e){
-//            slider.stopAuto();
-//            slider.startAuto();
-//        });
-
         //comment stopAuto if problems
-
     }
 </script>
