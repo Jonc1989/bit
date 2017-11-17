@@ -94,9 +94,60 @@ function checkLoginState( registration ) {
     });
 }
 
-jQuery( document ).on( 'click', '.social-auth .fb img', function ( e ) {
-    checkLoginState();
+
+jQuery( document ).ready( function () {
+
+    document.getElementById("google-register").onclick = function (e) { e.stopPropagation();
+
+        var auth2 = gapi.auth2.getAuthInstance();
+        // Sign the user in, and then retrieve their ID.
+        auth2.signIn().then(function() {
+            var profile = auth2.currentUser.get().getBasicProfile();
+            console.log('ID: ' + profile.getId());
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail());
+        });
+
+    };
+
+    jQuery( document ).on( 'click', '.social-auth .fb img', function ( e ) {
+        checkLoginState();
+    });
+    jQuery( document ).on( 'click', '.social-auth .register-fb img', function ( e ) {
+        checkLoginState( true );
+    });
 });
-jQuery( document ).on( 'click', '.social-auth .register-fb img', function ( e ) {
-    checkLoginState( true );
-});
+
+function onLoadCallback() {
+    gapi.load('auth2', function()
+    {
+        auth2 = gapi.auth2.init({
+            client_id: '833642584244-rvpqmu289ir75ft98p1o3i2hl6ru4u33.apps.googleusercontent.com',
+            fetch_basic_profile: true,
+            scope: 'profile email'  //scope: 'additional_scope'
+        });
+    });
+}
+
+
+function attachSignin(element) {
+    console.log(element.id);
+    auth2.attachClickHandler(element, {},
+        function(googleUser) {
+            console.log( googleUser.getBasicProfile() )
+                //googleUser.getBasicProfile().getName();
+        }, function(error) {
+            alert(JSON.stringify(error, undefined, 2));
+        });
+}
+
+function onSignIn(googleUser) {
+    //var profile = googleUser.getBasicProfile();
+    //console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    //console.log('Name: ' + profile.getName());
+    //console.log('Image URL: ' + profile.getImageUrl());
+    //console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
