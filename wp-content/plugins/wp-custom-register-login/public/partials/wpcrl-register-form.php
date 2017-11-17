@@ -115,9 +115,9 @@
                 <div id="fb-register" class="register-fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/fb.png"></div>
                 <div id="google-register" class="register-g+"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/g+.png"></div>
             </div>
-            <div id="google-sign-in" class="g-signin2 hidden" data-onsuccess="onSignIn"></div>
-
-            <script src="https://apis.google.com/js/platform.js?onload=loadGoogleJs" async defer></script>
+<!--            <div id="google-sign-in" class="g-signin2 hidden" data-onsuccess="onSignIn"></div>-->
+<!---->
+<!--            <script src="https://apis.google.com/js/platform.js?onload=loadGoogleJs" async defer></script>-->
         </div>
 
 </div>

@@ -188,19 +188,34 @@ input[type="button"]{
 }
 #partners{
   padding-bottom: 100px;
+  .bx-wrapper{
+    max-width: 100% !important;
+    height: 125px;
+    margin-bottom: 0px;
+
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  .bx-wrapper, .bx-viewport, .partners-wrap {
+    height: 125px!important;
+  }
   .partners-wrap{
-    text-align: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+//    text-align: center;
+//    display: flex;
+//    flex-flow: row wrap;
+//    justify-content: space-around;
     .partner{
-      float: none;
-      display: inline-block;
-      padding: 20px;
+      height: 100%;
+//      float: none;
+//      display: inline-block;
+//      padding: 20px;
     }
     img{
-      max-height: 60px;
-      max-width: 210px;
+//      max-height: 60px;
+//      max-width: 210px;
     }
   }
 }

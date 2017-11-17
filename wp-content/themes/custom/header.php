@@ -10,6 +10,7 @@
 	<title><?php echo get_bloginfo( 'name' ); ?></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory');?>/resources/js/vendor/bxslider-4-master/dist/jquery.bxslider.min.css" rel="stylesheet">
 	<!--<link href="<?php bloginfo('template_directory');?>/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />-->
 
 	<?php wp_head();?>
