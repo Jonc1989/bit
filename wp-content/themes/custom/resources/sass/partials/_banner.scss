@@ -1,4 +1,7 @@
 .main-template{
+  svg{
+    transform: rotateZ(180deg);
+  }
   .welcome-links{
     margin-top: 20px;
   }
@@ -81,8 +84,9 @@
   .granulas{
     position: relative;
     .opts-wrap{
+      z-index: 1;
       position: absolute;
-      @include on-circle($item-count: 7, $circle-size: 416px, $item-size: 11px);
+      @include on-circle($item-count: 6, $circle-size: 416px, $item-size: 11px);
       .header-opt{
         background: yellow;
         border-radius: 50%;

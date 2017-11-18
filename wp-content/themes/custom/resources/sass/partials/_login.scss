@@ -1,4 +1,24 @@
 #registrationModal, #loginModal{
+  .or{
+    background-color: #ffd334;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    left: -27px;
+    border-radius: 55%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    p{
+      margin: 0 auto;
+      font-family: 'RobotoBold', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 2.33;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
   label{
     display: flex;
     align-items: center;

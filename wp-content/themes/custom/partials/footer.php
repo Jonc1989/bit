@@ -13,7 +13,7 @@
 		<div class="col-md-12 col-sm-12 col-xs-12 clear-pads">
 			<div class="pipka"></div>
 		</div>
-		<div class="col-md-9 clear-pads">
+		<div class="col-md-4 clear-pads">
 			<?php
 			$menu_locations = get_nav_menu_locations();
 			$menu = $menu_locations[ 'footer' ];
@@ -26,7 +26,24 @@
 
 			</ul>
 		</div>
-		<div class="col-md-3 contactinfo clear-pads">
+        <div class="col-md-4">
+            <div class="col-md-6 clear-pads">
+                <ul >
+                <?php foreach ( $menu as $item ){?>
+                    <li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+                <?php } ?>
+                </ul>
+            </div>
+            <div class="col-md-6 clear-pads">
+                <ul >
+                <?php foreach ( $menu as $item ){?>
+                    <li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+                <?php } ?>
+                    </ul>
+            </div>
+        </div>
+
+		<div class="col-md-4 contactinfo clear-pads">
 			<p class="addressinfo"><?php echo get_option( 'address_input' );?></p>
 			<p ><?php echo get_option( 'phone_input' );?></p>
 			<p><?php echo get_option( 'admin_email' );?></p>

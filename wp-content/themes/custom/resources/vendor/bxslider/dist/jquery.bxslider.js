@@ -1487,14 +1487,14 @@
      */
     el.stopAuto = function(preventControlUpdate) {
       // if no interval exists, disregard call
-      if (!slider.interval) { return; }
+      //if (!slider.interval) { return; }
       // clear the interval
-      clearInterval(slider.interval);
-      slider.interval = null;
-	  //allback for when the auto rotate status changes
-	  slider.settings.onAutoChange.call(el, false);
-      // if auto controls are displayed and preventControlUpdate is not true
-      if (slider.settings.autoControls && preventControlUpdate !== true) { updateAutoControls('start'); }
+      //clearInterval(slider.interval);
+      //slider.interval = null;
+      ////allback for when the auto rotate status changes
+      //slider.settings.onAutoChange.call(el, false);
+      //// if auto controls are displayed and preventControlUpdate is not true
+      //if (slider.settings.autoControls && preventControlUpdate !== true) { updateAutoControls('start'); }
     };
 
     /**

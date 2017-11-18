@@ -98,6 +98,7 @@
 
             <h2><?php echo __( 'Connect via your favorite network', 'preico' ); ?></h2>
             <div class="col-md-12 col-xs-12 col-sm-12 social-auth text-center">
+                <div class="or"><p><?php echo __( 'Or', 'preico' ); ?></p></div>
                 <div  class="vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/vk.png"> </div>
                 <div class="fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/fb.png"></div>
                 <div class="g+"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/g+.png"></div>

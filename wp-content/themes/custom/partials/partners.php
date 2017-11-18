@@ -34,31 +34,7 @@
 	</div>
 </div>
 <script>
-
-    var slider;
-    function initSlider(){
-
-        var settings = {
-            slideWidth:150,
-            minSlides:3,
-            maxSlides: 5,
-            moveSlides:1,
-            speed:1000,
-            useCSS: false,
-            pager:!1,
-            pause:3000,
-            infiniteLoop:!0,
-            controls:!0,
-            slideMargin:20,
-            auto:!0,
-            hideControlOnEnd: true
-        };
-
-        slider = jQuery('.partners-wrap').bxSlider( settings );
-    }
-
     window.onload = function(){
-        initSlider();
-        //comment stopAuto if problems
+        initSlider( '.partners-wrap' );
     }
 </script>

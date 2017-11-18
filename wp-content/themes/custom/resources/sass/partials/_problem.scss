@@ -333,3 +333,19 @@ input[type="button"]{
   background: url( resources/images/icons/yellow/telegraph.png);
   @include bg-size( contain );
 }
+
+.bx-wrapper{
+  .bx-controls-direction{
+    a{
+      @include transition( opacity, .3s, ease-in-out );
+      opacity: 0;
+    }
+  }
+}
+.bx-wrapper:hover{
+  .bx-controls-direction{
+    a{
+      opacity: 1;
+    }
+  }
+}
