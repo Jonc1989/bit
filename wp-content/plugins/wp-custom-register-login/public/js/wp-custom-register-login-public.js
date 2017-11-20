@@ -217,14 +217,12 @@
                         }
                     }
                 },
-                agreement_erms: {
-                        validators: {
-                            required: true,
-                            callback: {
-                                message: 'Wrong answer'
-                            }
+                agreement_terms: {
+                    validators: {
+                        notEmpty: {
+                            message: 'This field is required'
                         }
-
+                    }
                 }
             }
         }).on('success.form.fv', function(e) {

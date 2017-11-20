@@ -79,11 +79,12 @@
 
                     ?>
 
-
-                    <label class="agreement-terms"><input type="checkbox" name="agreement_terms" value="value">
-                               <span><?php echo __( 'agreement terms text', 'preico' ); ?>
-                 <a href="#"><?php echo __( 'agreement terms link', 'preico' ); ?></a> </span>
-                    </label>
+                    <div class="form-group">
+                        <label class="agreement-terms"><input type="checkbox" name="agreement_terms" value="">
+                                   <span><?php echo __( 'agreement terms text', 'preico' ); ?>
+                     <a href="#"><?php echo __( 'agreement terms link', 'preico' ); ?></a> </span>
+                        </label>
+                    </div>
 
                     <div class="col-md-12 clear-pads">
                         <button type="submit" class="registration-submit">

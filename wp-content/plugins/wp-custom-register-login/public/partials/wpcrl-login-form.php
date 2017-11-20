@@ -58,10 +58,10 @@
 
 
                     <div class="col-md-12 clear-pads">
-                        <div class="col-md-6 login-btn-wrap">
+                        <div class="col-md-6 col-sm-6 login-btn-wrap">
                             <button type="submit" class="login-submit"><?php _e($submit_button_text, $this->plugin_name); ?></button>
                         </div>
-                        <div class="col-md-6 reset-btn-wrap">
+                        <div class="col-md-6 col-sm-6 reset-btn-wrap">
                             <?php
                             //render forgot password button
                             if($wpcrl_form_settings['wpcrl_enable_forgot_password']){
