@@ -22,7 +22,7 @@
 	<div class="col-md-12">
 		<div class="container city-description">
 			<div class="col-md-12 clear-pads">
-				<a class="" href="">
+				<a class="" href="" data-toggle="modal" data-target="#firstModal">
 					<div class="dark-bg triangle-top col-md-3">
 
 						<h4 class="yellow">Лесные ресурсы</h4>
@@ -31,30 +31,84 @@
 
 					</div>
 				</a>
+                <div class="modal fade" id="firstModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-body"><button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="yellow">Лесные ресурсы</h4>
+                                <p class="white">Арендованный лес</p>
+                                <p class="white">71 976 гектар</p>
+                            </div>
+                        </div>
 
-				<a class="">
+                    </div>
+                </div>
+
+				<a class="" data-toggle="modal" data-target="#secondModal">
 					<div class="dark-bg triangle-top col-md-3">
 						<h4 class="yellow">Лесопиление</h4>
 						<p class="white">Арендованный лес</p>
 						<p class="white">71 976 гектар</p>
 					</div>
 				</a>
+                <div class="modal fade" id="secondModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-body"><button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="yellow">Лесопиление</h4>
+                                <p class="white">Арендованный лес</p>
+                                <p class="white">71 976 гектар</p>
+                            </div>
+                        </div>
 
-				<a class="">
+                    </div>
+                </div>
+
+				<a class="" data-toggle="modal" data-target="#thirdModal">
 					<div class="dark-bg triangle-top col-md-3">
 						<h4 class="yellow">Лесные ресурсы</h4>
 						<p class="white">Арендованный лес</p>
 						<p class="white">71 976 гектар</p>
 					</div>
 				</a>
+                <div class="modal fade" id="thirdModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-body"><button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="yellow">Лесопиление</h4>
+                                <p class="white">Арендованный лес</p>
+                                <p class="white">71 976 гектар</p>
+                            </div>
+                        </div>
 
-				<a class="">
+                    </div>
+                </div>
+
+				<a class="" data-toggle="modal" data-target="#fourthModal">
 					<div class="dark-bg triangle-top col-md-3">
 						<h4 class="yellow">Станция  когенерации</h4>
 						<p class="white">Арендованный лес</p>
 						<p class="white">71 976 гектар</p>
 					</div>
 				</a>
+                <div class="modal fade" id="fourthModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-body"><button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="yellow">Лесопиление</h4>
+                                <p class="white">Арендованный лес</p>
+                                <p class="white">71 976 гектар</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
 			</div>
 		</div>
 	</div>

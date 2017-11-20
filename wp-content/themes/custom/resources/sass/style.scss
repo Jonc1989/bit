@@ -24,8 +24,16 @@ body > .container{
   height: 100%;
 }
 a, button {
+   outline: 0;
+   text-decoration: none;
+   text-decoration-style: unset;
+   text-decoration-color: unset;
+}
+a:focus, a:hover {
   outline: 0;
   text-decoration: none;
+  text-decoration-style: unset;
+  text-decoration-color: unset;
 }
 nav li a{
   //color: white !important;
