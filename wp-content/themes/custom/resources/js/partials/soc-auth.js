@@ -37,9 +37,6 @@ window.fbAsyncInit = function() {
 function getFacebookUserInfo( response, registration ){
     FB.api('/me?fields=name,email,first_name,last_name',  function(response) {
         console.log(response);
-        if( response.email !== undefined ){
-
-
 
             if( registration ){
 
@@ -48,28 +45,29 @@ function getFacebookUserInfo( response, registration ){
                 jQuery( '#wpcrl_email').val( response.email );
 
             }else{
-                var data = {
-                    action: 'log_user_in',
-                    email: response.email
-                };
+                if( response.email !== undefined ){
+                    var data = {
+                        action: 'log_user_in',
+                        email: response.email
+                    };
 
-                jQuery.ajax({
-                    url: ajaxurl,
-                    data: data,
-                    type: 'GET',
-                    success: function (response) {
-                        if( response == 'success' ){
-                            window.location.href = domain + '/dashboard';
-                        }else{
-                            alert( response );
+                    jQuery.ajax({
+                        url: ajaxurl,
+                        data: data,
+                        type: 'GET',
+                        success: function (response) {
+                            if( response == 'success' ){
+                                window.location.href = domain + '/dashboard';
+                            }else{
+                                alert( response );
+                            }
                         }
-                    }
-                });
-            }
+                    });
+                }else{
+                    alert('no email provided')
+                }
 
-        }else{
-            alert('no email provided')
-        }
+            }
     });
 }
 

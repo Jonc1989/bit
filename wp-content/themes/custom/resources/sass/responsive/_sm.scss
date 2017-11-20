@@ -78,4 +78,68 @@
       border-left: 8px solid transparent;
     }
   }
+  #roadmap {
+    padding-left: 0px;
+    padding-right: 0px;
+    ul {
+      width: 80%;
+      li:before{
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 35px;
+        left: -38px;
+      }
+      li:last-of-type:before{
+        content: '';
+        width: 23px;
+        height: 23px;
+        background-color: yellow;
+        border: 7px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 28px;
+        left: -45px;
+      }
+    }
+    ul:before{
+      content: '';
+      width: 3px;
+      height: calc( 100% - 80px );
+      background-color: #ffd333;
+      position: absolute;
+      top: 40px;
+      //bottom: -40px;
+      left: -35px;
+    }
+  }
+}
+@media ( min-width: 992px) {
+  #problem .city-description .dark-bg{
+    max-width: 25%;
+  }
+  #roadmap {
+
+    ul {
+      width: 740px;
+    }
+  }
+}
+@media ( min-width: 1200px){
+  #banner {
+    min-height: 681px;
+  }
+  #progress{
+    .progress-bar-wrap {
+      width: 480px;
+    }
+  }
+}
+@media (max-width: 767px){
+  .li-img-wrap{
+    min-width: 70px;
+  }
 }

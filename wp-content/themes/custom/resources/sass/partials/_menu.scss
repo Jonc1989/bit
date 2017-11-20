@@ -65,3 +65,16 @@ nav{
   padding-right: 15px;
   padding-left: 15px;
 }
+.dropdown-menu{
+  min-width: unset;
+  background-color: #100f0e;
+  li{
+    a{
+      color: white;
+    }
+  }
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  color: white;
+  background-color: #100f0e;
+}

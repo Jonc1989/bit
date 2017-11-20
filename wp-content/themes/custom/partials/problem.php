@@ -90,7 +90,7 @@
 			'post_status'    => 'publish',
 			'posts_per_page' => '8',
 			'orderby'        => 'post_date',
-			//'category_name'  => 'description',
+			'category_name'  => 'description',
 			'order'          => 'DESC'
 		);
 

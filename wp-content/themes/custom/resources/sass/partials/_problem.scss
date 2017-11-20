@@ -130,13 +130,16 @@ input[type="button"]{
   background: url( resources/images/roadmap-bg.png);
   @include bg-size( cover );
   ul{
-    width: 740px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     li{
+      display: flex;
+      align-items: center;
       position: relative;
+      min-height: 80px;
       .title-text, .date-description{
-        line-height: 1.67;
+        line-height: 1.1;
         text-align: left;
         color: #ffffff;
       }
@@ -147,44 +150,26 @@ input[type="button"]{
       .date-description{
         font-family: 'RobotoRegular', sans-serif;
         font-size: 16px;
+        margin-bottom: 0px;
       }
       img{
-        margin-right: 42px;
+        max-width: 61px;max-height: 44px;
+
         float: left;
       }
     }
-    li:before{
-      content: '';
-      width: 9px;
-      height: 9px;
-      background-color: #ffffff;
-      border-radius: 50%;
-      position: absolute;
-      top: 18px;
-      left: -38px;
-    }
-    li:last-of-type:before{
-      content: '';
-      width: 23px;
-      height: 23px;
-      background-color: yellow;
-      border: 7px solid white;
-      border-radius: 50%;
-      position: absolute;
-      top: 18px;
-      left: -45px;
-    }
+
   }
-  ul:before{
-    content: '';
-    width: 3px;
-    height: calc( 100% - 50px );
-    background-color: #ffd333;
-    position: absolute;
-    top: 20px;
-    //bottom: -40px;
-    left: -35px;
-  }
+
+}
+.li-img-wrap{
+  display: inline-block;
+  float: left;
+  min-width: 90px;
+  //min-height: 60px;
+}
+.li-txt-wrap{
+  display: inline-block;
 }
 #partners{
   padding-bottom: 100px;
@@ -259,16 +244,7 @@ input[type="button"]{
     color: #bbc4cd;
     padding-left: 20px;
   }
-  input[type="button"], input[type="submit"]{
-    width: 211px;
-    height: 60px;
-    background-color: white;
-    color: #6fb600;
-    border: solid 1px #6fb600;
 
-    font-family: 'RobotoBold';
-    font-size: 24px;
-  }
   textarea {
     font-size: 18px;
     line-height: 1.94;
@@ -280,7 +256,28 @@ input[type="button"]{
     resize: none;
   }
 }
+input[type="button"], input[type="submit"]{
+  width: 211px;
+  height: 60px;
+  background-color: white;
+  color: #6fb600;
+  border: solid 1px #6fb600;
 
+  font-family: 'RobotoBold';
+  font-size: 24px;
+
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 1px 1px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 1px 1px 0px rgba(50, 50, 50, 0.75);
+
+  outline: 0;
+}
+
+input[type="button"]:active, input[type="submit"]:active{
+  -webkit-box-shadow: none;
+  -moz-box-shadow:    none;
+  box-shadow:         none;
+}
 .address-icon, .phone-icon{
   display: inline-block;
   width: 36px;

@@ -4,7 +4,7 @@ jQuery(document).ready(function () {
 
     if( jQuery( '.granulas' ).length ){
         var bar = new ProgressBar.Circle( '.granulas', {
-            strokeWidth: 8,
+            strokeWidth: 3,
             easing: 'easeInOut',
             duration: 3000,
             color: '#ffd334',
