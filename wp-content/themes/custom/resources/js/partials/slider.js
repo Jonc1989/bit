@@ -15,9 +15,11 @@ function initSlider( className ){
         useCSS: false,
         pager:!1,
         pause:3000,
-        //infiniteLoop:!0,
+        infiniteLoop: true,
+        autoControls: false,
         controls:!0,
         slideMargin: 40,
+        touchEnabled: false,
         auto:!0
         //hideControlOnEnd: true
     };

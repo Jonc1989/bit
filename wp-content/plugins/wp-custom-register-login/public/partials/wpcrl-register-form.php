@@ -111,12 +111,60 @@
         <div class="col-xs-4 col-md-5 clear-pads soc-auth-wrapper right">
 
             <h2><?php echo __( 'Connect via your favorite network', 'preico' ); ?></h2>
+
+            <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
+
+
             <div class="col-md-12 social-auth text-center">
                 <div class="or"><p><?php echo __( 'Or', 'preico' ); ?></p></div>
-                <div class="register-vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/vk.png"> </div>
+                <div onclick="VK.Auth.login(authInfo, VK.access.EMAIL);" class="register-vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/vk.png"> </div>
                 <div id="fb-register" class="register-fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/fb.png"></div>
                 <div id="google-register" class="register-g+"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/g+.png"></div>
             </div>
+
+
+            <script type="text/javascript">
+                VK.init({
+                    apiId: 6265623
+                });
+
+                function authInfo(response) {
+                    if (response.session) {
+                        //console.log( response);
+                        getInitData();
+//                        VK.Api.call('account.getProfileInfo', {user_ids: response.session.mid}, function(r) {
+//
+//                                console.log(r);
+//
+//                        });
+                    } else {
+                        alert('not auth');
+                    }
+
+
+                }
+
+                function getInitData() {
+                    var code;
+                    code = 'return {'
+                    code += 'me: API.getProfiles({uids: API.getVariable({key: 1280}),  fields: "photo"})[0]';
+                    code += '};';
+                    VK.Api.call('execute', { 'code': code }, onGetInitData);
+                }
+                function onGetInitData(data) { console.log( data );
+                    var r;
+                    if (data.response) {
+                        r = data.response;
+                        if (r.me) {
+
+                            console.log(r.me.first_name + ' ' + r.me.last_name + '<br/><a href="http://vkontakte.ru/id' + r.me.uid + '">  ' + r.me.photo);
+
+                        }
+                    }
+                }
+                VK.Auth.getLoginStatus(authInfo);
+                VK.UI.button('vk_login_button');
+            </script>
 <!--            <div id="google-sign-in" class="g-signin2 hidden" data-onsuccess="onSignIn"></div>-->
 <!---->
 <!--            <script src="https://apis.google.com/js/platform.js?onload=loadGoogleJs" async defer></script>-->
