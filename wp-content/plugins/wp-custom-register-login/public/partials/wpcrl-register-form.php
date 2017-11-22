@@ -112,15 +112,18 @@
 
             <h2><?php echo __( 'Connect via your favorite network', 'preico' ); ?></h2>
 
-            <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
+            <script src="//vk.com/js/api/openapi.js?150" type="text/javascript"></script>
 
 
             <div class="col-md-12 social-auth text-center">
                 <div class="or"><p><?php echo __( 'Or', 'preico' ); ?></p></div>
-                <div onclick="VK.Auth.login(authInfo, VK.access.EMAIL);" class="register-vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/vk.png"> </div>
+                <div onclick="VK.Auth.login(authInfo);" class="register-vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/vk.png"> </div>
                 <div id="fb-register" class="register-fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/fb.png"></div>
                 <div id="google-register" class="register-g+"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/g+.png"></div>
             </div>
+
+
+
 
 
             <script type="text/javascript">
@@ -128,46 +131,68 @@
                     apiId: 6265623
                 });
 
+//                function auth(){
+//                    var url = 'https://oauth.vk.com/authorize?client_id=6265623&scope=email&redirect_uri=http://woodpellets.io&response_type=token';
+//
+//                    var newWin = window.open(url, 'vk-login', 'width=665,height=370')
+//                    newWin.onload = function() {
+//                        var hash = newWin.location.hash
+//                        console.log(hash)
+//                        if (hash.indexOf( 'email' ) != -1){
+//                            console.log(hash.indexOf( 'email' ))
+//                        }
+//                    }
+//                }
+
+
                 function authInfo(response) {
                     if (response.session) {
-                        //console.log( response);
-                        getInitData();
-//                        VK.Api.call('account.getProfileInfo', {user_ids: response.session.mid}, function(r) {
-//
-//                                console.log(r);
-//
-//                        });
+
+                        VK.Api.call('users.get', {user_ids: response.session.mid, fields: 'email' }, function(data) {
+                            if( data.response ){
+                                jQuery( "#wpcrl_fname" ).val( data.response[ 0 ].first_name );
+                                jQuery( "#wpcrl_lname" ).val( data.response[ 0 ].last_name );
+                            }
+                        });
+
+
+
                     } else {
-                        alert('not auth');
-                    }
-
-
-                }
-
-                function getInitData() {
-                    var code;
-                    code = 'return {'
-                    code += 'me: API.getProfiles({uids: API.getVariable({key: 1280}),  fields: "photo"})[0]';
-                    code += '};';
-                    VK.Api.call('execute', { 'code': code }, onGetInitData);
-                }
-                function onGetInitData(data) { console.log( data );
-                    var r;
-                    if (data.response) {
-                        r = data.response;
-                        if (r.me) {
-
-                            console.log(r.me.first_name + ' ' + r.me.last_name + '<br/><a href="http://vkontakte.ru/id' + r.me.uid + '">  ' + r.me.photo);
-
-                        }
+                        console.log('not auth');
                     }
                 }
-                VK.Auth.getLoginStatus(authInfo);
-                VK.UI.button('vk_login_button');
+
+//                function getInitData() {
+//                    var code;
+//                    code = 'return {'
+//                    code += 'me: API.getProfiles({uids: API.getVariable({key: 1280}),  fields: "email"})[0]';
+//                    code += '};';
+//                    VK.Api.call('execute', { 'code': code }, onGetInitData);
+//                }
+//                function onGetInitData(data) { console.log( data );
+//                    var r;
+//                    if (data.response) {
+//                        r = data.response;
+//                        if (r.me) {
+//
+//                            console.log(r);
+//
+//                        }
+//                    }
+//                }
+//                VK.Auth.getLoginStatus(authInfo);
+//                VK.UI.button('vk_login_button');
             </script>
-<!--            <div id="google-sign-in" class="g-signin2 hidden" data-onsuccess="onSignIn"></div>-->
-<!---->
-<!--            <script src="https://apis.google.com/js/platform.js?onload=loadGoogleJs" async defer></script>-->
+
+            <!-- VK Widget -->
+<!--            <div id="vk_auth"></div>-->
+<!--            <script type="text/javascript">-->
+<!--                VK.Widgets.Auth("vk_auth", {"authUrl":"/dashboard"});-->
+<!--            </script>-->
+            
+            <div id="google-sign-in" class="g-signin2 hidden" data-onsuccess="onSignIn"></div>
+
+            <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
         </div>
 
 </div>

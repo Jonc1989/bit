@@ -95,7 +95,7 @@ function checkLoginState( registration ) {
 
 jQuery( document ).ready( function () {
 
-    document.getElementById("google-register").onclick = function (e) { 
+    document.getElementById("google-register").onclick = function (e) {
         e.stopPropagation();
 
         var auth2 = gapi.auth2.getAuthInstance();
@@ -107,29 +107,34 @@ jQuery( document ).ready( function () {
             console.log('Family Name: ' + profile.getFamilyName());
             console.log('Image URL: ' + profile.getImageUrl());
             console.log('Email: ' + profile.getEmail());
+
+            jQuery( "#wpcrl_fname" ).val( profile.getGivenName() );
+            jQuery( "#wpcrl_lname" ).val( profile.getFamilyName() );
+            jQuery( "#wpcrl_email" ).val( profile.getEmail() );
         });
 
     };
 
     document.getElementById("fb-register").onclick = function (e) {
+        e.stopPropagation();
         checkLoginState( true );
-    }
-    
-    jQuery( document ).on( 'click', '.social-auth .fb img', function ( e ) {
-        checkLoginState();
-    });
+    };
+
+    // jQuery( document ).on( 'click', '.social-auth .fb img', function ( e ) {
+    //     checkLoginState();
+    // });
     // jQuery( document ).on( 'click', '.social-auth .register-fb img', function ( e ) {
     //     checkLoginState( true );
     // });
 });
 
-function loadGoogleJs() {
-    //gapi.load('auth2', function()
-    //{
-    //    auth2 = gapi.auth2.init({
-    //        client_id: '833642584244-rvpqmu289ir75ft98p1o3i2hl6ru4u33.apps.googleusercontent.com',
-    //        fetch_basic_profile: true,
-    //        scope: 'profile email'  //scope: 'additional_scope'
-    //    });
-    //});
+function onLoadCallback() {
+    gapi.load('auth2', function()
+    {
+       auth2 = gapi.auth2.init({
+           client_id: '833642584244-rvpqmu289ir75ft98p1o3i2hl6ru4u33.apps.googleusercontent.com',
+           fetch_basic_profile: true,
+           scope: 'profile email'  //scope: 'additional_scope'
+       });
+    });
 }
