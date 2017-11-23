@@ -8,7 +8,7 @@ get_header(); ?>
 
 		<?php get_template_part('partials/banner');?>
 		<?php get_template_part('partials/counter');?>
-
+		<?php get_template_part('partials/progress');?>
 		<?php get_template_part('partials/video');?>
 		<?php get_template_part('partials/problem');?>
 		<?php get_template_part('partials/subscribe');?>

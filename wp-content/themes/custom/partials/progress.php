@@ -1,32 +1,64 @@
-<div class="col-md-12 clear-pads" id="progress">
+<div class="col-md-12 clear-pads" id="progress" style="background-color: #d7d7d7">
 	<div class="container">
 		<div class="col-md-6">
-			<?php if(get_field('pre_ico_progress_fields')):?>
 
-				<?php $n = 1; while(has_sub_field('pre_ico_progress_fields')):?>
-					<div class="description-line">
-						<div class="img-container">
-							<?php if( get_sub_field( 'progress_icon' )){ ?>
-								<img src="<?php echo get_sub_field('progress_icon');?>">
-							<?php } ?>
+
+			<div class="granulas">
+
+				<div class="circle wrapper">
+
+
+
+							<div class="coin">
+								<img class="front" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
+								<img class="back" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
+							</div>
+
+
+				</div>
+
+
+
+				<div class="opts-wrap">
+					<div class="header-opt yellow-bg">
+						<div class="header-opt-content right">
+							<img src="<?php bloginfo('template_directory');?>/resources/images/flag.png">
 						</div>
-						<div class="text-container">
-							<h3><?php echo get_sub_field('progress_title');?></h3>
-							<p><?php echo get_sub_field('progress_description');?></p>
-						</div>
-
-
-
-
 					</div>
-					
+					<div class="header-opt yellow">
+						<div class="header-opt-content right">
+							<img src="<?php bloginfo('template_directory');?>/resources/images/flag.png">
+						</div>
+					</div>
+					<div class="header-opt yellow">
+						<div class="header-opt-content">
+							<img src="<?php bloginfo('template_directory');?>/resources/images/flag.png">
+						</div>
+					</div>
+					<div class="header-opt yellow">
+						<div class="header-opt-content ">
+							<img src="<?php bloginfo('template_directory');?>/resources/images/flag.png">
+						</div>
+					</div>
+					<div class="header-opt yellow ">
+						<div class="header-opt-content">
+							<img src="<?php bloginfo('template_directory');?>/resources/images/flag.png">
+						</div>
+					</div>
+					<div class="header-opt yellow">
+						<div class="header-opt-content right">
+							<img src="<?php bloginfo('template_directory');?>/resources/images/flag.png">
+						</div>
+					</div>
 
-				<?php $n++; endwhile;?>
+				</div>
 
-			<?php endif;?>
+			</div>
+
 		</div>
+
+
 		<div class="col-md-6">
-			
 			<div class="progress-bar-wrap">
 				<h4>PRE ICO progress bar</h4>
 				<p>Minimal contribution: 3 ETH</p>

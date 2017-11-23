@@ -19,7 +19,18 @@
 			</div>
 		</div>
 		<div class="col-md-6 col-sm-6">
-			<?php get_template_part('partials/header/circle');?>
+		
+			<div class="cycle">
+				<img src="<?php bloginfo('template_directory');?>/resources/images/cycle.png">
+				<div class="titles">
+					<div class="first-title">1</div>
+					<div class="first-title">2</div>
+					<div class="first-title">3</div>
+					<div class="first-title">4</div>
+					<div class="first-title">5</div>
+					<div class="first-title">6</div>
+				</div>
+			</div>
 			
 		</div>
 	</div>

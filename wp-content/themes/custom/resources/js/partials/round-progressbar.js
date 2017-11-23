@@ -13,7 +13,7 @@ jQuery(document).ready(function () {
             svgStyle: null
         });
 
-        bar.animate(0.3);
+        bar.animate(1);
     }
 
 
