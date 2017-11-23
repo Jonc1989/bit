@@ -84,13 +84,30 @@
 
 }
 
-
+.top-title, .bottom-title{
+  color: white;
+  width: 373px;
+  text-align: center;
+  p{
+    margin: 0px;
+  }
+}
 .granulas{
   position: relative;
   width: 373px;
   height: 373px;
-  margin: 0 auto;
-  margin-bottom: 80px;
+  //margin: 0 auto;
+  margin-bottom: 25px;
+  .top-title, .bottom-title{
+//    position: absolute;
+//    width: 100%;
+  }
+  .top-title{
+    //top: -60px;
+  }
+  .bottom-title{
+    //bottom: 0px;
+  }
   .opts-wrap{
     z-index: 1;
     position: absolute;
@@ -102,7 +119,7 @@
         width: 70px;
         height: 70px;
         position: absolute;
-        top: -50px;
+        top: -35px;
         left: -120px;
 
         font-family: 'RobotoMedium', sans-serif;
@@ -119,9 +136,14 @@
           max-width: 46px;
           max-height:64px;
         }
-
+        &.first{
+          left: 22px;
+        }
         &.right{
-          left: 0px;
+          left: 40px;
+        }
+        &.fourth{
+          left: -105px;
         }
       }
     }
@@ -149,8 +171,8 @@
 
   .coin{
     margin: 0 auto;
-    width: 75%;
-    height: 75%;
+    width: 80%;
+    height: 80%;
     animation-name: spin;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -173,15 +195,61 @@
 }
 
 .cycle{
+  position: relative;
   width: 503px;
   height: 415px;
-  img{
+  .scheme{
     width: 100%;
     height: 100%;
   }
 }
 .titles{
-  @include on-circle($item-count: 6, $circle-size: 373px, $item-size: 0px);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  .top-first, .sixth-title{
+    text-align: center;
+  }
+  .top-first{
+    margin-top: 70px;
+  }
+  .second-title, .third-title{
+    margin-top: 65px;    padding: 0px 15px;
+  }
+  .third-title, .fifth-title{
+    float: right;
+
+  }
+  .fourth-title, .fifth-title{
+      margin-top: 140px;
+    padding: 0px 15px;
+  }
+  .second-title, .third-title, .fourth-title, .fifth-title{
+    display: inline-block;
+  }
+  .bottom-second{
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    width: 100%;
+  }
+  
+}
+.coin-wrap{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  img{
+    max-width: 125px;
+    max-height: 125px;
+    margin: 0 auto;
+  }
 }
 @keyframes spin {
   0% { transform: rotateY(0deg); }

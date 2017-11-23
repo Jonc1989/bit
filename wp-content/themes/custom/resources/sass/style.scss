@@ -72,13 +72,19 @@ img{
 .dark-bg{
   background-color: #181b16;
 }
+.black{
+  color: #181b16;
+}
 .white{
   color: white;
 }
 .yellow{
   color: #ffd334;
 }
-
+.center-horizontaly{
+  display: flex;
+  align-items: center;
+}
 
 
 

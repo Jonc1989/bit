@@ -21,14 +21,26 @@
 		<div class="col-md-6 col-sm-6">
 		
 			<div class="cycle">
-				<img src="<?php bloginfo('template_directory');?>/resources/images/cycle.png">
+				<img class="scheme" src="<?php bloginfo('template_directory');?>/resources/images/cycle.png">
+                <div class="coin-wrap">
+                    <img src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
+                </div>
 				<div class="titles">
-					<div class="first-title">1</div>
-					<div class="first-title">2</div>
-					<div class="first-title">3</div>
-					<div class="first-title">4</div>
-					<div class="first-title">5</div>
-					<div class="first-title">6</div>
+                    <div class="top-first">
+                        <div class="first-title">ssssssssss</div>
+                    </div>
+                    <div class="top-second">
+                        <div class="second-title">ssssssssss</div>
+                        <div class="third-title">ssssssssss</div>
+                    </div>
+
+                    <div class="bottom-first">
+                        <div class="fourth-title">ssssssssss</div>
+                        <div class="fifth-title">ssssssssss</div>
+                    </div>
+                    <div class="bottom-second">
+                        <div class="sixth-title">ssssssssss</div>
+                    </div>
 				</div>
 			</div>
 			
