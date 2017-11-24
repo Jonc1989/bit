@@ -16,7 +16,7 @@
   width: 100%;
 
 
-  background: url(resources/images/bg@3x.png)no-repeat center center;
+  background: url(resources/images/banner-bg.png)no-repeat center center;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -50,9 +50,37 @@
     text-align: center;
     color: #ffd334;
   }
-  .welcome-links{
+  .welcome-links, .recycle{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
+  }
+  .recycle{
+    font-family: 'RobotoBlack';
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 0.88;
+    text-align: left;
+    color: #ffd334;
+    img{
+      max-width: 36px;
+      max-height: 36px;
+      margin-right: 10px;
+    }
+  }
+  .head-description{
+    p{
+      font-size: 15px;
+      line-height: 1.67;
+      text-align: left;
+      color: #ffffff;
+      max-width: 380px;
+    }
+    margin-top: 30px;
+
   }
   .soc-icon{
     img{
@@ -88,6 +116,7 @@
   color: white;
   width: 373px;
   text-align: center;
+  margin-bottom: 20px;
   p{
     margin: 0px;
   }
@@ -133,8 +162,10 @@
         align-items: center;
         justify-content: center;
         img{
+          opacity: 0.5;
           max-width: 46px;
           max-height:64px;
+          @include transition( opacity, .5s, ease-in-out );
         }
         &.first{
           left: 22px;
@@ -254,4 +285,24 @@
 @keyframes spin {
   0% { transform: rotateY(0deg); }
   100% { transform: rotateY(360deg); }
+}
+@media ( max-width: 1400px ) {
+  .granulas{
+    .opts-wrap {
+      width: 373px;
+      height: 373px;
+      @include on-circle($item-count: 6, $circle-size: 300px, $item-size: 0px);
+    }
+  }
+  .granulas, .opts-wrap {
+    width: 300px;
+    height: 300px;
+  }
+
+  .top-title, .bottom-title, .granulas{
+    margin: 0 auto 20px;
+  }
+  .curently-recived{
+    margin: 0 auto 40px;
+  }
 }

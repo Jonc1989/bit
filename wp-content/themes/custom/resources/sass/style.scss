@@ -60,6 +60,9 @@ input, textarea{
 img{
   max-width: 100%;
 }
+.bold{
+  font-family: 'RobotoBold', sans-serif;
+}
 .circle{
   border-radius: 50%;
 }
@@ -85,8 +88,12 @@ img{
   display: flex;
   align-items: center;
 }
-
-
+.font15{
+  font-size: 15px;
+}
+.font20{
+  font-size: 20px;
+}
 
 @import "responsive/_lg";
 @import "responsive/_md";

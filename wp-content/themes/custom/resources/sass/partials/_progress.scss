@@ -1,4 +1,8 @@
 #progress{
+  background: url(resources/images/progress-bg.png)no-repeat center center;
+
+  @include bg-size( cover );
+
   padding-top: 87px;
   padding-bottom: 30px;
   .container{
@@ -6,6 +10,7 @@
     align-items: center;
   }
   .wallet{
+    font-size: 15px;
     color: white;
     .yellow-bg{
       border-radius: 3px;
@@ -23,17 +28,59 @@
     }
   }
 
+  .first{
+    font-family: 'RobotoBlack', sans-serif;
+    font-size: 18px;
+  }
+  .second{
+    font-size: 16px;
+  }
+  .wallet-nr{
+    font-size: 16px;
+    #clipboard-text{
+      border: none;
+      background-color : transparent;
+      margin-right: 20px;
+      padding-left: 0px;
+      color: #ffd334;
+      outline: 0;
+      text-decoration: none;
+    }
+  }
+  .border-right{
+    border-right: 1px solid #ffd334;
+  }
+  .divided-blocks{
+    margin-top: 36px;
+    margin-bottom: 26px;
+  }
+  .divided-blocks>div{
+    padding-top: 18px;
+  }
+  .small-token{
+    margin-right: 10px;
+  }
+  .center-horizontaly{
+    font-size: 20px;
+  }
+  .curently-recived{
+    font-size: 20px;
+    line-height: 1.25;
+    color: #ffffff;
+    width: 373px;
+    text-align: center;
+    margin-bottom: 40px;
+    .yellow{
+      font-family: 'RobotoBlack', sans-serif;
+    }
+  }
 
 
 
 
 
 
-
-
-
-
-//  .description-line{
+  //  .description-line{
 //    display: flex;
 //    max-width: 430px;
 //    padding-bottom: 10px;

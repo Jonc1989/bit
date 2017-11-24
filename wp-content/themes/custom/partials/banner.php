@@ -7,6 +7,11 @@
 			<p>Индустрия по производству
 				пеллет в блокчейне</p>
 
+			<div class="col-md-12 clear-pads recycle">
+				<img src="<?php bloginfo('template_directory');?>/resources/images/recycle.png">
+				<span>100%</span>
+			</div>
+
 			<div class="col-md-12 clear-pads welcome-links">
 				<div class="col-md-6 col-sm-6 clear-pads">
 					<a class="btn join-link" href="/login">УЧАСТВОВАТЬ</a>
@@ -16,6 +21,11 @@
 					<a href="#" class="fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/fb@2x.png"></a>
 					<a href="#" class="telegraph"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/telegraph@2x.png"></a>
 				</div>
+			</div>
+			<div class="col-md-12 clear-pads head-description">
+				<p>Экологически чистое, безотходное производство,
+					замкнутого цикла из бозобнобляемых источников
+					энергии и применением новейший ИТ технологий</p>
 			</div>
 		</div>
 		<div class="col-md-6 col-sm-6">
