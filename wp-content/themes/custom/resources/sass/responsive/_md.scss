@@ -1,12 +1,8 @@
 @media (max-width: 1199px) {
   #banner {
-    .granulas {
-      width: 316px;
-      height: 316px;
-      .opts-wrap {
-        position: absolute;
-        @include on-circle($item-count: 7, $circle-size: 316px, $item-size: 8px);
-      }
+    padding-top: 115px;
+    .join-link {
+      font-size: 20px;
     }
   }
   .logo{
@@ -15,6 +11,45 @@
   .nav>li>a {
     padding: 10px 10px;
   }
-}
+  .top-title, .bottom-title{
+    width: 230px;
+  }
+  .granulas{
+    width: 230px;
+    height: 230px;
+    .opts-wrap{
+      width: 230px;
+      height: 230px;
+      @include on-circle($item-count: 6, $circle-size: 230px, $item-size: 0px);
+    }
+  }
+  .cycle{
+    width: 450px;
+    height: 400px;
+  }
+  .divided-blocks>div{
+    //text-align: center;
 
+    .yellow-bg{
+      margin-top: 7px;
+    }
+  }
+  #clipboard-text{
+    width: 300px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  #progress{
+    .border-right{
+      border-right: 1px solid #ffd334;
+    }
+    .divided-blocks>div{
+      padding-top: 18px;
+    }
+  }
+  .contactinfo{
+    float: right;
+  }
+}
 
