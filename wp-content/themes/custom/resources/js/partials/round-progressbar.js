@@ -29,7 +29,7 @@ jQuery(document).ready(function () {
 
             (function ( num ) {
                 setTimeout(function () {
-                    jQuery( '.icon' + num ).css( 'opacity', 1 );            console.log( i )
+                    jQuery( '.icon' + num ).css( 'opacity', 1 );
                 }, num * 500 );
             })(x);
         }

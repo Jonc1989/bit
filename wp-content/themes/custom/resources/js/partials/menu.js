@@ -15,3 +15,35 @@
 //         1500 )
 //
 // });
+
+function animateScroll( link ){
+
+    jQuery( link ).click(function(e) {
+        e.preventDefault();
+
+        var top = jQuery(this).attr("href");
+        var verticalOffset = jQuery(top).offset().top;
+
+        //isMenuItemSelected = true;
+
+        jQuery("html, body").animate({
+                scrollTop: verticalOffset
+            },
+            1500,
+            function(){
+                //isMenuItemSelected = false;
+            })
+
+    });
+
+}
+jQuery( document ).ready( function(){
+
+    var links = jQuery( '.nav li a' );
+
+    animateScroll( links[ 3 ] );
+    animateScroll( links[ 5 ] );
+
+    console.log( );
+
+});

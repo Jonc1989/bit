@@ -3,11 +3,11 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-  #banner{
-    .banner-container{
+
+    .banner-container, .document-container{
       padding-top: 70px;
     }
-  }
+
   .navbar-default {
     padding-top: 35px;
   }
@@ -128,6 +128,14 @@
         max-height: 20px;
       }
     }
+    .rounded{
+      .document{
+        p.download-title {
+          font-size: 14px;
+        }
+      }
+    }
+
   }
 
   #counter {
@@ -277,6 +285,11 @@
       width: 480px;
     }
   }
+  .rounded {
+    .document {
+      width: 220px;
+    }
+  }
 }
 @media (min-width: 768px){
   .menu-container {
@@ -350,5 +363,8 @@
   }
   .subscription-container{
     text-align: center;
+  }
+  .token2 {
+    max-width: 25%;
   }
 }

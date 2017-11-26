@@ -79,6 +79,10 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 define ('WPLANG', 'en_US');
+
+define ('upload_max_filesize', '256M');
+define ('post_max_size', '256M');
+
 //define( 'ALLOW_UNFILTERED_UPLOADS', true );
 
 /* That's all, stop editing! Happy blogging. */
