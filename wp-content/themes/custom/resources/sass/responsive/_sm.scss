@@ -1,3 +1,89 @@
+@media (min-width: 768px){
+  .address, .phone{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #banner{
+    .banner-container{
+      padding-top: 70px;
+    }
+  }
+  .navbar-default {
+    padding-top: 35px;
+  }
+
+  .register-link, .login-link, .dashboard-link{
+    border: 1px solid yellow;
+    a, a:hover, a:focus, a:active{
+      outline: 0;
+      outline-color: transparent;
+    }
+
+  }
+
+  .navbar-nav>li>a, .navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .register-login-modals{
+    .modal-dialog {
+      width: 850px;
+    }
+  }
+  #problem{
+    .dark-bg{
+      width: auto;
+      float: none;
+    }
+    .posts-wrap .post-wrap {
+      height: 320px;
+    }
+  }
+  #roadmap {
+    padding-left: 0px;
+    padding-right: 0px;
+    ul {
+      width: 80%;
+      li:before{
+        content: '';
+        width: 9px;
+        height: 9px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 35px;
+        left: -38px;
+      }
+      li:last-of-type:before{
+        content: '';
+        width: 23px;
+        height: 23px;
+        background-color: yellow;
+        border: 7px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 28px;
+        left: -45px;
+      }
+    }
+    ul:before{
+      content: '';
+      width: 3px;
+      height: calc( 100% - 80px );
+      background-color: #ffd333;
+      position: absolute;
+      top: 40px;
+      //bottom: -40px;
+      left: -35px;
+    }
+  }
+  #subscribe {
+    .subscription-container {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
 @media (max-width: 991px) {
   h1, .title{
     font-size: 30px;
@@ -45,16 +131,22 @@
   }
 
   #counter {
+    height: 165px;
     .counter-wrap{
       .counter-number {
-        font-size: 40px;
+        font-size: 36px;
       }
+    }
+    .counter-wrap > div {
+      height: 75px;
+      width: 80px;
     }
   }
   #problem{
     .city-description{
       .dark-bg{
         margin-right: 5px;
+        width: 48%;
       }
     }
   }
@@ -151,95 +243,20 @@
       padding-right: 0px;
     }
   }
+  #subscribe{
+    .subscribe-description>div{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    input[type="text"], input[type="button"] {
+      width: 100%;
+    }
+  }
+
 }
 
 
-@media (min-width: 768px){
-  .address, .phone{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  #banner{
-    //margin-top: -110px;
-  }
-  .navbar-default {
-    padding-top: 35px;
-  }
 
-  .register-link, .login-link, .dashboard-link{
-    border: 1px solid yellow;
-    a, a:hover, a:focus, a:active{
-      outline: 0;
-      outline-color: transparent;
-    }
-
-  }
-
-  .navbar-nav>li>a, .navbar-nav>li>a {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  .register-login-modals{
-    .modal-dialog {
-      width: 850px;
-    }
-  }
-  #problem{
-    .dark-bg{
-      width: auto;
-      float: none;
-    }
-    .dark-bg:after {
-      content: '';
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      margin-left: -8px;
-      width: 0; height: 0;
-      border-bottom: 8px solid #181b16;
-      border-right: 8px solid transparent;
-      border-left: 8px solid transparent;
-    }
-  }
-  #roadmap {
-    padding-left: 0px;
-    padding-right: 0px;
-    ul {
-      width: 80%;
-      li:before{
-        content: '';
-        width: 9px;
-        height: 9px;
-        background-color: #ffffff;
-        border-radius: 50%;
-        position: absolute;
-        top: 35px;
-        left: -38px;
-      }
-      li:last-of-type:before{
-        content: '';
-        width: 23px;
-        height: 23px;
-        background-color: yellow;
-        border: 7px solid white;
-        border-radius: 50%;
-        position: absolute;
-        top: 28px;
-        left: -45px;
-      }
-    }
-    ul:before{
-      content: '';
-      width: 3px;
-      height: calc( 100% - 80px );
-      background-color: #ffd333;
-      position: absolute;
-      top: 40px;
-      //bottom: -40px;
-      left: -35px;
-    }
-  }
-}
 @media ( min-width: 992px) {
   #problem .city-description .dark-bg{
     max-width: 25%;
@@ -330,5 +347,8 @@
   }
   .navbar-toggle {
     margin-right: 0px;
+  }
+  .subscription-container{
+    text-align: center;
   }
 }

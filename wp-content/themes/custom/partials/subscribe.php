@@ -3,11 +3,11 @@
 
 	<div class="container subscription-container">
 
-		<div class="col-md-6 subscribe-description ">
-			<div class="col-md-3 clear-pads">
+		<div class="col-md-6 col-sm-6 subscribe-description ">
+			<div class="col-md-3 col-sm-12 clear-pads">
 				<img src="<?php bloginfo('template_directory');?>/resources/images/mail.png">
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-9 col-sm-12">
 				<h1>Подпишитесь</h1>
 				<p>еженедельную подпискa новостей.
 					Информация, которая будет отсилаться
@@ -16,7 +16,7 @@
 			</div>
 
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 col-sm-6">
 			<?php es_subbox( $namefield = "YES", $desc = "", $group = "" ); ?>
 
 		</div>

@@ -88,14 +88,14 @@
                 обменников, только ETH кошельки. При транзакции,
                 пожалуйста, ставте GAS LIMIT 200000.
             </p>
-			<div class="col-md-12 clear-pads divided-blocks">
-	            <div class="col-md-6 clear-pads border-right">
+			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads divided-blocks">
+	            <div class="col-md-6 col-sm-12 col-xs-6 clear-pads border-right">
 	                <p class="font20">Soft Cap <span class="bold">2000 ETH</span></p>
 	                <div class="col-md-12 clear-pads opts">
 	                    <span>1 ETH = 800 WPC</span><div class="black yellow-bg bold">BONUS 300%</div>
 	                </div>
 	            </div>
-	            <div class="col-md-6  ">
+	            <div class="col-md-6 col-sm-12 col-xs-6">
 	                <p class="font20">Hard Cap <span class="bold">4000 ETH</span></p>
 	                <div class="col-md-12 clear-pads opts">
 	                    <span>1 ETH = 600 WPC</span><div class="black yellow-bg bold">BONUS 200%</div>
@@ -103,7 +103,7 @@
 	            </div>
 			</div>
 
-            <div class="col-md-12 clear-pads center-horizontaly">
+            <div class="col-md-12 col-sm-12 col-xs-12 clear-pads center-horizontaly">
                 <div class="inline-block small-token">
                     <img src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
                 </div>

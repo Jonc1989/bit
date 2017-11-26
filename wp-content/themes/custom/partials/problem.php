@@ -14,14 +14,14 @@
 	</div>
 		<div class="col-md-12">		<h4 class="text-center">Отопление и электроэнергия</h4></div>
 
-		<div class="city-image col-md-12 clear-pads">
+		<div class="city-image col-md-12 col-sm-12 col-xs-12 clear-pads">
 
 		</div>
 
 
-	<div class="col-md-12">
+	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="container city-description">
-			<div class="col-md-12 clear-pads">
+			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads">
 				<a class="" href="" data-toggle="modal" data-target="#firstModal">
 					<div class="dark-bg triangle-top col-md-3">
 
