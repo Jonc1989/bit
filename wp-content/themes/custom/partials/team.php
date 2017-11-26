@@ -1,4 +1,4 @@
-<div class="col-md-12 clear-pads" id="team">
+<div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="team">
 	<div class="container border-bottom">
 		<h1 class="title">Наша команда</h1>
 

@@ -5,10 +5,7 @@
 
   padding-top: 87px;
   padding-bottom: 30px;
-  .container{
-    display: flex;
-    align-items: center;
-  }
+
   .wallet{
     font-size: 15px;
     color: white;
@@ -73,5 +70,9 @@
       font-family: 'RobotoBlack', sans-serif;
     }
   }
-
+}
+.copy-icon{
+  img{
+    display: none;
+  }
 }

@@ -1,4 +1,4 @@
-<div class="col-md-12" id="roadmap">
+<div class="col-md-12 col-sm-12 col-xs-12" id="roadmap">
 	<h1 class="title white">Road map</h1>
 	<ul>
 		<li>

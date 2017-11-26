@@ -1,4 +1,4 @@
-<div class="col-md-12 clear-pads" id="counter">
+<div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="counter">
 	<h4>До конца PRE ICO</h4>
 	<div class="counter-wrap">
 		<div class="days dark-bg">

@@ -1,4 +1,4 @@
-<div class="col-md-12" id="footer-wrap">
+<div class="col-md-12 col-sm-12 col-xs-12" id="footer-wrap">
 	<div class="container">
 
 		<div class="col-md-12 clear-pads">

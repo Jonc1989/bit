@@ -1,4 +1,4 @@
-<div class="col-md-12 clear-pads" id="video">
+<div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="video">
 	<div class="container">
 		<h1 class="title">Инвестировать в реальное предприятие</h1>
 		<div class="col-md-6">

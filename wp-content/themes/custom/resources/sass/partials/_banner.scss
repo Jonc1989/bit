@@ -8,9 +8,9 @@
 }
 
 #banner{
-
+  padding-bottom: 25px;
   //margin-top: -72px;
-  padding-top: 175px;
+  //
 
   color: white;
   width: 100%;
@@ -22,7 +22,9 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
+  .banner-container{
+    padding-top: 70px;
+  }
   h1{
 
     font-size: 36px;
@@ -75,7 +77,6 @@
     p{
       font-size: 15px;
       line-height: 1.67;
-      text-align: left;
       color: #ffffff;
       max-width: 380px;
     }

@@ -1,4 +1,4 @@
-<div class="col-md-12 clear-pads" id="problem">
+<div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="problem">
 	<div class="container">
 		<h4 class="title">Проблема</h4>
 		<div class="col-md-6 text-block">
@@ -151,9 +151,9 @@
 		$posts = new WP_Query( $args );
 
 		if ( $posts->have_posts() ) : ?>
-			<div class="col-md-12 clear-pads border-bottom posts-wrap">
+			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads border-bottom posts-wrap">
 				<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
-					<div class="col-md-3 post-wrap">
+					<div class="col-md-3 col-sm-6 post-wrap">
 						<div class="col-md-12 clear-pads">
 							<div class="col-md-12 clear-pads">
 								<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>

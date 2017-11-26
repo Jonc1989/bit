@@ -9,6 +9,7 @@
     }
     p {
       font-size: 20px;
+      margin-bottom: 15px;
     }
     .join-link, .header-opt-content{
       font-size: 14px;
@@ -30,8 +31,17 @@
         padding: 0px;
       }
     }
-
-
+    .yellow-text{
+      line-height: 30px;
+      font-size: 18px;
+    }
+    .recycle{
+      font-size: 24px;
+      img {
+        max-width: 20px;
+        max-height: 20px;
+      }
+    }
   }
 
   #counter {
@@ -88,12 +98,58 @@
     .divided-blocks>div{
       padding-left: 0px;
     }
+    .wallet-nr {
+      .btn {
+        padding: 3px 8px;
+      }
+      #clipboard-text {
+        margin-right: 10px;
+        width: 220px;
+        font-size: 11px;
+      }
+    }
+    .wallet {
+      .wallet-nr {
+        img{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
   }
   .font15{
     font-size: 14px;
   }
   .font20{
     font-size: 17px;
+  }
+  .copy-icon{
+    img{
+
+      display: block;
+    }
+  }
+  .copy-txt{
+    display: none;
+  }
+  .nav > li > a {
+    font-size: 14px;
+  }
+  .logo{
+    width: 100px;
+  }
+  .menu-container{
+    .container, .container-fluid{
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .navbar-nav>li>a {
+      line-height: 14px;
+    }
+    .dropdown-toggle {
+      padding-right: 0px;
+    }
   }
 }
 
@@ -205,8 +261,74 @@
     }
   }
 }
+@media (min-width: 768px){
+  .menu-container {
+    //position: absolute;
+    ul.nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  #progress{
+    .container {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
 @media (max-width: 767px){
   .li-img-wrap{
     min-width: 70px;
+  }
+  #banner{
+    padding-bottom: 75px;
+    .left-side{
+      text-align: center;
+    }
+    p {
+      max-width: 100%;
+    }
+    .recycle{
+      display: inline-block;
+      margin: 0 auto;
+    }
+    .welcome-links{
+      justify-content: center;
+      a{
+        margin-right: 10px;
+      }
+    }
+    .head-description{
+      p{
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+    .cycle {
+      margin: 0 auto;
+    }
+  }
+  .menu-container{
+    //background-color: #181b16;
+    .container, .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    ul.nav.navbar-nav{
+      position: relative;
+    }
+    ul.nav.navbar-nav>li:last-of-type{
+
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: white;
+  }
+  .navbar-toggle {
+    margin-right: 0px;
   }
 }

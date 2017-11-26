@@ -1,6 +1,6 @@
-<div class="col-md-12 clear-pads" id="progress" style="background-color: #000000">
+<div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="progress" style="background-color: #000000">
 	<div class="container">
-		<div class="col-md-6">
+		<div class="col-md-6 col-sm-6 col-xs-12">
 
 
             <div class="top-title">
@@ -68,11 +68,18 @@
 		</div>
 
 
-		<div class="col-md-6 wallet">
+		<div class="col-md-6 col-sm-6 col-xs-12 wallet">
             <p>Номер кошелька</p>
             <div class="col-md-12 clear-pads wallet-nr">
 	            <input id="clipboard-text" class="yellow" type="text" name="clipboard" value="01x000000000051456165165615561100">
-                <button class="btn btn-success copy">Копировать</button>
+                <button class="btn btn-success copy">
+                    <span class="copy-icon">
+                        <img src="<?php bloginfo('template_directory');?>/resources/images/copy.png">
+                    </span>
+                    <span class="copy-txt">
+                        Копировать
+                    </span>
+                </button>
             </div>
             <p class="bold">Minimal 0.1 ETH</p>
 
