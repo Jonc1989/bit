@@ -41,7 +41,7 @@
                     <div class="form-group">
                         <input type="text" class="form-control" name="wpcrl_rp_email" id="wpcrl_rp_email" placeholder="Email">
                     </div>
-                    <input type="hidden" name="wpcrl_current_url" id="wpcrl_current_url" value="<?php echo get_permalink(); ?>" />
+                    <input type="hidden" name="wpcrl_current_url" id="wpcrl_current_url" value="<?php echo /*get_permalink()*/ site_url(); ?>" />
                     <?php
                 else:
 

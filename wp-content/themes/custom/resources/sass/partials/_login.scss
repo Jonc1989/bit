@@ -162,10 +162,39 @@
     cursor: pointer;
   }
   div{
+    width: 55px;
+    height: 55px;
     display: inline-block;
     margin-right: 23px;
   }
   div:last-of-type{
     margin-right: 0px;
   }
+}
+#register-vk, #vk-login{
+  background: url( resources/images/icons/55/vk.png )no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#fbregister, #fblogin{
+  background: url( resources/images/icons/55/fb.png )no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#google-register, #google-login{
+  background: url( resources/images/icons/55/g+.png )no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#register-vk, #fbregister, #google-register, #vk-login, #fblogin, #google-login{
+  cursor: pointer;
 }

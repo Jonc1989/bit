@@ -117,9 +117,9 @@
 
             <div class="col-md-12 social-auth text-center">
                 <div class="or"><p><?php echo __( 'Or', 'preico' ); ?></p></div>
-                <div onclick="VK.Auth.login(authInfo);" class="register-vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/vk.png"> </div>
-                <div id="fb-register" class="register-fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/fb.png"></div>
-                <div id="google-register" class="register-g+"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/55/g+.png"></div>
+                <div onclick="VK.Auth.login(authInfo);" id="register-vk"></div>
+                <div id="fbregister" class="register-fb"></div>
+                <div id="google-register" class="register-g+"></div>
             </div>
 
 

@@ -350,7 +350,7 @@
             // and the FormValidation instance
             var fv = $resetPasswordForm.data('formValidation');
             var content = $resetPasswordForm.serialize();
-            
+
             // start processing
             $('#wpcrl-resetpassword-loader-info').show();
             wpcrlStartResetPasswordProcess(content);
