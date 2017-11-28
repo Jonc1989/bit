@@ -83,6 +83,11 @@
       align-items: center;
     }
   }
+  #contact{
+    .address, .phone {
+      max-width: 355px;
+    }
+  }
 }
 @media (max-width: 991px) {
   h1, .title{
@@ -260,7 +265,14 @@
       width: 100%;
     }
   }
-
+  #contact{
+    .soc-icons{
+      text-align: center;
+    }
+    .address, .phone {
+      padding-bottom: 20px;
+    }
+  }
 }
 
 
@@ -308,15 +320,32 @@
   }
 }
 @media (max-width: 767px){
+  h1, .title{
+    font-size: 24px;
+  }
+  .title{
+    margin-bottom: 40px;
+  }
+  #banner {
+
+  }
   .li-img-wrap{
     min-width: 70px;
   }
   #banner{
+    h1 {
+      font-size: 24px;
+    }
+    .join-link, .header-opt-content {
+      font-size: 12px;
+    }
     padding-bottom: 75px;
     .left-side{
       text-align: center;
     }
     p {
+      font-size: 16px;
+      margin-bottom: 10px;
       max-width: 100%;
     }
     .recycle{
@@ -366,5 +395,90 @@
   }
   .token2 {
     max-width: 25%;
+  }
+  #video, #problem, #team{
+    .text-block, .posts-wrap .post-wrap p{
+      font-size: 14px;
+    }
+    .team-member p{
+      font-size: 14px;
+    }
+  }
+  #problem{
+    .city-description{
+      margin-bottom: 0px;
+    }
+    .posts-wrap{
+      padding-bottom: 0px;
+    }
+  }
+  #progress{
+    padding-top: 45px;
+  }
+  #contact{
+    .container.border-bottom {
+      padding-bottom: 35px;
+    }
+  }
+  #subscribe {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #roadmap{
+    ul{
+      width: 95%;
+      li{
+        img {
+          max-width: 45px;
+          max-height: 30px;
+        }
+        .title-text, .date-description {
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+  #videoModal{
+    .modal-dialog {
+      width: 100%;
+    }
+  }
+
+}
+@media (max-width: 600px){
+  #counter{
+    .counter-wrap{
+      .counter-number {
+        font-size: 24px;
+      }
+      .counter-text{
+        font-size: 13px;
+      }
+    }
+    .counter-wrap > div {
+      height: 58px;
+      width: 65px;
+      margin-right: 3px;
+    }
+    .counter-wrap > div:after {
+      content: "";
+      font-size: 24px;
+      color: #181b16;
+      position: absolute;
+      right: -10px;
+      top: 0px;
+      width: 0px;
+      height: 0%;
+      line-height: 0px;
+    }
+  }
+}
+@media (max-width: 500px){
+  #problem{
+    .city-description .dark-bg {
+      margin-right: 5px;
+      width: 100%;
+    }
   }
 }

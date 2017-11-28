@@ -26,15 +26,15 @@
 
 			</ul>
 		</div>
-        <div class="col-md-4">
-            <div class="col-md-6 clear-pads">
+        <div class="col-md-4 col-sm-12 clear-pads">
+            <div class="col-md-6 col-sm-6 col-xs-6 clear-pads">
                 <ul >
                 <?php foreach ( $menu as $item ){?>
                     <li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
                 <?php } ?>
                 </ul>
             </div>
-            <div class="col-md-6 clear-pads">
+            <div class="col-md-6 col-sm-6 col-xs-6 clear-pads">
                 <ul >
                 <?php foreach ( $menu as $item ){?>
                     <li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>

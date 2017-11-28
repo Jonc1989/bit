@@ -1,7 +1,7 @@
 <div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="video">
 	<div class="container">
 		<h1 class="title">Инвестировать в реальное предприятие</h1>
-		<div class="col-md-6">
+		<div class="col-md-6 col-sm-12 col-xs-12">
 			<a href="" class="" data-toggle="modal" data-target="#videoModal">
 
 
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-6 text-block">
+		<div class="col-md-6 col-sm-12 col-xs-12 text-block">
 			Обратный выкуп опционов WPCoin начнется через 15 месяцев после окончания
 			сбора средств в размере, 50% от прибыли исходя из квартальных отчетов.
 			Также инвесторы получат право обмена WPCoin на соответствующее количество
@@ -63,7 +63,7 @@
 
 
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 col-sm-12 col-xs-12">
 			<div class="col-md-12 clear-pads opts">
 				<div class="yellow-text yellow-bg">Pre ico</div><span>1 ETH = 600WPCOIN</span>
 			</div>

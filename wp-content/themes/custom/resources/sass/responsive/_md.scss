@@ -47,6 +47,9 @@
     .divided-blocks>div{
       padding-top: 18px;
     }
+    .curently-recived{
+      width: 373px;
+    }
   }
   .contactinfo{
     float: right;
@@ -70,6 +73,16 @@
       align-items: center;
     }
   }
-
+  #contact{
+    .contactinfo {
+      padding-left: 10%;
+      .soc-icons {
+        margin-top: 48px;
+      }
+    }
+    .phone{
+      border-bottom: 1px solid #e6e9eb;
+    }
+  }
 }
 
