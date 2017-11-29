@@ -14,7 +14,7 @@
 	<!--<link href="<?php bloginfo('template_directory');?>/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />-->
 
 	<?php wp_head();?>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
 </head>
 <body>
 

@@ -279,6 +279,8 @@
     max-width: 125px;
     max-height: 125px;
     margin: 0 auto;
+    animation: wind 20s infinite;
+    animation-delay: 1s;
   }
 }
 @keyframes spin {

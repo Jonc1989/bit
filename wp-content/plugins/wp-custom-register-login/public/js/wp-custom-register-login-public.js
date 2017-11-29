@@ -117,6 +117,16 @@
                 invalid: 'glyphicon glyphicon-remove',
                 validating: 'glyphicon glyphicon-refresh'
             },
+            addOns: {
+                reCaptcha2: {
+                    element: 'captchaContainer',
+                    language: 'en',
+                    theme: 'light',
+                    siteKey: '6LddMDgUAAAAAOAC7nBcPlXzp6YSL0jBEM5xGCmt',
+                    timeout: 120,
+                    message: 'The captcha is not valid'
+                }
+            },
             fields: {
                 wpcrl_fname: {
                     validators: {
@@ -244,7 +254,7 @@
             e.preventDefault();
         }).on('err.form.fv', function(e) {
             // Regenerate the captcha
-            generateCaptcha();
+            //generateCaptcha();
         });
     }
 

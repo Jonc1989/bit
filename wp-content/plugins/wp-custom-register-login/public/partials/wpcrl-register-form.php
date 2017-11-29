@@ -56,7 +56,7 @@
                     <div class="form-group">
                         <input type="password" class="form-control" name="wpcrl_password" id="wpcrl_password" placeholder="Password" >
                     </div>
-                    <div class="form-group">
+                    <div class="form-group pass-confirm">
                         <input type="password" class="form-control" name="wpcrl_password2" id="wpcrl_password2" placeholder="Confirm Password" >
                     </div>
 
@@ -69,6 +69,15 @@
                         </div>
                     <?php } ?>
 
+                    <!--<div class="g-recaptcha" data-sitekey="6LddMDgUAAAAAOAC7nBcPlXzp6YSL0jBEM5xGCmt"
+                         style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>-->
+
+                    <div class="form-group">
+                            <!-- The captcha container -->
+                            <div id="captchaContainer"></div>
+                        <!--style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"-->
+                    </div>
+
                     <input type="hidden" name="wpcrl_current_url" id="wpcrl_current_url" value="<?php echo get_permalink(); ?>" />
                     <input type="hidden" name="redirection_url" id="redirection_url" value="<?php echo get_permalink(); ?>" />
 
@@ -80,7 +89,11 @@
                     ?>
 
                     <div class="form-group">
-                        <label class="agreement-terms"><input type="checkbox" name="agreement_terms" value="">
+                        <label class="agreement-terms">
+                            <div class="agreement-input-wrap">
+                                <input type="checkbox" name="agreement_terms" value="">
+                            </div>
+                            
                                    <span><?php echo __( 'agreement terms text', 'preico' ); ?>
                      <a href="#"><?php echo __( 'agreement terms link', 'preico' ); ?></a> </span>
                         </label>
