@@ -99,6 +99,28 @@ function checkLoginState( registration ) {
 }
 
 
+function vkAuthInfo(response) {
+   if (response.session) {
+       VK.Api.call('users.get', {user_ids: response.session.mid, fields: 'email' }, function(data) {
+           if( data.response )
+           {
+               if( target = "register" ){
+                   jQuery( "#wpcrl_fname" ).val( data.response[ 0 ].first_name );
+                   jQuery( "#wpcrl_lname" ).val( data.response[ 0 ].last_name );
+               }
+           }
+       });
+   } else {
+       console.log('Something wrong with vk');
+   }
+}
+
+function auth(){
+    var url = 'https://oauth.vk.com/authorize?client_id=6265623&scope=email&redirect_uri=http://woodpellets.io?target=register&response_type=token';
+    window.location.href = url;
+}
+
+var target;
 jQuery( document ).ready( function () {
 
     document.getElementById("google-register").onclick = function (e) {
@@ -147,12 +169,65 @@ jQuery( document ).ready( function () {
         checkLoginState(  );
     };
 
+    document.getElementById( "register-vk" ).onclick = function (e) {
+        e.stopPropagation();
+        var url = 'https://oauth.vk.com/authorize?client_id=6265623&scope=email&redirect_uri=http://woodpellets.io?target=register&response_type=token';
+        window.location.href = url;
+    };
+
+    document.getElementById( "vk-login" ).onclick = function (e) {
+        e.stopPropagation();
+        var url = 'https://oauth.vk.com/authorize?client_id=6265623&scope=email&redirect_uri=http://woodpellets.io?target=login&response_type=token';
+        window.location.href = url;
+    };
+
     var url_string = window.location.href;
     var url = new URL(url_string);
-    var token = url.searchParams.get("wpcrl_reset_password_token");
+    var token = url.searchParams.get( "wpcrl_reset_password_token" );
+    target = url.searchParams.get( "target" );console.log(target);
+
+    var vkAccessToken = null;
+    var email = null;
+
+    var hash = window.location.hash.split('&');
+
+
+    hash.forEach( function(element) {
+
+        var params = element.split('=');
+
+        if( params[ 0 ] == '#access_token' ){
+            vkAccessToken = params[ 1 ];
+        }
+
+        if( params[ 0 ] == 'email' ){
+            email = params[ 1 ];
+        }
+
+    });
 
     if( token ){
         jQuery('#loginModal').modal('show');
+    }
+
+    if( vkAccessToken && email ){
+
+        VK.init({
+           apiId: 6265623
+        });
+
+        VK.Auth.getLoginStatus( vkAuthInfo );
+
+
+        if( target == "register" )
+        {
+            jQuery( '#registrationModal' ).modal('show');
+            jQuery( "#wpcrl_email" ).val( email );
+
+        }else if( target = "login" ){
+            searchUser( email )
+        }
+
     }
 
 });

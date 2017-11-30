@@ -199,6 +199,19 @@
     }
   }
 
+  .bg{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+
+    background: url(resources/images/granulas.png)no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   .coin{
     margin: 0 auto;
     width: 80%;

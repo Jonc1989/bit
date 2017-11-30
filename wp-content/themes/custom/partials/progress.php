@@ -12,11 +12,13 @@
 				<div class="circle wrapper">
 
 
+					<div class="bg">
+						<div class="coin">
+							<img class="front" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
+							<img class="back" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
+						</div>
+					</div>
 
-							<div class="coin">
-								<img class="front" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
-								<img class="back" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
-							</div>
 
 
 				</div>

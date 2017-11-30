@@ -12,7 +12,7 @@
 	<link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory');?>/resources/vendor/bxslider/dist/jquery.bxslider.min.css" rel="stylesheet">
 	<!--<link href="<?php bloginfo('template_directory');?>/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />-->
-
+	<script src="//vk.com/js/api/openapi.js?150" type="text/javascript"></script>
 	<?php wp_head();?>
 	<!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
 </head>

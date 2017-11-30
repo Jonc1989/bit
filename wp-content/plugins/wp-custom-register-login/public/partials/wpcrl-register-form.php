@@ -125,12 +125,12 @@
 
             <h2><?php echo __( 'Connect via your favorite network', 'preico' ); ?></h2>
 
-            <script src="//vk.com/js/api/openapi.js?150" type="text/javascript"></script>
+
 
 
             <div class="col-md-12 social-auth text-center">
                 <div class="or"><p><?php echo __( 'Or', 'preico' ); ?></p></div>
-                <div onclick="VK.Auth.login(authInfo);" id="register-vk"></div>
+                <div id="register-vk"></div>
                 <div id="fbregister" class="register-fb"></div>
                 <div id="google-register" class="register-g+"></div>
             </div>
@@ -140,40 +140,29 @@
 
 
             <script type="text/javascript">
-                VK.init({
-                    apiId: 6265623
-                });
+//                VK.init({
+//                    apiId: 6265623
+//                });
 
-//                function auth(){
-//                    var url = 'https://oauth.vk.com/authorize?client_id=6265623&scope=email&redirect_uri=http://woodpellets.io&response_type=token';
+                
+
+
+//                function authInfo(response) {
+//                    if (response.session) {
 //
-//                    var newWin = window.open(url, 'vk-login', 'width=665,height=370')
-//                    newWin.onload = function() {
-//                        var hash = newWin.location.hash
-//                        console.log(hash)
-//                        if (hash.indexOf( 'email' ) != -1){
-//                            console.log(hash.indexOf( 'email' ))
-//                        }
+//                        VK.Api.call('users.get', {user_ids: response.session.mid, fields: 'email' }, function(data) {
+//                            if( data.response ){
+//                                jQuery( "#wpcrl_fname" ).val( data.response[ 0 ].first_name );
+//                                jQuery( "#wpcrl_lname" ).val( data.response[ 0 ].last_name );
+//                            }
+//                        });
+//
+//
+//
+//                    } else {
+//                        console.log('not auth');
 //                    }
 //                }
-
-
-                function authInfo(response) {
-                    if (response.session) {
-
-                        VK.Api.call('users.get', {user_ids: response.session.mid, fields: 'email' }, function(data) {
-                            if( data.response ){
-                                jQuery( "#wpcrl_fname" ).val( data.response[ 0 ].first_name );
-                                jQuery( "#wpcrl_lname" ).val( data.response[ 0 ].last_name );
-                            }
-                        });
-
-
-
-                    } else {
-                        console.log('not auth');
-                    }
-                }
 
 //                function getInitData() {
 //                    var code;
