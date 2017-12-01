@@ -6,7 +6,7 @@
     position: absolute;
     left: -27px;
     border-radius: 55%;
-    display: flex;
+    @include display-flex();
     align-items: center;
     align-content: center;
     p{
@@ -20,7 +20,7 @@
     }
   }
   label{
-    display: flex;
+    @include display-flex();
     align-items: center;
   }
   .modal-content {
@@ -39,7 +39,7 @@
     margin-bottom: 25px;
   }
   .modal-body{
-    background: url(resources/images/bg@3x.png)no-repeat center center;
+    background: url(resources/images/auth-modal-bg.png)no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

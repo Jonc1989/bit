@@ -1,6 +1,6 @@
 <div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="progress" style="background-color: #000000">
 	<div class="container">
-		<div class="col-md-6 col-sm-6 col-xs-12">
+		<div class="col-md-6 col-sm-6 col-xs-12 progressbar">
 
 
             <div class="top-title">

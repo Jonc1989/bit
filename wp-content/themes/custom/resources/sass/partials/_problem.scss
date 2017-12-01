@@ -25,7 +25,7 @@
       height: 100%;
       .tooltips-wrap{
         height: 60%;
-        display: flex;
+        @include display-flex();
         align-items: flex-end;
       }
     }
@@ -134,7 +134,7 @@ input[type="button"]{
     margin: 0 auto;
     position: relative;
     li{
-      display: flex;
+      @include display-flex();
       align-items: center;
       position: relative;
       min-height: 80px;
@@ -296,7 +296,7 @@ input[type="button"]:active, input[type="submit"]:active{
   color: #38414b;
   padding-bottom: 48px;
 
-  display: flex;
+  @include display-flex();
   align-items: center;
   p{
 

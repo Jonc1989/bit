@@ -9,8 +9,7 @@
 		<div class="col-md-6 col-sm-6 col-xs-12 left-side">
 			<div class="yellow-text yellow-bg"><?php echo get_bloginfo( 'name' ) ?></div>
 			<h1><?php echo get_bloginfo( 'description' ) ?></h1>
-			<p>Индустрия по производству
-				пеллет в блокчейне</p>
+			<p><?php echo __( 'Индустрия по производству пеллет в блокчейне', 'preico' ) ?></p>
 
 			<div class="col-md-12 clear-pads recycle">
 				<img src="<?php bloginfo('template_directory');?>/resources/images/recycle.png">
@@ -28,9 +27,7 @@
 				</div>
 			</div>
 			<div class="col-md-12 clear-pads head-description">
-				<p>Экологически чистое, безотходное производство,
-					замкнутого цикла из бозобнобляемых источников
-					энергии и применением новейший ИТ технологий</p>
+				<p><?php echo __( 'Экологически чистое, безотходное производство, замкнутого цикла из бозобнобляемых источников энергии и применением новейший ИТ технологий', 'preico' ) ?></p>
 			</div>
 		</div>
 		<div class="col-md-6 col-sm-6  col-xs-12 right-side">
@@ -56,6 +53,43 @@
                     <div class="bottom-second">
                         <div class="sixth-title">ssssssssss</div>
                     </div>
+				</div>
+			</div>
+			
+			<div class="details-sm">
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/wood.png">
+					<p>Wood</p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/factory-2.png">
+					<p>Wood</p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/factory.png">
+					<p>Wood</p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/electr-factory.png">
+					<p>Wood</p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/farm.png">
+					<p>Wood</p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/warmhouse.png">
+					<p>Wood</p>
 				</div>
 			</div>
 			

@@ -69,7 +69,7 @@
   .document{
     margin-bottom: 10px;
     //height: 75px;
-    display: flex;
+    @include display-flex();
     //width: 220px;
     margin-right: 30px;
     .description{
@@ -83,11 +83,13 @@
     }
   }
   .flex{
+    padding-top: 20px;
+    padding-bottom: 20px;
     align-items: center;
   }
 }
 .flex{
-  display: flex;
+  @include display-flex();
 }
 .flying-token-wrap{
   animation: flyIn 3s;

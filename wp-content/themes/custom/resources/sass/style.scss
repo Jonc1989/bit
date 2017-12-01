@@ -85,7 +85,7 @@ img{
   color: #ffd334;
 }
 .center-horizontaly{
-  display: flex;
+  @include display-flex();
   align-items: center;
 }
 .font15{

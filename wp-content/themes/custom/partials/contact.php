@@ -1,7 +1,7 @@
 <div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="contact">
 	<div class="container border-bottom">
 
-		<h1 class="title">Свяжитесь с нами</h1>
+		<h1 class="title"><?php echo __( 'Свяжитесь с нами', 'preico' ) ?></h1>
 
 		<div class="col-md-12 col-sm-12 col-xs-12 clear-pads">
             <div class="col-md-6 col-sm-12 col-xs-12 contactinfo">
@@ -9,7 +9,7 @@
                     <div class="address">
 
                         <img class="address-icon" src="<?php bloginfo('template_directory');?>/resources/images/icons/address.png">
-                        <p>182250, Псковцкая обл., Себежцкий п н г Себеж, ул. В И Марго д 32</p>
+                        <p><?php echo get_option( 'address_input' ); ?></p>
                     </div>
                     <div class="phone">
 

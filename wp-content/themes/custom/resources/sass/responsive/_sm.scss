@@ -79,7 +79,7 @@
   }
   #subscribe {
     .subscription-container {
-      display: flex;
+      @include display-flex();
       align-items: center;
     }
   }
@@ -307,14 +307,14 @@
   .menu-container {
     //position: absolute;
     ul.nav {
-      display: flex;
+      @include display-flex();
       align-items: center;
       justify-content: center;
     }
   }
   #progress{
     .container {
-      display: flex;
+      @include display-flex();
       align-items: center;
     }
   }
@@ -480,5 +480,16 @@
       margin-right: 5px;
       width: 100%;
     }
+  }
+}
+@media (min-width: 421px){
+
+}
+@media (max-width: 420px){
+  .cycle{
+    display: none;
+  }
+  .details-sm{
+    display: block;
   }
 }
