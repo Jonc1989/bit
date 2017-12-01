@@ -58,10 +58,8 @@ function searchUser( email ) {
 
 function getFacebookUserInfo( response, registration ){
     FB.api('/me?fields=name,email,first_name,last_name',  function(response) {
-        console.log(response);
-
-            if( registration ){
-
+            if( registration )
+            {
                 jQuery( '#wpcrl_fname').val( response.first_name );
                 jQuery( '#wpcrl_lname').val( response.last_name );
                 jQuery( '#wpcrl_email').val( response.email );
@@ -81,7 +79,7 @@ function statusChangeCallback(response, registration) {
     if (response.status === 'connected') {
         getFacebookUserInfo( response, registration );
     } else {
-        FB.login(function(response) { console.log( response );
+        FB.login(function(response) {
             if ( response.authResponse ) {
                 getFacebookUserInfo( response, registration );
             } else {
@@ -100,13 +98,21 @@ function checkLoginState( registration ) {
 
 
 function vkAuthInfo(response) {
-   if (response.session) {
+   if (response.session)
+   {
        VK.Api.call('users.get', {user_ids: response.session.mid, fields: 'email' }, function(data) {
-           if( data.response )
+           if( data.response && data.response[ 0 ].uid == user_id )
            {
-               if( target = "register" ){
+
+               if( target == "register" )
+               {
+                   jQuery( "#wpcrl_email" ).val( email );
                    jQuery( "#wpcrl_fname" ).val( data.response[ 0 ].first_name );
                    jQuery( "#wpcrl_lname" ).val( data.response[ 0 ].last_name );
+                   jQuery( '#registrationModal' ).modal('show');
+
+               }else if( target = "login" ){
+                   searchUser( email )
                }
            }
        });
@@ -121,6 +127,10 @@ function auth(){
 }
 
 var target;
+var vkAccessToken = null;
+var email = null;
+var user_id = null;
+
 jQuery( document ).ready( function () {
 
     document.getElementById("google-register").onclick = function (e) {
@@ -129,12 +139,6 @@ jQuery( document ).ready( function () {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signIn().then(function() {
             var profile = auth2.currentUser.get().getBasicProfile();
-            console.log('ID: ' + profile.getId());
-            console.log('Full Name: ' + profile.getName());
-            console.log('Given Name: ' + profile.getGivenName());
-            console.log('Family Name: ' + profile.getFamilyName());
-            console.log('Image URL: ' + profile.getImageUrl());
-            console.log('Email: ' + profile.getEmail());
 
             jQuery( "#wpcrl_fname" ).val( profile.getGivenName() );
             jQuery( "#wpcrl_lname" ).val( profile.getFamilyName() );
@@ -164,7 +168,7 @@ jQuery( document ).ready( function () {
         checkLoginState( true );
     };
 
-    document.getElementById( "fblogin" ).onclick = function (e) {console.log( 'fblogin');
+    document.getElementById( "fblogin" ).onclick = function (e) {
         e.stopPropagation();
         checkLoginState(  );
     };
@@ -184,10 +188,9 @@ jQuery( document ).ready( function () {
     var url_string = window.location.href;
     var url = new URL(url_string);
     var token = url.searchParams.get( "wpcrl_reset_password_token" );
-    target = url.searchParams.get( "target" );console.log(target);
+    target = url.searchParams.get( "target" );
 
-    var vkAccessToken = null;
-    var email = null;
+
 
     var hash = window.location.hash.split('&');
 
@@ -204,30 +207,23 @@ jQuery( document ).ready( function () {
             email = params[ 1 ];
         }
 
+        if( params[ 0 ] == 'user_id' ){
+            user_id = params[ 1 ];
+        }
+
     });
 
     if( token ){
         jQuery('#loginModal').modal('show');
     }
 
-    if( vkAccessToken && email ){
-
+    if( vkAccessToken && email && user_id )
+    {
         VK.init({
            apiId: 6265623
         });
 
         VK.Auth.getLoginStatus( vkAuthInfo );
-
-
-        if( target == "register" )
-        {
-            jQuery( '#registrationModal' ).modal('show');
-            jQuery( "#wpcrl_email" ).val( email );
-
-        }else if( target = "login" ){
-            searchUser( email )
-        }
-
     }
 
 });
