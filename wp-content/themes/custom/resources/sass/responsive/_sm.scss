@@ -492,4 +492,9 @@
   .details-sm{
     display: block;
   }
+  #progress{
+    .divided-blocks > div{
+      width: 100%;
+    }
+  }
 }
