@@ -266,26 +266,29 @@
     margin-top: 70px;
   }
   .second-title, .third-title{
-    margin-top: 65px;    padding: 0px 15px;
+    //margin-top: 65px;
+    //padding: 0px 15px;
   }
   .third-title, .fifth-title{
     float: right;
 
   }
   .fourth-title, .fifth-title{
-      margin-top: 140px;
-    padding: 0px 15px;
+    margin-top: 125px;
   }
   .second-title, .third-title, .fourth-title, .fifth-title{
     display: inline-block;
   }
   .bottom-second{
     position: absolute;
-    bottom: -25px;
+    bottom: -35px;
     left: 0px;
     width: 100%;
   }
-  
+  .top-first, .second-title, .third-title, .fourth-title, .fifth-title, .sixth-title{
+    font-size: 11px;
+    text-align: center;
+  }
 }
 .coin-wrap{
   position: absolute;
