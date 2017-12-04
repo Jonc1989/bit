@@ -74,3 +74,19 @@ msgstr "Завод древесных пеллет - мощность 120 000 т
 
 msgid "Or"
 msgstr "Or"
+
+msgid "Days"
+msgstr "Days"
+
+msgid "Hours"
+msgstr "Hours"
+
+msgid "Minutes"
+msgstr "Minutes"
+
+msgid "Seconds"
+msgstr "Seconds"
+
+msgid "До конца PRE ICO"
+msgstr "До конца PRE ICO"
+

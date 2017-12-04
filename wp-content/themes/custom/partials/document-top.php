@@ -7,8 +7,7 @@
 		<div class="col-md-8 col-sm-8 col-xs-12">
 			<div class="yellow-text yellow-bg"><?php echo get_bloginfo( 'name' ) ?></div>
 			<h1><?php echo get_bloginfo( 'description' ) ?></h1>
-			<p>Индустрия по производству
-				пеллет в блокчейне</p>
+			<p><?php echo __( 'Индустрия по производству пеллет в блокчейне', 'preico' ) ?></p>
 
 			<div class="clear-pads col-md-12 col-sm-12 col-xs-12 documents rounded">
 				<?php if( get_field( 'documents' ) ){
@@ -62,7 +61,7 @@
 										<?php if( get_sub_field( 'link_name' )){ ?>
 											<span><?php echo get_sub_field('link_name');?></span>
 										<?php } else { ?>
-											<span>|<?php __( 'Url', 'preico' ) ?> </span>
+											<span><?php echo get_sub_field('link_url');?></span>
 										<?php } ?>
 									</a>
 								<?php } ?>

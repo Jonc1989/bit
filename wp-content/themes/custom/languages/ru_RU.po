@@ -4749,3 +4749,15 @@ msgstr "Завод древесных пеллет - мощность 120 000 т
 
 msgid "Or"
 msgstr "Завод древесных пеллет - мощность 120 000 тонн/год"
+
+msgid "Days"
+msgstr "Days"
+
+msgid "Hours"
+msgstr "Hours"
+
+msgid "Minutes"
+msgstr "Minutes"
+
+msgid "Seconds"
+msgstr "Seconds"

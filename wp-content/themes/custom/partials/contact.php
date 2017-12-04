@@ -14,7 +14,7 @@
                     <div class="phone">
 
                         <img class="phone-icon" src="<?php bloginfo('template_directory');?>/resources/images/icons/phone.png">
-                        <p>+ 371 29120386</p>
+                        <p><?php echo get_option( 'phone_input' ); ?></p>
                     </div>
                 </div>
 
