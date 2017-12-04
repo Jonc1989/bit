@@ -15,7 +15,7 @@
 
 <div id="wpcrlLoginSection" class="container-fluid">
 
-        <div class="col-xs-8 col-sm-7 col-md-7 left">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 left">
             <?php
             $wpcrl_redirect_settings = get_option('wpcrl_redirect_settings');
             $wpcrl_form_settings = get_option('wpcrl_form_settings');
@@ -58,10 +58,10 @@
 
 
                     <div class="col-md-12 clear-pads">
-                        <div class="col-md-6 col-sm-6 login-btn-wrap">
+                        <div class="col-md-6 col-sm-12 login-btn-wrap">
                             <button type="submit" class="login-submit"><?php _e($submit_button_text, $this->plugin_name); ?></button>
                         </div>
-                        <div class="col-md-6 col-sm-6 reset-btn-wrap">
+                        <div class="col-md-6 col-sm-12 reset-btn-wrap">
                             <?php
                             //render forgot password button
                             if($wpcrl_form_settings['wpcrl_enable_forgot_password']){
@@ -75,6 +75,15 @@
                     </div>
 
                 </form>
+
+
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 social-auth text-center mobile">
+                    <p><?php echo __( 'Or', 'preico' ); ?></p>
+                    <div class="vk-login"></div>
+                    <div class="fblogin"></div>
+                    <div class="google-login"></div>
+                </div>
                 <?php
                     //render the reset password form
                     if($wpcrl_form_settings['wpcrl_enable_forgot_password']){
@@ -94,14 +103,14 @@
 
             ?>
         </div>
-        <div class="col-xs-4 col-sm-5 col-md-5 clear-pads soc-auth-wrapper right">
+        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 soc-auth-wrapper hidden-sm hidden-xs right">
 
             <h2><?php echo __( 'Connect via your favorite network', 'preico' ); ?></h2>
             <div class="col-md-12 col-xs-12 col-sm-12 social-auth text-center">
                 <div class="or"><p><?php echo __( 'Or', 'preico' ); ?></p></div>
-                <div id="vk-login"></div>
-                <div id="fblogin"></div>
-                <div id="google-login"></div>
+                <div class="vk-login"></div>
+                <div class="fblogin"></div>
+                <div class="google-login"></div>
             </div>
         </div>
 

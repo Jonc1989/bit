@@ -133,8 +133,7 @@ var user_id = null;
 
 jQuery( document ).ready( function () {
 
-    document.getElementById("google-register").onclick = function (e) {
-        e.stopPropagation();
+    jQuery(".google-register").click( function (e) {
 
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signIn().then(function() {
@@ -145,45 +144,39 @@ jQuery( document ).ready( function () {
             jQuery( "#wpcrl_email" ).val( profile.getEmail() );
         });
 
-    };
+    });
 
-    document.getElementById("google-login").onclick = function (e) {
-        e.stopPropagation();
-
+    jQuery(".google-login").click( function (e) {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signIn().then(function() {
             var profile = auth2.currentUser.get().getBasicProfile();
 
             searchUser( profile.getEmail() );
         });
-
-    };
-
+    });
 
 
 
-
-    document.getElementById( "fbregister" ).onclick = function (e) {
-        e.stopPropagation();
+    jQuery(".fbregister").click( function (e) {
         checkLoginState( true );
-    };
+    });
 
-    document.getElementById( "fblogin" ).onclick = function (e) {
-        e.stopPropagation();
-        checkLoginState(  );
-    };
+    jQuery(".fblogin").click( function (e) {
+        checkLoginState();
+    });
 
-    document.getElementById( "register-vk" ).onclick = function (e) {
-        e.stopPropagation();
+
+    
+    jQuery(".register-vk").click( function (e) {
         var url = 'https://oauth.vk.com/authorize?client_id=6265623&scope=email&redirect_uri=http://woodpellets.io?target=register&response_type=token';
         window.location.href = url;
-    };
+    });
 
-    document.getElementById( "vk-login" ).onclick = function (e) {
-        e.stopPropagation();
+    jQuery(".vk-login").click( function (e) {
         var url = 'https://oauth.vk.com/authorize?client_id=6265623&scope=email&redirect_uri=http://woodpellets.io?target=login&response_type=token';
         window.location.href = url;
-    };
+    });
+
 
     var url_string = window.location.href;
     var url = new URL(url_string);

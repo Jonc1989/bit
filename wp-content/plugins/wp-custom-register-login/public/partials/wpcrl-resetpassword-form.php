@@ -15,7 +15,7 @@
 <?php $is_url_has_token = $_GET['wpcrl_reset_password_token'];?>
 <div id="wpcrlResetPasswordSection" class="container-fluid <?php echo empty($is_url_has_token) ? ' hidden' : 'ds' ?>">
     <div class="row">
-        <div class="col-xs-8 col-md-10"> 
+        <div class="col-xs-12 col-md-10">
             <?php
             $wpcrl_form_settings = get_option('wpcrl_form_settings');
 

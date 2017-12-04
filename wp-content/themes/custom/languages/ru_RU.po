@@ -4709,7 +4709,7 @@ msgid "Add widgets here to appear in your sidebar."
 msgstr "Add widgets here to appear in your sidebar XXX"
 
 msgid "Connect via your favorite network"
-msgstr "подключитесь через вашу любимую сеть"
+msgstr "Подключитесь через вашу любимую сеть"
 
 msgid "Инвестировать в реальное предприятие"
 msgstr "Инвестировать в реальное предприятие"
@@ -4745,4 +4745,7 @@ msgid "Лесозавод - мощность 120 000 м3/год"
 msgstr "Лесозавод - мощность 120 000 м3/год"
 
 msgid "Завод древесных пеллет - мощность 120 000 тонн/год"
+msgstr "Завод древесных пеллет - мощность 120 000 тонн/год"
+
+msgid "Or"
 msgstr "Завод древесных пеллет - мощность 120 000 тонн/год"

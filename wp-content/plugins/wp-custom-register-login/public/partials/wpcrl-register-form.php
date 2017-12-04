@@ -15,7 +15,7 @@
 
 <div id="wpcrlRegisterSection" class="container-fluid">
 
-        <div class="col-xs-8 col-md-7 left">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 left">
             <?php
             $wpcrl_form_settings = get_option('wpcrl_form_settings');
             $form_heading = empty($wpcrl_form_settings['wpcrl_signup_heading']) ? 'Register' : $wpcrl_form_settings['wpcrl_signup_heading'];
@@ -107,8 +107,15 @@
 
                             ?></button>
                     </div>
-
                 </form>
+
+
+                <div class="social-auth text-center mobile">
+                    <p><?php echo __( 'Or', 'preico' ); ?></p>
+                    <div class="register-vk"></div>
+                    <div class="fbregister register-fb"></div>
+                    <div class="google-register register-g+"></div>
+                </div>
                 <?php
             else:
                 $current_user = wp_get_current_user();
@@ -121,7 +128,7 @@
             ?>
         </div>
 
-        <div class="col-xs-4 col-md-5 clear-pads soc-auth-wrapper right">
+        <div class="col-lg-5 col-md-5 hidden-sm hidden-xs soc-auth-wrapper right">
 
             <h2><?php echo __( 'Connect via your favorite network', 'preico' ); ?></h2>
 
@@ -130,9 +137,9 @@
 
             <div class="col-md-12 social-auth text-center">
                 <div class="or"><p><?php echo __( 'Or', 'preico' ); ?></p></div>
-                <div id="register-vk"></div>
-                <div id="fbregister" class="register-fb"></div>
-                <div id="google-register" class="register-g+"></div>
+                <div class="register-vk"></div>
+                <div class="fbregister register-fb"></div>
+                <div class="google-register register-g+"></div>
             </div>
 
 

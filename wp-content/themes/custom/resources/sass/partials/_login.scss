@@ -4,7 +4,7 @@
     width: 55px;
     height: 55px;
     position: absolute;
-    left: -27px;
+    left: -43px;
     border-radius: 55%;
     @include display-flex();
     align-items: center;
@@ -58,11 +58,7 @@
   }
 
 }
-#loginModal{
-  .left, .right{
-    height: 372px;
-  }
-}
+
 #wpcrlRegisterSection, #wpcrlLoginSection{
   .left{
     padding-left: 30px;
@@ -177,8 +173,18 @@
   div:last-of-type{
     margin-right: 0px;
   }
+  &.mobile{
+    display: none;
+    margin-top: 25px;
+    font-weight: bold;
+    div{
+      width: 40px;
+      height: 40px;
+    }
+
+  }
 }
-#register-vk, #vk-login{
+.register-vk, .vk-login{
   background: url( resources/images/icons/55/vk.png )no-repeat center center;
 
   -webkit-background-size: cover;
@@ -186,7 +192,7 @@
   -o-background-size: cover;
   background-size: cover;
 }
-#fbregister, #fblogin{
+.fbregister, .fblogin{
   background: url( resources/images/icons/55/fb.png )no-repeat center center;
 
   -webkit-background-size: cover;
@@ -194,7 +200,7 @@
   -o-background-size: cover;
   background-size: cover;
 }
-#google-register, #google-login{
+.google-register, .google-login{
   background: url( resources/images/icons/55/g+.png )no-repeat center center;
 
   -webkit-background-size: cover;
@@ -202,12 +208,12 @@
   -o-background-size: cover;
   background-size: cover;
 }
-#register-vk, #fbregister, #google-register, #vk-login, #fblogin, #google-login{
+.register-vk, .fbregister, .google-register, .vk-login, .fblogin, .google-login{
   cursor: pointer;
 }
 .agreement-input-wrap{
   width: 20px;
-  height: 20px;
+  height: 100%;
   display: inline-block;
   margin-right: 10px;
 }

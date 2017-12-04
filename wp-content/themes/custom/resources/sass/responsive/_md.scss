@@ -84,5 +84,15 @@
       border-bottom: 1px solid #e6e9eb;
     }
   }
+  .register-login-modals{
+    .modal-dialog {
+      width: 850px;
+    }
+  }
+  #loginModal{
+    .left, .right{
+      height: 372px;
+    }
+  }
 }
 
