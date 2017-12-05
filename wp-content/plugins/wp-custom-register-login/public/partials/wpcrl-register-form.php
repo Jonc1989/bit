@@ -107,15 +107,16 @@
 
                             ?></button>
                     </div>
+                    <div class="social-auth text-center mobile">
+                        <p><?php echo __( 'Connect via your favorite network', 'preico' ); ?></p>
+                        <div class="register-vk"></div>
+                        <div class="fbregister register-fb"></div>
+                        <div class="google-register register-g+"></div>
+                    </div>
                 </form>
 
 
-                <div class="social-auth text-center mobile">
-                    <p><?php echo __( 'Or', 'preico' ); ?></p>
-                    <div class="register-vk"></div>
-                    <div class="fbregister register-fb"></div>
-                    <div class="google-register register-g+"></div>
-                </div>
+
                 <?php
             else:
                 $current_user = wp_get_current_user();

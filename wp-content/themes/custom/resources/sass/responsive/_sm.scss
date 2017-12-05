@@ -110,7 +110,7 @@
         margin-top: 50px;
       }
       .second-title, .third-title{
-        margin-top: 50px;
+        margin-top: 0px;
         padding: 0px;
       }
       .fourth-title, .fifth-title {
@@ -309,6 +309,7 @@
   .reset-btn-wrap{
     padding-left: 0px;
   }
+
 }
 
 
@@ -494,7 +495,23 @@
     font-size: 28px;
     margin-bottom: 18px;
   }
-
+  #firstModal, #secondModal, #thirdModal, #fourthModal{
+    h4{
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 14px;
+    }
+    .modal-body{
+      padding: 15px;
+    }
+    .close {
+      color: #000;
+      top: 10px;
+      right: 15px;
+    }
+  }
 }
 @media (max-width: 600px){
   #counter{

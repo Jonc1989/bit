@@ -66,7 +66,7 @@
                 <p class="first">Hard Cap </p>
                 <p class="second">4000 ETH goal</p>
             </div>
-			<div class="curently-recived">Currantly received <span class="yellow">128.745 ETH</span></div>
+			<div class="curently-recived"><?php echo __( 'Currantly received', 'preico' ) ?> <span class="yellow">128.745 ETH</span></div>
 		</div>
 
 
@@ -85,10 +85,10 @@
             </div>
             <p class="bold">Minimal 0.1 ETH</p>
 
-            <p class="font15">Для инвестирования, отправьте Эфир на официальный
+            <p class="font15"><?php echo __( 'Для инвестирования, отправьте Эфир на официальный
                 смарт контракт краудсейла.Нельзя переводить с
                 обменников, только ETH кошельки. При транзакции,
-                пожалуйста, ставте GAS LIMIT 200000.
+                пожалуйста, ставте GAS LIMIT 200000.', 'preico' ) ?>
             </p>
 			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads divided-blocks">
 	            <div class="col-md-6 col-sm-12 col-xs-6 clear-pads border-right">

@@ -50,7 +50,7 @@
 		</div>
 
 		<div class="col-md-12 clear-pads">
-			<div class="copyright">Copyright © ПРОЕКТ “WOOD PELLETS”</div>
+			<div class="copyright"><?php echo __( 'Copyright © ПРОЕКТ “WOOD PELLETS”', 'preico' ) ?></div>
 		</div>
 	</div>
 

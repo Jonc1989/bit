@@ -341,3 +341,30 @@ input[type="button"]:active, input[type="submit"]:active{
     }
   }
 }
+#firstModal, #secondModal, #thirdModal, #fourthModal{
+  padding-right: 0px!important;
+  h4{
+    position: relative;
+    font-family: 'RobotoBold', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.39;
+    text-align: center;
+    color: #38414b;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: left;
+    color: #9099a3;
+  }
+  .modal-body{
+    padding: 30px;
+  }
+  .close {
+    color: #000;
+    top: 10px;
+    right: 15px;
+  }
+}

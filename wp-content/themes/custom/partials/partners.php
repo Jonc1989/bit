@@ -1,6 +1,6 @@
 <div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="partners">
 	<div class="container">
-		<h1 class="title">Партнеры</h1>
+		<h1 class="title"><?php echo __( 'Партнеры', 'preico' ) ?></h1>
 
 		<?php
 		$args = array(

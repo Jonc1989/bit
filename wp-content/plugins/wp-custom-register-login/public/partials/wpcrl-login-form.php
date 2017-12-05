@@ -73,17 +73,17 @@
                         </div>
 
                     </div>
-
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 social-auth text-center mobile">
+                        <p><?php echo __( 'Connect via your favorite network', 'preico' ); ?></p>
+                        <div class="vk-login"></div>
+                        <div class="fblogin"></div>
+                        <div class="google-login"></div>
+                    </div>
                 </form>
 
 
 
-                <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12 social-auth text-center mobile">
-                    <p><?php echo __( 'Or', 'preico' ); ?></p>
-                    <div class="vk-login"></div>
-                    <div class="fblogin"></div>
-                    <div class="google-login"></div>
-                </div>
+                
                 <?php
                     //render the reset password form
                     if($wpcrl_form_settings['wpcrl_enable_forgot_password']){
