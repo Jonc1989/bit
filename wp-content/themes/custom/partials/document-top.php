@@ -4,6 +4,13 @@
 
 	<div class="container document-container">
 
+		<div class="col-md-4 col-sm-4 col-xs-12 right-md">
+			<div class="flying-token-wrap">
+				<img class="token2" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
+
+			</div>
+		</div>
+		
 		<div class="col-md-8 col-sm-8 col-xs-12">
 			<div class="yellow-text yellow-bg"><?php echo get_bloginfo( 'name' ) ?></div>
 			<h1><?php echo get_bloginfo( 'description' ) ?></h1>
@@ -71,14 +78,8 @@
 				} ?>
 			</div>
 			
-
-
 		</div>
-		<div class="col-md-4 col-sm-4 col-xs-12">
-			<div class="flying-token-wrap">
-				<img class="token2" src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
-
-			</div>
-		</div>
+		
+		
 	</div>
 </div> 

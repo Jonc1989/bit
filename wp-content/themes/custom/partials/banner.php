@@ -39,33 +39,33 @@
                 </div>
 				<div class="titles">
                     <div class="top-first">
-                        <div class="first-title" style="width: 200px; margin: 0 auto;    margin-bottom: 40px;">
+                        <div class="first-title">
 	                        <?php echo __( 'Когенерационная станция - электрическая мощность 4,5 МWТ - тепловая мощность 14,74 МWТ', 'preico' ) ?>
                         </div>
                     </div>
 
 
                     <div class="top-second">
-                        <div class="second-title" style="width: 190px;text-align: center;margin-left: -39px;">
+                        <div class="second-title">
 	                        <?php echo __( 'Завод древесных пеллет - мощность 120 000 тонн/год', 'preico' ) ?>
                         </div>
-                        <div class="third-title" style="width: 140px; text-align: center;margin-right: -19px;">
+                        <div class="third-title">
 	                        <?php echo __( 'Mайнинг - фермa 4,5 MWT 6750 Th/s', 'preico' ) ?>
                         </div>
                     </div>
 
                     <div class="bottom-first">
-                        <div class="fourth-title" style="width: 150px;margin-left: -27px;">
+                        <div class="fourth-title">
 
 	                        <?php echo __( 'Лесозавод - мощность 120 000 м3/год', 'preico' ) ?>
                         </div>
-                        <div class="fifth-title" style="width: 130px;margin-right: -10px;">
+                        <div class="fifth-title">
 	                        <?php echo __( 'Тепличный комплекс выращивание 2 млн саженцев ели /год', 'preico' ) ?>
 
                         </div>
                     </div>
                     <div class="bottom-second">
-                        <div class="sixth-title" style="width: 200px;margin: 0 auto;">
+                        <div class="sixth-title">
 	                        <?php echo __( 'Лесные ресурсы - площадь лесного фонда 71 967 га', 'preico' ) ?>
 
                         </div>
@@ -75,38 +75,40 @@
 			
 			<div class="details-sm">
 				<div>
-					<img src="<?php bloginfo('template_directory');?>/resources/images/wood.png">
-					<p>Wood</p>
-					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
-				</div>
-
-				<div>
-					<img src="<?php bloginfo('template_directory');?>/resources/images/factory-2.png">
-					<p>Wood</p>
-					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
-				</div>
-
-				<div>
-					<img src="<?php bloginfo('template_directory');?>/resources/images/factory.png">
-					<p>Wood</p>
-					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
-				</div>
-
-				<div>
 					<img src="<?php bloginfo('template_directory');?>/resources/images/electr-factory.png">
-					<p>Wood</p>
+					<p><?php echo __( 'Когенерационная станция - электрическая мощность 4,5 МWТ - тепловая мощность 14,74 МWТ', 'preico' ) ?></p>
 					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
 				</div>
 
 				<div>
 					<img src="<?php bloginfo('template_directory');?>/resources/images/farm.png">
-					<p>Wood</p>
+
+					<p><?php echo __( 'Mайнинг - фермa 4,5 MWT 6750 Th/s', 'preico' ) ?></p>
 					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
 				</div>
 
 				<div>
 					<img src="<?php bloginfo('template_directory');?>/resources/images/warmhouse.png">
-					<p>Wood</p>
+
+					<p><?php echo __( 'Тепличный комплекс выращивание 2 млн саженцев ели /год', 'preico' ) ?></p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/wood.png">
+					<p><?php echo __( 'Лесные ресурсы - площадь лесного фонда 71 967 га', 'preico' ) ?></p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/factory-2.png">
+					<p><?php echo __( 'Лесозавод - мощность 120 000 м3/год', 'preico' ) ?></p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/factory.png">
+					<p><?php echo __( 'Завод древесных пеллет - мощность 120 000 тонн/год', 'preico' ) ?></p>
 				</div>
 			</div>
 			

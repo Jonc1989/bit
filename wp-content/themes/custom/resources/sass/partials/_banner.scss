@@ -265,10 +265,29 @@
   .top-first{
     margin-top: 70px;
   }
-  .second-title, .third-title{
-    //margin-top: 65px;
-    //padding: 0px 15px;
+
+
+
+  .first-title{
+    width: 200px; margin: 0 auto;    margin-bottom: 40px;
   }
+  .second-title{
+    width: 190px;text-align: center;margin-left: -39px;
+  }
+  .third-title{
+    width: 140px; text-align: center;margin-right: -19px;
+  }
+  .fourth-title{
+    width: 150px;margin-left: -27px;
+  }
+  .fifth-title{
+    width: 130px;margin-right: -10px;
+  }
+  .sixth-title{
+    width: 200px;margin: 0 auto;
+  }
+
+
   .third-title, .fifth-title{
     float: right;
 

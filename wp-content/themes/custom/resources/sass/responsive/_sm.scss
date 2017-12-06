@@ -309,7 +309,32 @@
   .reset-btn-wrap{
     padding-left: 0px;
   }
-
+  .titles{
+    .first-title{
+      margin-bottom: 23px;
+    }
+    .second-title {
+      margin-left: -66px;
+    }
+    .third-title {
+      margin-right: -30px;
+    }
+    .fourth-title {
+      margin-left: -46px;
+    }
+    .fifth-title {
+      margin-right: -28px;
+    }
+  }
+  #banner .titles{
+    .fourth-title, .fifth-title {
+      margin-top: 92px;
+    }
+  }
+  .coin-wrap img {
+    max-width: 95px;
+    max-height: 95px;
+  }
 }
 
 
@@ -355,6 +380,15 @@
       align-items: center;
     }
   }
+  .rounded .document {
+    margin-right: 30px;
+  }
+  .right-md{
+    float: right;
+  }
+}
+.right-md{
+  min-height: 150px;
 }
 @media (max-width: 767px){
   h1, .title{
@@ -512,6 +546,14 @@
       right: 15px;
     }
   }
+
+  .document{
+    margin-bottom: 15px;
+    span {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
 }
 @media (max-width: 600px){
   #counter{
@@ -555,16 +597,16 @@
 
 
 }
-@media (min-width: 421px){
-
-}
-@media (max-width: 420px){
+@media (max-width: 480px){
   .cycle{
     display: none;
   }
   .details-sm{
     display: block;
   }
+}
+@media (max-width: 420px){
+
   #progress{
     .divided-blocks > div{
       width: 100%;
