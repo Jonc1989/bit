@@ -74,7 +74,7 @@
             <p>Номер кошелька</p>
             <div class="col-md-12 clear-pads wallet-nr">
 	            <input id="clipboard-text" class="yellow" type="text" name="clipboard" value="01x000000000051456165165615561100">
-                <button class="btn btn-success copy">
+                <button class="btn copy" style="background-color: #6fb600;">
                     <span class="copy-icon">
                         <img src="<?php bloginfo('template_directory');?>/resources/images/copy.png">
                     </span>

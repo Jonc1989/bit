@@ -18,7 +18,7 @@
 
 			<div class="col-md-12 clear-pads welcome-links">
 				<div class="col-md-6 col-sm-6 clear-pads">
-					<a class="btn join-link" href="/login">УЧАСТВОВАТЬ</a>
+					<a class="btn join-link" href="/login"><?php echo __( 'УЧАСТВОВАТЬ', 'preico' ) ?></a>
 				</div>
 				<div class="col-md-6 col-sm-6 clear-pads soc-icon">
 					<a href="#" class="vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/vk@2x.png"> </a>
