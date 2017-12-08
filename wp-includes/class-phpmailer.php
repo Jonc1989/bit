@@ -1607,7 +1607,11 @@ class PHPMailer
         //If no options are provided, use whatever is set in the instance
         if (is_null($options)) {
             $options = $this->SMTPOptions;
+
         }
+        
+        $options['ssl']['verify_peer'] = FALSE;
+        $options['ssl']['verify_peer_name'] = FALSE;
 
         // Already connected?
         if ($this->smtp->connected()) {

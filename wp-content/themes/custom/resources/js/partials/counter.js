@@ -26,37 +26,60 @@ function checkCounter() {
                     var distance = countDownDate - now;
 
                     // Time calculations for days, hours, minutes and seconds
-                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24)); console.log( days )
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); console.log( jQuery( '.counter-wrap .days .counter-number' ).text() )
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); console.log( minutes )
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000); console.log( seconds )
 
-                    if(  jQuery( '.counter-wrap .days .counter-number' ).text() != days ){
+                    if(  jQuery( '.counter-wrap .days .counter-number' ).text() != days && days >= 0 ){
                         jQuery( '.counter-wrap .days .counter-number' ).text( days );
+                    }else{
+                        if( days >= 0 ){
+                            jQuery( '.counter-wrap .days .counter-number' ).text( days );
+                        }else{
+                            jQuery( '.counter-wrap .days .counter-number' ).text( 0 );
+                        }
                     }
 
 
-                    if( jQuery( '.counter-wrap .hours .counter-number' ).text() != hours ){
+                    if( jQuery( '.counter-wrap .hours .counter-number' ).text() != hours && hours >= 0 ){
                         jQuery( '.counter-wrap .hours .counter-number' ).hide();
                         jQuery( '.counter-wrap .hours .counter-number' ).text( hours );
                         jQuery( '.counter-wrap .hours .counter-number' ).fadeIn( "slow");
                     }else{
-                        //jQuery( '.counter-wrap .hours .counter-number' ).text( hours );
+                        if( hours >= 0 ){
+                            jQuery( '.counter-wrap .hours .counter-number' ).text( hours );
+                        }else{
+                            jQuery( '.counter-wrap .hours .counter-number' ).text( 0 );
+                        }
                     }
 
 
-                    if( jQuery( '.counter-wrap .minutes .counter-number' ).text() != minutes ){
+                    if( jQuery( '.counter-wrap .minutes .counter-number' ).text() != minutes && minutes >= 0 ){
                         jQuery( '.counter-wrap .minutes .counter-number' ).hide();
                         jQuery( '.counter-wrap .minutes .counter-number' ).text( minutes );
                         jQuery( '.counter-wrap .minutes .counter-number' ).fadeIn( "slow");
                     }else{
-                        //jQuery( '.counter-wrap .minutes .counter-number' ).text( minutes );
+                        if( minutes >= 0 ){
+                            jQuery( '.counter-wrap .minutes .counter-number' ).text( minutes );
+                        }else{
+                            jQuery( '.counter-wrap .minutes .counter-number' ).text( 0 );
+                        }
+                    }
+
+                    if( jQuery('.counter-wrap .seconds .counter-number').text() != seconds && seconds >= 0 ){
+                        jQuery( '.counter-wrap .seconds .counter-number' ).hide();
+                        jQuery( '.counter-wrap .seconds .counter-number' ).text( seconds );
+                        jQuery( '.counter-wrap .seconds .counter-number' ).fadeIn( "slow");
+                    }else{
+                        if( minutes >= 0 ){
+                            jQuery( '.counter-wrap .seconds .counter-number' ).text( seconds );
+                        }else{
+                            jQuery( '.counter-wrap .seconds .counter-number' ).text( 0 );
+                        }
                     }
 
 
-                    jQuery( '.counter-wrap .seconds .counter-number' ).hide();
-                    jQuery( '.counter-wrap .seconds .counter-number' ).text( seconds );
-                    jQuery( '.counter-wrap .seconds .counter-number' ).fadeIn( "slow");
 
                     // If the count down is finished, write some text
                     if (distance < 0) {

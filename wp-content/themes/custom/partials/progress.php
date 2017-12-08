@@ -83,6 +83,11 @@
                     </span>
                 </button>
             </div>
+			<?php if( get_field( 'qr' )){?>
+			<div class="col-md-12 clear-pads qr">
+				<img src="<?php echo get_field( 'qr' ); ?>">
+			</div>
+			<?php } ?>
             <p class="bold">Minimal 0.1 ETH</p>
 
             <p class="font15"><?php echo __( 'Для инвестирования, отправьте Эфир на официальный

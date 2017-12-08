@@ -95,7 +95,7 @@
       font-size: 30px;
     }
     p {
-      font-size: 20px;
+      font-size: 19px;
       margin-bottom: 15px;
     }
     .join-link, .header-opt-content{
@@ -554,6 +554,9 @@
       line-height: 1.4;
     }
   }
+  .qr{
+    display: none;
+  }
 }
 @media (max-width: 600px){
   #counter{
@@ -612,4 +615,23 @@
       width: 100%;
     }
   }
+}
+@media (max-width: 350px){
+
+  #progress{
+    .wallet-nr #clipboard-text {
+      width: 220px;
+    }
+    .wallet .wallet-nr img {
+      width: 15px;
+      height: 15px;
+    }
+    .wallet-nr .btn {
+      padding: 3px 5px;
+    }
+    .wallet-nr #clipboard-text {
+      margin-right: 0px;
+    }
+  }
+
 }

@@ -11,7 +11,7 @@ function initSlider( className ){
         minSlides:3,
         maxSlides: 5,
         moveSlides:1,
-        speed:1000,
+        speed:400,
         useCSS: false,
         pager:!1,
         pause:3000,
