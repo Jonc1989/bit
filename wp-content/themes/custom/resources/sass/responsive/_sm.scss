@@ -335,6 +335,9 @@
     max-width: 95px;
     max-height: 95px;
   }
+  .openqr{
+    display: none;
+  }
 }
 
 
@@ -554,9 +557,7 @@
       line-height: 1.4;
     }
   }
-  .qr{
-    display: none;
-  }
+
 }
 @media (max-width: 600px){
   #counter{

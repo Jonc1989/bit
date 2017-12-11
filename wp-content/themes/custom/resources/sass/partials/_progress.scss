@@ -26,15 +26,22 @@
       width: 25px;
       height: 25px;
     }
-    .qr{
-      img{
-        max-width: 100px;
-        max-height: 100px;
-        margin-top: 21px;
-        margin-bottom: 20px;
-      }
+
+  }
+  .copy{
+    margin-right: 15px;
+    margin-left: 15px;
+    img{
+      width: 20px;
+      height: 20px;
     }
   }
+
+
+
+
+
+
 
   .first{
     font-family: 'RobotoBlack', sans-serif;
@@ -85,4 +92,35 @@
   img{
     display: none;
   }
+}
+.qrcode{
+  margin: 0 auto;
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+}
+#qrModal{
+  .modal-dialog {
+    width: 100%;
+  }
+  .modal-content {
+    background-color: transparent;
+  }
+}
+.instruction-file{    margin-bottom: 15px;
+  a{
+    font-size: 15px;
+    color: white;
+
+  }
+
+}
+@media (min-width: 768px)
+{
+  #qrModal{
+    .modal-dialog {
+      width: 300px;
+    }
+  }
+
 }

@@ -7,6 +7,9 @@ jQuery(document).ready(function () {
         jQuery('#videoModal').css( 'display', 'flex' );
     });
 
+    jQuery('#qrModal').on('show.bs.modal', function () {
+        jQuery('#qrModal').css( 'display', 'flex' );
+    });
     // jQuery('#firstModal').on('show.bs.modal', function () {
     //     jQuery('#firstModal').css( 'display', 'flex' );
     // });

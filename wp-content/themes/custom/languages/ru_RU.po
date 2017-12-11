@@ -4824,3 +4824,12 @@ msgstr "Наша команда"
 
 msgid "УЧАСТВОВАТЬ"
 msgstr "УЧАСТВОВАТЬ"
+
+msgid "Копровать"
+msgstr "Копровать"
+
+msgid "Oткрить QR код"
+msgstr "Oткрить QR код"
+
+msgid "Road map"
+msgstr "Карта дорогп"

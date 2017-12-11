@@ -5,7 +5,7 @@ msgstr ""
 "POT-Creation-Date: 2016-09-30 17:43+0300\n"
 "POT-Revision-Date: Mon Jul 25 2016 08:51:33 GMT+0700 (SE Asia Standard Time)"
 "\n"
-"PO-Revision-Date: 2017-12-06 16:51+0000\n"
+"PO-Revision-Date: 2017-12-11 17:06+0000\n"
 "Language-Team: English (United States)\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
@@ -80,24 +80,22 @@ msgstr "Свяжитесь с нами"
 msgid ""
 "Когенерационная станция - электрическая мощность 4,5 МWТ - тепловая мощность "
 "14,74 МWТ"
-msgstr ""
-"Когенерационная станция - электрическая мощность 4,5 МWТ - тепловая мощность "
-"14,74 МWТ"
+msgstr "Cogeneration station - electric power 4.5 MW - heat output 14.74 MWT"
 
 msgid "Mайнинг - фермa 4,5 MWT 6750 Th/s"
-msgstr "Mайнинг - фермa 4,5 MWT 6750 Th/s"
+msgstr "Mining - farm 4.5 MWT 6750 Th/s"
 
 msgid "Тепличный комплекс выращивание 2 млн саженцев ели /год"
-msgstr "Тепличный комплекс выращивание 2 млн саженцев ели /год"
+msgstr "Greenhouse complex growing 2 million fir plant / year"
 
 msgid "Лесные ресурсы - площадь лесного фонда 71 967 га"
-msgstr "Лесные ресурсы - площадь лесного фонда 71 967 га"
+msgstr "Forest resources - forest area 71 967 ha"
 
 msgid "Лесозавод - мощность 120 000 м3/год"
-msgstr "Лесозавод - мощность 120 000 м3/год"
+msgstr "Lumber mill - capacity 120 000 m3 / year"
 
 msgid "Завод древесных пеллет - мощность 120 000 тонн/год"
-msgstr "Завод древесных пеллет - мощность 120 000 тонн/год"
+msgstr "Wood pellet plant - capacity 120 000 tons / year"
 
 msgid "Or"
 msgstr "Or"
@@ -316,3 +314,12 @@ msgstr "Our team"
 
 msgid "УЧАСТВОВАТЬ"
 msgstr "PARTICIPATE"
+
+msgid "Копровать"
+msgstr "Copy"
+
+msgid "Oткрить QR код"
+msgstr "Open QR code"
+
+msgid "Road map"
+msgstr "Road map"

@@ -33,7 +33,7 @@
 					</div>
 					<div class="header-opt yellow">
 						<div class="header-opt-content right">
-							<img class="icon6"src="<?php bloginfo('template_directory');?>/resources/images/progress/excavator.png">
+							<img class="icon6" src="<?php bloginfo('template_directory');?>/resources/images/progress/excavator.png">
 						</div>
 					</div>
 					<div class="header-opt yellow">
@@ -71,23 +71,41 @@
 
 
 		<div class="col-md-6 col-sm-6 col-xs-12 wallet">
-            <p>Номер кошелька</p>
-            <div class="col-md-12 clear-pads wallet-nr">
-	            <input id="clipboard-text" class="yellow" type="text" name="clipboard" value="01x000000000051456165165615561100">
-                <button class="btn copy" style="background-color: #6fb600;">
+            <span>Номер кошелька</span>
+			<button class="btn copy" style="background-color: #6fb600;">
                     <span class="copy-icon">
                         <img src="<?php bloginfo('template_directory');?>/resources/images/copy.png">
                     </span>
                     <span class="copy-txt">
-                        Копировать
+                        <?php echo __( 'Копировать', 'preico' ) ?>
                     </span>
-                </button>
+			</button>
+
+			<button class="btn openqr" style="background-color: #6fb600;"
+			        data-toggle="modal" data-target="#qrModal">
+				<?php echo __( 'Oткрить QR код', 'preico' ) ?>
+			</button>
+
+
+            <div class="col-md-12 clear-pads wallet-nr">
+	            <input id="clipboard-text" class="yellow" type="text" name="clipboard" value="<?php echo get_field( 'wallet_nr' ); ?>">
+
             </div>
-			<?php if( get_field( 'qr' )){?>
-			<div class="col-md-12 clear-pads qr">
-				<img src="<?php echo get_field( 'qr' ); ?>">
+
+			<!--<div class="col-md-12 clear-pads instruction">
+				<?php if( get_field( 'instruction_text' )){?>
+					<?php echo get_field( 'instruction_text' ); ?>
+				<?php } ?>
+			</div>-->
+			<div class="col-md-12 clear-pads instruction-file">
+				<?php if( get_field( 'instruction_link' )){?>
+					<a target="_blank" href="<?php echo get_field( 'instruction_link' ); ?>">
+						<?php echo get_field( 'instruction_text' ); ?>
+					</a>
+				<?php } ?>
 			</div>
-			<?php } ?>
+
+			
             <p class="bold">Minimal 0.1 ETH</p>
 
             <p class="font15"><?php echo __( 'Для инвестирования, отправьте Эфир на официальный
@@ -122,4 +140,23 @@
 		</div>
 	</div>
 
+</div>
+
+
+<div class="modal fade" id="qrModal" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-body"><button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				<div class="col-md-12 clear-pads qr">
+					<?php if( get_field( 'qr' )){?>
+						<img class="qrcode" src="<?php echo get_field( 'qr' ); ?>">
+					<?php } ?>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
 </div>
