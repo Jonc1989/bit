@@ -115,15 +115,15 @@
             </p>
 			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads divided-blocks">
 	            <div class="col-md-6 col-sm-12 col-xs-6 clear-pads border-right">
-	                <p class="font20">Soft Cap <span class="bold">2000 ETH</span></p>
+	                <p class="font20"><?php echo get_field( 'investment_title' ); ?> <span class="bold"><?php echo get_field( 'sc_how_much' ); ?></span></p>
 	                <div class="col-md-12 clear-pads opts">
-	                    <span>1 ETH = 800 WPC</span><div class="black yellow-bg bold">BONUS 300%</div>
+	                    <span><?php echo get_field( 'sc_equal' ); ?> </span><div class="black yellow-bg bold"><?php echo get_field( 'sc_bonus' ); ?></div>
 	                </div>
 	            </div>
-	            <div class="col-md-6 col-sm-12 col-xs-6">
-	                <p class="font20">Hard Cap <span class="bold">4000 ETH</span></p>
+	            <div class="col-md-6 col-sm-12 col-xs-6 no-pad-right">
+	                <p class="font20"><?php echo get_field( 'hc_title' ); ?> <span class="bold"><?php echo get_field( 'hc_how_much' ); ?></span></p>
 	                <div class="col-md-12 clear-pads opts">
-	                    <span>1 ETH = 600 WPC</span><div class="black yellow-bg bold">BONUS 200%</div>
+	                    <span><?php echo get_field( 'hc_equal' ); ?> </span><div class="black yellow-bg bold"><?php echo get_field( 'hc_bonus' ); ?></div>
 	                </div>
 	            </div>
 			</div>
