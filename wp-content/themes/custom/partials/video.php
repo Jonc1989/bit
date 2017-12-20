@@ -7,10 +7,10 @@
 
 				<?php
 				$video_id = null;
-				if( strpos( 'https://www.youtube.com/embed/iXAbte4QXKs', "=") != 0 ){
-					$video_id  = substr( 'https://www.youtube.com/embed/iXAbte4QXKs', strpos( 'https://www.youtube.com/embed/iXAbte4QXKs', "=") + 1);
+				if( strpos( get_field( 'video_url' ), "=") != 0 ){
+					$video_id  = substr( get_field( 'video_url' ), strpos( get_field( 'video_url' ), "=") + 1);
 				}else{
-					$parts = explode("/", 'https://www.youtube.com/embed/iXAbte4QXKs' );
+					$parts = explode("/", get_field( 'video_url' ) );
 					$video_id = $parts[ count( $parts ) - 1 ];
 				}
 
@@ -46,7 +46,7 @@
 						<div class="modal-body"><button type="button" class="close" data-dismiss="modal">&times;</button>
 							<iframe
 
-								src="https://www.youtube.com/embed/iXAbte4QXKs"
+								src="<?php echo get_field( 'video_url' );?>"
 								frameborder="0" gesture="media"
 								allowfullscreen></iframe>
 						</div>

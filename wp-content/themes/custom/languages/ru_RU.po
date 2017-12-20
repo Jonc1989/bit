@@ -1,183 +1,38 @@
-# Loco Gettext template
 msgid ""
 msgstr ""
 "Project-Id-Version: Preico\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-30 17:43+0300\n"
-"POT-Revision-Date: Mon Jul 25 2016 08:51:33 GMT+0700 (SE Asia Standard Time)\n"
-"PO-Revision-Date: 2017-12-04 14:22+0200\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"POT-Revision-Date: Mon Jul 25 2016 08:51:33 GMT+0700 (SE Asia Standard Time)"
+"\n"
+"PO-Revision-Date: 2017-12-20 15:31+0000\n"
+"Language-Team: Russian\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
-"X-Generator: Poedit 1.8.8\n"
-"Last-Translator: \n"
-"Language: lv_LV\n"
-"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"Last-Translator: admin <janis.mozais@ms-idi.eu>\n"
+"Language: ru-RU\n"
+"X-Poedit-SearchPath-0: .."
 
 #: ../404.php:43
 msgid "404"
 msgstr ""
 
-#: ../404.php:44
-msgid "Sorry, this page is not available"
-msgstr "Извините, эта страница недоступна"
-
-#: ../404.php:45
-msgid "The page you are looking for was moved, removed, renamed or might never existed."
-msgstr "Страница, которую вы ищете былa перемещенa или удаленa."
-
-#: ../404.php:47
-msgid "Back to homepage"
-msgstr "Вернуться на главную страницу"
-
-#: ../404.php:48
-msgid "Contact Us"
-msgstr "Kонтакты"
-
-#: ../comments.php:13
-msgid "Comments"
-msgstr "Комментарии"
-
-#: ../comments.php:29
-msgid "Comments are closed."
-msgstr "Комментарии закрыты."
-
-#: ../comments.php:44
-msgid "Your comment:"
-msgstr "Ваш комментарий:"
-
-#: ../comments.php:52 ../inc/admin/settings/settings.php:1165 ..
-#: /inc/functions/woocommerce.php:374 ../inc/functions/woocommerce.php:428
-msgid "Email"
-msgstr "Эл. адрес"
-
-#: ../comments.php:58
-msgid "Leave"
-msgstr "Оставить"
-
-#: ../comments.php:58
-msgid " comment"
-msgstr " комментарий"
-
-#: ../comments.php:59
-msgid "Cancel reply"
-msgstr "Oтменить ответ"
-
-#: ../comming-soon.php:44
-msgid "coming soon"
-msgstr "скоро"
-
-#: ../comming-soon.php:45
-msgid "We are working "
-msgstr "Мы работаем"
-
-#: ../comming-soon.php:45
-msgid "hard!"
-msgstr "тяжело!"
-
 #: ../comming-soon.php:46
-msgid "We work to improve our website and make it look fresher! But we'll be back to soon"
+msgid ""
+"We work to improve our website and make it look fresher! But we'll be back "
+"to soon"
 msgstr ""
-
-#: ../content-archive-recipe.php:38 ../content-blog-list.php:33
-#: ../content-recipe. php:33 ../content-search-result.php:37
-#: ../content-search-result.php:86 .. /content-single.php:33
-#: ../inc/functions/widgets/foodfarm_recent_posts.php:84
-#: /inc/functions/widgets/foodfarm_recent_recipes.php:74
-#: /wp_knowledgebase/archive-kbe_knowledgebase.php:109
-#: /wp_knowledgebase/kbe_knowledgebase.php:114
-#: ../wp_knowledgebase/kbe_search.php:131
-#: ../wp_knowledgebase/single-kbe_knowledgebase.php:87
-#: /wp_knowledgebase/taxonomy-kbe_tags.php:122 ../wp_knowledgebase/taxonomy-
-#: kbe_taxonomy.php:123
-msgid "0 Comment"
-msgstr "0 Комментарий"
-
-#: ../content-archive-recipe.php:38 ../content-blog-list.php:33
-#: ../content-recipe. php:33 ../content-search-result.php:37
-#: ../content-search-result.php:86 .. /content-single.php:33
-#: ../inc/functions/widgets/foodfarm_recent_posts.php:84
-#: /inc/functions/widgets/foodfarm_recent_recipes.php:74
-#: /wp_knowledgebase/archive-kbe_knowledgebase.php:109
-#: /wp_knowledgebase/kbe_knowledgebase.php:114
-#: ../wp_knowledgebase/kbe_search.php:131
-#: ../wp_knowledgebase/single-kbe_knowledgebase.php:87
-#: /wp_knowledgebase/taxonomy-kbe_tags.php:122 ../wp_knowledgebase/taxonomy-
-#: kbe_taxonomy.php:123 ../content-archive-recipe.php:48
-#: ../content-press-media.php:38 ../content- search-result.php:47
-#: ../inc/functions/woocommerce.php:236
-#: /wp_knowledgebase/archive-kbe_knowledgebase.php:119
-#: /wp_knowledgebase/kbe_knowledgebase.php:124
-#: ../wp_knowledgebase/kbe_search.php:141
-#: ../wp_knowledgebase/taxonomy-kbe_tags.php:132 kbe_taxonomy.php:133
-msgid "Read more"
-msgstr "Читать больше"
-
-#: ../content-blog-list.php:53 ../content-search-result.php:106
-msgid "Pages:"
-msgstr "Страницы:"
-
-#: ../content-gallery-grid.php:67 ../content-gallery-masonry.php:61 ..
-#: /wp_knowledgebase/archive-kbe_knowledgebase.php:151
-#: /wp_knowledgebase/kbe_knowledgebase.php:156
-#: ../wp_knowledgebase/kbe_search.php:157
-#: ../wp_knowledgebase/taxonomy-kbe_tags.php:149 ../wp_knowledgebase/taxonomy-
-#: kbe_taxonomy.php:150
-msgid "View More"
-msgstr "Посмотреть больше"
-
-msgid "Show view more"
-msgstr "Показать более"
-
-#: ../content-recipe.php:51
-msgid "Prep"
-msgstr "Подготовка"
-
-#: ../content-recipe.php:57
-msgid "Cook"
-msgstr "Готовить"
-
-#: ../content-recipe.php:63
-msgid "Ready In"
-msgstr "Готовo"
-
-#: ../content-recipe.php:72
-msgid " servings"
-msgstr " сервировки"
-
-#: ../content-recipe.php:80
-msgid "Ingredients"
-msgstr "Ингредиенты"
-
-#: ../content-recipe.php:92
-msgid "Directions"
-msgstr "Направления"
-
-#: ../content-recipe.php:106 ../inc/functions/metaboxes/recipe.php:80
-msgid "Footnotes"
-msgstr "Примечания"
-
-#: ../content-recipe.php:109 ../inc/functions/metaboxes/recipe.php:40
-msgid "Cook's Note:"
-msgstr "Примечания повара:"
-
-#: ../content-recipe.php:114 ../inc/functions/metaboxes/recipe.php:45
-msgid "Editor's Note:"
-msgstr "Примечания редактора:"
-
-#: ../content-recipe.php:128 ../content-single.php:52 ../woocommerce/content-
-#: single-product.php:79
-msgid "Share"
-msgstr "Поделиться"
-
-#: ../content-search-result.php:95 ../inc/functions/functions.php:237
-msgid " Read More"
-msgstr "Читаты больше"
 
 #: ../functions.php:31
 msgid "Primary Menu"
@@ -204,7 +59,9 @@ msgid "A product has been added to compare"
 msgstr ""
 
 #: ../search.php:25
-msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
 msgstr ""
 
 #: ../footers/footer_1.php:81 ../footers/footer_2.php:82
@@ -217,7 +74,7 @@ msgstr ""
 #: ../headers/header_1.php:61 ../headers/header_2.php:45
 #: ../headers/header_4.php:40 ../headers/header_4. php:61
 #: ../headers/header_4.php:66 ../headers/header_5.php:34 ..
-#: /headers/header_5.php:47 ../headers/header_5.php:52
+#: headers/header_5.php:47 ../headers/header_5.php:52
 #: ../headers/header_6.php:42 ../headers/header_6.php:46
 #: ../inc/functions/layout.php:63 /woocommerce/checkout/thankyou.php:31
 msgid "My Account"
@@ -233,7 +90,7 @@ msgstr ""
 #: ../headers/header_2.php:52 ../headers/header_4.php:44
 #: ../headers/header_4.php:76 ../headers/header_5. php:38
 #: ../headers/header_5.php:62 ../headers/header_6.php:53 ..
-#: /inc/functions/layout.php:75 ../inc/functions/layout.php:75
+#: inc/functions/layout.php:75 ../inc/functions/layout.php:75
 msgid "Login / Register"
 msgstr ""
 
@@ -241,19 +98,13 @@ msgstr ""
 #: ../headers/header_2.php:54 ../headers/header_4.php:47
 #: ../headers/header_4.php:78 ../headers/header_5. php:41
 #: ../headers/header_5.php:64 ../headers/header_6.php:55 ..
-#: /inc/functions/layout.php:77
+#: inc/functions/layout.php:77
 msgid "Logout"
 msgstr ""
 
 #: ../headers/header_3.php:59
 msgid "Our"
 msgstr ""
-
-#: ../headers/header_3.php:59 ..
-#: /inc/functions/widgets/foodfarm_knowledge_catogories.php:80
-#: /inc/functions/widgets/foodfarm_recipe_categories.php:28
-msgid "Categories"
-msgstr "Kатегории"
 
 #: ../headers/header_4.php:50
 msgid "Shopping Cart"
@@ -368,17 +219,17 @@ msgid "Footer Type 6"
 msgstr ""
 
 #: ../inc/admin/functions.php:113 ../inc/admin/functions.php:128 ..
-#: /inc/admin/functions.php:135
+#: inc/admin/functions.php:135
 msgid "2"
 msgstr ""
 
 #: ../inc/admin/functions.php:114 ../inc/admin/functions.php:129 ..
-#: /inc/admin/functions.php:136
+#: inc/admin/functions.php:136
 msgid "3"
 msgstr ""
 
 #: ../inc/admin/functions.php:115 ../inc/admin/functions.php:130 ..
-#: /inc/admin/functions.php:137
+#: inc/admin/functions.php:137
 msgid "4"
 msgstr ""
 
@@ -415,7 +266,9 @@ msgid "Select theme type"
 msgstr ""
 
 #: ../inc/admin/settings/settings.php:45
-msgid "Please note that your theme options will be reset with new options. You should back up options."
+msgid ""
+"Please note that your theme options will be reset with new options. You "
+"should back up options."
 msgstr ""
 
 #: ../inc/admin/settings/settings.php:52
@@ -443,27 +296,27 @@ msgid "Layout default"
 msgstr ""
 
 #: ../inc/admin/settings/settings.php:76 ../inc/admin/settings/settings.php:658
-#: .. /inc/admin/settings/settings.php:708
-#: ../inc/admin/settings/settings.php:766 /inc/admin/settings/settings.php:809
-#: ../inc/admin/settings/settings.php:852 /inc/admin/settings/settings.php:955
-#: /inc/functions/metaboxes/default_options.php:72
+#: .. inc/admin/settings/settings.php:708
+#: ../inc/admin/settings/settings.php:766 inc/admin/settings/settings.php:809
+#: ../inc/admin/settings/settings.php:852 inc/admin/settings/settings.php:955
+#: inc/functions/metaboxes/default_options.php:72
 msgid "Layout"
 msgstr ""
 
 #: ../inc/admin/settings/settings.php:83 ../inc/admin/settings/settings.php:665
-#: .. /inc/admin/settings/settings.php:715
-#: ../inc/admin/settings/settings.php:773 /inc/admin/settings/settings.php:816
-#: ../inc/admin/settings/settings.php:859 /inc/admin/settings/settings.php:962
-#: /inc/functions/metaboxes/default_options.php:57
-#: /inc/functions/metaboxes/page.php:50
+#: .. inc/admin/settings/settings.php:715
+#: ../inc/admin/settings/settings.php:773 inc/admin/settings/settings.php:816
+#: ../inc/admin/settings/settings.php:859 inc/admin/settings/settings.php:962
+#: inc/functions/metaboxes/default_options.php:57
+#: inc/functions/metaboxes/page.php:50
 #: ../inc/functions/metaboxes/products.php:87
 msgid "Sidebar Position"
 msgstr ""
 
 #: ../inc/admin/settings/settings.php:90 ../inc/admin/settings/settings.php:672
-#: .. /inc/admin/settings/settings.php:722
-#: ../inc/admin/settings/settings.php:780 /inc/admin/settings/settings.php:823
-#: ../inc/admin/settings/settings.php:866 /inc/admin/settings/settings.php:969
+#: .. inc/admin/settings/settings.php:722
+#: ../inc/admin/settings/settings.php:780 inc/admin/settings/settings.php:823
+#: ../inc/admin/settings/settings.php:866 inc/admin/settings/settings.php:969
 msgid "Select Sidebar"
 msgstr ""
 
@@ -556,7 +409,7 @@ msgstr ""
 #: ../inc/admin/settings/settings.php:283
 #: ../inc/admin/settings/settings.php:1131
 #: ../inc/functions/metaboxes/default_options.php:42 ..
-#: /inc/functions/metaboxes/page.php:35
+#: inc/functions/metaboxes/page.php:35
 #: ../inc/functions/metaboxes/products.php:72
 msgid "Header"
 msgstr ""
@@ -568,7 +421,7 @@ msgstr ""
 #: ../inc/admin/settings/settings.php:297
 #: ../inc/admin/settings/settings.php:506 .
 #: inc/functions/metaboxes/default_options.php:49 ..
-#: /inc/functions/metaboxes/page.php:42
+#: inc/functions/metaboxes/page.php:42
 #: ../inc/functions/metaboxes/products.php:79
 msgid "Footer"
 msgstr ""
@@ -587,8 +440,8 @@ msgid "Footer Left Background"
 msgstr ""
 
 #: ../inc/admin/settings/settings.php:359 ..
-#: /inc/functions/metaboxes/default_options.php:30
-#: /inc/functions/metaboxes/products.php:60
+#: inc/functions/metaboxes/default_options.php:30
+#: inc/functions/metaboxes/products.php:60
 msgid "Breadcrumbs"
 msgstr ""
 
@@ -691,9 +544,9 @@ msgstr ""
 #: ../inc/admin/settings/settings.php:613
 #: ../inc/admin/settings/settings.php:620 . inc/admin/settings/settings.php:627
 #: ../inc/admin/settings/settings.php:634 ..
-#: /inc/admin/settings/settings.php:641 ../inc/admin/settings/settings.php:1035
-#: /inc/admin/settings/settings.php:1042
-#: ../inc/admin/settings/settings.php:1049 inc/admin/settings/settings.php:1056
+#: inc/admin/settings/settings.php:641 ../inc/admin/settings/settings.php:1035
+#: inc/admin/settings/settings.php:1042 ../inc/admin/settings/settings.php:1049
+#: inc/admin/settings/settings.php:1056
 msgid "http://"
 msgstr ""
 
@@ -719,8 +572,8 @@ msgstr ""
 
 #: ../inc/admin/settings/settings.php:683
 #: ../inc/admin/settings/settings.php:791 . inc/admin/settings/settings.php:834
-#: .. /inc/functions/metaboxes/default_options.php:36
-#: /inc/functions/metaboxes/page.php:29
+#: .. inc/functions/metaboxes/default_options.php:36
+#: inc/functions/metaboxes/page.php:29
 #: ../inc/functions/metaboxes/products.php:66
 msgid "Page Title"
 msgstr ""
@@ -732,10 +585,6 @@ msgstr ""
 #: ../inc/admin/settings/settings.php:690
 msgid "The number of words"
 msgstr ""
-
-#: ../inc/admin/settings/settings.php:698
-msgid "Gallery"
-msgstr "Галерея"
 
 #: ../inc/admin/settings/settings.php:703
 msgid "Gallery Archive Page"
@@ -760,11 +609,6 @@ msgstr ""
 #: ../inc/admin/settings/settings.php:748
 msgid "Navigation"
 msgstr ""
-
-#: ../inc/admin/settings/settings.php:756 ../inc/functions/layout.php:690 ..
-#: /inc/functions/layout.php:910
-msgid "Recipes"
-msgstr "Рецепты"
 
 #: ../inc/admin/settings/settings.php:761
 msgid "Recipe list layout default"
@@ -907,8 +751,10 @@ msgstr ""
 msgid ""
 "\n"
 "                                    <h1>coming soon</h1>\n"
-"                                    <h2>We are working <span>hard!</span></h2>\n"
-"                                    <p>We work to improve our website and make it look fresher! But we\"ll be back to soon</p>"
+"                                    <h2>We are working <span>hard!</span>"
+"</h2>\n"
+"                                    <p>We work to improve our website and "
+"make it look fresher! But we\"ll be back to soon</p>"
 msgstr ""
 
 #: ../inc/admin/settings/settings.php:1096
@@ -1033,31 +879,9 @@ msgstr ""
 msgid "%1$s"
 msgstr ""
 
-#: ../inc/functions/functions.php:297
-msgid "(Edit)"
-msgstr "(Pедактировать)"
-
-#: ../inc/functions/functions.php:315
-msgid "Reply"
-msgstr "Ответить"
-
-#: ../inc/functions/functions.php:338
-msgid "Post Comment"
-msgstr "Добавить"
-
 #: ../inc/functions/functions.php:378
 msgid "Enter the keywords"
 msgstr ""
-
-#: ../inc/functions/layout.php:540 ../inc/functions/layout.php:824
-msgid "Home"
-msgstr "Hачало"
-
-#: ../inc/functions/layout.php:581 ../inc/functions/layout.php:671 ..
-#: /inc/functions/layout.php:787 ../inc/functions/layout.php:843
-#: /inc/functions/layout.php:887 ../inc/functions/layout.php:961
-msgid "Search results for &ldquo;"
-msgstr "Результаты поиска &ldquo;"
 
 #: ../inc/functions/layout.php:606 ../inc/functions/layout.php:859
 msgid "Products tagged &ldquo;"
@@ -1194,7 +1018,9 @@ msgid "Description"
 msgstr ""
 
 #: ../inc/functions/menus.php:185
-msgid "The description will be displayed in the menu if the current theme supports it."
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
 msgstr ""
 
 #: ../inc/functions/menus.php:203
@@ -1235,7 +1061,7 @@ msgid "Remove"
 msgstr ""
 
 #: ../inc/functions/menus.php:278 ../woocommerce/wishlist.php:41 ..
-#: /woocommerce/myaccount/my-orders.php:97
+#: woocommerce/myaccount/my-orders.php:97
 msgid "Cancel"
 msgstr ""
 
@@ -1360,28 +1186,28 @@ msgid "Foodfarm style"
 msgstr ""
 
 #: ../inc/functions/vc_functions.php:9 ../inc/functions/vc_functions.php:29 ..
-#: /inc/functions/vc_functions.php:345
+#: inc/functions/vc_functions.php:345
 msgid "Classic"
 msgstr ""
 
 #: ../inc/functions/vc_functions.php:10 ../inc/functions/vc_functions.php:30 ..
-#: /inc/functions/vc_functions.php:344
+#: inc/functions/vc_functions.php:344
 msgid "Modern"
 msgstr ""
 
 #: ../inc/functions/vc_functions.php:11 ../inc/functions/vc_functions.php:31 ..
-#: /inc/functions/vc_functions.php:346
-#: /inc/functions/widgets/foodfarm_knowledge_tags.php:108
+#: inc/functions/vc_functions.php:346
+#: inc/functions/widgets/foodfarm_knowledge_tags.php:108
 msgid "Flat"
 msgstr ""
 
 #: ../inc/functions/vc_functions.php:12 ../inc/functions/vc_functions.php:32 ..
-#: /inc/functions/vc_functions.php:347
+#: inc/functions/vc_functions.php:347
 msgid "Outline"
 msgstr ""
 
 #: ../inc/functions/vc_functions.php:14 ../inc/functions/vc_functions.php:34 ..
-#: /inc/functions/vc_functions.php:339
+#: inc/functions/vc_functions.php:339
 msgid "Style"
 msgstr ""
 
@@ -1439,14 +1265,14 @@ msgstr ""
 
 #: ../inc/functions/vc_functions.php:134 ../inc/functions/vc_functions.php:150
 #: .. /inc/functions/vc_functions.php:166 ../inc/functions/vc_functions.php:183
-#: /inc/functions/vc_functions.php:199 ../inc/functions/vc_functions.php:215
-#: /inc/functions/vc_functions.php:230
+#: inc/functions/vc_functions.php:199 ../inc/functions/vc_functions.php:215
+#: inc/functions/vc_functions.php:230
 msgid "Icon"
 msgstr ""
 
 #: ../inc/functions/vc_functions.php:146 ../inc/functions/vc_functions.php:162
 #: .. /inc/functions/vc_functions.php:179 ../inc/functions/vc_functions.php:195
-#: /inc/functions/vc_functions.php:211 ../inc/functions/vc_functions.php:242
+#: inc/functions/vc_functions.php:211 ../inc/functions/vc_functions.php:242
 msgid "Select icon from library."
 msgstr ""
 
@@ -1632,10 +1458,6 @@ msgstr ""
 msgid "List View"
 msgstr ""
 
-#: ../inc/functions/woocommerce.php:192
-msgid "Show"
-msgstr "Показать"
-
 #: ../inc/functions/woocommerce.php:224
 msgid "Buy product"
 msgstr ""
@@ -1657,28 +1479,28 @@ msgid "Quick View"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:274 ../inc/functions/woocommerce.php:287 ..
-#: /inc/functions/woocommerce.php:298
+#: inc/functions/woocommerce.php:298
 msgid "Compare"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:359 ../inc/functions/woocommerce.php:413 ..
-#: /inc/functions/woocommerce.php:467 ../inc/functions/woocommerce.php:525
+#: inc/functions/woocommerce.php:467 ../inc/functions/woocommerce.php:525
 msgid "First Name"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:360 ../inc/functions/woocommerce.php:414 ..
-#: /inc/functions/woocommerce.php:468 ../inc/functions/woocommerce.php:526
+#: inc/functions/woocommerce.php:468 ../inc/functions/woocommerce.php:526
 msgctxt "placeholder"
 msgid "First Name *"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:364 ../inc/functions/woocommerce.php:418 ..
-#: /inc/functions/woocommerce.php:472 ../inc/functions/woocommerce.php:530
+#: inc/functions/woocommerce.php:472 ../inc/functions/woocommerce.php:530
 msgid "Last Name"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:365 ../inc/functions/woocommerce.php:419 ..
-#: /inc/functions/woocommerce.php:473 ../inc/functions/woocommerce.php:531
+#: inc/functions/woocommerce.php:473 ../inc/functions/woocommerce.php:531
 msgctxt "placeholder"
 msgid "Last Name *"
 msgstr ""
@@ -1688,20 +1510,20 @@ msgid "Company name"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:370 ../inc/functions/woocommerce.php:424 ..
-#: /inc/functions/woocommerce.php:478 ../inc/functions/woocommerce.php:536
+#: inc/functions/woocommerce.php:478 ../inc/functions/woocommerce.php:536
 msgctxt "placeholder"
 msgid "Company Name"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:375 ../inc/functions/woocommerce.php:429 ..
-#: /inc/functions/woocommerce.php:506 ../inc/functions/woocommerce.php:552
+#: inc/functions/woocommerce.php:506 ../inc/functions/woocommerce.php:552
 msgctxt "placeholder"
 msgid "E-mail *"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:380 ../inc/functions/woocommerce.php:405 ..
-#: /inc/functions/woocommerce.php:434 ../inc/functions/woocommerce.php:459
-#: /inc/functions/woocommerce.php:511
+#: inc/functions/woocommerce.php:434 ../inc/functions/woocommerce.php:459
+#: inc/functions/woocommerce.php:511
 msgctxt "placeholder"
 msgid "Phone *"
 msgstr ""
@@ -1721,12 +1543,12 @@ msgid "Apartment, suite, unit etc. (optional)"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:394 ../inc/functions/woocommerce.php:448 ..
-#: /inc/functions/woocommerce.php:499 ../inc/functions/woocommerce.php:556
+#: inc/functions/woocommerce.php:499 ../inc/functions/woocommerce.php:556
 msgid "Postcode / Zip"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:395 ../inc/functions/woocommerce.php:449 ..
-#: /inc/functions/woocommerce.php:500
+#: inc/functions/woocommerce.php:500
 msgctxt "placeholder"
 msgid "Postcode / Zip *"
 msgstr ""
@@ -1751,7 +1573,7 @@ msgid "Enter Your Apartment"
 msgstr ""
 
 #: ../inc/functions/woocommerce.php:494 ../inc/functions/woocommerce.php:541 ..
-#: /woocommerce/cart/shipping-calculator.php:83
+#: woocommerce/cart/shipping-calculator.php:83
 msgid "City"
 msgstr ""
 
@@ -1842,30 +1664,30 @@ msgid "Footer Layout"
 msgstr ""
 
 #: ../inc/functions/metaboxes/default_options.php:31 ..
-#: /inc/functions/metaboxes/products.php:61
+#: inc/functions/metaboxes/products.php:61
 msgid "Hide breadcrumbs"
 msgstr ""
 
 #: ../inc/functions/metaboxes/default_options.php:37 ..
-#: /inc/functions/metaboxes/page.php:30
+#: inc/functions/metaboxes/page.php:30
 #: ../inc/functions/metaboxes/products.php:67
 msgid "Hide Page Title"
 msgstr ""
 
 #: ../inc/functions/metaboxes/default_options.php:43 ..
-#: /inc/functions/metaboxes/page.php:36
+#: inc/functions/metaboxes/page.php:36
 #: ../inc/functions/metaboxes/products.php:73
 msgid "Hide header"
 msgstr ""
 
 #: ../inc/functions/metaboxes/default_options.php:50 ..
-#: /inc/functions/metaboxes/page.php:43
+#: inc/functions/metaboxes/page.php:43
 #: ../inc/functions/metaboxes/products.php:80
 msgid "Hide footer"
 msgstr ""
 
 #: ../inc/functions/metaboxes/default_options.php:65 ..
-#: /inc/functions/metaboxes/page.php:58
+#: inc/functions/metaboxes/page.php:58
 #: ../inc/functions/metaboxes/products.php:95
 msgid "Sidebar"
 msgstr ""
@@ -1895,12 +1717,12 @@ msgid "Remove File"
 msgstr ""
 
 #: ../inc/functions/metaboxes/functions.php:364 ..
-#: /inc/functions/metaboxes/functions.php:483
+#: inc/functions/metaboxes/functions.php:483
 msgid "Upload Image"
 msgstr ""
 
 #: ../inc/functions/metaboxes/functions.php:365 ..
-#: /inc/functions/metaboxes/functions.php:484
+#: inc/functions/metaboxes/functions.php:484
 msgid "Remove Image"
 msgstr ""
 
@@ -1940,7 +1762,7 @@ msgstr ""
 
 #: ../inc/functions/metaboxes/productlist.php:6 ../woocommerce/wishlist.php:77
 #: .. /woocommerce/wishlist.php:150 ../woocommerce/cart/cart.php:37
-#: /woocommerce/cart/cart.php:89 ../woocommerce/cart/cart.php:92
+#: woocommerce/cart/cart.php:89 ../woocommerce/cart/cart.php:92
 msgid "Price"
 msgstr ""
 
@@ -1980,10 +1802,6 @@ msgstr ""
 msgid "Ingredient"
 msgstr ""
 
-#: ../inc/functions/metaboxes/recipe.php:16
-msgid "Preparation time"
-msgstr "Pagatavošanas laiks"
-
 #: ../inc/functions/metaboxes/recipe.php:21
 msgid "Cook time"
 msgstr ""
@@ -2013,24 +1831,20 @@ msgid "Select Year"
 msgstr ""
 
 #: ../inc/functions/widgets/foodfarm_archives_post-type.php:92 ..
-#: /inc/functions/widgets/foodfarm_archives_post-type.php:99
-#: /inc/functions/widgets/foodfarm_archives_post-type.php:124
-#: /inc/functions/widgets/foodfarm_archives_post-type.php:130
+#: inc/functions/widgets/foodfarm_archives_post-type.php:99
+#: inc/functions/widgets/foodfarm_archives_post-type.php:124
+#: inc/functions/widgets/foodfarm_archives_post-type.php:130
 msgid " Releases"
 msgstr ""
 
 #: ../inc/functions/widgets/foodfarm_archives_post-type.php:193 ..
-#: /inc/functions/widgets/foodfarm_product.php:40
+#: inc/functions/widgets/foodfarm_product.php:40
 msgid "Product Type"
 msgstr ""
 
 #: ../inc/functions/widgets/foodfarm_archives_post-type.php:195
 msgid "post"
 msgstr ""
-
-#: ../inc/functions/widgets/foodfarm_archives_post-type.php:196
-msgid "gallery"
-msgstr "galerija"
 
 #: ../inc/functions/widgets/foodfarm_archives_post-type.php:197
 msgid "pressmedia"
@@ -2120,7 +1934,7 @@ msgid "WP Knowledgebase search widget"
 msgstr ""
 
 #: ../inc/functions/widgets/foodfarm_knowledge_search.php:48 ..
-#: /inc/functions/widgets/foodfarm_knowledge_search.php:48
+#: inc/functions/widgets/foodfarm_knowledge_search.php:48
 msgid "Search Articles..."
 msgstr ""
 
@@ -2199,17 +2013,13 @@ msgstr ""
 msgid "Your site&#8217;s most recent Posts."
 msgstr ""
 
-#: ../inc/functions/widgets/foodfarm_recent_posts.php:12
-msgid "Recent Posts"
-msgstr "Jaunākās publikācijas"
-
 #: ../inc/functions/widgets/foodfarm_recent_posts.php:135 ..
-#: /inc/functions/widgets/foodfarm_recent_recipes.php:123
+#: inc/functions/widgets/foodfarm_recent_recipes.php:123
 msgid "Number of posts to show:"
 msgstr ""
 
 #: ../inc/functions/widgets/foodfarm_recent_posts.php:139 ..
-#: /inc/functions/widgets/foodfarm_recent_recipes.php:127
+#: inc/functions/widgets/foodfarm_recent_recipes.php:127
 msgid "Display post date?"
 msgstr ""
 
@@ -2279,8 +2089,12 @@ msgstr[2] ""
 #: ../inc/plugins/class-tgm-plugin-activation.php:347 ../inc/plugins/functions.
 #: php:153
 #, php-format
-msgid "Sorry, but you do not have the correct permissions to install the %1$s plugin."
-msgid_plural "Sorry, but you do not have the correct permissions to install the %1$s plugins."
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -2288,8 +2102,12 @@ msgstr[2] ""
 #: ../inc/plugins/class-tgm-plugin-activation.php:352 ../inc/plugins/functions.
 #: php:156
 #, php-format
-msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
-msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -2306,8 +2124,11 @@ msgstr[2] ""
 #: ../inc/plugins/class-tgm-plugin-activation.php:362 ../inc/plugins/functions.
 #: php:162
 #, php-format
-msgid "Sorry, but you do not have the correct permissions to update the %1$s plugin."
-msgid_plural "Sorry, but you do not have the correct permissions to update the %1$s plugins."
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -2333,8 +2154,12 @@ msgstr[2] ""
 #: ../inc/plugins/class-tgm-plugin-activation.php:377 ../inc/plugins/functions.
 #: php:171
 #, php-format
-msgid "Sorry, but you do not have the correct permissions to activate the %1$s plugin."
-msgid_plural "Sorry, but you do not have the correct permissions to activate the %1$s plugins."
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -2394,7 +2219,9 @@ msgstr ""
 #: ../inc/plugins/class-tgm-plugin-activation.php:402 ../inc/plugins/functions.
 #: php:187
 #, php-format
-msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:403 ../inc/plugins/functions.
@@ -2426,16 +2253,22 @@ msgid "Return to the Dashboard"
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:919
-msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:919 ../inc/plugins/class-tgm-
 #: plugin-activation.php:922
-msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:922
-msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:1100
@@ -2552,7 +2385,9 @@ msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:2406
 #, php-format
-msgid "No plugins to install, update or activate. <a href=\"%1$s\">Return to the Dashboard</a>"
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:2420
@@ -2572,7 +2407,7 @@ msgid "Version"
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:2427 ..
-#: /woocommerce/myaccount/my-orders.php:27
+#: woocommerce/myaccount/my-orders.php:27
 msgid "Status"
 msgstr ""
 
@@ -2655,7 +2490,9 @@ msgid "The installation of %1$s failed."
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:3353
-msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:3354
@@ -2683,7 +2520,9 @@ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:3359
-msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
 msgstr ""
 
 #: ../inc/plugins/class-tgm-plugin-activation.php:3360
@@ -2702,7 +2541,9 @@ msgstr ""
 
 #: ../inc/plugins/importer/importer.php:373
 #, php-format
-msgid "Unable to create directory %s. Is its parent directory writable by the server?"
+msgid ""
+"Unable to create directory %s. Is its parent directory writable by the "
+"server?"
 msgstr ""
 
 #: ../inc/plugins/importer/parsers.php:43
@@ -2711,22 +2552,17 @@ msgid "There was an error when reading this WXR file"
 msgstr ""
 
 #: ../inc/plugins/importer/parsers.php:44
-msgid "Details are shown above. The importer will now try again with a different parser..."
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
 msgstr ""
 
 #: ../inc/plugins/importer/parsers.php:89
 #: ../inc/plugins/importer/parsers.php:94 .
 #: inc/plugins/importer/parsers.php:289 ../inc/plugins/importer/parsers.php:477
-msgid "This does not appear to be a WXR file, missing/invalid WXR version number"
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
 msgstr ""
-
-#: ../inc/plugins/importer/wordpress-importer.php:134 ..
-#: /inc/plugins/importer/wordpress-importer.php:143
-#: /inc/plugins/importer/wordpress-importer.php:194
-#: /inc/plugins/importer/wordpress-importer.php:198
-#: /inc/plugins/importer/wordpress-importer.php:207
-msgid "Sorry, there has been an error."
-msgstr "Notika kļūme"
 
 #: ../inc/plugins/importer/wordpress-importer.php:135
 msgid "The file does not exist, please try again."
@@ -2746,17 +2582,23 @@ msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:199
 #, php-format
-msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
 msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:215
 #, php-format
-msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
 msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:240
 #, php-format
-msgid "Failed to import author %s. Their posts will be attributed to the current user."
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
 msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:266
@@ -2764,12 +2606,19 @@ msgid "Assign Authors"
 msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:267
-msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>"
+"admin</code>s entries."
 msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:269
 #, php-format
-msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
 msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:279
@@ -2779,11 +2628,6 @@ msgstr ""
 #: ../inc/plugins/importer/wordpress-importer.php:282
 msgid "Download and import file attachments"
 msgstr ""
-
-#: ../inc/plugins/importer/wordpress-importer.php:286 ../woocommerce/single-
-#: product-reviews.php:78
-msgid "Submit"
-msgstr "Отправить"
 
 #: ../inc/plugins/importer/wordpress-importer.php:299
 msgid "Import author:"
@@ -2811,7 +2655,9 @@ msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:374
 #, php-format
-msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
 msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:425
@@ -2825,7 +2671,7 @@ msgid "Failed to import post tag %s"
 msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:511 ..
-#: /inc/plugins/importer/wordpress-importer.php:652
+#: inc/plugins/importer/wordpress-importer.php:652
 #, php-format
 msgid "Failed to import %s %s"
 msgstr ""
@@ -2886,11 +2732,16 @@ msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:1066
 #, php-format
-msgid "A new version of this importer is available. Please update to version %s to ensure compatibility with newer export files."
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
 msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:1081
-msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
 msgstr ""
 
 #: ../inc/plugins/importer/wordpress-importer.php:1082
@@ -2917,20 +2768,6 @@ msgstr ""
 msgid "No products added in the compare table."
 msgstr ""
 
-#: ../woocommerce/content-single-product.php:74
-msgid "Email to Friends"
-msgstr "Почтa другу"
-
-#: ../woocommerce/product-searchform.php:26
-msgctxt "placeholder"
-msgid "Search Products&hellip;"
-msgstr "Поиск продуктов..."
-
-#: ../woocommerce/product-searchform.php:26
-msgctxt "label"
-msgid "Search for:"
-msgstr "Искать:"
-
 #: ../woocommerce/single-product-reviews.php:32
 #, php-format
 msgid "%s review for %s"
@@ -2938,23 +2775,6 @@ msgid_plural "%s reviews for %s"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-
-#: ../woocommerce/single-product-reviews.php:34
-msgid "Reviews"
-msgstr "Oтзывы"
-
-#: ../woocommerce/single-product-reviews.php:55
-msgid "There are no reviews yet."
-msgstr "Hет ни одного отзыва."
-
-#: ../woocommerce/single-product-reviews.php:68
-msgid "Add a review"
-msgstr "Добавить отзыв"
-
-#: ../woocommerce/single-product-reviews.php:68
-#, php-format
-msgid "Be the first to review &ldquo;%s&rdquo;"
-msgstr "Оставьте первый отзыв &ldquo;%s&rdquo;"
 
 #: ../woocommerce/single-product-reviews.php:84
 #, php-format
@@ -2986,7 +2806,8 @@ msgid "Very Poor"
 msgstr ""
 
 #: ../woocommerce/single-product-reviews.php:107
-msgid "Only logged in customers who have purchased this product may leave a review."
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
 msgstr ""
 
 #: ../woocommerce/wishlist.php:28
@@ -3056,7 +2877,9 @@ msgid "Shipping costs will be calculated once you have provided your address."
 msgstr ""
 
 #: ../woocommerce/cart/cart-shipping.php:51
-msgid "There are no shipping methods available. Please double check your address, or contact us if you need any help."
+msgid ""
+"There are no shipping methods available. Please double check your address, "
+"or contact us if you need any help."
 msgstr ""
 
 #: ../woocommerce/cart/cart-totals.php:44
@@ -3077,7 +2900,7 @@ msgid "estimated for %s"
 msgstr ""
 
 #: ../woocommerce/cart/cart.php:38 ../woocommerce/cart/cart.php:100 ..
-#: /woocommerce/cart/cart.php:103
+#: woocommerce/cart/cart.php:103
 msgid "Quantity"
 msgstr ""
 
@@ -3143,7 +2966,9 @@ msgid "Update Total"
 msgstr ""
 
 #: ../woocommerce/checkout/cart-errors.php:26
-msgid "There are some issues with the items in your cart (shown above). Please go back to the cart page and resolve these issues before checking out."
+msgid ""
+"There are some issues with the items in your cart (shown above). Please go "
+"back to the cart page and resolve these issues before checking out."
 msgstr ""
 
 #: ../woocommerce/checkout/cart-errors.php:30
@@ -3163,7 +2988,9 @@ msgid "Create an account"
 msgstr ""
 
 #: ../woocommerce/checkout/form-billing.php:62
-msgid "Create an account by entering the information below. If you are a returning customer please login at the top of the page."
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login at the top of the page."
 msgstr ""
 
 #: ../woocommerce/checkout/form-checkout.php:28
@@ -3176,7 +3003,10 @@ msgstr ""
 
 #: ../woocommerce/checkout/form-checkout.php:64
 #: ../woocommerce/checkout/payment. php:46
-msgid "Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so."
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the <em>Update Totals</em> button before placing your order."
+" You may be charged more than the amount stated above if you fail to do so."
 msgstr ""
 
 #: ../woocommerce/checkout/form-checkout.php:65
@@ -3207,7 +3037,10 @@ msgid "Click here to login"
 msgstr ""
 
 #: ../woocommerce/checkout/form-login.php:34
-msgid "If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section."
+msgid ""
+"If you have shopped with us before, please enter your details in the boxes "
+"below. If you are a new customer, please proceed to the Billing &amp; "
+"Shipping section."
 msgstr ""
 
 #: ../woocommerce/checkout/form-pay.php:29
@@ -3219,12 +3052,15 @@ msgid "Totals"
 msgstr ""
 
 #: ../woocommerce/checkout/form-pay.php:68
-msgid "Sorry, it seems that there are no available payment methods for your location. Please contact us if you require assistance or wish to make alternate arrangements."
+msgid ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
 msgstr ""
 
 #: ../woocommerce/checkout/form-shipping.php:39 ../woocommerce/myaccount/form-
 #: edit-address.php:24 ../woocommerce/myaccount/my-address.php:28 ..
-#: /woocommerce/order/order-details-customer.php:68
+#: woocommerce/order/order-details-customer.php:68
 msgid "Shipping Address"
 msgstr ""
 
@@ -3241,7 +3077,10 @@ msgid "Select Payment Method"
 msgstr ""
 
 #: ../woocommerce/checkout/payment.php:38
-msgid "Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements."
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
 msgstr ""
 
 #: ../woocommerce/checkout/payment.php:38
@@ -3258,11 +3097,16 @@ msgstr ""
 
 #: ../woocommerce/checkout/terms.php:16
 #, php-format
-msgid "I&rsquo;ve read and accept the <a href=\"%s\" target=\"_blank\">terms &amp; conditions</a>"
+msgid ""
+"I&rsquo;ve read and accept the <a href=\"%s\" target=\"_blank\">terms &amp; "
+"conditions</a>"
 msgstr ""
 
 #: ../woocommerce/checkout/thankyou.php:26
-msgid "Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction. Please attempt your purchase again."
+msgid ""
+"Unfortunately your order cannot be processed as the originating "
+"bank/merchant has declined your transaction. Please attempt your purchase "
+"again."
 msgstr ""
 
 #: ../woocommerce/checkout/thankyou.php:29
@@ -3333,14 +3177,6 @@ msgctxt "Product quantity input tooltip"
 msgid "Qty"
 msgstr ""
 
-#: ../woocommerce/loop/no-products-found.php:23
-msgid "No products were found matching your selection."
-msgstr "Ни один продукт не отвечает критериям поиска."
-
-#: ../woocommerce/loop/orderby.php:24
-msgid "Sort by"
-msgstr "Сортировать по"
-
 #: ../woocommerce/loop/result-count.php:38
 msgid "Showing the single result"
 msgstr ""
@@ -3372,7 +3208,10 @@ msgid "New"
 msgstr ""
 
 #: ../woocommerce/myaccount/form-add-payment-method.php:49
-msgid "Sorry, it seems that there are no payment methods which support adding a new payment method. Please contact us if you require assistance or wish to make alternate arrangements."
+msgid ""
+"Sorry, it seems that there are no payment methods which support adding a new "
+"payment method. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
 msgstr ""
 
 #: ../woocommerce/myaccount/form-add-payment-method.php:57
@@ -3410,7 +3249,7 @@ msgstr ""
 #: ../woocommerce/myaccount/form-edit-address.php:24
 #: ../woocommerce/myaccount/my- address.php:27
 #: ../woocommerce/myaccount/my-address.php:33 ..
-#: /woocommerce/order/order-details-customer.php:57
+#: woocommerce/order/order-details-customer.php:57
 msgid "Billing Address"
 msgstr ""
 
@@ -3436,7 +3275,9 @@ msgid "Anti-spam"
 msgstr ""
 
 #: ../woocommerce/myaccount/form-lost-password.php:31
-msgid "Lost your password? Please enter your username or email address. You will receive a link to create a new password via email."
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
 msgstr ""
 
 #: ../woocommerce/myaccount/form-lost-password.php:37
@@ -3517,7 +3358,10 @@ msgid "l jS \\o\\f F Y, h:ia"
 msgstr ""
 
 #: ../woocommerce/order/form-tracking.php:28
-msgid "To track your order please enter your Order ID in the box below and press the \"Track\" button. This was given to you on your receipt and in the confirmation email you should have received."
+msgid ""
+"To track your order please enter your Order ID in the box below and press "
+"the \"Track\" button. This was given to you on your receipt and in the "
+"confirmation email you should have received."
 msgstr ""
 
 #: ../woocommerce/order/form-tracking.php:30
@@ -3590,14 +3434,6 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: ../woocommerce/single-product/meta.php:40 ../woocommerce/single-
-#: product/tabs/tabs.php:62
-msgid "Tag:"
-msgid_plural "Tags:"
-msgstr[0] "Tags:"
-msgstr[1] ""
-msgstr[2] ""
-
 #: ../woocommerce/single-product/product-attributes.php:37
 msgid "Weight"
 msgstr ""
@@ -3631,22 +3467,6 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: ../woocommerce/single-product/related.php:49
-msgid "You May"
-msgstr "Вам также "
-
-#: ../woocommerce/single-product/related.php:49
-msgid "Also like"
-msgstr "может понравиться"
-
-#: ../woocommerce/single-product/short-description.php:30
-msgid "Quick description"
-msgstr "Краткое описание"
-
-#: ../woocommerce/single-product/up-sells.php:51
-msgid "You may also like&hellip;"
-msgstr "Вам также может понравиться"
-
 #: ../woocommerce/single-product/add-to-cart/simple.php:44
 msgid "Qty:"
 msgstr ""
@@ -3660,7 +3480,8 @@ msgid "Clear"
 msgstr ""
 
 #: ../woocommerce/single-product/add-to-cart/variation.php:31
-msgid "Sorry, this product is unavailable. Please choose a different combination."
+msgid ""
+"Sorry, this product is unavailable. Please choose a different combination."
 msgstr ""
 
 #: ../woocommerce/single-product/tabs/additional-information.php:24
@@ -3676,10 +3497,10 @@ msgid "Product Tags"
 msgstr ""
 
 #: ../wp_knowledgebase/archive-kbe_knowledgebase.php:51 ..
-#: /wp_knowledgebase/kbe_knowledgebase.php:56
+#: wp_knowledgebase/kbe_knowledgebase.php:56
 #: ../wp_knowledgebase/kbe_search.php:78
 #: ../wp_knowledgebase/single-kbe_knowledgebase.php:52
-#: /wp_knowledgebase/taxonomy-kbe_tags.php:69 ../wp_knowledgebase/taxonomy-
+#: wp_knowledgebase/taxonomy-kbe_tags.php:69 ../wp_knowledgebase/taxonomy-
 #: kbe_taxonomy.php:70
 msgid "Search the "
 msgstr ""
@@ -3687,10 +3508,6 @@ msgstr ""
 #: ../wp_knowledgebase/kbe_search.php:41
 msgid "Search result not found......"
 msgstr ""
-
-#: ../wp_knowledgebase/kbe_search.php:87
-msgid "Search Results for: "
-msgstr " "
 
 #: ../wp_knowledgebase/kbe_search.php:164
 msgid "Search result not found."
@@ -3711,6 +3528,329 @@ msgstr ""
 #. Author URI of the theme
 msgid "http://arrowhitech.com/"
 msgstr ""
+
+msgid "Feb"
+msgstr ""
+
+msgid "Mar"
+msgstr ""
+
+msgid "Apr"
+msgstr ""
+
+msgid "May"
+msgstr ""
+
+msgid "Jun"
+msgstr ""
+
+msgid "Jul"
+msgstr ""
+
+msgid "Aug"
+msgstr ""
+
+msgid "Sep"
+msgstr ""
+
+msgid "Oct"
+msgstr ""
+
+msgid "Nov"
+msgstr ""
+
+msgid "Dec"
+msgstr ""
+
+msgid "Feature"
+msgstr ""
+
+#: ../404.php:44
+msgid "Sorry, this page is not available"
+msgstr "Извините, эта страница недоступна"
+
+#: ../404.php:45
+msgid ""
+"The page you are looking for was moved, removed, renamed or might never "
+"existed."
+msgstr "Страница, которую вы ищете былa перемещенa или удаленa."
+
+#: ../404.php:47
+msgid "Back to homepage"
+msgstr "Вернуться на главную страницу"
+
+#: ../404.php:48
+msgid "Contact Us"
+msgstr "Kонтакты"
+
+#: ../comments.php:13
+msgid "Comments"
+msgstr "Комментарии"
+
+#: ../comments.php:29
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#: ../comments.php:44
+msgid "Your comment:"
+msgstr "Ваш комментарий:"
+
+#: ../comments.php:52 ../inc/admin/settings/settings.php:1165 ..
+#: inc/functions/woocommerce.php:374 ../inc/functions/woocommerce.php:428
+msgid "Email"
+msgstr "Эл. адрес"
+
+#: ../comments.php:58
+msgid "Leave"
+msgstr "Оставить"
+
+#: ../comments.php:58
+msgid " comment"
+msgstr " комментарий"
+
+#: ../comments.php:59
+msgid "Cancel reply"
+msgstr "Oтменить ответ"
+
+#: ../comming-soon.php:44
+msgid "coming soon"
+msgstr "скоро"
+
+#: ../comming-soon.php:45
+msgid "We are working "
+msgstr "Мы работаем"
+
+#: ../comming-soon.php:45
+msgid "hard!"
+msgstr "тяжело!"
+
+#: ../content-archive-recipe.php:38 ../content-blog-list.php:33
+#: ../content-recipe. php:33 ../content-search-result.php:37
+#: ../content-search-result.php:86 .. /content-single.php:33
+#: ../inc/functions/widgets/foodfarm_recent_posts.php:84
+#: inc/functions/widgets/foodfarm_recent_recipes.php:74
+#: wp_knowledgebase/archive-kbe_knowledgebase.php:109
+#: wp_knowledgebase/kbe_knowledgebase.php:114
+#: ../wp_knowledgebase/kbe_search.php:131
+#: ../wp_knowledgebase/single-kbe_knowledgebase.php:87
+#: wp_knowledgebase/taxonomy-kbe_tags.php:122 ../wp_knowledgebase/taxonomy-
+#: kbe_taxonomy.php:123
+msgid "0 Comment"
+msgstr "0 Комментарий"
+
+#: ../content-archive-recipe.php:38 ../content-blog-list.php:33
+#: ../content-recipe. php:33 ../content-search-result.php:37
+#: ../content-search-result.php:86 .. /content-single.php:33
+#: ../inc/functions/widgets/foodfarm_recent_posts.php:84
+#: inc/functions/widgets/foodfarm_recent_recipes.php:74
+#: wp_knowledgebase/archive-kbe_knowledgebase.php:109
+#: wp_knowledgebase/kbe_knowledgebase.php:114
+#: ../wp_knowledgebase/kbe_search.php:131
+#: ../wp_knowledgebase/single-kbe_knowledgebase.php:87
+#: wp_knowledgebase/taxonomy-kbe_tags.php:122 ../wp_knowledgebase/taxonomy-
+#: kbe_taxonomy.php:123 ../content-archive-recipe.php:48
+#: ../content-press-media.php:38 ../content- search-result.php:47
+#: ../inc/functions/woocommerce.php:236
+#: wp_knowledgebase/archive-kbe_knowledgebase.php:119
+#: wp_knowledgebase/kbe_knowledgebase.php:124
+#: ../wp_knowledgebase/kbe_search.php:141
+#: ../wp_knowledgebase/taxonomy-kbe_tags.php:132 kbe_taxonomy.php:133
+msgid "Read more"
+msgstr "Читать больше"
+
+#: ../content-blog-list.php:53 ../content-search-result.php:106
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: ../content-gallery-grid.php:67 ../content-gallery-masonry.php:61 ..
+#: wp_knowledgebase/archive-kbe_knowledgebase.php:151
+#: wp_knowledgebase/kbe_knowledgebase.php:156
+#: ../wp_knowledgebase/kbe_search.php:157
+#: ../wp_knowledgebase/taxonomy-kbe_tags.php:149 ../wp_knowledgebase/taxonomy-
+#: kbe_taxonomy.php:150
+msgid "View More"
+msgstr "Посмотреть больше"
+
+msgid "Show view more"
+msgstr "Показать более"
+
+#: ../content-recipe.php:51
+msgid "Prep"
+msgstr "Подготовка"
+
+#: ../content-recipe.php:57
+msgid "Cook"
+msgstr "Готовить"
+
+#: ../content-recipe.php:63
+msgid "Ready In"
+msgstr "Готовo"
+
+#: ../content-recipe.php:72
+msgid " servings"
+msgstr " сервировки"
+
+#: ../content-recipe.php:80
+msgid "Ingredients"
+msgstr "Ингредиенты"
+
+#: ../content-recipe.php:92
+msgid "Directions"
+msgstr "Направления"
+
+#: ../content-recipe.php:106 ../inc/functions/metaboxes/recipe.php:80
+msgid "Footnotes"
+msgstr "Примечания"
+
+#: ../content-recipe.php:109 ../inc/functions/metaboxes/recipe.php:40
+msgid "Cook's Note:"
+msgstr "Примечания повара:"
+
+#: ../content-recipe.php:114 ../inc/functions/metaboxes/recipe.php:45
+msgid "Editor's Note:"
+msgstr "Примечания редактора:"
+
+#: ../content-recipe.php:128 ../content-single.php:52 ../woocommerce/content-
+#: single-product.php:79
+msgid "Share"
+msgstr "Поделиться"
+
+#: ../content-search-result.php:95 ../inc/functions/functions.php:237
+msgid " Read More"
+msgstr "Читаты больше"
+
+#: ../headers/header_3.php:59 ..
+#: inc/functions/widgets/foodfarm_knowledge_catogories.php:80
+#: inc/functions/widgets/foodfarm_recipe_categories.php:28
+msgid "Categories"
+msgstr "Kатегории"
+
+#: ../inc/admin/settings/settings.php:698
+msgid "Gallery"
+msgstr "Галерея"
+
+#: ../inc/admin/settings/settings.php:756 ../inc/functions/layout.php:690 ..
+#: inc/functions/layout.php:910
+msgid "Recipes"
+msgstr "Рецепты"
+
+#: ../inc/functions/functions.php:297
+msgid "(Edit)"
+msgstr "(Pедактировать)"
+
+#: ../inc/functions/functions.php:315
+msgid "Reply"
+msgstr "Ответить"
+
+#: ../inc/functions/functions.php:338
+msgid "Post Comment"
+msgstr "Добавить"
+
+#: ../inc/functions/layout.php:540 ../inc/functions/layout.php:824
+msgid "Home"
+msgstr "Hачало"
+
+#: ../inc/functions/layout.php:581 ../inc/functions/layout.php:671 ..
+#: inc/functions/layout.php:787 ../inc/functions/layout.php:843
+#: inc/functions/layout.php:887 ../inc/functions/layout.php:961
+msgid "Search results for &ldquo;"
+msgstr "Результаты поиска &ldquo;"
+
+#: ../inc/functions/woocommerce.php:192
+msgid "Show"
+msgstr "Показать"
+
+#: ../inc/functions/metaboxes/recipe.php:16
+msgid "Preparation time"
+msgstr "Pagatavošanas laiks"
+
+#: ../inc/functions/widgets/foodfarm_archives_post-type.php:196
+msgid "gallery"
+msgstr "galerija"
+
+#: ../inc/functions/widgets/foodfarm_recent_posts.php:12
+msgid "Recent Posts"
+msgstr "Jaunākās publikācijas"
+
+#: ../inc/plugins/importer/wordpress-importer.php:134 ..
+#: inc/plugins/importer/wordpress-importer.php:143
+#: inc/plugins/importer/wordpress-importer.php:194
+#: inc/plugins/importer/wordpress-importer.php:198
+#: inc/plugins/importer/wordpress-importer.php:207
+msgid "Sorry, there has been an error."
+msgstr "Notika kļūme"
+
+#: ../inc/plugins/importer/wordpress-importer.php:286 ../woocommerce/single-
+#: product-reviews.php:78
+msgid "Submit"
+msgstr "Отправить"
+
+#: ../woocommerce/content-single-product.php:74
+msgid "Email to Friends"
+msgstr "Почтa другу"
+
+#: ../woocommerce/product-searchform.php:26
+msgctxt "placeholder"
+msgid "Search Products&hellip;"
+msgstr "Поиск продуктов..."
+
+#: ../woocommerce/product-searchform.php:26
+msgctxt "label"
+msgid "Search for:"
+msgstr "Искать:"
+
+#: ../woocommerce/single-product-reviews.php:34
+msgid "Reviews"
+msgstr "Oтзывы"
+
+#: ../woocommerce/single-product-reviews.php:55
+msgid "There are no reviews yet."
+msgstr "Hет ни одного отзыва."
+
+#: ../woocommerce/single-product-reviews.php:68
+msgid "Add a review"
+msgstr "Добавить отзыв"
+
+#: ../woocommerce/single-product-reviews.php:68
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "Оставьте первый отзыв &ldquo;%s&rdquo;"
+
+#: ../woocommerce/loop/no-products-found.php:23
+msgid "No products were found matching your selection."
+msgstr "Ни один продукт не отвечает критериям поиска."
+
+#: ../woocommerce/loop/orderby.php:24
+msgid "Sort by"
+msgstr "Сортировать по"
+
+#: ../woocommerce/single-product/meta.php:40 ../woocommerce/single-
+#: product/tabs/tabs.php:62
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] "Tags:"
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../woocommerce/single-product/related.php:49
+msgid "You May"
+msgstr "Вам также "
+
+#: ../woocommerce/single-product/related.php:49
+msgid "Also like"
+msgstr "может понравиться"
+
+#: ../woocommerce/single-product/short-description.php:30
+msgid "Quick description"
+msgstr "Краткое описание"
+
+#: ../woocommerce/single-product/up-sells.php:51
+msgid "You may also like&hellip;"
+msgstr "Вам также может понравиться"
+
+#: ../wp_knowledgebase/kbe_search.php:87
+msgid "Search Results for: "
+msgstr " "
 
 msgid "Show all"
 msgstr "Показать все"
@@ -3789,39 +3929,6 @@ msgstr "maija"
 
 msgid "Jan"
 msgstr "Jan"
-
-msgid "Feb"
-msgstr ""
-
-msgid "Mar"
-msgstr ""
-
-msgid "Apr"
-msgstr ""
-
-msgid "May"
-msgstr ""
-
-msgid "Jun"
-msgstr ""
-
-msgid "Jul"
-msgstr ""
-
-msgid "Aug"
-msgstr ""
-
-msgid "Sep"
-msgstr ""
-
-msgid "Oct"
-msgstr ""
-
-msgid "Nov"
-msgstr ""
-
-msgid "Dec"
-msgstr ""
 
 msgid "Your Review"
 msgstr "Ваш oтзыв"
@@ -3930,11 +4037,15 @@ msgstr "Ничего не найдено"
 
 #: loop.php:29
 msgid "Sorry, no posts matched your criteria. Please try another search"
-msgstr "К сожалению, ни одна публикация не соответствует Вашим критериям. Пожалуйста, попробуйте другой поиск"
+msgstr ""
+"К сожалению, ни одна публикация не соответствует Вашим критериям. Пожалуйста,"
+" попробуйте другой поиск"
 
 #: loop.php:30
-msgid "You might want to consider some of our suggestions to get better results:"
-msgstr "Рассмотрите некоторые наши предложения для получения лучших результатов:"
+msgid ""
+"You might want to consider some of our suggestions to get better results:"
+msgstr ""
+"Рассмотрите некоторые наши предложения для получения лучших результатов:"
 
 #: loop.php:32
 msgid "Check your spelling."
@@ -3942,7 +4053,8 @@ msgstr "Проверьте Вашу орфографию."
 
 #: loop.php:33
 msgid "Try a similar keyword, for example: notebook instead of laptop."
-msgstr "Попробуйте аналогичное ключевое слово, например: ноутбук вместо лаптопа."
+msgstr ""
+"Попробуйте аналогичное ключевое слово, например: ноутбук вместо лаптопа."
 
 #: loop.php:34
 msgid "Try using more than one keyword."
@@ -4560,9 +4672,6 @@ msgstr "ШОРТКОД ЧЛЕН КОМАНДЫ"
 msgid "SHORTCODE FEATURE"
 msgstr "ШОРТКОД FEATURE"
 
-msgid "Feature"
-msgstr ""
-
 msgid "Is Alternative Display Type:"
 msgstr "Является альтернативным типом дисплея:"
 
@@ -4596,11 +4705,26 @@ msgstr "ШОРТКОД КОНТАКТНАЯ ИНФОРМАЦИЯ"
 msgid "SHORTCODE PROGRESS BAR"
 msgstr "ИНДИКАТОР ВЫПОЛНЕНИЯ"
 
-msgid "You can use the two buttons below to backup your current options, and then restore it back at a later time. This is useful if you want to experiment on the options but would like to keep the old settings in case you need it back."
-msgstr "Вы можете воспользоваться двумя кнопками ниже для резервного копирования ваших текущих настроек, а затем восстановить их обратно позже. Это полезно, если вы хотите поэкспериментировать с вариантами, но хотели бы сохранить старые настройки в случае необходимости их возврата."
+msgid ""
+"You can use the two buttons below to backup your current options, and then "
+"restore it back at a later time. This is useful if you want to experiment on "
+"the options but would like to keep the old settings in case you need it back."
+msgstr ""
+"Вы можете воспользоваться двумя кнопками ниже для резервного копирования "
+"ваших текущих настроек, а затем восстановить их обратно позже. Это полезно, "
+"если вы хотите поэкспериментировать с вариантами, но хотели бы сохранить "
+"старые настройки в случае необходимости их возврата."
 
-msgid "You can transfer the saved options data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click \"Import Options\"."
-msgstr "Вы можете переносить сохраненные параметры данных между различными устанавками, скопировав текст в текстовом поле. Чтобы импортировать данные из другой установки, замените данные в текстовом поле данными из другой установки и нажмите \"Параметры импорта\"."
+msgid ""
+"You can transfer the saved options data between different installs by "
+"copying the text inside the text box. To import data from another install, "
+"replace the data in the text box with the one from another install and click "
+"\"Import Options\"."
+msgstr ""
+"Вы можете переносить сохраненные параметры данных между различными "
+"устанавками, скопировав текст в текстовом поле. Чтобы импортировать данные "
+"из другой установки, замените данные в текстовом поле данными из другой "
+"установки и нажмите \"Параметры импорта\"."
 
 msgid "Clients and partners"
 msgstr "Клиенты и партнёры"
@@ -4714,23 +4838,45 @@ msgstr "Подключитесь через вашу любимую сеть"
 msgid "Инвестировать в реальное предприятие"
 msgstr "Инвестировать в реальное предприятие"
 
-msgid "Обратный выкуп опционов WPCoin начнется через 15 месяцев после окончания сбора средств в размере, 50% от прибыли исходя из квартальных отчетов. Также инвесторы получат право обмена WPCoin на соответствующее количество древесных гранул исходя из расчета  1тонна древесных гранул =100 WPCoin = на условиях FCA."
-msgstr "Обратный выкуп опционов WPCoin начнется через 15 месяцев после окончания сбора средств в размере, 50% от прибыли исходя из квартальных отчетов. Также инвесторы получат право обмена WPCoin на соответствующее количество древесных гранул исходя из расчета  1тонна древесных гранул =100 WPCoin = на условиях FCA."
+msgid ""
+"Обратный выкуп опционов WPCoin начнется через 15 месяцев после окончания "
+"сбора средств в размере, 50% от прибыли исходя из квартальных отчетов. Также "
+"инвесторы получат право обмена WPCoin на соответствующее количество "
+"древесных гранул исходя из расчета  1тонна древесных гранул =100 WPCoin = на "
+"условиях FCA."
+msgstr ""
+"В основе проекта WOOD PELLETS - внедрение модели интенсивного "
+"лесопользования с улучшением породного и качественного состава лесного фонда "
+", также применение экологически чистого , безотходного производства "
+"замкнутого цикла на основе глубокой переработки древесины и биотоплива "
+"(древесных пеллет) без дополнительных негативных воздействий на окружающую "
+"среду , с использованием возобновляемых источников энергии для совместной "
+"выроботки электричества , тепла и холода на собственные нужды предприятия и "
+"запуска экомайнинг фермы ."
 
 msgid "EUR"
 msgstr "EUR"
 
 msgid "Индустрия по производству пеллет в блокчейне"
-msgstr "Индустрия по производству пеллет в блокчейне"
+msgstr ""
+"БЛОКЧЕИН - ОПЦИОН В ИНДУСТРИИ ПРОИЗВОДСТВА ДРЕВЕСНЫХ ПЕЛЛЕТ И ЭКОМАЙНИНГА"
 
-msgid "Экологически чистое, безотходное производство, замкнутого цикла из бозобнобляемых источников энергии и применением новейший ИТ технологий"
-msgstr "Экологически чистое, безотходное производство, замкнутого цикла из бозобнобляемых источников энергии и применением новейший ИТ технологий"
+msgid ""
+"Экологически чистое, безотходное производство, замкнутого цикла из "
+"бозобнобляемых источников энергии и применением новейший ИТ технологий"
+msgstr ""
+"экологически чистое безотходное производство замкнутого цикла из "
+"возобновляемых источников энергии и применением новейших ит технологий "
 
 msgid "Свяжитесь с нами"
 msgstr "Свяжитесь с нами"
 
-msgid "Когенерационная станция - электрическая мощность 4,5 МWТ - тепловая мощность 14,74 МWТ"
-msgstr "Когенерационная станция - электрическая мощность 4,5 МWТ - тепловая мощность 14,74 МWТ"
+msgid ""
+"Когенерационная станция - электрическая мощность 4,5 МWТ - тепловая мощность "
+"14,74 МWТ"
+msgstr ""
+"Когенерационная станция - электрическая мощность 4,5 МWТ - тепловая мощность "
+"14,74 МWТ"
 
 msgid "Mайнинг - фермa 4,5 MWT 6750 Th/s"
 msgstr "Mайнинг - фермa 4,5 MWT 6750 Th/s"
@@ -4768,26 +4914,132 @@ msgstr "До конца PRE ICO"
 msgid "Лесозавод"
 msgstr "Лесозавод"
 
-msgid "Лесопильный завод с производительностью пиления 100.000 – 120.000 м3 пиловочника в год в две смены в зависимости от карты распила и среднего диаметра бревна. Предлагаемая концепция на базе Фрезерно-ленточнопильной (Quadro) технологии предусматривает распиловку пиловочника по программно- устанавливаемым схемам раскроя на центральные и боковые доски (до макс. 8 боковых досок/брёвeн) в автоматическом режиме. Дополнительным преимуществом Линии является ее компактность при минимальной потребности в персонале (2-3 оператора в одну смену) на лесопильной линии и высокий коэффициент использования при низком удельном энергопотреблении на 1 м3 распиливаемого сырья."
-msgstr "Лесопильный завод с производительностью пиления 100.000 – 120.000 м3 пиловочника в год в две смены в зависимости от карты распила и среднего диаметра бревна. Предлагаемая концепция на базе Фрезерно-ленточнопильной (Quadro) технологии предусматривает распиловку пиловочника по программно- устанавливаемым схемам раскроя на центральные и боковые доски (до макс. 8 боковых досок/брёвeн) в автоматическом режиме. Дополнительным преимуществом Линии является ее компактность при минимальной потребности в персонале (2-3 оператора в одну смену) на лесопильной линии и высокий коэффициент использования при низком удельном энергопотреблении на 1 м3 распиливаемого сырья."
+msgid ""
+"Лесопильный завод с производительностью пиления 100.000 – 120.000 м3 "
+"пиловочника в год в две смены в зависимости от карты распила и среднего "
+"диаметра бревна. Предлагаемая концепция на базе Фрезерно-ленточнопильной "
+"(Quadro) технологии предусматривает распиловку пиловочника по программно- "
+"устанавливаемым схемам раскроя на центральные и боковые доски (до макс. 8 "
+"боковых досок/брёвeн) в автоматическом режиме. Дополнительным преимуществом "
+"Линии является ее компактность при минимальной потребности в персонале (2-3 "
+"оператора в одну смену) на лесопильной линии и высокий коэффициент "
+"использования при низком удельном энергопотреблении на 1 м3 распиливаемого "
+"сырья."
+msgstr ""
+"Лесопильный завод с производительностью пиления 100.000 – 120.000 м3 "
+"пиловочника в год в две смены в зависимости от карты распила и среднего "
+"диаметра бревна. Предлагаемая концепция на базе Фрезерно-ленточнопильной "
+"(Quadro) технологии предусматривает распиловку пиловочника по программно- "
+"устанавливаемым схемам раскроя на центральные и боковые доски (до макс. 8 "
+"боковых досок/брёвeн) в автоматическом режиме. Дополнительным преимуществом "
+"Линии является ее компактность при минимальной потребности в персонале (2-3 "
+"оператора в одну смену) на лесопильной линии и высокий коэффициент "
+"использования при низком удельном энергопотреблении на 1 м3 распиливаемого "
+"сырья."
 
 msgid "Когенерация"
 msgstr "Когенерация"
 
-msgid "Когенерация это процесс совместной выработки электрической и тепловой энергии.  Отходы, образующиеся в процессе лесозаготовки и  производства, используются когенерационной станцией для выработки электро- и теплоэнергии на собственные нужды предприятия. таким образом комплекс заводов будет полностью независимым. Когенерационная установка является эффективной альтернативой тепловым сетям, благодаря гибкому изменению параметров теплоносителя в зависимости от требований потребителя в любое время года. Потребитель, имеющий в эксплуатации когенераторную электростанцию не подвержен зависимости от экономического состояния дел больших теплоэнергетических компаниях. Доход (или экономия) от реализации электричества и тепловой энергии, за короткое время, покрывают все расходы на когенераторную электростанцию. Окупаемость капитальных вложений в когенераторную установку происходит быстрее окупаемости средств, затраченных на подключение к электро и тепловым сетям, обеспечивая тем самым, устойчивый возврат инвестиций."
-msgstr "Когенерация это процесс совместной выработки электрической и тепловой энергии.  Отходы, образующиеся в процессе лесозаготовки и  производства, используются когенерационной станцией для выработки электро- и теплоэнергии на собственные нужды предприятия. таким образом комплекс заводов будет полностью независимым. Когенерационная установка является эффективной альтернативой тепловым сетям, благодаря гибкому изменению параметров теплоносителя в зависимости от требований потребителя в любое время года. Потребитель, имеющий в эксплуатации когенераторную электростанцию не подвержен зависимости от экономического состояния дел больших теплоэнергетических компаниях. Доход (или экономия) от реализации электричества и тепловой энергии, за короткое время, покрывают все расходы на когенераторную электростанцию. Окупаемость капитальных вложений в когенераторную установку происходит быстрее окупаемости средств, затраченных на подключение к электро и тепловым сетям, обеспечивая тем самым, устойчивый возврат инвестиций."
+msgid ""
+"Когенерация это процесс совместной выработки электрической и тепловой "
+"энергии.  Отходы, образующиеся в процессе лесозаготовки и  производства, "
+"используются когенерационной станцией для выработки электро- и теплоэнергии "
+"на собственные нужды предприятия. таким образом комплекс заводов будет "
+"полностью независимым. Когенерационная установка является эффективной "
+"альтернативой тепловым сетям, благодаря гибкому изменению параметров "
+"теплоносителя в зависимости от требований потребителя в любое время года. "
+"Потребитель, имеющий в эксплуатации когенераторную электростанцию не "
+"подвержен зависимости от экономического состояния дел больших "
+"теплоэнергетических компаниях. Доход (или экономия) от реализации "
+"электричества и тепловой энергии, за короткое время, покрывают все расходы "
+"на когенераторную электростанцию. Окупаемость капитальных вложений в "
+"когенераторную установку происходит быстрее окупаемости средств, затраченных "
+"на подключение к электро и тепловым сетям, обеспечивая тем самым, устойчивый "
+"возврат инвестиций."
+msgstr ""
+"Когенерация это процесс совместной выработки электрической и тепловой "
+"энергии.  Отходы, образующиеся в процессе лесозаготовки и  производства, "
+"используются когенерационной станцией для выработки электро- и теплоэнергии "
+"на собственные нужды предприятия. таким образом комплекс заводов будет "
+"полностью независимым. Когенерационная установка является эффективной "
+"альтернативой тепловым сетям, благодаря гибкому изменению параметров "
+"теплоносителя в зависимости от требований потребителя в любое время года. "
+"Потребитель, имеющий в эксплуатации когенераторную электростанцию не "
+"подвержен зависимости от экономического состояния дел больших "
+"теплоэнергетических компаниях. Доход (или экономия) от реализации "
+"электричества и тепловой энергии, за короткое время, покрывают все расходы "
+"на когенераторную электростанцию. Окупаемость капитальных вложений в "
+"когенераторную установку происходит быстрее окупаемости средств, затраченных "
+"на подключение к электро и тепловым сетям, обеспечивая тем самым, устойчивый "
+"возврат инвестиций."
 
 msgid "Лесные ресурсы"
 msgstr "Лесные ресурсы"
 
-msgid "Компания является арендатором по 2 договорам аренды лесных участков в Псковской области, расположенных на землях лесного фонда,.. Срок аренды - 49 лет Ресурсная  база компании 8 000 000 кубометров древесины . Площадь   арендованного лесного фонда составляет 71 967 га, в том числе:  Опочецкое лесничество – 29 629 га.  Себежское лесничество – 42 338 га.. . Также имеет в  собственности производственную площадку с капитальными строениями общей площадью 40000 кв метров, с электрической мощностью около 1 МВт. Данная территория имеет хорошо развитую транспортную инфраструктуру. По ней проходят такие транспортные магистрали как: Москва-Балтия; Санкт-Петербург-Киев; Опочка-Полоцк, а также имеется железная дорога направлением Москва-Балтия, включающую в себя станцию «Себеж», на которой компания имеем железнодорожные пути с погрузочно-разгрузочными площадками. Сеть лесных дорог поддерживается в хорошем состоянии, позволяет вести заготовку леса круглогодично. Компания осуществляет активный экологический и противопожарный мониторинг, защиту лесов на предоставленных в аренду лесных участках и прилегающих территориях, тем самым обеспечивая защиту своего сырья. Компания ежегодно, по согласованию с Правительством Псковской области, высаживают несколько миллионов саженцев хвойных и лиственных пород деревьев и осуществляют авторский надзор за произведенными посадками."
-msgstr "Компания является арендатором по 2 договорам аренды лесных участков в Псковской области, расположенных на землях лесного фонда,.. Срок аренды - 49 лет Ресурсная  база компании 8 000 000 кубометров древесины . Площадь   арендованного лесного фонда составляет 71 967 га, в том числе:  Опочецкое лесничество – 29 629 га.  Себежское лесничество – 42 338 га.. . Также имеет в  собственности производственную площадку с капитальными строениями общей площадью 40000 кв метров, с электрической мощностью около 1 МВт. Данная территория имеет хорошо развитую транспортную инфраструктуру. По ней проходят такие транспортные магистрали как: Москва-Балтия; Санкт-Петербург-Киев; Опочка-Полоцк, а также имеется железная дорога направлением Москва-Балтия, включающую в себя станцию «Себеж», на которой компания имеем железнодорожные пути с погрузочно-разгрузочными площадками. Сеть лесных дорог поддерживается в хорошем состоянии, позволяет вести заготовку леса круглогодично. Компания осуществляет активный экологический и противопожарный мониторинг, защиту лесов на предоставленных в аренду лесных участках и прилегающих территориях, тем самым обеспечивая защиту своего сырья. Компания ежегодно, по согласованию с Правительством Псковской области, высаживают несколько миллионов саженцев хвойных и лиственных пород деревьев и осуществляют авторский надзор за произведенными посадками."
+msgid ""
+"Компания является арендатором по 2 договорам аренды лесных участков в "
+"Псковской области, расположенных на землях лесного фонда,.. Срок аренды - 49 "
+"лет Ресурсная  база компании 8 000 000 кубометров древесины . Площадь   "
+"арендованного лесного фонда составляет 71 967 га, в том числе:  Опочецкое "
+"лесничество – 29 629 га.  Себежское лесничество – 42 338 га.. . Также имеет "
+"в  собственности производственную площадку с капитальными строениями общей "
+"площадью 40000 кв метров, с электрической мощностью около 1 МВт. Данная "
+"территория имеет хорошо развитую транспортную инфраструктуру. По ней "
+"проходят такие транспортные магистрали как: Москва-Балтия; Санкт-Петербург-"
+"Киев; Опочка-Полоцк, а также имеется железная дорога направлением Москва-"
+"Балтия, включающую в себя станцию «Себеж», на которой компания имеем "
+"железнодорожные пути с погрузочно-разгрузочными площадками. Сеть лесных "
+"дорог поддерживается в хорошем состоянии, позволяет вести заготовку леса "
+"круглогодично. Компания осуществляет активный экологический и "
+"противопожарный мониторинг, защиту лесов на предоставленных в аренду лесных "
+"участках и прилегающих территориях, тем самым обеспечивая защиту своего "
+"сырья. Компания ежегодно, по согласованию с Правительством Псковской области,"
+" высаживают несколько миллионов саженцев хвойных и лиственных пород деревьев "
+"и осуществляют авторский надзор за произведенными посадками."
+msgstr ""
+"Компания является арендатором по 2 договорам аренды лесных участков в "
+"Псковской области, расположенных на землях лесного фонда,.. Срок аренды - 49 "
+"лет Ресурсная  база компании 8 000 000 кубометров древесины . Площадь   "
+"арендованного лесного фонда составляет 71 967 га, в том числе:  Опочецкое "
+"лесничество – 29 629 га.  Себежское лесничество – 42 338 га.. . Также имеет "
+"в  собственности производственную площадку с капитальными строениями общей "
+"площадью 40000 кв метров, с электрической мощностью около 1 МВт. Данная "
+"территория имеет хорошо развитую транспортную инфраструктуру. По ней "
+"проходят такие транспортные магистрали как: Москва-Балтия; Санкт-Петербург-"
+"Киев; Опочка-Полоцк, а также имеется железная дорога направлением Москва-"
+"Балтия, включающую в себя станцию «Себеж», на которой компания имеем "
+"железнодорожные пути с погрузочно-разгрузочными площадками. Сеть лесных "
+"дорог поддерживается в хорошем состоянии, позволяет вести заготовку леса "
+"круглогодично. Компания осуществляет активный экологический и "
+"противопожарный мониторинг, защиту лесов на предоставленных в аренду лесных "
+"участках и прилегающих территориях, тем самым обеспечивая защиту своего "
+"сырья. Компания ежегодно, по согласованию с Правительством Псковской области,"
+" высаживают несколько миллионов саженцев хвойных и лиственных пород деревьев "
+"и осуществляют авторский надзор за произведенными посадками."
 
 msgid "Завод древесных пеллет"
 msgstr "Завод древесных пеллет"
 
-msgid "Завод древесных пеллет мощностью 120 000 тонн в год  для производства древесно топливных гранул (пеллеты, ДТГ)Класса Enplus A1, Enplus A2.  – это небольшие цилиндрические прессованные древесные изделия диаметром 4-12 мм, длиной 20-50 мм, переработанные из высушенных остатков деревообрабатывающего и лесопильного производства: опилки, стружка, древесная мука, щепа, древесная пыль и т.д. Гранулы используются в котлах для получения тепловой и электрической энергии путем сжигания. Преимуществом использования древесных гранул перед другими видами топлива является:  снижение вредных выбросов СО2 в атмосферу."
-msgstr "Завод древесных пеллет мощностью 120 000 тонн в год  для производства древесно топливных гранул (пеллеты, ДТГ)Класса Enplus A1, Enplus A2.  – это небольшие цилиндрические прессованные древесные изделия диаметром 4-12 мм, длиной 20-50 мм, переработанные из высушенных остатков деревообрабатывающего и лесопильного производства: опилки, стружка, древесная мука, щепа, древесная пыль и т.д. Гранулы используются в котлах для получения тепловой и электрической энергии путем сжигания. Преимуществом использования древесных гранул перед другими видами топлива является:  снижение вредных выбросов СО2 в атмосферу."
+msgid ""
+"Завод древесных пеллет мощностью 120 000 тонн в год  для производства "
+"древесно топливных гранул (пеллеты, ДТГ)Класса Enplus A1, Enplus A2.  – это "
+"небольшие цилиндрические прессованные древесные изделия диаметром 4-12 мм, "
+"длиной 20-50 мм, переработанные из высушенных остатков деревообрабатывающего "
+"и лесопильного производства: опилки, стружка, древесная мука, щепа, "
+"древесная пыль и т.д. Гранулы используются в котлах для получения тепловой и "
+"электрической энергии путем сжигания. Преимуществом использования древесных "
+"гранул перед другими видами топлива является:  снижение вредных выбросов СО2 "
+"в атмосферу."
+msgstr ""
+"Завод древесных пеллет мощностью 120 000 тонн в год  для производства "
+"древесно топливных гранул (пеллеты, ДТГ)Класса Enplus A1, Enplus A2.  – это "
+"небольшие цилиндрические прессованные древесные изделия диаметром 4-12 мм, "
+"длиной 20-50 мм, переработанные из высушенных остатков деревообрабатывающего "
+"и лесопильного производства: опилки, стружка, древесная мука, щепа, "
+"древесная пыль и т.д. Гранулы используются в котлах для получения тепловой и "
+"электрической энергии путем сжигания. Преимуществом использования древесных "
+"гранул перед другими видами топлива является:  снижение вредных выбросов СО2 "
+"в атмосферу."
 
 msgid "Copyright © ПРОЕКТ “WOOD PELLETS”"
 msgstr "Copyright © ПРОЕКТ “WOOD PELLETS”"
@@ -4798,11 +5050,38 @@ msgstr "Партнеры"
 msgid "Проблема"
 msgstr "Проблема"
 
-msgid "Главные проблемы в производстве пеллет и пиломатеиала - экология, рентабельность производственного бизнеса и нехватка сыря. Проект Wood Pellets предлогает концепт безотходного производства замкнутого цикла. Комплекс небудет нуждается в посредниках."
-msgstr "Главные проблемы в производстве пеллет и пиломатеиала - экология, рентабельность производственного бизнеса и нехватка сыря. Проект Wood Pellets предлогает концепт безотходного производства замкнутого цикла. Комплекс небудет нуждается в посредниках."
+msgid ""
+"Главные проблемы в производстве пеллет и пиломатеиала - экология, "
+"рентабельность производственного бизнеса и нехватка сыря. Проект Wood "
+"Pellets предлогает концепт безотходного производства замкнутого цикла. "
+"Комплекс небудет нуждается в посредниках."
+msgstr ""
+"Лес - это источник сырья для всех древесных изготовляющих или "
+"перерабатывающих предприятий . Множество лесозаготовительных и "
+"деревообрабатывающих предприятий после выполнения работ оставляют около 25 – "
+"40 % отходного лесного и древесного материала, дальнейшая судьба которого "
+"просто уничтожается методом сжигания , поэтому так важна , переработка "
+"отходов древесины , её использование в производстве не только сохранит "
+"первичный древесный материал, но и уменьшит отходы древесины, что позволит "
+"значительно сократить вырубку лесов . Рассматривая проблемы "
+"лесопромышленного комплекса , специалисты постоянно заявляют о необходимости "
+"развития глубокой переработки древесного сырья."
 
-msgid "В комплекс проекта Wood Pellets входит лесозавод, завод древесных гранул и станция когенерация. Проект Wood Pellets предлагает произвести независимый комплекс заводов который обеспечивает безотходное производство пеллет."
-msgstr "В комплекс проекта Wood Pellets входит лесозавод, завод древесных гранул и станция когенерация. Проект Wood Pellets предлагает произвести независимый комплекс заводов который обеспечивает безотходное производство пеллет."
+msgid ""
+"В комплекс проекта Wood Pellets входит лесозавод, завод древесных гранул и "
+"станция когенерация. Проект Wood Pellets предлагает произвести независимый "
+"комплекс заводов который обеспечивает безотходное производство пеллет."
+msgstr ""
+"Несмотря на то, что Россия обладает четвертью мирового лесного фонда, на ее "
+"долю приходится лишь 3% мирового рынка продуктов глубокой переработки. Лишь "
+"15% - 20% древесины в России подвергается глубокой переработке . Мы живем в "
+"мире где человечество равнодушно относится к нашей планете и экологии . Как "
+"объясняют исследователи , углекислый газ (CO2) в атмосфере Земли в 2016 году "
+"достиг максимальной концентрации . Его содержание увеличилось на 50% по "
+"сравнению со средним уровнем в течение последних 10 лет . Бизнес модель "
+"крипто майнинга в значительной степени зависит от источников энергии . Цена "
+"и доступность электроэнергии являются двумя важнейшими факторами для "
+"компаний , занимающихся майнингом .\n"
 
 msgid "Отопление и электроэнергия"
 msgstr "Отопление и электроэнергия"
@@ -4810,14 +5089,24 @@ msgstr "Отопление и электроэнергия"
 msgid "Currantly received"
 msgstr "Currantly received"
 
-msgid "Для инвестирования, отправьте Эфир на официальный смарт контракт краудсейла.Нельзя переводить с обменников, только ETH кошельки. При транзакции, пожалуйста, ставте GAS LIMIT 200000."
-msgstr "Для инвестирования, отправьте Эфир на официальный смарт контракт краудсейла.Нельзя переводить с обменников, только ETH кошельки. При транзакции, пожалуйста, ставте GAS LIMIT 200000."
+msgid ""
+"Для инвестирования, отправьте Эфир на официальный смарт контракт краудсейла."
+"Нельзя переводить с обменников, только ETH кошельки. При транзакции, "
+"пожалуйста, ставте GAS LIMIT 200000."
+msgstr ""
+"Для инвестирования, отправьте Эфир на официальный смарт контракт краудсейла."
+"Нельзя переводить с обменников, только ETH кошельки. При транзакции, "
+"пожалуйста, ставте GAS LIMIT 200000."
 
 msgid "Подпишитесь"
 msgstr "Подпишитесь"
 
-msgid "еженедельную подпискa новостей. Информация, которая будет отсилаться при подписке."
-msgstr "еженедельную подпискa новостей. Информация, которая будет отсилаться при подписке."
+msgid ""
+"еженедельную подпискa новостей. Информация, которая будет отсилаться при "
+"подписке."
+msgstr ""
+"еженедельную подпискa новостей. Информация, которая будет отсилаться при "
+"подписке."
 
 msgid "Наша команда"
 msgstr "Наша команда"

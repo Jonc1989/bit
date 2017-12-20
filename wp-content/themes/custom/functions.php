@@ -141,8 +141,44 @@ function register_contact_info() {
 		)
 	);
 
+	add_settings_field(
+		'facebook_input',
+		'Facebook page',
+		'input_callback',
+		'general',
+		'contact_section',
+		array(
+			'facebook_input'
+		)
+	);
+
+	add_settings_field(
+		'vk_input',
+		'VK page',
+		'input_callback',
+		'general',
+		'contact_section',
+		array(
+			'vk_input'
+		)
+	);
+
+	add_settings_field(
+		'telegraph_input',
+		'Telegraph page',
+		'input_callback',
+		'general',
+		'contact_section',
+		array(
+			'telegraph_input'
+		)
+	);
+
 	register_setting( 'general', 'address_input', 'esc_attr' );
 	register_setting( 'general', 'phone_input', 'esc_attr' );
+	register_setting( 'general', 'facebook_input', 'esc_attr' );
+	register_setting( 'general', 'vk_input', 'esc_attr' );
+	register_setting( 'general', 'telegraph_input', 'esc_attr' );
 }
 function contact_callback() {
 	echo '<span> </span>';

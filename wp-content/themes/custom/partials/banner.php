@@ -26,9 +26,9 @@
 					<a class="btn join-link" href="/login"><?php echo __( 'УЧАСТВОВАТЬ', 'preico' ) ?></a>
 				</div>
 				<div class="col-md-6 col-sm-6 clear-pads soc-icon">
-					<a href="#" class="vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/vk@2x.png"> </a>
-					<a href="#" class="fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/fb@2x.png"></a>
-					<a href="#" class="telegraph"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/telegraph@2x.png"></a>
+					<a target="_blank" href="<?php echo get_option( 'vk_input' );?>" class="vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/vk@2x.png"> </a>
+					<a target="_blank" href="<?php echo get_option( 'facebook_input' );?>" class="fb"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/fb@2x.png"></a>
+					<a target="_blank" href="<?php echo get_option( 'telegraph_input' );?>" class="telegraph"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/telegraph@2x.png"></a>
 				</div>
 			</div>
 		</div>

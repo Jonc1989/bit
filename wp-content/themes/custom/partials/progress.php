@@ -71,7 +71,20 @@
 
 
 		<div class="col-md-6 col-sm-6 col-xs-12 wallet">
-            <span>Номер кошелька</span>
+
+			<div class="">
+				<div class="form-group">
+					<label for="usr" style="display: block;">Введите желаемую сумму токенов:</label>
+					<input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/^0+/, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"  class="form-control num-tocken" id="usr" style="width: 200px; height: 31px; display: inline-block;">
+					<button class="btn eth_calc" style="background-color: #6fb600;margin-right: 15px;margin-left: 15px;">
+						<span class="copy-txt">Расчитать</span>
+					</button>
+
+					<p class="must_pay" style="margin-top: 11px; display: none;">Вы должны оплатить <span>0.45845678</span></p>
+				</div>
+			</div>
+
+			<span>Номер кошелька</span>
 			<button class="btn copy" style="background-color: #6fb600;">
                     <span class="copy-icon">
                         <img src="<?php bloginfo('template_directory');?>/resources/images/copy.png">
@@ -136,7 +149,9 @@
                     1 Euro = <span class="bold">1 WPC</span>
                 </div>
             </div>
-
+			<div class="">
+				Стоимость 1 ETH = <span class="rth_eur"></span> на <span class="eth_time"></span> MSK (UTC+3)
+			</div>
 		</div>
 	</div>
 

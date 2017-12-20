@@ -19,9 +19,9 @@
                 </div>
 
                 <div class="col-md-12 col-sm-6 clear-pads soc-icons">
-                    <a href="#" class="vk"><div class="vk-yellow-icon"></div> </a>
-                    <a href="#" class="fb"><div class="fb-yellow-icon"></div></a>
-                    <a href="#" class="telegraph"><div class="telegraph-yellow-icon"></div></a>
+                    <a target="_blank" href="<?php echo get_option( 'vk_input' );?>" class="vk"><div class="vk-yellow-icon"></div> </a>
+                    <a target="_blank" href="<?php echo get_option( 'facebook_input' );?>" class="fb"><div class="fb-yellow-icon"></div></a>
+                    <a target="_blank" href="<?php echo get_option( 'telegraph_input' );?>" class="telegraph"><div class="telegraph-yellow-icon"></div></a>
                     <p> <?php echo  __( 'Наши страницы в социальных сетях', 'preico' );?> </p>
                 </div>
             </div>
