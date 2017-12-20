@@ -323,3 +323,6 @@ msgstr "Open QR code"
 
 msgid "Road map"
 msgstr "Road map"
+
+msgid "Преимущество"
+msgstr "Advantages"

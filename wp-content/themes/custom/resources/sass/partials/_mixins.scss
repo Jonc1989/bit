@@ -23,10 +23,19 @@
 
     @for $i from 1 through $item-count {
       &:nth-of-type(#{$i}) {
-        transform:
-                rotate($rot * 1deg)
-                translate($circle-size / 2)
-                rotate($rot * -1deg);
+
+        -webkit-transform: rotate($rot * 1deg)
+        translate($circle-size / 2)
+        rotate($rot * -1deg);
+        -moz-transform: rotate($rot * 1deg)
+        translate($circle-size / 2)
+        rotate($rot * -1deg);
+        -ms-transform: rotate($rot * 1deg)
+        translate($circle-size / 2)
+        rotate($rot * -1deg);
+        transform: rotate($rot * 1deg)
+        translate($circle-size / 2)
+        rotate($rot * -1deg);
       }
 
       $rot: $rot + $angle;

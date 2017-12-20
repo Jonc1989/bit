@@ -4833,3 +4833,6 @@ msgstr "Oткрить QR код"
 
 msgid "Road map"
 msgstr "Карта дорогп"
+
+msgid "Преимущество"
+msgstr "Преимущество"

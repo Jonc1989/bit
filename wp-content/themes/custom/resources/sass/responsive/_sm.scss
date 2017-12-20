@@ -190,6 +190,9 @@
         max-height: 40px;
       }
     }
+    .circle {
+      padding: 5px;
+    }
   }
   #progress{
     .divided-blocks {
@@ -302,6 +305,12 @@
   .close:focus, .close:hover, .close {
     color: black;
   }
+  #qrModal{
+    .close:focus, .close:hover, .close {
+      color: white;
+    }
+  }
+
   .login-btn-wrap{
     margin-bottom: 15px;
     padding-right: 0px;
@@ -344,7 +353,7 @@
 
 @media ( min-width: 992px) {
   #problem .city-description .dark-bg{
-    max-width: 25%;
+    //max-width: 25%;
   }
   #roadmap {
 
@@ -596,6 +605,9 @@
   }
   #captchaContainer{
     transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;
+
+    -moz-transform: scale(0.77);
+    -ms-transform: scale(0.77);
   }
 
 

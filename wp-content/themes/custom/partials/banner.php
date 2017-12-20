@@ -77,6 +77,24 @@
 			
 			<div class="details-sm">
 				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/wood.png">
+					<p><?php echo __( 'Лесные ресурсы - площадь лесного фонда 71 967 га', 'preico' ) ?></p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/factory-2.png">
+					<p><?php echo __( 'Лесозавод - мощность 120 000 м3/год', 'preico' ) ?></p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
+					<img src="<?php bloginfo('template_directory');?>/resources/images/factory.png">
+					<p><?php echo __( 'Завод древесных пеллет - мощность 120 000 тонн/год', 'preico' ) ?></p>
+					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
+				</div>
+
+				<div>
 					<img src="<?php bloginfo('template_directory');?>/resources/images/electr-factory.png">
 					<p><?php echo __( 'Когенерационная станция - электрическая мощность 4,5 МWТ - тепловая мощность 14,74 МWТ', 'preico' ) ?></p>
 					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
@@ -93,24 +111,6 @@
 					<img src="<?php bloginfo('template_directory');?>/resources/images/warmhouse.png">
 
 					<p><?php echo __( 'Тепличный комплекс выращивание 2 млн саженцев ели /год', 'preico' ) ?></p>
-					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
-				</div>
-
-				<div>
-					<img src="<?php bloginfo('template_directory');?>/resources/images/wood.png">
-					<p><?php echo __( 'Лесные ресурсы - площадь лесного фонда 71 967 га', 'preico' ) ?></p>
-					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
-				</div>
-
-				<div>
-					<img src="<?php bloginfo('template_directory');?>/resources/images/factory-2.png">
-					<p><?php echo __( 'Лесозавод - мощность 120 000 м3/год', 'preico' ) ?></p>
-					<img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/bullet.png">
-				</div>
-
-				<div>
-					<img src="<?php bloginfo('template_directory');?>/resources/images/factory.png">
-					<p><?php echo __( 'Завод древесных пеллет - мощность 120 000 тонн/год', 'preico' ) ?></p>
 				</div>
 			</div>
 			

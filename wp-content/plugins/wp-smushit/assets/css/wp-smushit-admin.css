@@ -544,6 +544,9 @@ table.wp-smush-stats-holder tr td:first-child {
 
 .wp-smush-progress.animate span {
     animation: animate-stripes 3s linear infinite;
+    -webkit-animation:  animate-stripes 3s linear infinite;
+    -moz-animation:     animate-stripes 3s linear infinite;
+    -o-animation:  animate-stripes 3s linear infinite;
 }
 
 @keyframes animate-stripes {

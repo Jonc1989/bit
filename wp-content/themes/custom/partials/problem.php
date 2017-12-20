@@ -18,15 +18,15 @@
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="container city-description">
 			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads">
-				<a class="" href="" data-toggle="modal" data-target="#firstModal">
-					<div class="dark-bg triangle-top col-md-3">
+
+					<div class="dark-bg triangle-top col-md-3" data-toggle="modal" data-target="#firstModal">
 
 						<h4 class="yellow"><?php echo __( 'Лесозавод', 'preico' ) ?></h4>
 						<p class="white">Арендованный лес</p>
 						<p class="white">71 976 гектар</p>
 
 					</div>
-				</a>
+
                 <div class="modal fade" id="firstModal" role="dialog">
                     <div class="modal-dialog">
                         <!-- Modal content-->
@@ -43,13 +43,13 @@
                     </div>
                 </div>
 
-				<a class="" href="" data-toggle="modal" data-target="#secondModal">
-					<div class="dark-bg triangle-top col-md-3">
+
+					<div class="dark-bg triangle-top col-md-3" data-toggle="modal" data-target="#secondModal">
 						<h4 class="yellow"><?php echo __( 'Когенерация', 'preico' ) ?></h4>
 						<p class="white">Арендованный лес</p>
 						<p class="white">71 976 гектар</p>
 					</div>
-				</a>
+
                 <div class="modal fade" id="secondModal" role="dialog">
                     <div class="modal-dialog">
                         <!-- Modal content-->
@@ -63,13 +63,13 @@
                     </div>
                 </div>
 
-				<a class="" href="" data-toggle="modal" data-target="#thirdModal">
-					<div class="dark-bg triangle-top col-md-3">
+
+					<div class="dark-bg triangle-top col-md-3" data-toggle="modal" data-target="#thirdModal">
 						<h4 class="yellow"><?php echo __( 'Лесные ресурсы', 'preico' ) ?></h4>
 						<p class="white">Арендованный лес</p>
 						<p class="white">71 976 гектар</p>
 					</div>
-				</a>
+
                 <div class="modal fade" id="thirdModal" role="dialog">
                     <div class="modal-dialog">
                         <!-- Modal content-->
@@ -83,13 +83,13 @@
                     </div>
                 </div>
 
-				<a class="" href="" data-toggle="modal" data-target="#fourthModal">
-					<div class="dark-bg triangle-top col-md-3">
+
+					<div class="dark-bg triangle-top col-md-3" data-toggle="modal" data-target="#fourthModal">
 						<h4 class="yellow"><?php echo __( 'Завод древесных пеллет', 'preico' ) ?></h4>
 						<p class="white">Арендованный лес</p>
 						<p class="white">71 976 гектар</p>
 					</div>
-				</a>
+				
                 <div class="modal fade" id="fourthModal" role="dialog">
                     <div class="modal-dialog">
                         <!-- Modal content-->
@@ -114,6 +114,9 @@
 
 
 	<div class="container">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<h4 class="title"><?php echo __( 'Преимущество', 'preico' ) ?></h4>
+		</div>
 
 		<?php
 		$args = array(
