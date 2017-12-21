@@ -3,10 +3,10 @@
 		<div class="col-md-6 col-sm-6 col-xs-12 progressbar">
 
 
-            <div class="top-title">
-                <p class="first">Soft Cap </p>
-                <p class="second">2000 ETH goal</p>
-            </div>
+			<div class="top-title">
+				<p class="first">Soft Cap </p>
+				<p class="second">2000 ETH goal</p>
+			</div>
 			<div class="granulas">
 
 				<div class="circle wrapper">
@@ -62,11 +62,11 @@
 				</div>
 
 			</div>
-            <div class="bottom-title">
-                <p class="first">Hard Cap </p>
-                <p class="second">4000 ETH goal</p>
-            </div>
-			<div class="curently-recived"><?php echo __( 'Currantly received', 'preico' ) ?> <span class="yellow">128.745 ETH</span></div>
+			<div class="bottom-title">
+				<p class="first">Hard Cap </p>
+				<p class="second">4000 ETH goal</p>
+			</div>
+			<div class="curently-recived"><?php echo __( 'Получено инвестиций', 'preico' ) ?><br><span class="yellow"></span></div>
 		</div>
 
 
@@ -100,10 +100,10 @@
 			</button>
 
 
-            <div class="col-md-12 clear-pads wallet-nr">
-	            <input id="clipboard-text" class="yellow" type="text" name="clipboard" value="<?php echo get_field( 'wallet_nr' ); ?>">
+			<div class="col-md-12 clear-pads wallet-nr">
+				<input id="clipboard-text" class="yellow" type="text" name="clipboard" value="<?php echo get_field( 'wallet_nr' ); ?>">
 
-            </div>
+			</div>
 
 			<!--<div class="col-md-12 clear-pads instruction">
 				<?php if( get_field( 'instruction_text' )){?>
@@ -118,39 +118,39 @@
 				<?php } ?>
 			</div>
 
-			
-            <p class="bold">Minimal 0.1 ETH</p>
 
-            <p class="font15"><?php echo __( 'Для инвестирования, отправьте Эфир на официальный
+			<p class="bold">Minimal 0.1 ETH</p>
+
+			<p class="font15"><?php echo __( 'Для инвестирования, отправьте Эфир на официальный
                 смарт контракт краудсейла.Нельзя переводить с
                 обменников, только ETH кошельки. При транзакции,
                 пожалуйста, ставте GAS LIMIT 200000.', 'preico' ) ?>
-            </p>
+			</p>
 			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads divided-blocks">
-	            <div class="col-md-6 col-sm-12 col-xs-6 clear-pads border-right">
-	                <p class="font20"><?php echo get_field( 'investment_title' ); ?> <span class="bold"><?php echo get_field( 'sc_how_much' ); ?></span></p>
-	                <div class="col-md-12 clear-pads opts">
-	                    <span><?php echo get_field( 'sc_equal' ); ?> </span><div class="black yellow-bg bold"><?php echo get_field( 'sc_bonus' ); ?></div>
-	                </div>
-	            </div>
-	            <div class="col-md-6 col-sm-12 col-xs-6 no-pad-right">
-	                <p class="font20"><?php echo get_field( 'hc_title' ); ?> <span class="bold"><?php echo get_field( 'hc_how_much' ); ?></span></p>
-	                <div class="col-md-12 clear-pads opts">
-	                    <span><?php echo get_field( 'hc_equal' ); ?> </span><div class="black yellow-bg bold"><?php echo get_field( 'hc_bonus' ); ?></div>
-	                </div>
-	            </div>
+				<div class="col-md-6 col-sm-12 col-xs-6 clear-pads border-right">
+					<p class="font20"><?php echo get_field( 'investment_title' ); ?> <span class="bold"><?php echo get_field( 'sc_how_much' ); ?></span></p>
+					<div class="col-md-12 clear-pads opts">
+						<span><?php echo get_field( 'sc_equal' ); ?> </span><div class="black yellow-bg bold"><?php echo get_field( 'sc_bonus' ); ?></div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-6 no-pad-right">
+					<p class="font20"><?php echo get_field( 'hc_title' ); ?> <span class="bold"><?php echo get_field( 'hc_how_much' ); ?></span></p>
+					<div class="col-md-12 clear-pads opts">
+						<span><?php echo get_field( 'hc_equal' ); ?> </span><div class="black yellow-bg bold"><?php echo get_field( 'hc_bonus' ); ?></div>
+					</div>
+				</div>
 			</div>
 
-            <div class="col-md-12 col-sm-12 col-xs-12 clear-pads center-horizontaly">
-                <div class="inline-block small-token">
-                    <img src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
-                </div>
-                <div class="inline-block yellow ">
-                    1 Euro = <span class="bold">1 WPC</span>
-                </div>
-            </div>
+			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads center-horizontaly" style="margin-bottom: 15px;">
+				<div class="inline-block small-token">
+					<img src="<?php bloginfo('template_directory');?>/resources/images/token2.png">
+				</div>
+				<div class="inline-block yellow ">
+					1 Euro = <span class="bold">1 WPC</span>
+				</div>
+			</div>
 			<div class="">
-				Стоимость 1 ETH = <span class="rth_eur"></span> на <span class="eth_time"></span> MSK (UTC+3)
+				Стоимость 1 ETH = <span class="eth_txt">
 			</div>
 		</div>
 	</div>

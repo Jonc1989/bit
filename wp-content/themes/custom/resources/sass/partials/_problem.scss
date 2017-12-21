@@ -17,10 +17,10 @@
 
     background-position: bottom;
 
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     .container{
       height: 100%;
       .tooltips-wrap{
@@ -35,16 +35,20 @@
     margin-bottom: 40px;
     text-align: center;
     .dark-bg{
+      cursor: pointer;
       padding: 21px 15px;
       text-align: left;
       //max-width: 25%;
-      margin-right: 34px;
-      margin-bottom: 20px;
-      display: inline-block;
-      position: relative;
+      //margin-right: 34px;
+      //margin-bottom: 20px;
+      //display: inline-block;
+      //position: relative;
+margin-bottom: 10px;
       border-radius: 3px;
+      min-height: 82px;
       h4{
         margin-top: 0px;
+        font-size: 14px;
       }
       p{
         margin-bottom: 0px;
@@ -341,7 +345,7 @@ input[type="button"]:active, input[type="submit"]:active{
     }
   }
 }
-#firstModal, #secondModal, #thirdModal, #fourthModal{
+#firstModal, #secondModal, #thirdModal, #fourthModal, #fifthModal, #sixthModal{
   padding-right: 0px!important;
   h4{
     position: relative;

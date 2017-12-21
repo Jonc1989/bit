@@ -1,0 +1,4 @@
+phpunit.xml
+test/server/node_modules
+vendor
+.idea

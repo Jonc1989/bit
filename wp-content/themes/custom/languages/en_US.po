@@ -326,3 +326,15 @@ msgstr "Road map"
 
 msgid "Преимущество"
 msgstr "Advantages"
+
+msgid "Mайнинг фермa"
+msgstr "Mайнинг фермa"
+
+msgid "Mайнинг фермa ..."
+msgstr "Mайнинг фермa ..."
+
+msgid "Тепличный комплекс"
+msgstr "Тепличный комплекс"
+
+msgid "Тепличный комплекс ..."
+msgstr "Тепличный комплекс ..."
