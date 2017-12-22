@@ -1,20 +1,77 @@
 <div class="col-md-12 col-sm-12 col-xs-12" id="roadmap">
 	<h1 class="title white"><?php echo __( 'Road map', 'preico' ) ?></h1>
-	<ul>
-        <?php if( get_field( 'roadmap_events' ) ){
-            while(has_sub_field('roadmap_events')):?>
-            <?php $file = get_sub_field('roadmap_img');?>
-                <li>
+
+    <div class="container">
+        <div class="col-md-6 left-block">
+            <div class="roadmap-block">
+                <h4 class="yellow">2017 Q2-Q4 - Разработка проектной базы</h4>
+
+                <div class="roadmap-item">
                     <div class="li-img-wrap">
-                        <img src="<?php echo $file;?>">
+                        <img src="http://woodpellets.io/wp-content/uploads/2017/11/1@2x.png">
                     </div>
                     <div class="li-txt-wrap">
-                        <p class="title-text"><?php echo get_sub_field('roadmap_text');?></p>
-                        <p class="date-description"><?php echo get_sub_field('roadmap_time');?></p>
+                        <p class="title-text">Проведение переговоров с поставщиками</p>
                     </div>
-                </li>
-            <?php endwhile;
-        } ?>
+                </div>
 
-	</ul>
+                <div class="roadmap-item">
+                    <div class="li-img-wrap">
+                        <img src="http://woodpellets.io/wp-content/uploads/2017/11/1@2x.png">
+                    </div>
+                    <div class="li-txt-wrap">
+                        <p class="title-text">Проведение переговоров с поставщиками</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="roadmap-block">
+                <h4 class="yellow">2017 Q2-Q4 - Разработка проектной базы</h4>
+
+                <div class="roadmap-item">
+                    <div class="li-img-wrap">
+                        <img src="http://woodpellets.io/wp-content/uploads/2017/11/1@2x.png">
+                    </div>
+                    <div class="li-txt-wrap">
+                        <p class="title-text">Проведение переговоров с поставщиками</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="li-img-wrap">
+                        <img src="http://woodpellets.io/wp-content/uploads/2017/11/1@2x.png">
+                    </div>
+                    <div class="li-txt-wrap">
+                        <p class="title-text">Проведение переговоров с поставщиками</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6 right-block">
+            <div class="roadmap-block">
+                <h4 class="yellow">2018 Q1  - PRE SALE </h4>
+
+                <div class="roadmap-item">
+                    <div class="li-img-wrap">
+                        <img src="http://woodpellets.io/wp-content/uploads/2017/11/1@2x.png">
+                    </div>
+                    <div class="li-txt-wrap">
+                        <p class="title-text">Проведение переговоров с поставщиками</p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="li-img-wrap">
+                        <img src="http://woodpellets.io/wp-content/uploads/2017/11/1@2x.png">
+                    </div>
+                    <div class="li-txt-wrap">
+                        <p class="title-text">Проведение переговоров с поставщиками</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
