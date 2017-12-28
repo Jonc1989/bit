@@ -1,6 +1,6 @@
 <div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="team">
+    <h1 class="title"><?php echo __( 'Наша команда', 'preico' ) ?></h1>
 	<div class="container border-bottom">
-		<h1 class="title"><?php echo __( 'Наша команда', 'preico' ) ?></h1>
 
 		<?php
 		$args = array(

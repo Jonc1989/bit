@@ -355,12 +355,7 @@
   #problem .city-description .dark-bg{
     //max-width: 25%;
   }
-  //#roadmap {
-  //
-  //  ul {
-  //    width: 740px;
-  //  }
-  //}
+
 }
 @media ( min-width: 1200px){
   #banner {
@@ -397,6 +392,83 @@
   }
   .right-md{
     float: right;
+  }
+  #roadmap {
+    .left-block:before{
+      content: '';
+      width: 3px;
+      height: calc( 100% - 80px);
+      background-color: #ffd333;
+      position: absolute;
+      top: 48px;
+      right: 0px;
+    }
+    .left-block:after{
+      content: '';
+      width: 23px;
+      height: 23px;
+      background-color: yellow;
+      border: 7px solid white;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 15px;
+      right: -10px;
+    }
+
+    .first:before{
+      content: '';
+      width: 9px;
+      height: 9px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      top: 35px;
+      right: -18px;
+    }
+    .second:before{
+      content: '';
+      width: 9px;
+      height: 9px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: -21px;
+    }
+    .third:before{
+      content: '';
+      width: 9px;
+      height: 9px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: -18px;
+    }
+    .right-block{
+      .roadmap-item, .yellow{
+        padding-left: 15%;
+      }
+
+    }
+    .bottom-block{
+      text-align: center;
+    }
+    .fourth{
+      .roadmap-item{
+        width: 360px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+      }
+    }
+    .first{
+      margin-bottom: 160px;
+    }
+    .third{
+      .yellow{
+        padding-left: 70px;
+      }
+    }
   }
 }
 .right-md{
@@ -507,21 +579,12 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  //#roadmap{
-  //  ul{
-  //    width: 95%;
-  //    li{
-  //      img {
-  //        max-width: 45px;
-  //        max-height: 30px;
-  //      }
-  //      .title-text, .date-description {
-  //        font-size: 14px;
-  //      }
-  //    }
-  //  }
-  //
-  //}
+  #roadmap{
+    .roadmap-block{
+      margin-bottom: 30px;
+    }
+
+  }
   #videoModal{
     .modal-dialog {
       width: 100%;
@@ -595,6 +658,11 @@
       line-height: 0px;
     }
   }
+  #roadmap {
+    h4 {
+      font-size: 20px;
+    }
+  }
 }
 @media (max-width: 500px){
   #problem{
@@ -619,6 +687,19 @@
   .details-sm{
     display: block;
   }
+  #roadmap {
+    h4{
+      font-size: 16px;
+    }
+    .li-img-wrap {
+      img {
+        max-width: 20px;
+        max-height: 20px;
+
+      }
+      min-width: 45px;
+    }
+  }
 }
 @media (max-width: 420px){
 
@@ -627,6 +708,29 @@
       width: 100%;
     }
   }
+}
+@media (max-width: 400px){
+  #roadmap{
+    text-align: center;
+    .li-img-wrap{
+      width: 100%;
+      text-align: center;
+      img {
+        float: none;
+        max-width: 37px;
+        max-height: 37px;
+        margin-bottom: 7px;
+      }
+    }
+    .roadmap-item{
+      margin-bottom: 40px;
+      p{
+        text-align: center;
+      }
+    }
+
+  }
+
 }
 @media (max-width: 350px){
 
