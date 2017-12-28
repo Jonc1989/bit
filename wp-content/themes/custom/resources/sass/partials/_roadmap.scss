@@ -37,19 +37,14 @@
   position: relative;
 }
 .roadmap-item{
-//  display: -webkit-box;
-//  display: -moz-box;
-//  display: -ms-flexbox;
-//  display: -webkit-flex;
-//  display: flex;
-//  align-items: center;
+
   position: relative;
   //width: 360px;
   margin: 0 auto;
   min-height: 37px;
   margin-bottom: 25px;
   p{
-  //float: right;
+  margin-bottom: 0px;
   text-align: left;
   }
 }

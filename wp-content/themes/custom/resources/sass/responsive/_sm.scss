@@ -709,6 +709,16 @@
     }
   }
 }
+@media (min-width: 401px){
+  .roadmap-item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+  }
+}
 @media (max-width: 400px){
   #roadmap{
     text-align: center;
