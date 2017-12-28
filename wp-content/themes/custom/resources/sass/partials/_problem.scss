@@ -64,6 +64,12 @@ margin-bottom: 10px;
   }
   .posts-wrap{
     padding-bottom: 85px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
     .post-wrap{
 
       margin-bottom: 54px;
