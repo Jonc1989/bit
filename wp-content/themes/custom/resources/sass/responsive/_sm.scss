@@ -347,31 +347,11 @@
   .openqr{
     display: none;
   }
-}
-
-
-
-@media ( min-width: 992px) {
-  #problem .city-description .dark-bg{
-    //max-width: 25%;
-  }
-
-}
-@media ( min-width: 1200px){
-  #banner {
-    min-height: 681px;
-  }
-  #progress{
-    .progress-bar-wrap {
-      width: 480px;
-    }
-  }
-  .rounded {
-    .document {
-      width: 220px;
-    }
+  #roadmap .right-block {
+    margin-top: 90px;
   }
 }
+
 @media (min-width: 768px){
   .menu-container {
     //position: absolute;
@@ -455,6 +435,7 @@
       text-align: center;
     }
     .fourth{
+      margin-top: 40px;
       .roadmap-item{
         width: 360px;
         margin: 0 auto;
@@ -462,7 +443,7 @@
       }
     }
     .first{
-      margin-bottom: 160px;
+      margin-bottom: 90px;
     }
     .third{
       .yellow{
@@ -471,6 +452,33 @@
     }
   }
 }
+
+@media ( min-width: 992px) {
+  #problem .city-description .dark-bg{
+    //max-width: 25%;
+  }
+  #roadmap{
+    .first{
+      margin-bottom: 160px;
+    }
+  }
+}
+@media ( min-width: 1200px){
+  #banner {
+    min-height: 681px;
+  }
+  #progress{
+    .progress-bar-wrap {
+      width: 480px;
+    }
+  }
+  .rounded {
+    .document {
+      width: 220px;
+    }
+  }
+}
+
 .right-md{
   min-height: 150px;
 }
