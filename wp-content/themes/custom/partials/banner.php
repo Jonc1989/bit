@@ -8,6 +8,9 @@
 
 		<div class="col-md-6 col-sm-6 col-xs-12 left-side">
 			<div class="yellow-text yellow-bg"><?php echo get_bloginfo( 'name' ) ?></div>
+
+            <a class="white-paper white" href="">White paper</a>
+
 			<h1><?php echo get_bloginfo( 'description' ) ?></h1>
 			<p><?php echo __( 'Индустрия по производству пеллет в блокчейне', 'preico' ) ?></p>
 
@@ -23,7 +26,14 @@
 
 			<div class="col-md-12 clear-pads welcome-links">
 				<div class="col-md-6 col-sm-6 clear-pads">
-					<a class="btn join-link" href="/login"><?php echo __( 'УЧАСТВОВАТЬ', 'preico' ) ?></a>
+
+                    <?php if( is_user_logged_in() ){ ?>
+                        <a class="btn join-link" href="<?php echo home_url() ?>/dashboard"><?php echo __( 'УЧАСТВОВАТЬ', 'preico' ) ?></a>
+
+                    <?php }else { ?>
+                        <a class="btn join-link" href="" data-toggle="modal" data-target="#registrationModal"><?php echo __( 'УЧАСТВОВАТЬ', 'preico' ) ?></a>
+                    <?php } ?>
+
 				</div>
 				<div class="col-md-6 col-sm-6 clear-pads soc-icon">
 					<a target="_blank" href="<?php echo get_option( 'vk_input' );?>" class="vk"><img src="<?php bloginfo('template_directory');?>/resources/images/icons/vk@2x.png"> </a>

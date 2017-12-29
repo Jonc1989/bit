@@ -8,12 +8,10 @@
 			<?php echo __( 'В комплекс проекта Wood Pellets входит лесозавод, завод древесных гранул и станция когенерация. Проект Wood Pellets предлагает произвести независимый комплекс заводов который обеспечивает безотходное производство пеллет.', 'preico' ) ?>
 		</div>
 	</div>
-		<div class="col-md-12">		<h4 class="text-center"><?php echo __( 'Отопление и электроэнергия', 'preico' ) ?></h4></div>
 
-		<div class="city-image col-md-12 col-sm-12 col-xs-12 clear-pads">
+    <?php get_template_part('partials/video');?>
 
-		</div>
-
+    <div class="city-image col-md-12 col-sm-12 col-xs-12 clear-pads hidden-xs"></div>
 
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="container city-description">
@@ -152,10 +150,6 @@
 	</div>
 
 
-	<?php get_template_part('partials/video');?>
-
-
-
 	<div class="container">
 		<div class="col-md-12 col-sm-12 col-xs-12">
 			<h4 class="title"><?php echo __( 'Преимущество', 'preico' ) ?></h4>
@@ -165,7 +159,7 @@
 		$args = array(
 			'post_type'      => 'post',
 			'post_status'    => 'publish',
-			'posts_per_page' => '8',
+			'posts_per_page' => '-1',
 			'orderby'        => 'post_date',
 			'category_name'  => 'description',
 			'order'          => 'DESC'

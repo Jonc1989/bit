@@ -10,7 +10,7 @@
   }
 }
 
-#banner{
+#banner, #questions{
   padding-bottom: 25px;
   //margin-top: -72px;
   //
@@ -107,7 +107,13 @@
 
     text-align: center;
   }
-
+  .white-paper{
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  .white-paper:hover,  .white-paper:active,  .white-paper:focus{
+    color: white;
+  }
 }
 
 .top-title, .bottom-title{
