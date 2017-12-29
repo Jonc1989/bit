@@ -1,6 +1,6 @@
 #progress{
   background: url(resources/images/progress-bg.png)no-repeat center center;
-
+  overflow: hidden;
   @include bg-size( cover );
 
   padding-top: 87px;

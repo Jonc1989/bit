@@ -43,8 +43,15 @@
   }
   #problem .city-image {
     height: 100px;
+
+  }
+  .posts-wrap{
+    h1{
+      font-size: 30px;
+    }
   }
 }
+
 @media (min-width: 992px) {
   #progress{
     .border-right{

@@ -15,7 +15,7 @@
 
 			<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-				<div class="col-md-3 team-member">
+				<div class="col-md-3 col-sm-6 col-xs-12 team-member">
 				<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
 					<?php if($image) { ?>
 						<div class="team-photo circle" style="background: url(<?php echo $image; ?>)no-repeat center center;
