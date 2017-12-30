@@ -1,3 +1,21 @@
+.questions-template{
+  height: 100%;
+
+
+  padding-bottom: 25px;
+  color: white;
+  width: 100%;
+
+  background: url(resources/images/banner-bg.jpg)no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.question-wrap{
+  padding-top: 100px;
+}
 .question-toggle{
   text-transform: uppercase;
   font-size: 20px;
@@ -22,7 +40,14 @@
   text-align: justify;
   color: #000000;
 }
-
+.question-title{
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 85%;
+  vertical-align: top;
+}
 #questions{
   .bullet{
     float: right;

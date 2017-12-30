@@ -10,41 +10,41 @@ get_header(); ?>
 
         <div class="container">
 
+            <div class="question-wrap col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12">
+                <?php
+                $args = array(
+                    'post_type'      => 'questions',
+                    'post_status'    => 'publish',
+                    'orderby'        => 'post_date',
+                    'order'          => 'DESC'
+                );
+                $posts = new WP_Query( $args );
 
-            <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                <div class="question-toggle">
-                    Question
-                    <span>
-                        <img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/yellow-arrow.png">
-                    </span>
-                </div>
-            </a>
+                if ( $posts->have_posts() ) : ?>
 
-            <div class="collapse" id="collapseExample">
-                <div class="questions">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
-            </div>
+                <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-            <a class="" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                <div class="question-toggle">
-                    Question2
-                    <span>
-                        <img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/yellow-arrow.png">
-                    </span>
-                </div>
-            </a>
+                    <a class="" data-toggle="collapse" href="#id<?php echo get_the_ID();?>" role="button" aria-expanded="false" aria-controls="id<?php echo get_the_ID();?>">
+                        <div class="question-toggle">
+                            <div class="question-title"> <?php the_title(); ?></div>
 
-            <div class="collapse" id="collapseExample2">
-                <div class="questions">
-                    Anim pariatur cliche repreh endfgg fgeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                </div>
+                            <span>
+                                <img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/yellow-arrow.png">
+                            </span>
+                        </div>
+                    </a>
+
+                    <div class="collapse" id="id<?php echo get_the_ID();?>">
+                        <div class="questions">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
+
+                <?php endwhile; ?>
+                <?php wp_reset_query(); ?>
+                <?php endif; ?>
             </div>
         </div>
-
     </div>
-
-
 </div>
-
 <?php get_footer(); ?>

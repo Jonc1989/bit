@@ -437,7 +437,7 @@
 
 }
 @media ( min-width: 1200px){
-  #banner, #questions{
+  #banner,{
     min-height: 681px;
   }
   #progress{
@@ -610,7 +610,9 @@
       line-height: 1.4;
     }
   }
-
+  .question-wrap{
+    padding-top: 40px;
+  }
 }
 @media (max-width: 600px){
   #counter{
@@ -681,6 +683,13 @@
       min-width: 45px;
     }
   }
+
+  #questions{
+    .bullet{
+      display: none;
+    }
+  }
+
 }
 @media (max-width: 420px){
 

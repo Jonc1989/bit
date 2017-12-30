@@ -386,3 +386,6 @@ msgstr "Начало продаж продукции компании"
 
 msgid "Начало выкупа токенов"
 msgstr "Начало выкупа токенов"
+
+msgid "Page not found"
+msgstr "Page not found"
