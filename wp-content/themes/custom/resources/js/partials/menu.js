@@ -44,6 +44,4 @@ jQuery( document ).ready( function(){
     animateScroll( links[ 3 ] );
     animateScroll( links[ 5 ] );
 
-    console.log( );
-
 });

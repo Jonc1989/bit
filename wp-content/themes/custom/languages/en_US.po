@@ -420,3 +420,20 @@ msgstr "Minimal 0.1 ETH"
 msgid "Стоимость 1 ETH = "
 msgstr "Стоимость 1 ETH = "
 
+msgid "71 967 га"
+msgstr "71 967 га"
+
+msgid "120 000 м3/год"
+msgstr "120 000 м3/год"
+
+msgid "120 000 тонн/год"
+msgstr "120 000 тонн/год"
+
+msgid "4,5 МWТ"
+msgstr "4,5 МWТ"
+
+msgid "6750 Th/s"
+msgstr "6750 Th/s"
+
+msgid "2 млн саженцев ели /год"
+msgstr "2 млн саженцев ели /год"

@@ -218,6 +218,13 @@ add_action( 'wp_ajax_log_user_in', 'log_user_in' );
 add_action( 'wp_ajax_nopriv_log_user_in', 'log_user_in' );
 
 function wpdocs_excerpt_more( $more ) {
-	return '...';
+	return '';
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+
+
+function custom_excerpt_length( $length ) {
+    return 15;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
