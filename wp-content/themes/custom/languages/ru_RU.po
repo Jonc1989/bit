@@ -5188,3 +5188,51 @@ msgstr "Начало выкупа токенов"
 
 msgid "Page not found"
 msgstr "Page not found"
+
+msgid "Soft Cap"
+msgstr "Soft Cap"
+
+msgid "2000 ETH goal"
+msgstr "2000 ETH goal"
+
+msgid "Hard Cap"
+msgstr "Hard Cap"
+
+msgid "4000 ETH goal"
+msgstr "4000 ETH goal"
+
+msgid "Введите желаемую сумму токенов:"
+msgstr "Введите желаемую сумму токенов:"
+
+msgid "Расчитать"
+msgstr "Расчитать"
+
+msgid "Вы должны оплатить"
+msgstr "Вы должны оплатить"
+
+msgid "Номер кошелька"
+msgstr "Номер кошелька"
+
+msgid "Minimal 0.1 ETH"
+msgstr "Minimal 0.1 ETH"
+
+msgid "Стоимость 1 ETH = "
+msgstr "Стоимость 1 ETH = "
+
+msgid "71 967 га"
+msgstr "71 967 га"
+
+msgid "120 000 м3/год"
+msgstr "120 000 м3/год"
+
+msgid "120 000 тонн/год"
+msgstr "120 000 тонн/год"
+
+msgid "4,5 МWТ"
+msgstr "4,5 МWТ"
+
+msgid "6750 Th/s"
+msgstr "6750 Th/s"
+
+msgid "2 млн саженцев ели /год"
+msgstr "2 млн саженцев ели /год"

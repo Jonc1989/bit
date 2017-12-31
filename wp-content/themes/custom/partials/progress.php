@@ -4,8 +4,8 @@
 
 
 			<div class="top-title">
-				<p class="first">Soft Cap </p>
-				<p class="second">2000 ETH goal</p>
+				<p class="first"><?php echo __( 'Soft Cap', 'preico' ) ?> </p>
+				<p class="second"><?php echo __( '2000 ETH goal', 'preico' ) ?></p>
 			</div>
 			<div class="granulas">
 
@@ -63,8 +63,8 @@
 
 			</div>
 			<div class="bottom-title">
-				<p class="first">Hard Cap </p>
-				<p class="second">4000 ETH goal</p>
+				<p class="first"><?php echo __( 'Hard Cap', 'preico' ) ?></p>
+				<p class="second"><?php echo __( '4000 ETH goal', 'preico' ) ?></p>
 			</div>
 			<div class="curently-recived"><?php echo __( 'Получено инвестиций', 'preico' ) ?><br><span class="yellow"></span></div>
 		</div>
@@ -74,22 +74,20 @@
 
 			<div class="">
 				<div class="form-group">
-					<label for="usr" style="display: block;">Введите желаемую сумму токенов:</label>
+					<label for="usr" style="display: block;"><?php echo __( 'Введите желаемую сумму токенов:', 'preico' ) ?></label>
 					<input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/^0+/, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"  class="form-control num-tocken" id="usr" style="width: 200px; height: 31px; display: inline-block;">
 					<button class="btn eth_calc" style="background-color: #6fb600;margin-right: 15px;margin-left: 15px;">
-						<span class="copy-txt">Расчитать</span>
+						<span class=""><?php echo __( 'Расчитать', 'preico' ) ?></span>
 					</button>
 
-					<p class="must_pay" style="margin-top: 11px; display: none;">Вы должны оплатить <span>0.45845678</span></p>
+					<p class="must_pay" style="margin-top: 11px; display: none;"><?php echo __( 'Вы должны оплатить', 'preico' ) ?> <span>0.45845678</span></p>
 				</div>
 			</div>
 
-			<span>Номер кошелька</span>
+			<span><?php echo __( 'Номер кошелька', 'preico' ) ?></span>
 			<button class="btn copy" style="background-color: #6fb600;">
-                    <span class="copy-icon">
-                        <img src="<?php bloginfo('template_directory');?>/resources/images/copy.png">
-                    </span>
-                    <span class="copy-txt">
+
+                    <span class="">
                         <?php echo __( 'Копировать', 'preico' ) ?>
                     </span>
 			</button>
@@ -119,7 +117,7 @@
 			</div>
 
 
-			<p class="bold">Minimal 0.1 ETH</p>
+			<p class="bold"><?php echo __( 'Minimal 0.1 ETH', 'preico' ) ?></p>
 
 			<p class="font15"><?php echo __( 'Для инвестирования, отправьте Эфир на официальный
                 смарт контракт краудсейла.Нельзя переводить с
@@ -150,7 +148,7 @@
 				</div>
 			</div>
 			<div class="">
-				Стоимость 1 ETH = <span class="eth_txt">
+                <?php echo __( 'Стоимость 1 ETH = ', 'preico' ) ?><span class="eth_txt">
 			</div>
 		</div>
 	</div>

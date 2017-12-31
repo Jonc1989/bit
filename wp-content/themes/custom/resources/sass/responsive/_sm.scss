@@ -35,16 +35,16 @@
       min-height: 320px;
     }
   }
-  #team {
-    .container {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
+//  #team {
+//    .container {
+//      display: -webkit-box;
+//      display: -moz-box;
+//      display: -ms-flexbox;
+//      display: -webkit-flex;
+//      display: flex;
+//      flex-wrap: wrap;
+//    }
+//  }
   #subscribe {
     .subscription-container {
       @include display-flex();

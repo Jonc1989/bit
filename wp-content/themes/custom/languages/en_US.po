@@ -389,3 +389,34 @@ msgstr "Начало выкупа токенов"
 
 msgid "Page not found"
 msgstr "Page not found"
+
+msgid "Soft Cap"
+msgstr "Soft Cap"
+
+msgid "2000 ETH goal"
+msgstr "2000 ETH goal"
+
+msgid "Hard Cap"
+msgstr "Hard Cap"
+
+msgid "4000 ETH goal"
+msgstr "4000 ETH goal"
+
+msgid "Введите желаемую сумму токенов:"
+msgstr "Введите желаемую сумму токенов:"
+
+msgid "Расчитать"
+msgstr "Расчитать"
+
+msgid "Вы должны оплатить"
+msgstr "Вы должны оплатить"
+
+msgid "Номер кошелька"
+msgstr "Номер кошелька"
+
+msgid "Minimal 0.1 ETH"
+msgstr "Minimal 0.1 ETH"
+
+msgid "Стоимость 1 ETH = "
+msgstr "Стоимость 1 ETH = "
+

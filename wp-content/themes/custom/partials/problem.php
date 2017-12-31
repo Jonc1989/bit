@@ -17,12 +17,30 @@
 		<div class="container city-description">
 			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads">
 
+                <div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
+                    <div class="dark-bg triangle-top" data-toggle="modal" data-target="#thirdModal">
+                        <h4 class="yellow"><?php echo __( 'Лесные ресурсы', 'preico' ) ?></h4>
+                        <p class="white"><?php echo __( '71 967 га', 'preico' ) ?></p>
+                    </div>
+
+                    <div class="modal fade" id="thirdModal" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-body"><button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="yellow"><?php echo __( 'Лесные ресурсы', 'preico' ) ?></h4>
+                                    <p class="white"><?php echo __( 'Компания является арендатором по 2 договорам аренды лесных участков в Псковской области, расположенных на землях лесного фонда,.. Срок аренды - 49 лет Ресурсная  база компании 8 000 000 кубометров древесины . Площадь   арендованного лесного фонда составляет 71 967 га, в том числе:  Опочецкое лесничество – 29 629 га.  Себежское лесничество – 42 338 га.. . Также имеет в  собственности производственную площадку с капитальными строениями общей площадью 40000 кв метров, с электрической мощностью около 1 МВт. Данная территория имеет хорошо развитую транспортную инфраструктуру. По ней проходят такие транспортные магистрали как: Москва-Балтия; Санкт-Петербург-Киев; Опочка-Полоцк, а также имеется железная дорога направлением Москва-Балтия, включающую в себя станцию «Себеж», на которой компания имеем железнодорожные пути с погрузочно-разгрузочными площадками. Сеть лесных дорог поддерживается в хорошем состоянии, позволяет вести заготовку леса круглогодично. Компания осуществляет активный экологический и противопожарный мониторинг, защиту лесов на предоставленных в аренду лесных участках и прилегающих территориях, тем самым обеспечивая защиту своего сырья. Компания ежегодно, по согласованию с Правительством Псковской области, высаживают несколько миллионов саженцев хвойных и лиственных пород деревьев и осуществляют авторский надзор за произведенными посадками.', 'preico' ) ?></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
 				<div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
 					<div class="dark-bg triangle-top" data-toggle="modal" data-target="#firstModal">
-
 						<h4 class="yellow"><?php echo __( 'Лесозавод', 'preico' ) ?></h4>
-
-
+                        <p class="white"> <?php echo __( '120 000 м3/год', 'preico' ) ?></p>
 					</div>
 
 	                <div class="modal fade" id="firstModal" role="dialog">
@@ -42,11 +60,30 @@
 	                </div>
 				</div>
 
+                <div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
+                    <div class="dark-bg triangle-top" data-toggle="modal" data-target="#fourthModal">
+                        <h4 class="yellow"><?php echo __( 'Завод древесных пеллет', 'preico' ) ?></h4>
+                        <p class="white"><?php echo __( '120 000 тонн/год', 'preico' ) ?></p>
+                    </div>
+
+                    <div class="modal fade" id="fourthModal" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-body"><button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="yellow"><?php echo __( 'Завод древесных пеллет', 'preico' ) ?></h4>
+                                    <p class="white"><?php echo __( 'Завод древесных пеллет мощностью 120 000 тонн в год  для производства древесно топливных гранул (пеллеты, ДТГ)Класса Enplus A1, Enplus A2.  – это небольшие цилиндрические прессованные древесные изделия диаметром 4-12 мм, длиной 20-50 мм, переработанные из высушенных остатков деревообрабатывающего и лесопильного производства: опилки, стружка, древесная мука, щепа, древесная пыль и т.д. Гранулы используются в котлах для получения тепловой и электрической энергии путем сжигания. Преимуществом использования древесных гранул перед другими видами топлива является:  снижение вредных выбросов СО2 в атмосферу.', 'preico' ) ?></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
 				<div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
 					<div class="dark-bg triangle-top" data-toggle="modal" data-target="#secondModal">
 						<h4 class="yellow"><?php echo __( 'Когенерация', 'preico' ) ?></h4>
-
-
+                        <p class="white"><?php echo __( '4,5 МWТ', 'preico' ) ?></p>
 					</div>
 
 	                <div class="modal fade" id="secondModal" role="dialog">
@@ -64,50 +101,9 @@
 				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
-					<div class="dark-bg triangle-top" data-toggle="modal" data-target="#thirdModal">
-						<h4 class="yellow"><?php echo __( 'Лесные ресурсы', 'preico' ) ?></h4>
-
-					</div>
-
-	                <div class="modal fade" id="thirdModal" role="dialog">
-	                    <div class="modal-dialog">
-	                        <!-- Modal content-->
-	                        <div class="modal-content">
-	                            <div class="modal-body"><button type="button" class="close" data-dismiss="modal">&times;</button>
-	                                <h4 class="yellow"><?php echo __( 'Лесные ресурсы', 'preico' ) ?></h4>
-	                                <p class="white"><?php echo __( 'Компания является арендатором по 2 договорам аренды лесных участков в Псковской области, расположенных на землях лесного фонда,.. Срок аренды - 49 лет Ресурсная  база компании 8 000 000 кубометров древесины . Площадь   арендованного лесного фонда составляет 71 967 га, в том числе:  Опочецкое лесничество – 29 629 га.  Себежское лесничество – 42 338 га.. . Также имеет в  собственности производственную площадку с капитальными строениями общей площадью 40000 кв метров, с электрической мощностью около 1 МВт. Данная территория имеет хорошо развитую транспортную инфраструктуру. По ней проходят такие транспортные магистрали как: Москва-Балтия; Санкт-Петербург-Киев; Опочка-Полоцк, а также имеется железная дорога направлением Москва-Балтия, включающую в себя станцию «Себеж», на которой компания имеем железнодорожные пути с погрузочно-разгрузочными площадками. Сеть лесных дорог поддерживается в хорошем состоянии, позволяет вести заготовку леса круглогодично. Компания осуществляет активный экологический и противопожарный мониторинг, защиту лесов на предоставленных в аренду лесных участках и прилегающих территориях, тем самым обеспечивая защиту своего сырья. Компания ежегодно, по согласованию с Правительством Псковской области, высаживают несколько миллионов саженцев хвойных и лиственных пород деревьев и осуществляют авторский надзор за произведенными посадками.', 'preico' ) ?></p>
-	                            </div>
-	                        </div>
-
-	                    </div>
-	                </div>
-				</div>
-
-				<div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
-					<div class="dark-bg triangle-top" data-toggle="modal" data-target="#fourthModal">
-						<h4 class="yellow"><?php echo __( 'Завод древесных пеллет', 'preico' ) ?></h4>
-
-					</div>
-				
-	                <div class="modal fade" id="fourthModal" role="dialog">
-	                    <div class="modal-dialog">
-	                        <!-- Modal content-->
-	                        <div class="modal-content">
-	                            <div class="modal-body"><button type="button" class="close" data-dismiss="modal">&times;</button>
-	                                <h4 class="yellow"><?php echo __( 'Завод древесных пеллет', 'preico' ) ?></h4>
-	                                <p class="white"><?php echo __( 'Завод древесных пеллет мощностью 120 000 тонн в год  для производства древесно топливных гранул (пеллеты, ДТГ)Класса Enplus A1, Enplus A2.  – это небольшие цилиндрические прессованные древесные изделия диаметром 4-12 мм, длиной 20-50 мм, переработанные из высушенных остатков деревообрабатывающего и лесопильного производства: опилки, стружка, древесная мука, щепа, древесная пыль и т.д. Гранулы используются в котлах для получения тепловой и электрической энергии путем сжигания. Преимуществом использования древесных гранул перед другими видами топлива является:  снижение вредных выбросов СО2 в атмосферу.', 'preico' ) ?></p>
-	                            </div>
-	                        </div>
-
-	                    </div>
-	                </div>
-				</div>
-
-				<div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
 					<div class="dark-bg triangle-top" data-toggle="modal" data-target="#fifthModal">
 						<h4 class="yellow"><?php echo __( 'Mайнинг фермa', 'preico' ) ?></h4>
-
-
+                        <p class="white"><?php echo __( '6750 Th/s', 'preico' ) ?></p>
 					</div>
 
 					<div class="modal fade" id="fifthModal" role="dialog">
@@ -127,7 +123,7 @@
 				<div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
 					<div class="dark-bg triangle-top" data-toggle="modal" data-target="#sixthModal">
 						<h4 class="yellow"><?php echo __( 'Тепличный комплекс', 'preico' ) ?></h4>
-
+                        <p class="white"><?php echo __( '2 млн саженцев ели /год', 'preico' ) ?></p>
 					</div>
 
 					<div class="modal fade" id="sixthModal" role="dialog">
