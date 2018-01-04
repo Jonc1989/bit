@@ -5236,3 +5236,6 @@ msgstr "6750 Th/s"
 
 msgid "2 млн саженцев ели /год"
 msgstr "2 млн саженцев ели /год"
+
+msgid "Less"
+msgstr "Больше"
