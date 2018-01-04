@@ -1,9 +1,8 @@
 #team{
-  .container{
-    padding-bottom: 60px;
-  }
+  padding-bottom: 50px;
+
   .team-member{
-    min-height: 350px;
+    min-height: 250px;
     text-align: center;
     margin-bottom: 30px;
     .team-photo{
@@ -22,6 +21,24 @@
       line-height: 1.56;
       color: #9099a3;
       text-align: center;
+    }
+  }
+  .more{
+    display: inline;
+  }
+  .less{
+    display: none;
+  }
+  .collapse + .collapse-btn-container{
+
+
+  }
+  .collapse.in + .collapse-btn-container{
+    .more{
+      display: none;
+    }
+    .less{
+      display: inline;
     }
   }
 }

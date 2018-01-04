@@ -179,9 +179,14 @@ jQuery( document ).ready( function () {
 
 
     var url_string = window.location.href;
-    var url = new URL(url_string);
-    var token = url.searchParams.get( "wpcrl_reset_password_token" );
-    target = url.searchParams.get( "target" );
+    try{
+        var url = new URL(url_string);
+        var token = url.searchParams.get( "wpcrl_reset_password_token" );
+        target = url.searchParams.get( "target" );
+    }catch (err) {
+        console.log(err)
+    }
+
 
 
 
