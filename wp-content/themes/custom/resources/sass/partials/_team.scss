@@ -24,22 +24,39 @@
       text-align: center;
     }
   }
-  .more{
-    display: inline;
-  }
-  .less{
-    display: none;
-  }
-  .collapse + .collapse-btn-container{
+  //.more{
+  //  display: inline;
+  //}
+  //.less{
+  //  display: none;
+  //}
+  //.collapse + .collapse-btn-container{
+  //
+  //
+  //}
+  //.collapse.in + .collapse-btn-container{
+  //  .more{
+  //    display: none;
+  //  }
+  //  .less{
+  //    display: inline;
+  //  }
+  //}
 
-
-  }
-  .collapse.in + .collapse-btn-container{
+  .more-btn{
     .more{
-      display: none;
+      display: inline;
     }
     .less{
-      display: inline;
+      display: none;
+    }
+    &.more{
+      .more{
+        display: none;
+      }
+      .less{
+        display: inline;
+      }
     }
   }
 }
