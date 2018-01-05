@@ -9,7 +9,7 @@
 		<div class="col-md-6 col-sm-6 col-xs-12 left-side">
 			<div class="yellow-text yellow-bg"><?php echo get_bloginfo( 'name' ) ?></div>
 
-            <a class="white-paper white" href="">White paper</a>
+            <a class="white-paper white" href="<?php echo get_field( 'white_paper' ); ?>"><?php echo __( 'White paper', 'preico' ) ?></a>
 
 			<h1><?php echo get_bloginfo( 'description' ) ?></h1>
 			<p><?php echo __( 'Индустрия по производству пеллет в блокчейне', 'preico' ) ?></p>

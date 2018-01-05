@@ -5239,3 +5239,6 @@ msgstr "2 млн саженцев ели /год"
 
 msgid "Less"
 msgstr "Больше"
+
+msgid "White paper"
+msgstr "White paper"
