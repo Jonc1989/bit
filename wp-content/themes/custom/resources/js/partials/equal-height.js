@@ -17,22 +17,26 @@ equalheight = function(e) {
 get_team_members = function ( more ) {
 
     if(more){
-        jQuery('.team-member').slice(3).slideToggle();
-        jQuery('.more-btn').removeClass('more').addClass('less').text('Show less');
+        jQuery('.team-member').slice(3).slideToggle( 400 );
+        jQuery('.more-btn').removeClass('more')
         equalheight('.team-member');
     }else{
-        jQuery('.team-member').slice(3).slideToggle();
-        jQuery('.more-btn').removeClass('less').addClass('more').text('Show more');
+        jQuery('.team-member').slice(3).slideToggle( 400 );
+        jQuery('.more-btn')
+            .addClass('more')
     }
 };
 
 jQuery(document).ready(function () {
     equalheight('.team-member');
+    var height = jQuery('.team-member').eq(0).css( 'height' );
+    jQuery('.team-member').css( 'height', height );
 
-    // jQuery(document).on('click', '.more-btn', function () {
-    //     var more = jQuery(this).hasClass('more');
-    //     get_team_members(more);
-    // });
+
+    jQuery(document).on('click', '.more-btn', function () {
+        var more = jQuery(this).hasClass('more');
+        get_team_members(more);
+    });
 });
 jQuery( window ).resize(function() {
     equalheight('.team-member');

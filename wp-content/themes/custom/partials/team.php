@@ -17,7 +17,7 @@
 			<?php $num = 0; ?>
 			<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-				<div class="col-md-4 col-sm-4 col-xs-12 team-member" style="">
+				<div class="col-md-4 col-sm-6 col-xs-12 team-member" style="display: block;">
 				<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
 					<?php if($image) { ?>
 						<div class="team-photo circle" style="background: url(<?php echo $image; ?>)no-repeat center center;
@@ -40,8 +40,8 @@
 		<?php endif; ?>
 
 
-	</div>
-	<div class="container collapse" id="more-team">
+	<!--</div>
+	<div class="container collapse" id="more-team">-->
 
 		<?php
 		$args = array(
@@ -58,7 +58,7 @@
 			<?php $num = 0; ?>
 			<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-				<div class="col-md-4 col-sm-4 col-xs-12 team-member" style="">
+				<div class="col-md-4 col-sm-6 col-xs-12 team-member" style="display: none;">
 					<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
 					<?php if($image) { ?>
 						<div class="team-photo circle" style="background: url(<?php echo $image; ?>)no-repeat center center;
