@@ -13,7 +13,7 @@ get_header(); ?>
 <?php get_footer(); ?>
 
 <script>
-    jQuery(document).ready(function () {
+    jQuery(window).load(function() {
         checkCounter()
 	    initMap();
     });
