@@ -3,7 +3,7 @@
  * Template Name: Documents
  */
 get_header(); ?>
-	<div class="col-xs-12 document-template">
+	<div class="document-template">
 		<?php get_template_part('partials/document-top');?>
 		<div id="map"></div>
 		<?php get_template_part('partials/counter');?>

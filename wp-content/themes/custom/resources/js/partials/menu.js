@@ -1,39 +1,27 @@
 /**
  * Created by Admin on 11.11.2017..
  */
-// $(".home li > .prevent").click(function(e) {
-//
-//     $( '[data-toggle="collapse"]' ).trigger( "click" );
-//     e.preventDefault();
-//
-//     var top = $(this).attr("href");
-//     var verticalOffset = $(top).offset().top;
-//
-//     $("html, body").animate({
-//             scrollTop: verticalOffset
-//         },
-//         1500 )
-//
-// });
+
 
 function animateScroll( link ){
 
     jQuery( link ).click(function(e) {
         e.preventDefault();
 
-        var top = jQuery(this).attr("href");
-        var verticalOffset = jQuery(top).offset().top;
+        var id = jQuery(this).attr("href");
 
-        //isMenuItemSelected = true;
+        var full = window.location.origin + window.location.pathname.slice(0, -1);
+        if( domain == full ){
+            var verticalOffset = jQuery(id).offset().top;
 
-        jQuery("html, body").animate({
-                scrollTop: verticalOffset
-            },
-            1500,
-            function(){
-                //isMenuItemSelected = false;
-            })
-
+            jQuery("html, body").animate({
+                    scrollTop: verticalOffset
+                },
+                1500,
+                function(){})
+        }else{
+            window.location.href = domain + '/' + id;
+        }
     });
 
 }
