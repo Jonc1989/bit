@@ -1,9 +1,23 @@
 .dashboard-template{
-  padding-top: 150px;
   height: 100%;
 
   #footer-wrap{
     position:absolute;
     bottom:0;
   }
+  @media (min-width: 768px)
+  {
+    .navbar-nav>li {
+      float: left;
+      width: 100%;
+    }
+  }
+
+}
+.dashboard-header{
+
+}
+.side-menu{
+  background-color: #808080;
+  height: 100%;
 }
