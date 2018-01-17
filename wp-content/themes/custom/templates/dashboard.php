@@ -12,21 +12,36 @@ get_header(); ?>
 </style>
 	<div class="col-md-12 clear-pads dashboard-template">
 
-        <div class="col-md-3 side-menu">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="<?php echo home_url() ?>">
-                        <div class="logo">
-                            <img src="<?php bloginfo('template_directory');?>/resources/images/logo.png"
-                                 srcset="<?php bloginfo('template_directory');?>/resources/images/logo@3x.png 3x"
-                                 class="header-logo">
-                        </div>
-                    </a>
-                </li>
+        <div class="col-md-3 side-menu clear-pads">
+            <a href="<?php echo home_url() ?>">
+                <div class="logo">
+                    <img src="<?php bloginfo('template_directory');?>/resources/images/logo.png"
+                         srcset="<?php bloginfo('template_directory');?>/resources/images/logo@3x.png 3x"
+                         class="header-logo">
+                </div>
+            </a>
+            
 
-                <li>
-                    <a href="<?php echo home_url() ?>">fdd </a>
-                </li>
-            </ul>
+
+
+            <div class="roadmap-item">
+                <div class="li-img-wrap">
+                    <img src="<?php bloginfo('template_directory');?>/resources/images/marketing.png">
+
+                </div>
+                <p class="title-text"><?php echo __( 'Маркетинговая составляющая', 'preico' ) ?></p>
+            </div>
+
+            <div class="roadmap-item">
+                <div class="li-img-wrap">
+                    <img src="<?php bloginfo('template_directory');?>/resources/images/registracija.png">
+
+                </div>
+                <p class="title-text"><?php echo __( 'Пегистрационные процессы', 'preico' ) ?></p>
+            </div>
+
+
+
         </div>
         <div class="clear-pads col-md-9">
             <div class="col-md-12 dashboard-header yellow-bg">
@@ -40,24 +55,38 @@ get_header(); ?>
             </div>
 
             <div class="col-md-12 rounded">
-                <div class="col-lg-2 col-md-6 col-sm-6 ">
-                    <div class="row document yellow-bg">
+                <div class="col-lg-2 col-md-4 col-sm-6 ">
+                    <div class="yellow-bg">
                         <div class="description">
-                            <p class="download-title">ООО «Ланган»</p>
-                            <p class="download-this">Скачать
-                                png
-                            </p>
+                            <p class="info-title">ООО «Ланган»</p>
+                            <p class="info">1,0005</p>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 ">
-                    <div class="row document yellow-bg">
+                <div class="col-lg-2 col-md-4 col-sm-6 ">
+                    <div class="gray-bg">
                         <div class="description">
-                            <p class="download-title">ООО «Ланган»</p>
-                            <p class="download-this">Скачать
-                                png
-                            </p>
+                            <p class="info-title">ООО «Ланган»</p>
+                            <p class="info">1,0005</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 ">
+                    <div class="gray-bg">
+                        <div class="description">
+                            <p class="info-title">ООО «Ланган»</p>
+                            <p class="info">1,0005</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 ">
+                    <div class="gray-bg">
+                        <div class="description">
+                            <p class="info-title">ООО «Ланган»</p>
+                            <p class="info">1,0005</p>
                         </div>
                     </div>
                 </div>
@@ -80,11 +109,7 @@ get_header(); ?>
                 </div>
                 <div class="col-md-6" style="">
                     <a href="" class="" data-toggle="modal" data-target="#videoModal">
-                        <div class="col-md-12 clear-pads video-preview" style="height: 300px;background: url(https://img.youtube.com/vi/iXAbte4QXKs/maxresdefault.jpg)no-repeat center center;
-					-webkit-background-size: cover;
-					-moz-background-size: cover;
-					-o-background-size: cover;
-					background-size: cover;">
+                        <div class="col-md-12 clear-pads video-preview" style="">
 
                         </div>
                     </a>

@@ -1,23 +1,63 @@
 .dashboard-template{
   height: 100%;
 
+  .rounded{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    .description{
+      padding: 18px 20px;
+      .info-title{
+        font-size: 16px;
+        color: #38414b;
+      }
+      p{
+        line-height: 1;
+      }
+
+      p.info{
+        margin-bottom: 0px;
+        font-size: 24px;
+      }
+    }
+  }
+  .yellow-bg, .gray-bg {
+    border-radius: 3px;
+  }
+  .gray-bg{
+    border: solid 1px #d4dde8;
+  }
+
+  .video-preview{
+    height: 300px;
+
+    background: url(https://img.youtube.com/vi/iXAbte4QXKs/maxresdefault.jpg)no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   #footer-wrap{
     position:absolute;
     bottom:0;
   }
-  @media (min-width: 768px)
-  {
-    .navbar-nav>li {
-      float: left;
-      width: 100%;
-    }
-  }
-
 }
 .dashboard-header{
 
 }
+
 .side-menu{
   background-color: #808080;
   height: 100%;
+  .logo{
+    height: 110px;
+    background: url(resources/images/banner-bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
