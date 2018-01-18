@@ -4,12 +4,10 @@
  */
 
 get_header(); ?>
+<?php $page = get_page_by_title( 'Dashboard' );
+$content = apply_filters('the_content', $page->post_content); ?>
 
-<style>
-	.menu-container{
-		background-color: #110f0e;
-	}
-</style>
+
 	<div class="col-md-12 clear-pads dashboard-template">
 
         <div class="col-md-3 side-menu clear-pads">
@@ -23,35 +21,48 @@ get_header(); ?>
             
 
 
+            <div class="menu">
+                <a href="">
+                    <div class="menu-item">
+                        <div class="li-img-wrap">
+                            <img src="<?php bloginfo('template_directory');?>/resources/images/marketing.png">
 
-            <div class="roadmap-item">
-                <div class="li-img-wrap">
-                    <img src="<?php bloginfo('template_directory');?>/resources/images/marketing.png">
+                        </div>
+                        <p class="title-text"><?php echo __( 'Маркетинговая составляющая', 'preico' ) ?></p>
+                    </div>
+                </a>
 
-                </div>
-                <p class="title-text"><?php echo __( 'Маркетинговая составляющая', 'preico' ) ?></p>
+                <a href="">
+                    <div class="menu-item">
+                        <div class="li-img-wrap">
+                            <img src="<?php bloginfo('template_directory');?>/resources/images/registracija.png">
+
+                        </div>
+                        <p class="title-text"><?php echo __( 'Пегистрационные процессы', 'preico' ) ?></p>
+                    </div>
+                </a>
+
             </div>
 
-            <div class="roadmap-item">
-                <div class="li-img-wrap">
-                    <img src="<?php bloginfo('template_directory');?>/resources/images/registracija.png">
-
-                </div>
-                <p class="title-text"><?php echo __( 'Пегистрационные процессы', 'preico' ) ?></p>
-            </div>
-
-
-
+            
         </div>
-        <div class="clear-pads col-md-9">
+
+        <div class="content-wrap col-md-12">
             <div class="col-md-12 dashboard-header yellow-bg">
-                <span>Ваш баланс</span>
-                <button class="btn- btn-success">Инвестировать</button>
-                <span style="float: right;"><?php echo wp_get_current_user()->user_login ; ?></span>
+                <div class="balance">
+                    <div class="text">Ваш баланс</div>
+                    <div class="summ">2,0007</div>
+                    <img src="<?php bloginfo('template_directory');?>/resources/images/vikup_tokena.png">
+                </div>
+
+                <button class="btn- btn-success invest">Инвестировать</button>
+                <a class="user-info" href="""><?php echo wp_get_current_user()->user_login ; ?></a>
             </div>
 
             <div class="col-md-12">
-                <h4>Dashboard</h4>
+                <div class="col-md-12">
+                    <h4>Dashboard</h4>
+                </div>
             </div>
 
             <div class="col-md-12 rounded">
@@ -91,21 +102,11 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
+            <div class="col-md-12"><div class="col-md-12"><div class="col-md-12 border-bottom"></div></div></div>
 
-            <div class="col-md-12">
+            <div class="col-md-12 dashboard">
                 <div class="col-md-6">
-                    Что необходимо для выведение средств
-                    Обратный выкуп опционов WPCoin начнется через 15 месяцев после окончания сбора средств в размере
-                    , 50% от прибыли исходя из квартальных отчетов.
-                    Также инвесторы получат право обмена WPCoin на соответствующее количество древесных гранул исходя
-                    из расчета  1тонна древесных гранул =100 WPCoin = на условиях FCA:
-                    Lorem ipsum dolor sit amet.
-                    consectetur adipisicing elit, sed do eiusmod tempo.
-                    labore et dolore magna aliqua.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum. Sed ut perspiciatis unde
-                    omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore.
+                    <?php echo $content; ?>
                 </div>
                 <div class="col-md-6" style="">
                     <a href="" class="" data-toggle="modal" data-target="#videoModal">

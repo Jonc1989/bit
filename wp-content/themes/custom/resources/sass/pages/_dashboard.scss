@@ -44,20 +44,127 @@
     position:absolute;
     bottom:0;
   }
+
+.dashboard{
+  padding-top: 30px;
+}
 }
 .dashboard-header{
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  .balance, .invest{
+    display: inline-block;
+    height: 36px;
+    border-radius: 3px;
+    div{
+      padding-top: 2px;
+      display: inline-block;
+    }
+  }
+  .balance{
+    //min-width: 200px;
 
+
+    background-color: #2f3027;
+    //display: -webkit-box;
+    //display: -moz-box;
+    //display: -ms-flexbox;
+    //display: -webkit-flex;
+    //display: flex;
+    //align-items: center;
+    padding: 5px 10px;
+    .summ{
+      padding-left: 20px;
+    }
+    img{
+      margin-left: 10px;
+      margin-top: 3px;
+      width: 20px;
+      height: 20px;
+      float: right;
+    }
+  }
+  .invest{
+    margin-left: 12px;
+    background-color: #6fb600;
+    border: none;
+  }
 }
 
 .side-menu{
-  background-color: #808080;
+
+  position: fixed; /* Stay in place */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+
+  width: 290px;
+  z-index: 1;
+  background-color: #181b16;
+
   height: 100%;
   .logo{
+    padding-top: 60px;
     height: 110px;
     background: url(resources/images/banner-bg.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    text-align: center;
+    img{
+      max-width: 200px;
+    }
   }
+  .menu{
+    color: white;
+    padding: 40px 20px;
+    .menu-item{
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+
+      position: relative;
+      margin: 0 auto;
+      min-height: 37px;
+      margin-bottom: 25px;
+      .li-img-wrap{
+        min-width: 50px;
+        img{
+          max-width: 30px;
+          max-height: 26px;
+        }
+      }
+      p{
+        margin-bottom: 0px;
+        text-align: left;
+
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+    }
+  }
+
+}
+.content-wrap{
+  //left: 0px;
+  padding-left: 290px;
+  padding-right: 0px;
+  height: 100%;
+  //position: fixed;
+  //width: 100%;
+  z-index: 0;
+}
+.user-info{
+  float: right;
+  color: black;
 }
