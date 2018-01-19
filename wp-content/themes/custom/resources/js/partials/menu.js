@@ -32,4 +32,10 @@ jQuery( document ).ready( function(){
     animateScroll( links[ 3 ] );
     animateScroll( links[ 5 ] );
 
+  
+
+    jQuery( document ).on( 'click', '.side-menu .menu-collapse', function () {
+        jQuery( '.side-menu' ).toggleClass( 'open' );
+        jQuery( '.content-wrap' ).toggleClass( 'extended' );
+    } )
 });

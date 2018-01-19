@@ -1,5 +1,6 @@
 .dashboard-template{
-  height: 100%;
+  min-height: 100%;
+  min-height: calc( 100% - 281px);
 
   .rounded{
     display: -webkit-box;
@@ -91,23 +92,39 @@
     border: none;
   }
 }
-
+.menu-collapse{
+  width: 100%;
+  height: 70px;
+  background-color: #111410;
+  bottom: 0px;
+  position: absolute;
+  .colapse-text{
+    display: none;
+  }
+}
 .side-menu{
 
-  position: fixed; /* Stay in place */
+  position: absolute; /* Stay in place */
   top: 0; /* Stay at the top */
   left: 0;
+  bottom: 0px;
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s;
 
-  width: 290px;
+  width: 67px;
   z-index: 1;
   background-color: #181b16;
 
-  height: 100%;
+  //min-height: calc( 100% - 281px);
+  &.open{
+    width: 290px;
+    .colapse-text{
+      display: inline-block;
+    }
+  }
   .logo{
-    padding-top: 60px;
-    height: 110px;
+    padding-top: 15px;
+    height: 60px;
     background: url(resources/images/banner-bg.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -115,7 +132,7 @@
     background-size: cover;
     text-align: center;
     img{
-      max-width: 200px;
+      max-width: 252px;
     }
   }
   .menu{
@@ -157,12 +174,17 @@
 }
 .content-wrap{
   //left: 0px;
-  padding-left: 290px;
+  padding-left: 67px;
   padding-right: 0px;
-  height: 100%;
+  min-height: 100%;
+  min-height: calc( 100% - 281px);
   //position: fixed;
   //width: 100%;
   z-index: 0;
+  @include transition( padding-left, .4s, ease-out );
+  &.extended{
+    padding-left: 290px;
+  }
 }
 .user-info{
   float: right;
