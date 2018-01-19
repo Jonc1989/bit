@@ -43,7 +43,7 @@ $content = apply_filters('the_content', $page->post_content); ?>
 
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12 menu-collapse">
-                    <div class="colapse-text">2Collapse</div>
+                    <div class="colapse-text">Collapse</div>
                     <img src="<?php bloginfo('template_directory');?>/resources/images/vikup_tokena.png">
                 </div>
             </div>
@@ -66,7 +66,7 @@ $content = apply_filters('the_content', $page->post_content); ?>
             </div>
 
             <div class="col-md-12 col-sm-12 col-xs-12 rounded">
-                <div class="col-lg-2 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="yellow-bg">
                         <div class="description">
                             <p class="info-title">ООО «Ланган»</p>
@@ -75,7 +75,7 @@ $content = apply_filters('the_content', $page->post_content); ?>
                     </div>
 
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="gray-bg">
                         <div class="description">
                             <p class="info-title">ООО «Ланган»</p>
@@ -84,7 +84,7 @@ $content = apply_filters('the_content', $page->post_content); ?>
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="gray-bg">
                         <div class="description">
                             <p class="info-title">ООО «Ланган»</p>
@@ -93,7 +93,7 @@ $content = apply_filters('the_content', $page->post_content); ?>
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-sm-6 ">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="gray-bg">
                         <div class="description">
                             <p class="info-title">ООО «Ланган»</p>

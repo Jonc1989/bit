@@ -56,6 +56,15 @@
       max-width: 355px;
     }
   }
+  .side-menu.open{
+    width: 290px;
+    .colapse-text{
+      display: inline-block;
+    }
+  }
+  .content-wrap.extended{
+    padding-left: 290px;
+  }
 }
 @media (max-width: 991px) {
   h1, .title{
@@ -434,7 +443,14 @@
       margin-bottom: 160px;
     }
   }
-
+  .dashboard-template .rounded {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media ( min-width: 1200px){
   #banner,{

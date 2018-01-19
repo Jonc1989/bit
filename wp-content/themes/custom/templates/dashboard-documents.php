@@ -43,7 +43,7 @@ $content = apply_filters('the_content', $page->post_content); ?>
 
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-12 menu-collapse">
-                    <div class="colapse-text">2Collapse</div>
+                    <div class="colapse-text">Collapse</div>
                     <img src="<?php bloginfo('template_directory');?>/resources/images/vikup_tokena.png">
                 </div>
             </div>
