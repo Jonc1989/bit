@@ -90,6 +90,9 @@ img{
 .yellow{
   color: #ffd334;
 }
+.green{
+  color: #369800;
+}
 .center-horizontaly{
   @include display-flex();
   align-items: center;

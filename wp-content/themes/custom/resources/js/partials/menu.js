@@ -34,7 +34,7 @@ jQuery( document ).ready( function(){
 
   
 
-    jQuery( document ).on( 'click', '.side-menu .menu-collapse', function () {
+    jQuery( document ).on( 'click', '.colapse-icon', function () {
         jQuery( '.side-menu' ).toggleClass( 'open' );
         jQuery( '.content-wrap' ).toggleClass( 'extended' );
     } )

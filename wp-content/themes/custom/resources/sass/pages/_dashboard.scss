@@ -91,14 +91,14 @@
   }
 }
 .menu-collapse{
-
+  padding-right: 23px;
   width: 100%;
   height: 70px;
   background-color: #111410;
   bottom: 0px;
   position: absolute;
   .colapse-text{
-    padding-top: 15px;
+    padding-top: 21px;
     height: 100%;
     display: none;
 
@@ -112,7 +112,13 @@
     color: #525443;
     @include transition( display, .4s, ease-out );
   }
-  img{float: right;}
+  img{
+    cursor: pointer;
+    margin-top: 26px;
+    float: right;
+    width: 22px;
+    height: 19px;
+  }
 }
 .side-menu{
 
@@ -131,7 +137,7 @@
   &.open{
 
   }
-  .logo{
+  .menu-logo{
     padding-top: 15px;
     height: 60px;
     background: url(resources/images/banner-bg.jpg) no-repeat center center;
@@ -146,7 +152,8 @@
   }
   .menu{
     color: white;
-    padding: 40px 20px;
+    //padding: 40px 0px;
+
     .menu-item{
       display: -webkit-box;
       display: -moz-box;
@@ -154,16 +161,21 @@
       display: -webkit-flex;
       display: flex;
       align-items: center;
-
+      padding: 0px 20px;
       position: relative;
       margin: 0 auto;
-      min-height: 37px;
-      margin-bottom: 25px;
+      height: 70px;        color: #ffffff;
+      //margin-bottom: 25px;
       .li-img-wrap{
         min-width: 50px;
-        img{
-          max-width: 30px;
-          max-height: 26px;
+        .menu-img{
+          width: 30px;
+          height: 26px;
+          background: url(resources/images/progress/documents.png) no-repeat center center;
+          -webkit-background-size: contain;
+          -moz-background-size: contain;
+          -o-background-size: contain;
+          background-size: contain;
         }
       }
       p{
@@ -175,7 +187,13 @@
         font-style: normal;
         font-stretch: normal;
         letter-spacing: normal;
-        color: #ffffff;
+
+      }
+    }
+    a:hover{
+      .menu-item{
+        background-color: #2f3027;
+        color: #ffd234;
       }
     }
   }
@@ -185,8 +203,8 @@
   padding-bottom: 50px;
   padding-left: 67px;
   padding-right: 0px;
-  min-height: 100%;
-  min-height: calc( 100% - 281px);
+  height: 100%;
+  //min-height: calc( 100% - 281px);
   //position: fixed;
   //width: 100%;
   z-index: 0;
@@ -196,4 +214,16 @@
 .user-info{
   float: right;
   color: black;
+}
+
+.collapse-arrow{
+  width: 25px;
+  height: 25px;
+  background: url(resources/images/down.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  display: inline-block;
+  float: right;
 }

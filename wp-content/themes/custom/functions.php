@@ -21,11 +21,10 @@ function my_theme_setup(){
 add_theme_support( 'post-thumbnails' );
 
 register_nav_menus( array(
-	'primary' => __( 'Primary Menu', 'preico' )
-) );
+	'primary' => __( 'Primary Menu', 'preico' ),
+    'footer' => __( 'Footer Menu', 'preico' ),
+    'side-menu' => __( 'Side Menu', 'preico' )
 
-register_nav_menus( array(
-	'footer' => __( 'Footer Menu', 'preico' )
 ) );
 
 function debug($value)
@@ -228,3 +227,13 @@ function custom_excerpt_length( $length ) {
     return 15;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function randomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}

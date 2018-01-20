@@ -10,43 +10,10 @@ $content = apply_filters('the_content', $page->post_content); ?>
 
 	<div class="col-md-12 col-sm-12 col-xs-12 clear-pads dashboard-template">
 
-
+        <?php get_template_part('partials/dashboard/side-menu');?>
 
         <div class="content-wrap col-md-12 col-sm-12 col-xs-12 extended">
-            <div class="col-md-3 col-sm-3 col-xs-3 side-menu clear-pads open">
-                <a class="home-link" href="<?php echo home_url() ?>">
-                    <div class="logo">
-                        <img src="<?php bloginfo('template_directory');?>/resources/images/logo.png"
-                             srcset="<?php bloginfo('template_directory');?>/resources/images/logo@3x.png 3x"
-                             class="header-logo">
-                    </div>
-                </a>
-                <div class="menu">
-                    <a href="http://localhost/bitcoin/dashboard-documents">
-                        <div class="menu-item">
-                            <div class="li-img-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/resources/images/marketing.png">
 
-                            </div>
-                            <p class="title-text"><?php echo __( 'Маркетинговая составляющая', 'preico' ) ?></p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="menu-item">
-                            <div class="li-img-wrap">
-                                <img src="<?php bloginfo('template_directory');?>/resources/images/registracija.png">
-
-                            </div>
-                            <p class="title-text"><?php echo __( 'Пегистрационные процессы', 'preico' ) ?></p>
-                        </div>
-                    </a>
-
-                </div>
-                <div class="col-md-12 col-sm-12 col-xs-12 menu-collapse">
-                    <div class="colapse-text">Collapse</div>
-                    <img src="<?php bloginfo('template_directory');?>/resources/images/vikup_tokena.png">
-                </div>
-            </div>
 
             <div class="col-md-12 col-sm-12 col-xs-12 dashboard-header yellow-bg">
                 <div class="balance">
@@ -61,7 +28,7 @@ $content = apply_filters('the_content', $page->post_content); ?>
 
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="col-md-12">
-                    <h4>Dashboard</h4>
+                    <h4>Личный кабинет</h4>
                 </div>
             </div>
 
@@ -69,7 +36,7 @@ $content = apply_filters('the_content', $page->post_content); ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="yellow-bg">
                         <div class="description">
-                            <p class="info-title">ООО «Ланган»</p>
+                            <p class="info-title">Ваш баланс</p>
                             <p class="info">1,0005</p>
                         </div>
                     </div>
@@ -78,7 +45,16 @@ $content = apply_filters('the_content', $page->post_content); ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="gray-bg">
                         <div class="description">
-                            <p class="info-title">ООО «Ланган»</p>
+                            <p class="info-title">Текущий бонус</p>
+                            <p class="info green">1,0005</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <div class="gray-bg">
+                        <div class="description">
+                            <p class="info-title">Цена продажи</p>
                             <p class="info">1,0005</p>
                         </div>
                     </div>
@@ -87,16 +63,7 @@ $content = apply_filters('the_content', $page->post_content); ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="gray-bg">
                         <div class="description">
-                            <p class="info-title">ООО «Ланган»</p>
-                            <p class="info">1,0005</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <div class="gray-bg">
-                        <div class="description">
-                            <p class="info-title">ООО «Ланган»</p>
+                            <p class="info-title">Цена WP Coin</p>
                             <p class="info">1,0005</p>
                         </div>
                     </div>

@@ -629,6 +629,15 @@
   .question-wrap{
     padding-top: 40px;
   }
+  .dashboard-header{
+    .balance, .invest{
+      width: 100%;
+      margin-bottom: 7px;
+    }
+    .invest{
+      margin-left: 0px;
+    }
+  }
 }
 @media (max-width: 600px){
   #counter{
