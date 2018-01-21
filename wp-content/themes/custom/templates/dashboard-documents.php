@@ -36,22 +36,40 @@ get_header(); ?>
                             <?php $id = randomString();?>
                             <a class="" data-toggle="collapse" href="#<?php echo $id;?>" role="button" aria-expanded="false" aria-controls="<?php echo $id;?>">
                                 <div class="document-category gray-bg">
-                                    <?php echo get_sub_field( 'category_name' ); ?>
-                                    <div class="collapse-arrow">
+                                    <div class="col-md-12">
+                                        <?php echo get_sub_field( 'category_name' ); ?>
+                                        <div class="collapse-arrow">
 
+                                        </div>
                                     </div>
-                                </div>
-<span>
 
-                            </span>
+                                </div>
+
 
                             </a>
 
                             <div class="collapse" id="<?php echo $id;?>">
+
+                                <div class="col-md-12 document-list-header border-bottom">
+                                    Name
+                                </div>
+
                                 <?php while(has_sub_field( 'document_files' )):?>
+                                    <div class="col-md-12 document-item border-bottom">
+                                        <div class="col-md-9 col-sm-8 col-xs-8 clear-pads">
+                                            <?php echo get_sub_field( 'document_title' ); ?>
+                                        </div>
+                                        <div class="col-md-3 col-sm-4 col-xs-4 clear-pads">
+                                            <a target="_blank" href="<?php echo get_sub_field( 'document_file' ); ?>">
+                                                <div class="open-document">
+                                                    Open
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
 
 
-                                    <?php echo get_sub_field( 'document_title' ); ?>
 
 
                                 <?php endwhile; ?>

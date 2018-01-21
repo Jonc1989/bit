@@ -66,11 +66,16 @@
     }
   }
 }
-.rounded{
-  .yellow-bg, .white-bg{
-    border-radius: 5px;
-    margin-bottom: 19px;
+.document-container{
+  .rounded {
+    .yellow-bg, .white-bg {
+      border-radius: 5px;
+      margin-bottom: 19px;
+    }
   }
+}
+.rounded{
+
   .document{
     margin-bottom: 10px;
     //height: 75px;
