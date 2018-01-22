@@ -143,7 +143,7 @@
 
                 <div class="roadmap-item">
                     <div class="li-img-wrap">
-                        <img src="<?php bloginfo('template_directory');?>/resources/images/vikup_tokena.png">
+                        <img src="<?php bloginfo('template_directory');?>/resources/images/token.png">
 
                     </div><p class="title-text"><?php echo __( 'Начало выкупа токенов', 'preico' ) ?></p>
 

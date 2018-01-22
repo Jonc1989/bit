@@ -28,7 +28,7 @@ function animateScroll( link ){
 jQuery( document ).ready( function(){
 
     var links = jQuery( '.nav li a' );
-
+    animateScroll( links[ 1 ] );
     animateScroll( links[ 3 ] );
     animateScroll( links[ 5 ] );
 

@@ -15,16 +15,7 @@ $content = apply_filters('the_content', $page->post_content); ?>
         <div class="content-wrap col-md-12 col-sm-12 col-xs-12 extended">
 
 
-            <div class="col-md-12 col-sm-12 col-xs-12 dashboard-header yellow-bg">
-                <div class="balance">
-                    <div class="text">Ваш баланс</div>
-                    <div class="summ">2,0007</div>
-                    <img src="<?php bloginfo('template_directory');?>/resources/images/vikup_tokena.png">
-                </div>
-
-                <button class="btn- btn-success invest">Инвестировать</button>
-                <a class="user-info" href="""><?php echo wp_get_current_user()->user_login ; ?></a>
-            </div>
+            <?php get_template_part('partials/dashboard/header');?>
 
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="col-md-12">

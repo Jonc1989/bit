@@ -7,6 +7,9 @@
     .yellow-bg, .gray-bg {
       border-radius: 3px;
     }
+    .gray-bg{
+      border: solid 1px #d4dde8;
+    }
     .description{
       padding: 18px 20px;
       .info-title{
@@ -24,10 +27,7 @@
     }
   }
 
-  .gray-bg{
-    border: solid 1px #d4dde8;
-    //margin-bottom: 19px;
-  }
+
   //.yellow-bg{
   //  border: solid 1px #ffd334;
   //}
@@ -53,6 +53,31 @@
   color: white;
   padding: 12px;
   font-size: 16px;
+  .dropdown-menu>li>a{
+    padding-right: 30px;
+    padding-left: 15px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-menu {
+    right: 0px;
+    left: unset;
+    //li{
+    //  padding: 0px 20px;
+    //}
+    img{
+      float: left;
+      margin-right: 13px;
+    }
+    div{
+      display: inline-block;
+    }
+  }
   .balance, .invest{
     display: inline-block;
     height: 36px;
@@ -114,12 +139,17 @@
     color: #525443;
     @include transition( display, .4s, ease-out );
   }
-  img{
+  .colapse-icon{
     cursor: pointer;
     margin-top: 26px;
     float: right;
-    width: 22px;
+    width: 11px;
     height: 19px;
+    background: url(resources/images/arrow.png) no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
   }
 }
 .side-menu{
@@ -173,11 +203,7 @@
         .menu-img{
           width: 30px;
           height: 26px;
-          background: url(resources/images/progress/documents.png) no-repeat center center;
-          -webkit-background-size: contain;
-          -moz-background-size: contain;
-          -o-background-size: contain;
-          background-size: contain;
+
         }
       }
       p{
@@ -190,6 +216,60 @@
         font-stretch: normal;
         letter-spacing: normal;
 
+      }
+    }
+    .cctv{
+      .menu-img{
+        background: url(resources/images/progress/camera.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
+    .documents{
+      .menu-img{
+        background: url(resources/images/progress/documents.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
+    .rules{
+      .menu-img{
+        background: url(resources/images/progress/ico.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
+    .cashout{
+      .menu-img{
+        background: url(resources/images/progress/cash_out.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
+    .oferta{
+      .menu-img{
+        background: url(resources/images/progress/oferta.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
+    .news{
+      .menu-img{
+        background: url(resources/images/progress/news.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
       }
     }
     a:hover{
@@ -217,6 +297,9 @@
   float: right;
   color: black;
 }
+.doc-block{
+  margin-bottom: 40px;
+}
 .document-category{
   height: 40px;
   font-size: 20px;
@@ -238,13 +321,16 @@
 .collapse-arrow{
   width: 25px;
   height: 25px;
-  background: url(resources/images/down.png) no-repeat center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  //background: url(resources/images/down.png) no-repeat center center;
+  //-webkit-background-size: contain;
+  //-moz-background-size: contain;
+  //-o-background-size: contain;
+  //background-size: contain;
   display: inline-block;
   float: right;
+  background-color: #b8c2c8;
+  border-radius: 50%;
+  margin-top: 2px;
 }
 .document-list-header{
   padding-top: 15px;

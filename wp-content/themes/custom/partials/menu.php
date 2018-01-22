@@ -36,7 +36,7 @@
                         <?php } ?>
 
                         <?php if( is_user_logged_in() ){ ?>
-                            <li class="dashboard-link"><a href="/dashboard" >Dashboard</a></li>
+                            <li class="dashboard-link"><a href="<?php echo home_url() ?>/dashboard" >Dashboard</a></li>
 
                         <?php }else { ?>
                             <li class="register-link"><a href="" data-toggle="modal" data-target="#registrationModal">Registration</a></li>

@@ -1,4 +1,4 @@
-<div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="video">
+<div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="project">
 	<div class="container">
 		<h1 class="title"><?php echo  __( 'Инвестировать в реальное предприятие', 'preico' );?></h1>
 		<div class="col-md-6 col-sm-12 col-xs-12">
