@@ -13,20 +13,43 @@
 			<span class="caret"></span></button>
 		<ul class="dropdown-menu">
 			<li><a href="<?php echo home_url() ?>/dashboard">
-					<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/personal_cabinet.png">
+					<div class="menu-img-wrap">
+						<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/personal_cabinet.png">
+					</div>
+
 					<div class="">личные данные инвестора </div>
 				</a>
 			</li>
 			<li><a href="">
-					<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/change_password.png">
+
+					<div class="menu-img-wrap">
+						<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/change_password.png">
+					</div>
+
 					<div class="">Сменить пароль</div>
 				</a></li>
-			<li><a href="">
+			<li class="lang-switch-wrap">
+					<div class="lang-switch">
+						<?php foreach(qtrans_getSortedLanguages() as $language) { ?>
+							<a href="<?php echo qtrans_convertURL($current_url, $language, false, true)?>">
+								<div class="language">
+									<?php echo $language; ?>
+								</div>
+							</a>
+						<?php } ?>
+					</div>
+				<div class="menu-img-wrap">
 					<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/arrow.png">
+				</div>
+
 					<div class="">Сменить язык</div>
-				</a></li>
+
+			</li>
 			<li><a class="" href="<?php echo wp_logout_url( site_url() ); ?>">
-					<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/exit.png">
+					<div class="menu-img-wrap">
+						<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/exit.png">
+					</div>
+
 					<div class="">Выйти</div>
 
 				</a> </li>

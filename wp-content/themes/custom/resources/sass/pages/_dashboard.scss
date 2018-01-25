@@ -53,15 +53,21 @@
   color: white;
   padding: 12px;
   font-size: 16px;
-  .dropdown-menu>li>a{
-    padding-right: 30px;
-    padding-left: 15px;
+  .dropdown-menu>li{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 60px;
+    padding-left: 0px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    align-items: center;
+    align-items: center;      color: white;
+    a{
+      padding: 0px;
+
+    }
   }
 
   .dropdown-menu {
@@ -70,12 +76,32 @@
     //li{
     //  padding: 0px 20px;
     //}
-    img{
+    .menu-img-wrap{
       float: left;
-      margin-right: 13px;
+      width: 35px;
+      text-align: center;
     }
     div{
       display: inline-block;
+    }
+    .lang-switch{
+      position: absolute;
+      left: -50px;
+      background-color: #100f0e;
+      display: none;
+      height: 26px;
+      line-height: 27px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    .lang-switch-wrap:hover{
+      .lang-switch{
+        display: block;
+        a{
+          padding: 3px 5px;
+
+        }
+      }
     }
   }
   .balance, .invest{
@@ -145,11 +171,16 @@
     float: right;
     width: 11px;
     height: 19px;
-    background: url(resources/images/arrow.png) no-repeat center center;
+    background: url(resources/images/collapse-arrow.png) no-repeat center center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
+
+    -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
   }
 }
 .side-menu{
@@ -167,6 +198,14 @@
 
   //min-height: calc( 100% - 281px);
   &.open{
+    .menu-collapse{
+      .colapse-icon{
+        -webkit-transform: rotateZ(0deg);
+        -moz-transform: rotateZ(0deg);
+        -ms-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+      }
+    }
 
   }
   .menu-logo{
@@ -227,9 +266,27 @@
         background-size: contain;
       }
     }
+    //.cctv:hover, .cctv:active{
+    //  .menu-img{
+    //    background: url(resources/images/icons/yellow/camera.png) no-repeat center center;
+    //    -webkit-background-size: contain;
+    //    -moz-background-size: contain;
+    //    -o-background-size: contain;
+    //    background-size: contain;
+    //  }
+    //}
     .documents{
       .menu-img{
         background: url(resources/images/progress/documents.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
+    .documents:hover, .documents:active{
+      .menu-img{
+        background: url(resources/images/icons/yellow/documents.png) no-repeat center center;
         -webkit-background-size: contain;
         -moz-background-size: contain;
         -o-background-size: contain;
@@ -245,9 +302,27 @@
         background-size: contain;
       }
     }
+    .rules:hover, .rules:active{
+      .menu-img{
+        background: url(resources/images/icons/yellow/ico.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
     .cashout{
       .menu-img{
         background: url(resources/images/progress/cash_out.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
+    .cashout:hover, .cashout:active{
+      .menu-img{
+        background: url(resources/images/icons/yellow/cash_out.png) no-repeat center center;
         -webkit-background-size: contain;
         -moz-background-size: contain;
         -o-background-size: contain;
@@ -263,9 +338,27 @@
         background-size: contain;
       }
     }
+    .oferta:hover, .oferta:active{
+      .menu-img{
+        background: url(resources/images/icons/yellow/oferta.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
     .news{
       .menu-img{
         background: url(resources/images/progress/news.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
+    .news:hover, .news:active{
+      .menu-img{
+        background: url(resources/images/icons/yellow/news.png) no-repeat center center;
         -webkit-background-size: contain;
         -moz-background-size: contain;
         -o-background-size: contain;
