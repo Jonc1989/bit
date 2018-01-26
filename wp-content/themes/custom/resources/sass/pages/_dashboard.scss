@@ -266,15 +266,15 @@
         background-size: contain;
       }
     }
-    //.cctv:hover, .cctv:active{
-    //  .menu-img{
-    //    background: url(resources/images/icons/yellow/camera.png) no-repeat center center;
-    //    -webkit-background-size: contain;
-    //    -moz-background-size: contain;
-    //    -o-background-size: contain;
-    //    background-size: contain;
-    //  }
-    //}
+    .cctv:hover, .cctv:active{
+      .menu-img{
+        background: url(resources/images/icons/yellow/camera.png) no-repeat center center;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
+    }
     .documents{
       .menu-img{
         background: url(resources/images/progress/documents.png) no-repeat center center;
