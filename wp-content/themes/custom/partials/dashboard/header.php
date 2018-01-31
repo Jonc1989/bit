@@ -20,14 +20,15 @@
 					<div class="">личные данные инвестора </div>
 				</a>
 			</li>
-			<li><a href="">
+			<li><a href="" data-toggle="modal" data-target="#user_details" >
 
 					<div class="menu-img-wrap">
 						<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/change_password.png">
 					</div>
 
 					<div class="">Сменить пароль</div>
-				</a></li>
+				</a>
+            </li>
 			<li class="lang-switch-wrap">
 					<div class="lang-switch">
 						<?php foreach(qtrans_getSortedLanguages() as $language) { ?>
@@ -56,4 +57,8 @@
 
 		</ul>
 	</div>
+
+
 </div>
+
+

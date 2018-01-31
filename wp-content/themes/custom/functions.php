@@ -237,3 +237,14 @@ function randomString($length = 10) {
     }
     return $randomString;
 }
+
+function update_user(){
+
+    $user = $_POST;
+    debug($user);
+
+
+    die();
+}
+add_action( 'wp_ajax_update_user', 'update_user' );
+add_action( 'wp_ajax_nopriv_update_user', 'update_user' );
