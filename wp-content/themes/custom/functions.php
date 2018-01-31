@@ -241,10 +241,67 @@ function randomString($length = 10) {
 function update_user(){
 
     $user = $_POST;
-    debug($user);
+    //debug($user);
+
+    $id = $_POST[ 'wpcrl_id' ];
+    $wpcrl_fname = $_POST[ 'wpcrl_fname' ];
+    $wpcrl_lname = $_POST[ 'wpcrl_lname' ];
+    $wpcrl_username = $_POST[ 'wpcrl_username' ];
+    $wpcrl_email = $_POST[ 'wpcrl_email' ];
+    $wpcrl_password = $_POST[ 'wpcrl_password' ];
 
 
+    $data = [ 'ID' => get_current_user_id() ];
+
+    if( $wpcrl_email != '' ){
+        $data[ 'user_email' ] = $wpcrl_email;
+    }
+
+    if( $wpcrl_password != '' ){
+        $data[ 'user_pass' ] = $wpcrl_password;
+    }
+
+
+    update_user_meta( get_current_user_id(), 'first_name', $wpcrl_fname );
+    update_user_meta( get_current_user_id(), 'last_name', $wpcrl_lname );
+
+    wp_update_user( $data );
+
+    echo 1;
     die();
 }
 add_action( 'wp_ajax_update_user', 'update_user' );
 add_action( 'wp_ajax_nopriv_update_user', 'update_user' );
+
+
+function json_response($json_array){
+    header('Cache-Control: no-cache, must-revalidate');
+    header('Expires: Mon, 15 Mar 1979 17:00:00 GMT');
+    header('Content-type: application/json');
+
+    $json = json_encode( $json_array );
+    echo $json;
+}
+
+
+function get_user_data()
+{
+    //meta
+    $name = get_user_meta( get_current_user_id(), 'first_name' );
+    $surname = get_user_meta( get_current_user_id(), 'last_name' );
+    $nick_name = get_user_meta( get_current_user_id(), 'nickname' );
+
+    $user_data = get_userdata( get_current_user_id() );
+
+
+    $data = [
+        'name'          => $name[0],
+        'surname'       => $surname[0],
+        'nickname'      => $user_data->user_login,
+        'email'         => $user_data->user_email
+    ];
+    json_response($data);
+    die();
+}
+add_action( 'wp_ajax_get_user_data', 'get_user_data' );
+add_action( 'wp_ajax_nopriv_get_user_data', 'get_user_data' );

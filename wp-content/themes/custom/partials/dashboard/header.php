@@ -9,26 +9,19 @@
 
 	<div class="dropdown user-info">
 		<button class="dropdown-toggle" type="button" data-toggle="dropdown">
-			<span class="locale"><?php echo wp_get_current_user()->user_login ; ?></span>
+			<span class="locale"><?php echo wp_get_current_user()->user_firstname . ' ' . wp_get_current_user()->user_lastname ; ?></span>
 			<span class="caret"></span></button>
 		<ul class="dropdown-menu">
-			<li><a href="<?php echo home_url() ?>/dashboard">
-					<div class="menu-img-wrap">
+            <li><a href="" data-toggle="modal" data-target="#user_details" >
+
+                <div class="menu-img-wrap">
 						<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/personal_cabinet.png">
 					</div>
 
 					<div class="">личные данные инвестора </div>
 				</a>
 			</li>
-			<li><a href="" data-toggle="modal" data-target="#user_details" >
 
-					<div class="menu-img-wrap">
-						<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/change_password.png">
-					</div>
-
-					<div class="">Сменить пароль</div>
-				</a>
-            </li>
 			<li class="lang-switch-wrap">
 					<div class="lang-switch">
 						<?php foreach(qtrans_getSortedLanguages() as $language) { ?>

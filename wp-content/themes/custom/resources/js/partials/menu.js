@@ -11,7 +11,8 @@ function animateScroll( link ){
         var id = jQuery(this).attr("href");
 
         var full = window.location.origin + window.location.pathname.slice(0, -1);
-        if( domain == full ){
+
+        if( domain == full || domain + enLocale == window.location.href || domain + ruLocale == window.location.href){
             var verticalOffset = jQuery(id).offset().top;
 
             jQuery("html, body").animate({

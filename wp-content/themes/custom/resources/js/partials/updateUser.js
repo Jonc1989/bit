@@ -5,6 +5,14 @@ jQuery(document).ready(initScript);
 
 function initScript() {
     InitUserUpdateForm();
+
+    refreshUserData()
+}
+
+function refreshUserData(){
+    jQuery('#user_details').on('show.bs.modal', function () {
+        getUserData();
+    });
 }
 
 function InitUserUpdateForm() {
@@ -74,9 +82,9 @@ function InitUserUpdateForm() {
             },
             wpcrl_password: {
                 validators: {
-                    notEmpty: {
-                        message: 'The password is required'
-                    },
+                    //notEmpty: {
+                    //    message: 'The password is required'
+                    //},
                     stringLength: {
                         min: 6,
                         message: 'The password must be more than 6 characters long'
@@ -85,9 +93,9 @@ function InitUserUpdateForm() {
             },
             wpcrl_password2: {
                 validators: {
-                    notEmpty: {
-                        message: 'The password is required'
-                    },
+                    //notEmpty: {
+                    //    message: 'The password is required'
+                    //},
                     identical: {
                         field: 'wpcrl_password',
                         message: 'The password and its confirm are not the same'
@@ -110,7 +118,6 @@ function InitUserUpdateForm() {
         // and the FormValidation instance
         var fv = $registerForm.data('formValidation');
         var content = $registerForm.serialize();
-        console.log(content)
         // start processing
         //jQuery('#wpcrl-reg-loader-info').show();
 
@@ -132,7 +139,27 @@ function updateUser(content) {
         data: content + '&action=update_user',
         type: 'POST',
         success: function (response) {
-            console.log(response);
+            jQuery(function () {
+                jQuery('#user_details').modal('toggle');
+            });
+        }
+    });
+}
+
+function getUserData() {
+
+    var data = {
+        action: 'get_user_data'
+    };
+    jQuery.ajax({
+        url: ajaxurl,
+        data: data,
+        type: 'GET',
+        success: function (response) {
+            jQuery('#wpcrl_fname').val( response.name );
+            jQuery('#wpcrl_lname').val( response.surname );
+            jQuery('#wpcrl_username').val( response.nickname );
+            jQuery('#wpcrl_email').val( response.email );
         }
     });
 }

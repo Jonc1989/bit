@@ -40,4 +40,6 @@
 <script>
 	var ajaxurl  = '<?php echo get_site_url(); ?>/wp-admin/admin-ajax.php';
 	var domain  = '<?php echo get_site_url(); ?>';
+    var ruLocale = '/ru/';
+    var enLocale = '/en/';
 </script>
