@@ -5276,3 +5276,18 @@ msgstr "Less"
 
 msgid "White paper"
 msgstr "White paper"
+
+msgid "Выйти"
+msgstr "Выйти"
+
+msgid "Личный кабинет"
+msgstr "Личный кабинет"
+
+msgid "Смотреть"
+msgstr "Смотреть"
+
+msgid "Название документа"
+msgstr "Название документа"
+
+msgid "Действие"
+msgstr "Действие"

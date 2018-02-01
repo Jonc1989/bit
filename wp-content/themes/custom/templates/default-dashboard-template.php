@@ -75,7 +75,7 @@ get_header(); ?>
 
     </div>
 
-    <div class="col-md-12 col-sm-12 col-xs-12 dashboard-modals">
+    <div class="dashboard-modals">
         <?php get_template_part('partials/dashboard/user-edit-form');?>
     </div>
-<?php get_footer(); ?>
+<?php get_template_part('partials/footer-scripts');?>

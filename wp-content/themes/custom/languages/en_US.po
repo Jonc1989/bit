@@ -443,3 +443,18 @@ msgstr "Less"
 
 msgid "White paper"
 msgstr "White paper"
+
+msgid "Выйти"
+msgstr "Logout"
+
+msgid "Личный кабинет"
+msgstr "Dashboard"
+
+msgid "Смотреть"
+msgstr "Watch"
+
+msgid "Название документа"
+msgstr "Document name"
+
+msgid "Действие"
+msgstr "Action"

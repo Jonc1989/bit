@@ -103,7 +103,9 @@ img{
 .font20{
   font-size: 20px;
 }
-
+.collapse-arrow{
+  @include transition( transform, .35s, ease-out );
+}
 @import "responsive/_lg";
 @import "responsive/_md";
 @import "responsive/_sm";

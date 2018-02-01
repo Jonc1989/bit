@@ -25,28 +25,35 @@ get_header(); ?>
                             <?php $id = randomString();?>
                             <a class="" data-toggle="collapse" href="#<?php echo $id;?>" role="button" aria-expanded="true" aria-controls="<?php echo $id;?>">
                                 <div class="document-category gray-bg">
-                                    <div class="col-md-12">
+                                    <div class="clear-pads col-md-12 col-sm-12 col-xs-12 doc-category-title">
                                         <?php echo get_sub_field( 'category_name' ); ?>
-                                        <div class="collapse-arrow">
 
-                                        </div>
                                     </div>
+                                    <div class="collapse-arrow"><div class="collapse-arrow-img"></div></div>
                                 </div>
                             </a>
 
-                            <div class="collapse in" id="<?php echo $id;?>">
-                                <div class="col-md-12 document-list-header border-bottom">
-                                    Name
+                            <div class="col-md-12 col-sm-12 col-xs-12 clear-pads collapse in" id="<?php echo $id;?>">
+                                <div class="col-md-12 col-sm-12 col-xs-12 document-list-header border-bottom">
+
+
+
+                                    <div class="col-md-9 col-sm-8 col-xs-8 clear-pads"><?php echo __( 'Название документа', 'preico' ) ?></div>
+                                    <div class="col-md-3 col-sm-4 col-xs-4 clear-pads">
+                                        <div class="right-column"><?php echo __( 'Действие', 'preico' ) ?></div>
+                                    </div>
+
+
                                 </div>
                                 <?php while(has_sub_field( 'document_files' )):?>
                                     <div class="col-md-12 document-item border-bottom">
-                                        <div class="col-md-9 col-sm-8 col-xs-8 clear-pads">
+                                        <div class="download-name col-md-9 col-sm-8 col-xs-8 clear-pads">
                                             <?php echo get_sub_field( 'document_title' ); ?>
                                         </div>
                                         <div class="col-md-3 col-sm-4 col-xs-4 clear-pads">
                                             <a target="_blank" href="<?php echo get_sub_field( 'document_file' ); ?>">
                                                 <div class="open-document">
-                                                    Open
+                                                    <?php echo __( 'Смотреть', 'preico' ) ?>
                                                 </div>
                                             </a>
                                         </div>
@@ -69,7 +76,7 @@ get_header(); ?>
 
     </div>
 
-    <div class="col-md-12 col-sm-12 col-xs-12 dashboard-modals">
+    <div class="dashboard-modals">
         <?php get_template_part('partials/dashboard/user-edit-form');?>
     </div>
-<?php get_footer(); ?>
+<?php get_template_part('partials/footer-scripts');?>

@@ -1,8 +1,12 @@
 <div class="col-md-12 col-sm-12 col-xs-12 dashboard-header yellow-bg">
 	<div class="balance">
 		<div class="text">Ваш баланс</div>
-		<div class="summ">2,0007</div>
-		<img src="<?php bloginfo('template_directory');?>/resources/images/vikup_tokena.png">
+		<div class="summ">2,0007
+        <span>
+            <img src="<?php bloginfo('template_directory');?>/resources/images/vikup_tokena.png">
+        </span>
+        </div>
+
 	</div>
 
 	<button class="btn- btn-success invest">Инвестировать</button>
@@ -44,7 +48,7 @@
 						<img src="<?php bloginfo('template_directory');?>/resources/images/dropdown/exit.png">
 					</div>
 
-					<div class="">Выйти</div>
+					<div class=""><?php echo __( 'Выйти', 'preico' ) ?></div>
 
 				</a> </li>
 

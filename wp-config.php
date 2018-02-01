@@ -82,6 +82,7 @@ define ('WPLANG', 'en_US');
 
 define ('upload_max_filesize', '256M');
 define ('post_max_size', '256M');
+define('CONCATENATE_SCRIPTS', false);
 
 //define( 'ALLOW_UNFILTERED_UPLOADS', true );
 

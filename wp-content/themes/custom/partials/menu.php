@@ -55,10 +55,10 @@
                                     <span class="caret"></span></button>
                                 <ul class="dropdown-menu">
                                     <?php foreach(qtrans_getSortedLanguages() as $language) { ?>
-                                        <li><a href="<?php echo qtrans_convertURL($current_url, $language, false, true)?>"><?php echo $language; ?></a></li>
+                                        <li><a href="<?php echo qtrans_convertURL($current_url, $language, false, true)?>"><?php echo strtoupper( $language ); ?></a></li>
                                     <?php } ?>
                                     <?php if( is_user_logged_in() ){ ?>
-                                        <li><a class="" href="<?php echo wp_logout_url( site_url() ); ?>">Logout</a> </li>
+                                        <li><a class="" href="<?php echo wp_logout_url( site_url() ); ?>"><?php echo __( 'Выйти', 'preico' ) ?></a> </li>
                                     <?php } ?>
                                 </ul>
                             </div>

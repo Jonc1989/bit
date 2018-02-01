@@ -638,6 +638,18 @@
       margin-left: 0px;
     }
   }
+  .document-category {
+    font-size: 17px;
+  }
+  .document-item {
+    font-size: 13px;
+  }
+  .dashboard-header{
+    font-size: 14px;
+  }
+  .dashboard-header .dropdown-menu > li {
+    font-size: 12px;
+  }
 }
 @media (max-width: 600px){
   #counter{
@@ -714,7 +726,9 @@
       display: none;
     }
   }
-
+  .open-document, .right-column {
+    width: 100%;
+  }
 }
 @media (max-width: 420px){
 
