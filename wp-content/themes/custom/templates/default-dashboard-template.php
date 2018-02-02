@@ -1,3 +1,4 @@
+<?php if( !is_user_logged_in() ){ header('Location: '. site_url()); } ?>
 <?php
 /**
  * Template Name: Default dashboard template
@@ -26,7 +27,7 @@ get_header(); ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="yellow-bg">
                         <div class="description">
-                            <p class="info-title">Ваш баланс</p>
+                            <p class="info-title"><?php echo __( 'Ваш баланс', 'preico' ) ?></p>
                             <p class="info">1,0005</p>
                         </div>
                     </div>
@@ -35,7 +36,7 @@ get_header(); ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="gray-bg">
                         <div class="description">
-                            <p class="info-title">Текущий бонус</p>
+                            <p class="info-title"><?php echo __( 'Скидка', 'preico' ) ?></p>
                             <p class="info green">1,0005</p>
                         </div>
                     </div>
@@ -44,7 +45,7 @@ get_header(); ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="gray-bg">
                         <div class="description">
-                            <p class="info-title">Цена продажи</p>
+                            <p class="info-title"><?php echo __( 'Заработок ETH', 'preico' ) ?></p>
                             <p class="info">1,0005</p>
                         </div>
                     </div>
@@ -53,8 +54,8 @@ get_header(); ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                     <div class="gray-bg">
                         <div class="description">
-                            <p class="info-title">Цена WP Coin</p>
-                            <p class="info">1,0005</p>
+                            <p class="info-title"><?php echo __( 'Статус', 'preico' ) ?></p>
+                            <p class="info">Premium</p>
                         </div>
                     </div>
                 </div>

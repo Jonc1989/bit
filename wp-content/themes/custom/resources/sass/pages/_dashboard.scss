@@ -33,12 +33,6 @@
   //}
   .video-preview{
     height: 300px;
-
-    background: url(https://img.youtube.com/vi/iXAbte4QXKs/maxresdefault.jpg)no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
   }
   #footer-wrap{
     position:absolute;
@@ -454,7 +448,7 @@
   }
 }
 .collapsed{
-  .collapse-arrow{
+  .collapse-arrow, .bullet{
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     -ms-transform: rotateZ(180deg);

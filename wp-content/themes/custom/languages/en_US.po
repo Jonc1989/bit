@@ -458,3 +458,15 @@ msgstr "Document name"
 
 msgid "Действие"
 msgstr "Action"
+
+msgid "Ваш баланс"
+msgstr "Balance"
+
+msgid "Скидка"
+msgstr "Discount"
+
+msgid "Заработок ETH"
+msgstr "Earnings ETH"
+
+msgid "Статус"
+msgstr "Status"

@@ -5291,3 +5291,15 @@ msgstr "Название документа"
 
 msgid "Действие"
 msgstr "Действие"
+
+msgid "Ваш баланс"
+msgstr "Ваш баланс"
+
+msgid "Скидка"
+msgstr "Скидка"
+
+msgid "Заработок ETH"
+msgstr "Заработок ETH"
+
+msgid "Статус"
+msgstr "Статус"

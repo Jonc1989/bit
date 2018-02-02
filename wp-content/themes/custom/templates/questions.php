@@ -24,13 +24,13 @@ get_header(); ?>
 
                 <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 
-                    <a class="" data-toggle="collapse" href="#id<?php echo get_the_ID();?>" role="button" aria-expanded="false" aria-controls="id<?php echo get_the_ID();?>">
+                    <a class="collapsed" data-toggle="collapse" href="#id<?php echo get_the_ID();?>" role="button" aria-expanded="false" aria-controls="id<?php echo get_the_ID();?>">
                         <div class="question-toggle">
-                            <div class="question-title"> <?php the_title(); ?></div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 question-title"> <?php the_title(); ?></div>
 
-                            <span>
+                            <div>
                                 <img class="bullet" src="<?php bloginfo('template_directory');?>/resources/images/yellow-arrow.png">
-                            </span>
+                            </div>
                         </div>
                     </a>
 
