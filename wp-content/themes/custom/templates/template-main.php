@@ -12,7 +12,7 @@ get_header(); ?>
 
 	<?php get_template_part('partials/problem');?>
 
-
+	<?php get_template_part('partials/news');?>
 	<?php get_template_part('partials/subscribe');?>
 	<?php get_template_part('partials/roadmap');?>
 	<?php get_template_part('partials/contact');?>

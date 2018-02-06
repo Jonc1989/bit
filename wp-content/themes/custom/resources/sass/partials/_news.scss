@@ -1,0 +1,23 @@
+#news{
+  .post-wrap{
+    text-align: center;
+  }
+  .news-img{
+    //width: 250px;
+    height: 148px;
+
+  }
+  .yellow-border{
+    border-radius: 3px;
+    border: solid 3px #ffd333;
+  }
+}
+
+#current{padding:5px;text-align:center;border:1px solid #d4d9e5;border-radius:2px;width:40px;}
+.more-wrap{margin-bottom:18px;margin-top:24px;text-align:center;height:35px;display:inline-block;width:100%;}
+button.nonactive{background-color:#aab2bd;}
+button.active{background-color:#8cc63b;}
+button.nonactive:hover{cursor:default;}
+button.active{cursor:pointer;}
+i.pagination-icon{font-style:normal;font-size:24px;position:relative;top:-5px;}
+.current-page{color:#6c7a89;font-size:14px;padding:0px 10px;}

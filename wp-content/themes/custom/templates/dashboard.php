@@ -69,40 +69,42 @@ $content = apply_filters('the_content', $page->post_content); ?>
                     <?php echo $content; ?>
                 </div>
 
-                <?php
-                $video_id = null;
-                if( strpos( get_field( 'video_url' ), "=") != 0 ){
-                    $video_id  = substr( get_field( 'video_url' ), strpos( get_field( 'video_url' ), "=") + 1);
-                }else{
-                    $parts = explode("/", get_field( 'video_url' ) );
-                    $video_id = $parts[ count( $parts ) - 1 ];
-                }
+                <?php if( get_field( 'video_url' ) && get_field( 'video_url' ) != "" ){?>
+                    <?php
+                    $video_id = null;
+                    if( strpos( get_field( 'video_url' ), "=") != 0 ){
+                        $video_id  = substr( get_field( 'video_url' ), strpos( get_field( 'video_url' ), "=") + 1);
+                    }else{
+                        $parts = explode("/", get_field( 'video_url' ) );
+                        $video_id = $parts[ count( $parts ) - 1 ];
+                    }
 
-                $preview = '';
-                if(@file_get_contents("https://img.youtube.com/vi/".$video_id."/maxresdefault.jpg"))
-                {
-                    $preview = "https://img.youtube.com/vi/".$video_id."/maxresdefault.jpg";
-                }
-                elseif( @file_get_contents("https://img.youtube.com/vi/".$video_id."/maxresdefault.jpg") )
-                {
-                    $preview = "https://img.youtube.com/vi/".$video_id."/sddefault.jpg";
-                }else{
-                    $preview = "https://img.youtube.com/vi/".$video_id."/0.jpg";
-                }
-                ?>
-                <div class="col-md-6 col-sm-12 col-xs-12" style="">
-                    <a href="" class="" data-toggle="modal" data-target="#videoModal">
-                        <div class="col-md-12 col-sm-12 col-xs-12 clear-pads video-preview" style="background: url(<?php echo $preview; ?>)no-repeat center center;
-                            -webkit-background-size: cover;
-                            -moz-background-size: cover;
-                            -o-background-size: cover;
-                            background-size: cover;">
+                    $preview = '';
+                    if(@file_get_contents("https://img.youtube.com/vi/".$video_id."/maxresdefault.jpg"))
+                    {
+                        $preview = "https://img.youtube.com/vi/".$video_id."/maxresdefault.jpg";
+                    }
+                    elseif( @file_get_contents("https://img.youtube.com/vi/".$video_id."/maxresdefault.jpg") )
+                    {
+                        $preview = "https://img.youtube.com/vi/".$video_id."/sddefault.jpg";
+                    }else{
+                        $preview = "https://img.youtube.com/vi/".$video_id."/0.jpg";
+                    }
+                    ?>
+                    <div class="col-md-6 col-sm-12 col-xs-12" style="">
+                        <a href="" class="" data-toggle="modal" data-target="#videoModal">
+                            <div class="col-md-12 col-sm-12 col-xs-12 clear-pads video-preview" style="background: url(<?php echo $preview; ?>)no-repeat center center;
+                                -webkit-background-size: cover;
+                                -moz-background-size: cover;
+                                -o-background-size: cover;
+                                background-size: cover;">
 
-                        </div>
-                    </a>
+                            </div>
+                        </a>
 
 
-                </div>
+                    </div>
+                <?php } ?>
             </div>
         </div>
 

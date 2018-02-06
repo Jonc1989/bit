@@ -1,23 +1,23 @@
-<div class="col-md-12 col-sm-12 col-xs-12 clear-pads" id="problem">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clear-pads" id="problem">
 	<div class="container">
 		<h4 class="title"><?php echo __( 'Проблема', 'preico' ) ?></h4>
-		<div class="col-md-6 text-block">
+		<div class="col-lg-6 col-md-6 text-block">
 			<?php echo __( 'Главные проблемы в производстве пеллет и пиломатеиала - экология, рентабельность производственного бизнеса и нехватка сыря. Проект Wood Pellets предлогает концепт безотходного производства замкнутого цикла. Комплекс небудет нуждается в посредниках.', 'preico' ) ?>
 		</div>
-		<div class="col-md-6 text-block">
+		<div class="col-lg-6 col-md-6 text-block">
 			<?php echo __( 'В комплекс проекта Wood Pellets входит лесозавод, завод древесных гранул и станция когенерация. Проект Wood Pellets предлагает произвести независимый комплекс заводов который обеспечивает безотходное производство пеллет.', 'preico' ) ?>
 		</div>
 	</div>
 
     <?php get_template_part('partials/video');?>
 
-    <div class="city-image col-md-12 col-sm-12 col-xs-12 clear-pads hidden-xs"></div>
+    <div class="city-image col-lg-12 col-md-12 col-sm-12 col-xs-12 clear-pads hidden-xs"></div>
 
-	<div class="col-md-12 col-sm-12 col-xs-12">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div class="container city-description">
-			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clear-pads">
 
-                <div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 full-width-xs">
                     <div class="dark-bg triangle-top" data-toggle="modal" data-target="#thirdModal">
                         <h4 class="yellow"><?php echo __( 'Лесные ресурсы', 'preico' ) ?></h4>
                         <p class="white"><?php echo __( '71 967 га', 'preico' ) ?></p>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 full-width-xs">
 					<div class="dark-bg triangle-top" data-toggle="modal" data-target="#firstModal">
 						<h4 class="yellow"><?php echo __( 'Лесозавод', 'preico' ) ?></h4>
                         <p class="white"> <?php echo __( '120 000 м3/год', 'preico' ) ?></p>
@@ -60,7 +60,7 @@
 	                </div>
 				</div>
 
-                <div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 full-width-xs">
                     <div class="dark-bg triangle-top" data-toggle="modal" data-target="#fourthModal">
                         <h4 class="yellow"><?php echo __( 'Завод древесных пеллет', 'preico' ) ?></h4>
                         <p class="white"><?php echo __( '120 000 тонн/год', 'preico' ) ?></p>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 full-width-xs">
 					<div class="dark-bg triangle-top" data-toggle="modal" data-target="#secondModal">
 						<h4 class="yellow"><?php echo __( 'Когенерация', 'preico' ) ?></h4>
                         <p class="white"><?php echo __( '4,5 МWТ', 'preico' ) ?></p>
@@ -100,7 +100,7 @@
 	                </div>
 				</div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 full-width-xs">
 					<div class="dark-bg triangle-top" data-toggle="modal" data-target="#fifthModal">
 						<h4 class="yellow"><?php echo __( 'Mайнинг фермa', 'preico' ) ?></h4>
                         <p class="white"><?php echo __( '6750 Th/s', 'preico' ) ?></p>
@@ -120,7 +120,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-2 col-sm-4 col-xs-6 full-width-xs">
+				<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 full-width-xs">
 					<div class="dark-bg triangle-top" data-toggle="modal" data-target="#sixthModal">
 						<h4 class="yellow"><?php echo __( 'Тепличный комплекс', 'preico' ) ?></h4>
                         <p class="white"><?php echo __( '2 млн саженцев ели /год', 'preico' ) ?></p>
@@ -147,7 +147,7 @@
 
 
 	<div class="container">
-		<div class="col-md-12 col-sm-12 col-xs-12">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<h4 class="title"><?php echo __( 'Преимущество', 'preico' ) ?></h4>
 		</div>
 
@@ -164,11 +164,11 @@
 		$posts = new WP_Query( $args );
 
 		if ( $posts->have_posts() ) : ?>
-			<div class="col-md-12 col-sm-12 col-xs-12 clear-pads border-bottom posts-wrap">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clear-pads border-bottom posts-wrap">
 				<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
-					<div class="col-md-3 col-sm-6 post-wrap">
-						<div class="col-md-12 clear-pads">
-							<div class="col-md-12 clear-pads">
+					<div class="col-lg-3 col-md-4 col-sm-6 post-wrap">
+						<div class="col-lg-12 col-md-12 clear-pads">
+							<div class="col-lg-12 col-md-12 clear-pads">
 								<?php $image = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() )); ?>
 								<?php if($image) { ?>
 									<div class="description-post-img" style="background: url(<?php echo $image; ?>)no-repeat center center;
@@ -179,10 +179,10 @@
 									</div>
 								<?php } ?>
 							</div>
-							<div class="col-md-12 clear-pads">
+							<div class="col-lg-12 col-md-12 clear-pads">
 								<h1><?php the_title(); ?></h1>
 							</div>
-							<div class="col-md-12 clear-pads">
+							<div class="col-lg-12 col-md-12 clear-pads">
 								<p><?php the_content(); ?></p>
 							</div>
 						</div>

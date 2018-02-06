@@ -4,6 +4,7 @@ add_filter('show_admin_bar', '__return_false');
 require 'post-types/team-post_type.php';
 require 'post-types/partner-post_type.php';
 require 'post-types/questions-post_type.php';
+require 'post-types/news-post_type.php';
 
 //wp_enqueue_script('jquery', get_template_directory_uri().'/resources/js/vendor/jquery-3.2.1.min.js', array(), null, true);
 
